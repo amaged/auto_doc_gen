@@ -1,0 +1,642 @@
+\subsection*{netq check clag}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{No CLAG session info found}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Error: The following commands contain keyword(s) 'check', 'clag'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    netq check clag [json]}
+\DoxyCodeLine{    netq check clag around <text-time> [json]}
+\DoxyCodeLine{    netq example check clag}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{Unable to find command netq check clag --help}
+\DoxyCodeLine{}
+\DoxyCodeLine{No CLAG session info found}
+\end{DoxyCode}
+ \subsection*{net example clag basic-\/clag}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Scenario}
+\DoxyCodeLine{========}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{            ---------------                   ---------------}
+\DoxyCodeLine{           |               | swp3       swp3 |               |}
+\DoxyCodeLine{           |    switch1    |=================|    switch2    |}
+\DoxyCodeLine{           | mgmt=10.0.0.1 | swp4       swp4 | mgmt=10.0.0.2 |}
+\DoxyCodeLine{            ---------------                   ---------------}
+\DoxyCodeLine{                   | swp1                            | swp1}
+\DoxyCodeLine{                   |            ---------            |}
+\DoxyCodeLine{                   |           |         |           |}
+\DoxyCodeLine{                    -----------| host-11 |-----------}
+\DoxyCodeLine{                               |         |}
+\DoxyCodeLine{                                ---------}
+\DoxyCodeLine{}
+\DoxyCodeLine{We want to create an MLAG peering relationship between switch1 and switch2 on}
+\DoxyCodeLine{their swp3 and swp4 interfaces, create vlans 100-200, and dual connect host-11 to}
+\DoxyCodeLine{swp1 on both switch1 and switch2.}
+\DoxyCodeLine{}
+\DoxyCodeLine{You will need to configure switch1 and switch2, the steps for both are}
+\DoxyCodeLine{very similar.}
+\DoxyCodeLine{}
+\DoxyCodeLine{- create the peering; select one switch to be primary and the other secondary}
+\DoxyCodeLine{  - backup-ip is an optional (recommened) IP address that is separately reachable}
+\DoxyCodeLine{}
+\DoxyCodeLine{- create VLANs 100-200}
+\DoxyCodeLine{}
+\DoxyCodeLine{- configure a host facing interface for clag}
+\DoxyCodeLine{  - switch1 and switch2 MUST use the same clag-id for host-11}
+\DoxyCodeLine{}
+\DoxyCodeLine{- connect the clag to host-11 to vlan 100 untagged}
+\DoxyCodeLine{}
+\DoxyCodeLine{- review and commit}
+\DoxyCodeLine{}
+\DoxyCodeLine{net commands}
+\DoxyCodeLine{============}
+\DoxyCodeLine{}
+\DoxyCodeLine{switch1\# net add clag peer sys-mac 44:38:39:FF:01:01 interface swp3-4 primary backup-ip 10.0.0.2}
+\DoxyCodeLine{switch1\# net add vlan 100-200}
+\DoxyCodeLine{switch1\# net add clag port bond bond-to-host-11 interface swp1 clag-id 1}
+\DoxyCodeLine{switch1\# net add bond bond-to-host-11 bridge access 100}
+\DoxyCodeLine{switch1\# net pending}
+\DoxyCodeLine{switch1\# net commit}
+\DoxyCodeLine{}
+\DoxyCodeLine{switch2\# net add clag peer sys-mac 44:38:39:FF:01:01 interface swp3-4 secondary backup-ip 10.0.0.1}
+\DoxyCodeLine{switch2\# net add vlan 100-200}
+\DoxyCodeLine{switch2\# net add clag port bond bond-to-host-11 interface swp1 clag-id 1}
+\DoxyCodeLine{switch2\# net add bond bond-to-host-11 bridge access 100}
+\DoxyCodeLine{switch2\# net pending}
+\DoxyCodeLine{switch2\# net commit}
+\DoxyCodeLine{}
+\DoxyCodeLine{Verification}
+\DoxyCodeLine{============}
+\DoxyCodeLine{switch1\# net show interface}
+\DoxyCodeLine{switch1\# net show clag}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'basic-clag', 'example', 'clag'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net example clag basic-clag}
+\end{DoxyCode}
+ \subsection*{net show clag}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'show', 'clag'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show clag [our-macs|our-multicast-entries|our-multicast-router-ports|peer-macs|peer-multicast-entries|peer-multicast-router-ports|params|backup-ip|id] [verbose] [json]}
+\DoxyCodeLine{    net show clag macs [<mac>] [json]}
+\DoxyCodeLine{    net show clag neighbors [verbose]}
+\DoxyCodeLine{    net show clag peer-lacp-rate}
+\DoxyCodeLine{    net show clag status [verbose] [json]}
+\DoxyCodeLine{    net show clag verify-vlans [verbose]}
+\end{DoxyCode}
+ \subsection*{cat /etc/network/interfaces}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{auto lo}
+\DoxyCodeLine{iface lo inet loopback}
+\DoxyCodeLine{    address 10.0.0.41/32}
+\DoxyCodeLine{    address fd00::41/128}
+\DoxyCodeLine{}
+\DoxyCodeLine{auto eth0}
+\DoxyCodeLine{iface eth0 inet static}
+\DoxyCodeLine{    address 10.255.0.1}
+\DoxyCodeLine{    netmask 255.255.0.0}
+\DoxyCodeLine{    gateway 10.255.0.3}
+\DoxyCodeLine{auto eth1}
+\DoxyCodeLine{iface eth1 inet static}
+\DoxyCodeLine{    address 192.168.0.254}
+\DoxyCodeLine{    netmask 255.255.0.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{auto eth2}
+\DoxyCodeLine{iface eth2}
+\DoxyCodeLine{}
+\DoxyCodeLine{auto eth3}
+\DoxyCodeLine{iface eth3}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: cat [OPTION]... [FILE]...}
+\DoxyCodeLine{Concatenate FILE(s), or standard input, to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{  -A, --show-all           equivalent to -vET}
+\DoxyCodeLine{  -b, --number-nonblank    number nonempty output lines, overrides -n}
+\DoxyCodeLine{  -e                       equivalent to -vE}
+\DoxyCodeLine{  -E, --show-ends          display \$ at end of each line}
+\DoxyCodeLine{  -n, --number             number all output lines}
+\DoxyCodeLine{  -s, --squeeze-blank      suppress repeated empty output lines}
+\DoxyCodeLine{  -t                       equivalent to -vT}
+\DoxyCodeLine{  -T, --show-tabs          display TAB characters as \string^I}
+\DoxyCodeLine{  -u                       (ignored)}
+\DoxyCodeLine{  -v, --show-nonprinting   use \string^ and M- notation, except for LFD and TAB}
+\DoxyCodeLine{      --help     display this help and exit}
+\DoxyCodeLine{      --version  output version information and exit}
+\DoxyCodeLine{}
+\DoxyCodeLine{With no FILE, or when FILE is -, read standard input.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Examples:}
+\DoxyCodeLine{  cat f - g  Output f's contents, then standard input, then g's contents.}
+\DoxyCodeLine{  cat        Copy standard input to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{GNU coreutils online help: <http://www.gnu.org/software/coreutils/>}
+\DoxyCodeLine{Full documentation at: <http://www.gnu.org/software/coreutils/cat>}
+\DoxyCodeLine{or available locally via: info '(coreutils) cat invocation'}
+\DoxyCodeLine{}
+\DoxyCodeLine{auto lo}
+\DoxyCodeLine{iface lo inet loopback}
+\DoxyCodeLine{    address 10.0.0.41/32}
+\DoxyCodeLine{    address fd00::41/128}
+\DoxyCodeLine{}
+\DoxyCodeLine{auto eth0}
+\DoxyCodeLine{iface eth0 inet static}
+\DoxyCodeLine{    address 10.255.0.1}
+\DoxyCodeLine{    netmask 255.255.0.0}
+\DoxyCodeLine{    gateway 10.255.0.3}
+\DoxyCodeLine{auto eth1}
+\DoxyCodeLine{iface eth1 inet static}
+\DoxyCodeLine{    address 192.168.0.254}
+\DoxyCodeLine{    netmask 255.255.0.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{auto eth2}
+\DoxyCodeLine{iface eth2}
+\DoxyCodeLine{}
+\DoxyCodeLine{auto eth3}
+\DoxyCodeLine{iface eth3}
+\end{DoxyCode}
+ \subsection*{net show bridge link DP}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ERROR: Command not found.}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show bridge link \%DP}
+\DoxyCodeLine{                    \string^ Invalid value here.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Use "net help KEYWORD(s)" to list all options that use KEYWORD(s).}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ERROR: There are no commands with keyword(s) 'bridge', 'show', 'link', '\%DP'}
+\end{DoxyCode}
+ \subsection*{net show clag backup-\/ip}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'backup-ip', 'show', 'clag'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show clag [our-macs|our-multicast-entries|our-multicast-router-ports|peer-macs|peer-multicast-entries|peer-multicast-router-ports|params|backup-ip|id] [verbose] [json]}
+\end{DoxyCode}
+ \subsection*{net show configuration}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{frr version 4.0+cl3u2}
+\DoxyCodeLine{}
+\DoxyCodeLine{frr defaults datacenter}
+\DoxyCodeLine{}
+\DoxyCodeLine{hostname oob-mgmt-server}
+\DoxyCodeLine{}
+\DoxyCodeLine{username cumulus nopassword}
+\DoxyCodeLine{}
+\DoxyCodeLine{service integrated-vtysh-config}
+\DoxyCodeLine{}
+\DoxyCodeLine{log syslog informational}
+\DoxyCodeLine{}
+\DoxyCodeLine{interface eth2}
+\DoxyCodeLine{  ipv6 nd ra-interval 10}
+\DoxyCodeLine{  no ipv6 nd suppress-ra}
+\DoxyCodeLine{}
+\DoxyCodeLine{interface eth3}
+\DoxyCodeLine{  ipv6 nd ra-interval 10}
+\DoxyCodeLine{  no ipv6 nd suppress-ra}
+\DoxyCodeLine{}
+\DoxyCodeLine{line vty}
+\DoxyCodeLine{}
+\DoxyCodeLine{snmp-server}
+\DoxyCodeLine{  listening-address localhost}
+\DoxyCodeLine{}
+\DoxyCodeLine{dns}
+\DoxyCodeLine{  }
+\DoxyCodeLine{  nameserver}
+\DoxyCodeLine{    8.8.8.8}
+\DoxyCodeLine{}
+\DoxyCodeLine{interface lo}
+\DoxyCodeLine{  address 10.0.0.41/32}
+\DoxyCodeLine{  address fd00::41/128}
+\DoxyCodeLine{}
+\DoxyCodeLine{interface eth0}
+\DoxyCodeLine{  address 10.255.0.1}
+\DoxyCodeLine{  netmask 255.255.0.0}
+\DoxyCodeLine{  gateway 10.255.0.3}
+\DoxyCodeLine{}
+\DoxyCodeLine{interface eth1}
+\DoxyCodeLine{  address 192.168.0.254}
+\DoxyCodeLine{  netmask 255.255.0.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{time}
+\DoxyCodeLine{  }
+\DoxyCodeLine{  zone}
+\DoxyCodeLine{    Etc/UTC}
+\DoxyCodeLine{  }
+\DoxyCodeLine{  ntp}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    servers}
+\DoxyCodeLine{      0.cumulusnetworks.pool.ntp.org iburst}
+\DoxyCodeLine{      1.cumulusnetworks.pool.ntp.org iburst}
+\DoxyCodeLine{      2.cumulusnetworks.pool.ntp.org iburst}
+\DoxyCodeLine{      3.cumulusnetworks.pool.ntp.org iburst}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    source}
+\DoxyCodeLine{      eth0}
+\DoxyCodeLine{}
+\DoxyCodeLine{dot1x}
+\DoxyCodeLine{  mab-activation-delay 30}
+\DoxyCodeLine{  eap-reauth-period 0}
+\DoxyCodeLine{  }
+\DoxyCodeLine{  radius}
+\DoxyCodeLine{    accounting-port 1813}
+\DoxyCodeLine{    authentication-port 1812}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# The above output is a summary of the configuration state of the switch.}
+\DoxyCodeLine{\# Do not cut and paste this output into /etc/network/interfaces or any other}
+\DoxyCodeLine{\# configuration file.  This output is intended to be used for troubleshooting}
+\DoxyCodeLine{\# when you need to see a summary of configuration settings.}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# Please use "net show configuration commands" for a configuration that}
+\DoxyCodeLine{\# you can back up or copy and paste into a new device.}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'configuration', 'show'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show configuration [commands|files|acl|bgp|multicast|ospf|ospf6]}
+\DoxyCodeLine{    net show configuration dhcp [json]}
+\DoxyCodeLine{    net show configuration dns}
+\DoxyCodeLine{    net show configuration dot1x}
+\DoxyCodeLine{    net show configuration interface [<interface>]}
+\DoxyCodeLine{    net show configuration ptp}
+\DoxyCodeLine{    net show configuration snmp-server}
+\DoxyCodeLine{    net show configuration syslog}
+\end{DoxyCode}
+ \subsection*{net show clag status verbose}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'verbose', 'status', 'show', 'clag'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show clag status [verbose] [json]}
+\end{DoxyCode}
+ \subsection*{sudo cl-\/service-\/summary summary}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Service cron         enabled    active   }
+\DoxyCodeLine{Service sshd         enabled    active   }
+\DoxyCodeLine{Service syslog       enabled    active   }
+\DoxyCodeLine{Service asic-monitor enabled    inactive }
+\DoxyCodeLine{Service clagd        disabled   inactive }
+\DoxyCodeLine{Service cumulus-poe             inactive }
+\DoxyCodeLine{Service lldpd        enabled    active   }
+\DoxyCodeLine{Service mstpd        disabled   inactive }
+\DoxyCodeLine{Service neighmgrd    enabled    active   }
+\DoxyCodeLine{Service netd         enabled    active   }
+\DoxyCodeLine{Service netq-agent   enabled    active   }
+\DoxyCodeLine{Service portwd       enabled    active   }
+\DoxyCodeLine{Service ptmd         enabled    active   }
+\DoxyCodeLine{Service pwmd         enabled    active   }
+\DoxyCodeLine{Service smond        enabled    active   }
+\DoxyCodeLine{Service switchd      enabled    active   }
+\DoxyCodeLine{Service sysmonitor   enabled    active   }
+\DoxyCodeLine{Service vxrd         disabled   inactive }
+\DoxyCodeLine{Service vxsnd        disabled   inactive }
+\DoxyCodeLine{Service rdnbrd       disabled   inactive }
+\DoxyCodeLine{Service frr          enabled    active   }
+\DoxyCodeLine{Service bgpd         disabled   inactive }
+\DoxyCodeLine{Service eigrpd       disabled   inactive }
+\DoxyCodeLine{Service isisd        disabled   inactive }
+\DoxyCodeLine{Service ldpd         disabled   inactive }
+\DoxyCodeLine{Service nhrpd        disabled   inactive }
+\DoxyCodeLine{Service ospf6d       disabled   inactive }
+\DoxyCodeLine{Service ospfd        disabled   inactive }
+\DoxyCodeLine{Service pimd         disabled   inactive }
+\DoxyCodeLine{Service ripd         disabled   inactive }
+\DoxyCodeLine{Service ripngd       disabled   inactive }
+\DoxyCodeLine{Service zebra        enabled    active   }
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Service cron         enabled    active   }
+\DoxyCodeLine{Service sshd         enabled    active   }
+\DoxyCodeLine{Service syslog       enabled    active   }
+\DoxyCodeLine{Service asic-monitor enabled    inactive }
+\DoxyCodeLine{Service clagd        disabled   inactive }
+\DoxyCodeLine{Service cumulus-poe             inactive }
+\DoxyCodeLine{Service lldpd        enabled    active   }
+\DoxyCodeLine{Service mstpd        disabled   inactive }
+\DoxyCodeLine{Service neighmgrd    enabled    active   }
+\DoxyCodeLine{Service netd         enabled    active   }
+\DoxyCodeLine{Service netq-agent   enabled    active   }
+\DoxyCodeLine{Service portwd       enabled    active   }
+\DoxyCodeLine{Service ptmd         enabled    active   }
+\DoxyCodeLine{Service pwmd         enabled    active   }
+\DoxyCodeLine{Service smond        enabled    active   }
+\DoxyCodeLine{Service switchd      enabled    active   }
+\DoxyCodeLine{Service sysmonitor   enabled    active   }
+\DoxyCodeLine{Service vxrd         disabled   inactive }
+\DoxyCodeLine{Service vxsnd        disabled   inactive }
+\DoxyCodeLine{Service rdnbrd       disabled   inactive }
+\DoxyCodeLine{Service frr          enabled    active   }
+\DoxyCodeLine{Service bgpd         disabled   inactive }
+\DoxyCodeLine{Service eigrpd       disabled   inactive }
+\DoxyCodeLine{Service isisd        disabled   inactive }
+\DoxyCodeLine{Service ldpd         disabled   inactive }
+\DoxyCodeLine{Service nhrpd        disabled   inactive }
+\DoxyCodeLine{Service ospf6d       disabled   inactive }
+\DoxyCodeLine{Service ospfd        disabled   inactive }
+\DoxyCodeLine{Service pimd         disabled   inactive }
+\DoxyCodeLine{Service ripd         disabled   inactive }
+\DoxyCodeLine{Service ripngd       disabled   inactive }
+\DoxyCodeLine{Service zebra        enabled    active   }
+\end{DoxyCode}
+ \subsection*{sudo systemctl status clagd.\+service}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{● clagd.service - Cumulus Linux Multi-Chassis LACP Bonding Daemon}
+\DoxyCodeLine{   Loaded: loaded (/lib/systemd/system/clagd.service; disabled)}
+\DoxyCodeLine{   Active: inactive (dead)}
+\DoxyCodeLine{     Docs: man:clagd(8)}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{systemctl [OPTIONS...] \{COMMAND\} ...}
+\DoxyCodeLine{}
+\DoxyCodeLine{Query or send control commands to the systemd manager.}
+\DoxyCodeLine{}
+\DoxyCodeLine{  -h --help           Show this help}
+\DoxyCodeLine{     --version        Show package version}
+\DoxyCodeLine{     --system         Connect to system manager}
+\DoxyCodeLine{     --user           Connect to user service manager}
+\DoxyCodeLine{  -H --host=[USER@]HOST}
+\DoxyCodeLine{                      Operate on remote host}
+\DoxyCodeLine{  -M --machine=CONTAINER}
+\DoxyCodeLine{                      Operate on local container}
+\DoxyCodeLine{  -t --type=TYPE      List only units of a particular type}
+\DoxyCodeLine{     --state=STATE    List only units with particular LOAD or SUB or ACTIVE state}
+\DoxyCodeLine{  -p --property=NAME  Show only properties by this name}
+\DoxyCodeLine{  -a --all            Show all loaded units/properties, including dead/empty}
+\DoxyCodeLine{                      ones. To list all units installed on the system, use}
+\DoxyCodeLine{                      the 'list-unit-files' command instead.}
+\DoxyCodeLine{  -l --full           Don't ellipsize unit names on output}
+\DoxyCodeLine{  -r --recursive      Show unit list of host and local containers}
+\DoxyCodeLine{     --reverse        Show reverse dependencies with 'list-dependencies'}
+\DoxyCodeLine{     --job-mode=MODE  Specify how to deal with already queued jobs, when}
+\DoxyCodeLine{                      queueing a new job}
+\DoxyCodeLine{     --show-types     When showing sockets, explicitly show their type}
+\DoxyCodeLine{  -i --ignore-inhibitors}
+\DoxyCodeLine{                      When shutting down or sleeping, ignore inhibitors}
+\DoxyCodeLine{     --kill-who=WHO   Who to send signal to}
+\DoxyCodeLine{  -s --signal=SIGNAL  Which signal to send}
+\DoxyCodeLine{  -q --quiet          Suppress output}
+\DoxyCodeLine{     --no-block       Do not wait until operation finished}
+\DoxyCodeLine{     --no-wall        Don't send wall message before halt/power-off/reboot}
+\DoxyCodeLine{     --no-reload      When enabling/disabling unit files, don't reload daemon}
+\DoxyCodeLine{                      configuration}
+\DoxyCodeLine{     --no-legend      Do not print a legend (column headers and hints)}
+\DoxyCodeLine{     --no-pager       Do not pipe output into a pager}
+\DoxyCodeLine{     --no-ask-password}
+\DoxyCodeLine{                      Do not ask for system passwords}
+\DoxyCodeLine{     --global         Enable/disable unit files globally}
+\DoxyCodeLine{     --runtime        Enable unit files only temporarily until next reboot}
+\DoxyCodeLine{  -f --force          When enabling unit files, override existing symlinks}
+\DoxyCodeLine{                      When shutting down, execute action immediately}
+\DoxyCodeLine{     --preset-mode=   Specifies whether fully apply presets, or only enable,}
+\DoxyCodeLine{                      or only disable}
+\DoxyCodeLine{     --root=PATH      Enable unit files in the specified root directory}
+\DoxyCodeLine{  -n --lines=INTEGER  Number of journal entries to show}
+\DoxyCodeLine{  -o --output=STRING  Change journal output mode (short, short-monotonic,}
+\DoxyCodeLine{                      verbose, export, json, json-pretty, json-sse, cat)}
+\DoxyCodeLine{     --plain          Print unit dependencies as a list instead of a tree}
+\DoxyCodeLine{}
+\DoxyCodeLine{Unit Commands:}
+\DoxyCodeLine{  list-units [PATTERN...]         List loaded units}
+\DoxyCodeLine{  list-sockets [PATTERN...]       List loaded sockets ordered by address}
+\DoxyCodeLine{  list-timers [PATTERN...]        List loaded timers ordered by next elapse}
+\DoxyCodeLine{  start NAME...                   Start (activate) one or more units}
+\DoxyCodeLine{  stop NAME...                    Stop (deactivate) one or more units}
+\DoxyCodeLine{  reload NAME...                  Reload one or more units}
+\DoxyCodeLine{  restart NAME...                 Start or restart one or more units}
+\DoxyCodeLine{  try-restart NAME...             Restart one or more units if active}
+\DoxyCodeLine{  reload-or-restart NAME...       Reload one or more units if possible,}
+\DoxyCodeLine{                                  otherwise start or restart}
+\DoxyCodeLine{  reload-or-try-restart NAME...   Reload one or more units if possible,}
+\DoxyCodeLine{                                  otherwise restart if active}
+\DoxyCodeLine{  isolate NAME                    Start one unit and stop all others}
+\DoxyCodeLine{  kill NAME...                    Send signal to processes of a unit}
+\DoxyCodeLine{  is-active PATTERN...            Check whether units are active}
+\DoxyCodeLine{  is-failed PATTERN...            Check whether units are failed}
+\DoxyCodeLine{  status [PATTERN...|PID...]      Show runtime status of one or more units}
+\DoxyCodeLine{  show [PATTERN...|JOB...]        Show properties of one or more}
+\DoxyCodeLine{                                  units/jobs or the manager}
+\DoxyCodeLine{  cat PATTERN...                  Show files and drop-ins of one or more units}
+\DoxyCodeLine{  set-property NAME ASSIGNMENT... Sets one or more properties of a unit}
+\DoxyCodeLine{  help PATTERN...|PID...          Show manual for one or more units}
+\DoxyCodeLine{  reset-failed [PATTERN...]       Reset failed state for all, one, or more}
+\DoxyCodeLine{                                  units}
+\DoxyCodeLine{  list-dependencies [NAME]        Recursively show units which are required}
+\DoxyCodeLine{                                  or wanted by this unit or by which this}
+\DoxyCodeLine{                                  unit is required or wanted}
+\DoxyCodeLine{}
+\DoxyCodeLine{Unit File Commands:}
+\DoxyCodeLine{  list-unit-files [PATTERN...]    List installed unit files}
+\DoxyCodeLine{  enable NAME...                  Enable one or more unit files}
+\DoxyCodeLine{  disable NAME...                 Disable one or more unit files}
+\DoxyCodeLine{  reenable NAME...                Reenable one or more unit files}
+\DoxyCodeLine{  preset NAME...                  Enable/disable one or more unit files}
+\DoxyCodeLine{                                  based on preset configuration}
+\DoxyCodeLine{  preset-all                      Enable/disable all unit files based on}
+\DoxyCodeLine{                                  preset configuration}
+\DoxyCodeLine{  is-enabled NAME...              Check whether unit files are enabled}
+\DoxyCodeLine{}
+\DoxyCodeLine{  mask NAME...                    Mask one or more units}
+\DoxyCodeLine{  unmask NAME...                  Unmask one or more units}
+\DoxyCodeLine{  link PATH...                    Link one or more units files into}
+\DoxyCodeLine{                                  the search path}
+\DoxyCodeLine{  get-default                     Get the name of the default target}
+\DoxyCodeLine{  set-default NAME                Set the default target}
+\DoxyCodeLine{}
+\DoxyCodeLine{Machine Commands:}
+\DoxyCodeLine{  list-machines [PATTERN...]      List local containers and host}
+\DoxyCodeLine{}
+\DoxyCodeLine{Job Commands:}
+\DoxyCodeLine{  list-jobs [PATTERN...]          List jobs}
+\DoxyCodeLine{  cancel [JOB...]                 Cancel all, one, or more jobs}
+\DoxyCodeLine{}
+\DoxyCodeLine{Snapshot Commands:}
+\DoxyCodeLine{  snapshot [NAME]                 Create a snapshot}
+\DoxyCodeLine{  delete NAME...                  Remove one or more snapshots}
+\DoxyCodeLine{}
+\DoxyCodeLine{Environment Commands:}
+\DoxyCodeLine{  show-environment                Dump environment}
+\DoxyCodeLine{  set-environment NAME=VALUE...   Set one or more environment variables}
+\DoxyCodeLine{  unset-environment NAME...       Unset one or more environment variables}
+\DoxyCodeLine{  import-environment NAME...      Import all, one or more environment variables}
+\DoxyCodeLine{}
+\DoxyCodeLine{Manager Lifecycle Commands:}
+\DoxyCodeLine{  daemon-reload                   Reload systemd manager configuration}
+\DoxyCodeLine{  daemon-reexec                   Reexecute systemd manager}
+\DoxyCodeLine{}
+\DoxyCodeLine{System Commands:}
+\DoxyCodeLine{  is-system-running               Check whether system is fully running}
+\DoxyCodeLine{  default                         Enter system default mode}
+\DoxyCodeLine{  rescue                          Enter system rescue mode}
+\DoxyCodeLine{  emergency                       Enter system emergency mode}
+\DoxyCodeLine{  halt                            Shut down and halt the system}
+\DoxyCodeLine{  poweroff                        Shut down and power-off the system}
+\DoxyCodeLine{  reboot [ARG]                    Shut down and reboot the system}
+\DoxyCodeLine{  kexec                           Shut down and reboot the system with kexec}
+\DoxyCodeLine{  exit                            Request user instance exit}
+\DoxyCodeLine{  switch-root ROOT [INIT]         Change to a different root file system}
+\DoxyCodeLine{  suspend                         Suspend the system}
+\DoxyCodeLine{  hibernate                       Hibernate the system}
+\DoxyCodeLine{  hybrid-sleep                    Hibernate and suspend the system}
+\end{DoxyCode}
+ \subsection*{net show bridge spanning-\/tree}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{/etc/network/interfaces does not contain a vlan aware bridge }
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'spanning-tree', 'bridge', 'show'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show bridge spanning-tree [<interface>] [json]}
+\DoxyCodeLine{    net show bridge spanning-tree detail [json]}
+\end{DoxyCode}
+ \subsection*{net show counters}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Kernel Interface table}
+\DoxyCodeLine{Iface      MTU    Met    RX\_OK    RX\_ERR    RX\_DRP    RX\_OVR    TX\_OK    TX\_ERR    TX\_DRP    TX\_OVR  Flg}
+\DoxyCodeLine{-------  -----  -----  -------  --------  --------  --------  -------  --------  --------  --------  -----}
+\DoxyCodeLine{docker0   1500      0        0         0         0         0        0         0         0         0  BMU}
+\DoxyCodeLine{eth0      1500      0    21546         0         0         0    20210         0         0         0  BMRU}
+\DoxyCodeLine{eth1      1500      0    53833         0         0         0    45546         0         0         0  BMRU}
+\DoxyCodeLine{eth2      1500      0     1251         0         0         0     1251         0         0         0  BMRU}
+\DoxyCodeLine{eth3      1500      0     1259         0         1         0     1262         0         0         0  BMRU}
+\DoxyCodeLine{lo       65536      0    34367         0         0         0    34367         0         0         0  LRU}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'counters', 'show'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show counters [json]}
+\end{DoxyCode}
+ \subsection*{sudo ethtool -\/S DP}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Cannot get stats strings information: No such device}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ethtool: bad command line argument(s)}
+\DoxyCodeLine{For more information run ethtool -h}
+\end{DoxyCode}
+ \subsection*{net show interface bond1}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{       Name   MAC  Speed  MTU  Mode}
+\DoxyCodeLine{-----  -----  ---  -----  ---  -------------}
+\DoxyCodeLine{ADMDN  bond1       N/A         NotConfigured}
+\DoxyCodeLine{}
+\DoxyCodeLine{Routing}
+\DoxyCodeLine{-------}
+\DoxyCodeLine{  \% Can't find interface bond1}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ERROR: There are no commands with keyword(s) 'interface', 'bond1', 'show'}
+\end{DoxyCode}
+ \subsection*{clagctl}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Unable to communicate with clagd. Is it running?}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usage: clagctl [-h] [-j] [-v] [command [args]]}
+\DoxyCodeLine{}
+\DoxyCodeLine{CLAG daemon control interface, version 0.1.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{positional arguments:}
+\DoxyCodeLine{  command        Command to execute, default is 'status'}
+\DoxyCodeLine{  args           Additional command parameters}
+\DoxyCodeLine{}
+\DoxyCodeLine{optional arguments:}
+\DoxyCodeLine{  -h, --help     show this help message and exit}
+\DoxyCodeLine{  -v, --verbose  Increase the amount of output.}
+\DoxyCodeLine{  -j, --json     json output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{The commands are:}
+\DoxyCodeLine{cleardebugflags       Removes or clears the debug logging flags}
+\DoxyCodeLine{collectgarbage        Causes clagd to run python's garbage collection}
+\DoxyCodeLine{connstate             Display socket connection state with peer}
+\DoxyCodeLine{debug                 Sets the debugging level}
+\DoxyCodeLine{dumpneighs            Displays the neighs learned on this switch}
+\DoxyCodeLine{dumpourmacs           Displays the MACs learned on this switch}
+\DoxyCodeLine{dumpourmcast          Displays the multicast entries learned on this switch}
+\DoxyCodeLine{dumpourrport          Displays the multicast router ports learned on this switch}
+\DoxyCodeLine{dumppeermacs          Displays the MACs learned on the peer switch}
+\DoxyCodeLine{dumppeermcast         Displays the multicast entries learned on the peer switch}
+\DoxyCodeLine{dumppeerrport         Displays the multicast router ports learned on the peer switch}
+\DoxyCodeLine{echo                  Echo back the supplied string}
+\DoxyCodeLine{lacppoll              The frequency clagd collects information and sends to peer}
+\DoxyCodeLine{logfile               Sets the name of the log file}
+\DoxyCodeLine{logmsg                Outputs a message to the log file}
+\DoxyCodeLine{params                Display the parameters in use by clagd}
+\DoxyCodeLine{peerlacprate          Displays the peer's polling rate}
+\DoxyCodeLine{peerlinkpoll          The frequency clagd polls the status of the peer interface}
+\DoxyCodeLine{peertimeout           The time clagd expects a message from the peer}
+\DoxyCodeLine{priority              Sets the priority of clagd}
+\DoxyCodeLine{quiet                 Prevents output in the log file}
+\DoxyCodeLine{reloaddone            Config reload done}
+\DoxyCodeLine{sendbufsize           The size of the socket send buffer, in bytes}
+\DoxyCodeLine{sendtimeout           The time clagd send socket waits to enqueue data}
+\DoxyCodeLine{setanycastip          Sets the VXLAN anycast IP address}
+\DoxyCodeLine{setbackupip           Sets the backup IP address}
+\DoxyCodeLine{setclagid             Associates a bond with a clag id}
+\DoxyCodeLine{setdebugflags         Sets the debug logging flags}
+\DoxyCodeLine{showbackupip          Displays backup link info}
+\DoxyCodeLine{showclagid            Displays the CLAG bonds configured on this switch}
+\DoxyCodeLine{showdebugflags        Shows the debug logging flags}
+\DoxyCodeLine{showtimers            Displays CLAG related timers}
+\DoxyCodeLine{status                Display the status of the clagd daemon}
+\DoxyCodeLine{verbose               Enables additional output in log file}
+\DoxyCodeLine{verifyvlans           Verifies VLAN configuration with the peer}
+\DoxyCodeLine{}
+\DoxyCodeLine{See the clagctl man page for more information}
+\end{DoxyCode}
+ 

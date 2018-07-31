@@ -1,0 +1,350 @@
+\subsection*{sudo ethtool -\/m swp1}
+
+\#\#\# Collect Serial numbers, model numbers, power levels for interface swp1 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Cannot get module EEPROM information: No such device}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ethtool: bad command line argument(s)}
+\DoxyCodeLine{For more information run ethtool -h}
+\end{DoxyCode}
+ \subsection*{sudo ethtool DP}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Cannot get device settings: No such device}
+\DoxyCodeLine{Cannot get wake-on-lan settings: No such device}
+\DoxyCodeLine{Cannot get message level: No such device}
+\DoxyCodeLine{Cannot get link status: No such device}
+\DoxyCodeLine{Settings for \%DP:}
+\DoxyCodeLine{No data available}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ethtool: bad command line argument(s)}
+\DoxyCodeLine{For more information run ethtool -h}
+\end{DoxyCode}
+ \subsection*{sudo lldpcli show statistics}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{LLDP statistics:}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{Interface:    eth1}
+\DoxyCodeLine{  Transmitted:  166}
+\DoxyCodeLine{  Received:     0}
+\DoxyCodeLine{  Discarded:    0}
+\DoxyCodeLine{  Unrecognized: 0}
+\DoxyCodeLine{  Ageout:       0}
+\DoxyCodeLine{  Inserted:     0}
+\DoxyCodeLine{  Deleted:      0}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{Interface:    eth2}
+\DoxyCodeLine{  Transmitted:  170}
+\DoxyCodeLine{  Received:     170}
+\DoxyCodeLine{  Discarded:    0}
+\DoxyCodeLine{  Unrecognized: 0}
+\DoxyCodeLine{  Ageout:       0}
+\DoxyCodeLine{  Inserted:     1}
+\DoxyCodeLine{  Deleted:      0}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{Interface:    eth3}
+\DoxyCodeLine{  Transmitted:  170}
+\DoxyCodeLine{  Received:     169}
+\DoxyCodeLine{  Discarded:    0}
+\DoxyCodeLine{  Unrecognized: 0}
+\DoxyCodeLine{  Ageout:       0}
+\DoxyCodeLine{  Inserted:     1}
+\DoxyCodeLine{  Deleted:      0}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{lldpcli: invalid option -- '-'}
+\DoxyCodeLine{Usage:   lldpcli [OPTIONS ...] [COMMAND ...]}
+\DoxyCodeLine{Version: lldpd 0.7.16-555-g8c7dc90}
+\DoxyCodeLine{}
+\DoxyCodeLine{-d          Enable more debugging information.}
+\DoxyCodeLine{-u socket   Specify the Unix-domain socket used for communication with lldpd(8).}
+\DoxyCodeLine{-f format   Choose output format (plain, keyvalue, json, xml).}
+\DoxyCodeLine{-c conf     Read the provided configuration file.}
+\DoxyCodeLine{}
+\DoxyCodeLine{see manual page lldpcli(8) for more information}
+\DoxyCodeLine{}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{LLDP statistics:}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{Interface:    eth1}
+\DoxyCodeLine{  Transmitted:  166}
+\DoxyCodeLine{  Received:     0}
+\DoxyCodeLine{  Discarded:    0}
+\DoxyCodeLine{  Unrecognized: 0}
+\DoxyCodeLine{  Ageout:       0}
+\DoxyCodeLine{  Inserted:     0}
+\DoxyCodeLine{  Deleted:      0}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{Interface:    eth2}
+\DoxyCodeLine{  Transmitted:  170}
+\DoxyCodeLine{  Received:     170}
+\DoxyCodeLine{  Discarded:    0}
+\DoxyCodeLine{  Unrecognized: 0}
+\DoxyCodeLine{  Ageout:       0}
+\DoxyCodeLine{  Inserted:     1}
+\DoxyCodeLine{  Deleted:      0}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{Interface:    eth3}
+\DoxyCodeLine{  Transmitted:  170}
+\DoxyCodeLine{  Received:     169}
+\DoxyCodeLine{  Discarded:    0}
+\DoxyCodeLine{  Unrecognized: 0}
+\DoxyCodeLine{  Ageout:       0}
+\DoxyCodeLine{  Inserted:     1}
+\DoxyCodeLine{  Deleted:      0}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\end{DoxyCode}
+ \subsection*{sudo lldpcli show neighbors}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{LLDP neighbors:}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{Interface:    eth2, via: LLDP, RID: 2, Time: 0 day, 01:22:39}
+\DoxyCodeLine{  Chassis:     }
+\DoxyCodeLine{    ChassisID:    mac 44:38:39:00:02:00}
+\DoxyCodeLine{    SysName:      leaf01}
+\DoxyCodeLine{    SysDescr:     Cumulus Linux version 3.6.1 running on Bochs Bochs}
+\DoxyCodeLine{    MgmtIP:       10.0.0.11}
+\DoxyCodeLine{    MgmtIP:       fd00::11}
+\DoxyCodeLine{    Capability:   Bridge, off}
+\DoxyCodeLine{    Capability:   Router, on}
+\DoxyCodeLine{  Port:        }
+\DoxyCodeLine{    PortID:       ifname swp44}
+\DoxyCodeLine{    PortDescr:    swp44}
+\DoxyCodeLine{    TTL:          120}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{Interface:    eth3, via: LLDP, RID: 1, Time: 0 day, 01:22:45}
+\DoxyCodeLine{  Chassis:     }
+\DoxyCodeLine{    ChassisID:    mac 44:38:39:00:03:00}
+\DoxyCodeLine{    SysName:      leaf02}
+\DoxyCodeLine{    SysDescr:     Cumulus Linux version 3.6.1 running on Bochs Bochs}
+\DoxyCodeLine{    MgmtIP:       10.0.0.12}
+\DoxyCodeLine{    MgmtIP:       fd00::12}
+\DoxyCodeLine{    Capability:   Bridge, off}
+\DoxyCodeLine{    Capability:   Router, on}
+\DoxyCodeLine{  Port:        }
+\DoxyCodeLine{    PortID:       ifname swp44}
+\DoxyCodeLine{    PortDescr:    swp44}
+\DoxyCodeLine{    TTL:          120}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{lldpcli: invalid option -- '-'}
+\DoxyCodeLine{Usage:   lldpcli [OPTIONS ...] [COMMAND ...]}
+\DoxyCodeLine{Version: lldpd 0.7.16-555-g8c7dc90}
+\DoxyCodeLine{}
+\DoxyCodeLine{-d          Enable more debugging information.}
+\DoxyCodeLine{-u socket   Specify the Unix-domain socket used for communication with lldpd(8).}
+\DoxyCodeLine{-f format   Choose output format (plain, keyvalue, json, xml).}
+\DoxyCodeLine{-c conf     Read the provided configuration file.}
+\DoxyCodeLine{}
+\DoxyCodeLine{see manual page lldpcli(8) for more information}
+\DoxyCodeLine{}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{LLDP neighbors:}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{Interface:    eth2, via: LLDP, RID: 2, Time: 0 day, 01:22:39}
+\DoxyCodeLine{  Chassis:     }
+\DoxyCodeLine{    ChassisID:    mac 44:38:39:00:02:00}
+\DoxyCodeLine{    SysName:      leaf01}
+\DoxyCodeLine{    SysDescr:     Cumulus Linux version 3.6.1 running on Bochs Bochs}
+\DoxyCodeLine{    MgmtIP:       10.0.0.11}
+\DoxyCodeLine{    MgmtIP:       fd00::11}
+\DoxyCodeLine{    Capability:   Bridge, off}
+\DoxyCodeLine{    Capability:   Router, on}
+\DoxyCodeLine{  Port:        }
+\DoxyCodeLine{    PortID:       ifname swp44}
+\DoxyCodeLine{    PortDescr:    swp44}
+\DoxyCodeLine{    TTL:          120}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{Interface:    eth3, via: LLDP, RID: 1, Time: 0 day, 01:22:45}
+\DoxyCodeLine{  Chassis:     }
+\DoxyCodeLine{    ChassisID:    mac 44:38:39:00:03:00}
+\DoxyCodeLine{    SysName:      leaf02}
+\DoxyCodeLine{    SysDescr:     Cumulus Linux version 3.6.1 running on Bochs Bochs}
+\DoxyCodeLine{    MgmtIP:       10.0.0.12}
+\DoxyCodeLine{    MgmtIP:       fd00::12}
+\DoxyCodeLine{    Capability:   Bridge, off}
+\DoxyCodeLine{    Capability:   Router, on}
+\DoxyCodeLine{  Port:        }
+\DoxyCodeLine{    PortID:       ifname swp44}
+\DoxyCodeLine{    PortDescr:    swp44}
+\DoxyCodeLine{    TTL:          120}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\end{DoxyCode}
+ \subsection*{sensors -\/f}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cumulus\_vx\_cpld-isa-0000}
+\DoxyCodeLine{Adapter: ISA adapter}
+\DoxyCodeLine{fan1:        2500 RPM  (min = 2500 RPM, max = 29000 RPM)}
+\DoxyCodeLine{fan2:        2500 RPM  (min = 2500 RPM, max = 29000 RPM)}
+\DoxyCodeLine{fan3:        2500 RPM  (min = 2500 RPM, max = 29000 RPM)}
+\DoxyCodeLine{fan4:        2500 RPM  (min = 2500 RPM, max = 29000 RPM)}
+\DoxyCodeLine{fan5:        2500 RPM  (min = 2500 RPM, max = 29000 RPM)}
+\DoxyCodeLine{fan6:        2500 RPM  (min = 2500 RPM, max = 29000 RPM)}
+\DoxyCodeLine{fan7:        2500 RPM  (min = 2500 RPM, max = 29000 RPM)}
+\DoxyCodeLine{fan8:        2500 RPM  (min = 2500 RPM, max = 29000 RPM)}
+\DoxyCodeLine{temp1:        +77.0°F  (low  = +41.0°F, high = +176.0°F)}
+\DoxyCodeLine{                       (crit low = +32.0°F, crit = +185.0°F)}
+\DoxyCodeLine{temp2:        +77.0°F  (low  = +41.0°F, high = +176.0°F)}
+\DoxyCodeLine{                       (crit low = +32.0°F, crit = +185.0°F)}
+\DoxyCodeLine{temp3:        +77.0°F  (low  = +41.0°F, high = +176.0°F)}
+\DoxyCodeLine{                       (crit low = +32.0°F, crit = +185.0°F)}
+\DoxyCodeLine{temp4:        +77.0°F  (low  = +41.0°F, high = +176.0°F)}
+\DoxyCodeLine{                       (crit low = +32.0°F, crit = +185.0°F)}
+\DoxyCodeLine{temp5:        +77.0°F  (low  = +41.0°F, high = +176.0°F)}
+\DoxyCodeLine{                       (crit low = +32.0°F, crit = +185.0°F)}
+\DoxyCodeLine{temp6:        +77.0°F  (low  = +41.0°F, high = +176.0°F)}
+\DoxyCodeLine{                       (crit low = +32.0°F, crit = +185.0°F)}
+\DoxyCodeLine{temp7:        +77.0°F  (low  = +41.0°F, high = +176.0°F)}
+\DoxyCodeLine{                       (crit low = +32.0°F, crit = +185.0°F)}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: sensors [OPTION]... [CHIP]...}
+\DoxyCodeLine{  -c, --config-file     Specify a config file}
+\DoxyCodeLine{  -h, --help            Display this help text}
+\DoxyCodeLine{  -s, --set             Execute `set' statements (root only)}
+\DoxyCodeLine{  -f, --fahrenheit      Show temperatures in degrees fahrenheit}
+\DoxyCodeLine{  -A, --no-adapter      Do not show adapter for each chip}
+\DoxyCodeLine{      --bus-list        Generate bus statements for sensors.conf}
+\DoxyCodeLine{  -u                    Raw output}
+\DoxyCodeLine{  -v, --version         Display the program version}
+\DoxyCodeLine{}
+\DoxyCodeLine{Use `-' after `-c' to read the config file from stdin.}
+\DoxyCodeLine{If no chips are specified, all chip info will be printed.}
+\DoxyCodeLine{Example chip names:}
+\DoxyCodeLine{    lm78-i2c-0-2d   *-i2c-0-2d}
+\DoxyCodeLine{    lm78-i2c-0-*    *-i2c-0-*}
+\DoxyCodeLine{    lm78-i2c-*-2d   *-i2c-*-2d}
+\DoxyCodeLine{    lm78-i2c-*-*    *-i2c-*-*}
+\DoxyCodeLine{    lm78-isa-0290   *-isa-0290}
+\DoxyCodeLine{    lm78-isa-*  *-isa-*}
+\DoxyCodeLine{    lm78-*}
+\end{DoxyCode}
+ \subsection*{sudo lldpcli show statistics summary}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{LLDP Global statistics:}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{Summary of stats:}
+\DoxyCodeLine{  Transmitted:  506}
+\DoxyCodeLine{  Received:     339}
+\DoxyCodeLine{  Discarded:    0}
+\DoxyCodeLine{  Unrecognized: 0}
+\DoxyCodeLine{  Ageout:       0}
+\DoxyCodeLine{  Inserted:     2}
+\DoxyCodeLine{  Deleted:      0}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{lldpcli: invalid option -- '-'}
+\DoxyCodeLine{Usage:   lldpcli [OPTIONS ...] [COMMAND ...]}
+\DoxyCodeLine{Version: lldpd 0.7.16-555-g8c7dc90}
+\DoxyCodeLine{}
+\DoxyCodeLine{-d          Enable more debugging information.}
+\DoxyCodeLine{-u socket   Specify the Unix-domain socket used for communication with lldpd(8).}
+\DoxyCodeLine{-f format   Choose output format (plain, keyvalue, json, xml).}
+\DoxyCodeLine{-c conf     Read the provided configuration file.}
+\DoxyCodeLine{}
+\DoxyCodeLine{see manual page lldpcli(8) for more information}
+\DoxyCodeLine{}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{LLDP Global statistics:}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{Summary of stats:}
+\DoxyCodeLine{  Transmitted:  506}
+\DoxyCodeLine{  Received:     339}
+\DoxyCodeLine{  Discarded:    0}
+\DoxyCodeLine{  Unrecognized: 0}
+\DoxyCodeLine{  Ageout:       0}
+\DoxyCodeLine{  Inserted:     2}
+\DoxyCodeLine{  Deleted:      0}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\end{DoxyCode}
+ \subsection*{sudo lldpcli show running-\/configuration}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{Global configuration:}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{Configuration:}
+\DoxyCodeLine{  Transmit delay: 30}
+\DoxyCodeLine{  Transmit hold: 4}
+\DoxyCodeLine{  Receive mode: no}
+\DoxyCodeLine{  Pattern for management addresses: (none)}
+\DoxyCodeLine{  Interface pattern: swp*,eth*,!eth0}
+\DoxyCodeLine{  Interface pattern blacklist: (none)}
+\DoxyCodeLine{  Interface pattern for chassis ID: (none)}
+\DoxyCodeLine{  Override description with: (none)}
+\DoxyCodeLine{  Override platform with: Linux}
+\DoxyCodeLine{  Override system name with: (none)}
+\DoxyCodeLine{  Advertise version: yes}
+\DoxyCodeLine{  Update interface descriptions: no}
+\DoxyCodeLine{  Promiscuous mode on managed interfaces: no}
+\DoxyCodeLine{  Disable LLDP-MED inventory: no}
+\DoxyCodeLine{  LLDP-MED fast start mechanism: yes}
+\DoxyCodeLine{  LLDP-MED fast start interval: 1}
+\DoxyCodeLine{  Source MAC for LLDP frames on bond slaves: local}
+\DoxyCodeLine{  Port ID TLV subtype for LLDP frames: ifname}
+\DoxyCodeLine{  Agent type:   unknown}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{lldpcli: invalid option -- '-'}
+\DoxyCodeLine{Usage:   lldpcli [OPTIONS ...] [COMMAND ...]}
+\DoxyCodeLine{Version: lldpd 0.7.16-555-g8c7dc90}
+\DoxyCodeLine{}
+\DoxyCodeLine{-d          Enable more debugging information.}
+\DoxyCodeLine{-u socket   Specify the Unix-domain socket used for communication with lldpd(8).}
+\DoxyCodeLine{-f format   Choose output format (plain, keyvalue, json, xml).}
+\DoxyCodeLine{-c conf     Read the provided configuration file.}
+\DoxyCodeLine{}
+\DoxyCodeLine{see manual page lldpcli(8) for more information}
+\DoxyCodeLine{}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{Global configuration:}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\DoxyCodeLine{Configuration:}
+\DoxyCodeLine{  Transmit delay: 30}
+\DoxyCodeLine{  Transmit hold: 4}
+\DoxyCodeLine{  Receive mode: no}
+\DoxyCodeLine{  Pattern for management addresses: (none)}
+\DoxyCodeLine{  Interface pattern: swp*,eth*,!eth0}
+\DoxyCodeLine{  Interface pattern blacklist: (none)}
+\DoxyCodeLine{  Interface pattern for chassis ID: (none)}
+\DoxyCodeLine{  Override description with: (none)}
+\DoxyCodeLine{  Override platform with: Linux}
+\DoxyCodeLine{  Override system name with: (none)}
+\DoxyCodeLine{  Advertise version: yes}
+\DoxyCodeLine{  Update interface descriptions: no}
+\DoxyCodeLine{  Promiscuous mode on managed interfaces: no}
+\DoxyCodeLine{  Disable LLDP-MED inventory: no}
+\DoxyCodeLine{  LLDP-MED fast start mechanism: yes}
+\DoxyCodeLine{  LLDP-MED fast start interval: 1}
+\DoxyCodeLine{  Source MAC for LLDP frames on bond slaves: local}
+\DoxyCodeLine{  Port ID TLV subtype for LLDP frames: ifname}
+\DoxyCodeLine{  Agent type:   unknown}
+\DoxyCodeLine{-------------------------------------------------------------------------------}
+\end{DoxyCode}
+ 

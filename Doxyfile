@@ -1,0 +1,35 @@
+PROJECT_NAME           = "CITC Demo Documentation Example"
+PROJECT_BRIEF          = "Network Documentation for Prospects"
+OUTPUT_DIRECTORY       = output_of_doxygen
+
+INPUT                  = BGP.md \
+Bridges.md \
+CLAG.md \
+Customer_A.md \
+ECMP.md \
+EVPN.md \
+Filters_and_Access_Lists.md \
+GRE.md \
+IGP_MLD_Snooping.md \
+LACP.md \
+Layer_1.md \
+Layer_2.md \
+Layer_3.md \
+Logging.md \
+PBR.md \
+PIM.md \
+Pluggables.md \
+Redistribute.md \
+Software_and_Licenses.md \
+Spanning_Tree.md \
+System_Resources.md \
+VLANs.md \
+VRF.md \
+VRR.md \
+VXLAN.md \
+NTP.md 
+
+USE_MDFILE_AS_MAINPAGE = main_page.markdown
+DISABLE_INDEX          = NO
+GENERATE_TREEVIEW      = YES
+GENERATE_RTF           = NO

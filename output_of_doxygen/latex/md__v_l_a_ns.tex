@@ -1,0 +1,224 @@
+\subsection*{net example vlan-\/interfaces}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Scenarios}
+\DoxyCodeLine{=========}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{---- Create an IP interface to a VLAN for routing or other applications}
+\DoxyCodeLine{}
+\DoxyCodeLine{switch\# net add vlan 100 ip address 10.0.0.1/24}
+\DoxyCodeLine{switch\# net commit}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{---- Create a dual stack IP interface to a VLAN for routing or other applications}
+\DoxyCodeLine{}
+\DoxyCodeLine{switch\# net add vlan 100 ip address 10.0.0.1/24}
+\DoxyCodeLine{switch\# net add vlan 100 ipv6 address fd00:2:0:1::1/64}
+\DoxyCodeLine{switch\# net commit}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{---- Create a dual stack IP interface to a VLAN for routing or other applications}
+\DoxyCodeLine{     along with a virtual interface for virtual routing redundancy.  The reserved}
+\DoxyCodeLine{     range of MAC addresses for VRR is 00:00:5E:00:01:00 to 00:00:5E:00:01:ff.}
+\DoxyCodeLine{}
+\DoxyCodeLine{switch\# net add vlan 100 ip address 10.0.0.1/24}
+\DoxyCodeLine{switch\# net add vlan 100 ipv6 address fd00:2:0:1::1/64}
+\DoxyCodeLine{switch\# net add vlan 100 ip address-virtual 00:00:5e:00:01:01 10.0.0.254/24}
+\DoxyCodeLine{switch\# net add vlan 100 ipv6 address-virtual 00:00:5e:00:01:01 fd00:2:0:1::254/64}
+\DoxyCodeLine{switch\# net commit}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'vlan-interfaces', 'example'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net example vlan-interfaces}
+\end{DoxyCode}
+ \subsection*{net show bridge vlan}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Interface  VLAN  Flags}
+\DoxyCodeLine{---------  ----  -----}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'bridge', 'show', 'vlan'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show bridge macs vlan <number> [json]}
+\DoxyCodeLine{    net show bridge vlan [<number>] [json]}
+\end{DoxyCode}
+ \subsection*{sudo mstpctl showbridge B100}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{can't setup control connection}
+\DoxyCodeLine{ctl\_client\_init: Couldn't connect to server}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: mstpctl [commands]}
+\DoxyCodeLine{commands:}
+\DoxyCodeLine{    addbridge             <bridge> [<bridge> ...]              Add bridges to the mstpd's list}
+\DoxyCodeLine{    delbridge             <bridge> [<bridge> ...]              Remove bridges from the mstpd's list}
+\DoxyCodeLine{    showbridge            [json] [<bridge> ... [param]]        Show bridge state for the CIST}
+\DoxyCodeLine{    showmstilist          <bridge>                             Show list of registered MSTIs}
+\DoxyCodeLine{    showmstconfid         <bridge>                             Show MST ConfigId}
+\DoxyCodeLine{    showvid2fid           <bridge>                             Show VID-to-FID allocation table}
+\DoxyCodeLine{    showfid2mstid         <bridge>                             Show FID-to-MSTID allocation table}
+\DoxyCodeLine{    showport              <bridge> [json] [<port> ... [param]] Show port state for the CIST}
+\DoxyCodeLine{    showportdetail        <bridge> [json] [<port> ... [param]] Show port detailed state for the CIST}
+\DoxyCodeLine{    showtree              <bridge> <mstid>                     Show bridge state for the given MSTI}
+\DoxyCodeLine{    showtreeport          <bridge> <port> <mstid>              Show port detailed state for the given MSTI}
+\DoxyCodeLine{    setmstconfid          <bridge> <revision> <name>           Set MST ConfigId elements: Revision Level (0-65535) and Name}
+\DoxyCodeLine{    setvid2fid            <bridge> <FID>:<VIDs List>           Set VIDs-to-FIDs allocation}
+\DoxyCodeLine{    setfid2mstid          <bridge> <mstid>:<FIDs List>         Set FIDs-to-MSTIDs allocation}
+\DoxyCodeLine{    setmaxage             <bridge> <max\_age>                   Set bridge max age (6-40)}
+\DoxyCodeLine{    setfdelay             <bridge> <fwd\_delay>                 Set bridge forward delay (4-30)}
+\DoxyCodeLine{    setmaxhops            <bridge> <max\_hops>                  Set bridge max hops (6-40)}
+\DoxyCodeLine{    setforcevers          <bridge> \{mstp|rstp|stp\}             Force Spanning Tree protocol version}
+\DoxyCodeLine{    settxholdcount        <bridge> <tx\_hold\_count>             Set bridge transmit hold count (1-10)}
+\DoxyCodeLine{    createtree            <bridge> <mstid>                     Create new MSTI}
+\DoxyCodeLine{    deletetree            <bridge> <mstid>                     Delete existing MSTI}
+\DoxyCodeLine{    settreeprio           <bridge> <mstid> <priority>          Set bridge priority (0-65535) for the given MSTI}
+\DoxyCodeLine{    setportpathcost       <bridge> <port> <cost>               Set port external path cost for the CIST (0 = auto)}
+\DoxyCodeLine{    setportadminedge      <bridge> <port> \{yes|no\}             Set initial edge state}
+\DoxyCodeLine{    setportautoedge       <bridge> <port> \{yes|no\}             Enable auto transition to/from edge state}
+\DoxyCodeLine{    setportp2p            <bridge> <port> \{yes|no|auto\}        Set p2p detection mode}
+\DoxyCodeLine{    setportrestrrole      <bridge> <port> \{yes|no\}             Restrict port ability to take Root role}
+\DoxyCodeLine{    setportrestrtcn       <bridge> <port> \{yes|no\}             Restrict port ability to propagate received TCNs}
+\DoxyCodeLine{    portmcheck            <bridge> <port>                      Try to get back from STP to rapid (RSTP/MSTP) mode}
+\DoxyCodeLine{    setbpduguard          <bridge> <port> \{yes|no\}             Set bpdu guard state}
+\DoxyCodeLine{    settreeportprio       <bridge> <port> <mstid> <priority>   Set port priority (0-240) for the given MSTI}
+\DoxyCodeLine{    settreeportcost       <bridge> <port> <mstid> <cost>       Set port internal path cost for the given MSTI (0 = auto)}
+\DoxyCodeLine{    showall               [json]                               Show detailed mstpctl info}
+\DoxyCodeLine{    sethello              <bridge> <hello\_time>                Set bridge hello time (1-10)}
+\DoxyCodeLine{    setageing             <bridge> <ageing\_time>               Set bridge ageing time (10-1000000)}
+\DoxyCodeLine{    setportnetwork        <bridge> <port> \{yes|no\}             Set port network state}
+\DoxyCodeLine{    setportbpdufilter     <bridge> <port> \{yes|no\}             Set BPDU filter state}
+\DoxyCodeLine{    debuglevel            <level>                              Level of verbosity (1-4)}
+\end{DoxyCode}
+ \subsection*{sudo mstpctl showportde}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{can't setup control connection}
+\DoxyCodeLine{ctl\_client\_init: Couldn't connect to server}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: mstpctl [commands]}
+\DoxyCodeLine{commands:}
+\DoxyCodeLine{    addbridge             <bridge> [<bridge> ...]              Add bridges to the mstpd's list}
+\DoxyCodeLine{    delbridge             <bridge> [<bridge> ...]              Remove bridges from the mstpd's list}
+\DoxyCodeLine{    showbridge            [json] [<bridge> ... [param]]        Show bridge state for the CIST}
+\DoxyCodeLine{    showmstilist          <bridge>                             Show list of registered MSTIs}
+\DoxyCodeLine{    showmstconfid         <bridge>                             Show MST ConfigId}
+\DoxyCodeLine{    showvid2fid           <bridge>                             Show VID-to-FID allocation table}
+\DoxyCodeLine{    showfid2mstid         <bridge>                             Show FID-to-MSTID allocation table}
+\DoxyCodeLine{    showport              <bridge> [json] [<port> ... [param]] Show port state for the CIST}
+\DoxyCodeLine{    showportdetail        <bridge> [json] [<port> ... [param]] Show port detailed state for the CIST}
+\DoxyCodeLine{    showtree              <bridge> <mstid>                     Show bridge state for the given MSTI}
+\DoxyCodeLine{    showtreeport          <bridge> <port> <mstid>              Show port detailed state for the given MSTI}
+\DoxyCodeLine{    setmstconfid          <bridge> <revision> <name>           Set MST ConfigId elements: Revision Level (0-65535) and Name}
+\DoxyCodeLine{    setvid2fid            <bridge> <FID>:<VIDs List>           Set VIDs-to-FIDs allocation}
+\DoxyCodeLine{    setfid2mstid          <bridge> <mstid>:<FIDs List>         Set FIDs-to-MSTIDs allocation}
+\DoxyCodeLine{    setmaxage             <bridge> <max\_age>                   Set bridge max age (6-40)}
+\DoxyCodeLine{    setfdelay             <bridge> <fwd\_delay>                 Set bridge forward delay (4-30)}
+\DoxyCodeLine{    setmaxhops            <bridge> <max\_hops>                  Set bridge max hops (6-40)}
+\DoxyCodeLine{    setforcevers          <bridge> \{mstp|rstp|stp\}             Force Spanning Tree protocol version}
+\DoxyCodeLine{    settxholdcount        <bridge> <tx\_hold\_count>             Set bridge transmit hold count (1-10)}
+\DoxyCodeLine{    createtree            <bridge> <mstid>                     Create new MSTI}
+\DoxyCodeLine{    deletetree            <bridge> <mstid>                     Delete existing MSTI}
+\DoxyCodeLine{    settreeprio           <bridge> <mstid> <priority>          Set bridge priority (0-65535) for the given MSTI}
+\DoxyCodeLine{    setportpathcost       <bridge> <port> <cost>               Set port external path cost for the CIST (0 = auto)}
+\DoxyCodeLine{    setportadminedge      <bridge> <port> \{yes|no\}             Set initial edge state}
+\DoxyCodeLine{    setportautoedge       <bridge> <port> \{yes|no\}             Enable auto transition to/from edge state}
+\DoxyCodeLine{    setportp2p            <bridge> <port> \{yes|no|auto\}        Set p2p detection mode}
+\DoxyCodeLine{    setportrestrrole      <bridge> <port> \{yes|no\}             Restrict port ability to take Root role}
+\DoxyCodeLine{    setportrestrtcn       <bridge> <port> \{yes|no\}             Restrict port ability to propagate received TCNs}
+\DoxyCodeLine{    portmcheck            <bridge> <port>                      Try to get back from STP to rapid (RSTP/MSTP) mode}
+\DoxyCodeLine{    setbpduguard          <bridge> <port> \{yes|no\}             Set bpdu guard state}
+\DoxyCodeLine{    settreeportprio       <bridge> <port> <mstid> <priority>   Set port priority (0-240) for the given MSTI}
+\DoxyCodeLine{    settreeportcost       <bridge> <port> <mstid> <cost>       Set port internal path cost for the given MSTI (0 = auto)}
+\DoxyCodeLine{    showall               [json]                               Show detailed mstpctl info}
+\DoxyCodeLine{    sethello              <bridge> <hello\_time>                Set bridge hello time (1-10)}
+\DoxyCodeLine{    setageing             <bridge> <ageing\_time>               Set bridge ageing time (10-1000000)}
+\DoxyCodeLine{    setportnetwork        <bridge> <port> \{yes|no\}             Set port network state}
+\DoxyCodeLine{    setportbpdufilter     <bridge> <port> \{yes|no\}             Set BPDU filter state}
+\DoxyCodeLine{    debuglevel            <level>                              Level of verbosity (1-4)}
+\end{DoxyCode}
+ \subsection*{cat /proc/net/vlan/config}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cat: /proc/net/vlan/config: No such file or directory}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: cat [OPTION]... [FILE]...}
+\DoxyCodeLine{Concatenate FILE(s), or standard input, to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{  -A, --show-all           equivalent to -vET}
+\DoxyCodeLine{  -b, --number-nonblank    number nonempty output lines, overrides -n}
+\DoxyCodeLine{  -e                       equivalent to -vE}
+\DoxyCodeLine{  -E, --show-ends          display \$ at end of each line}
+\DoxyCodeLine{  -n, --number             number all output lines}
+\DoxyCodeLine{  -s, --squeeze-blank      suppress repeated empty output lines}
+\DoxyCodeLine{  -t                       equivalent to -vT}
+\DoxyCodeLine{  -T, --show-tabs          display TAB characters as \string^I}
+\DoxyCodeLine{  -u                       (ignored)}
+\DoxyCodeLine{  -v, --show-nonprinting   use \string^ and M- notation, except for LFD and TAB}
+\DoxyCodeLine{      --help     display this help and exit}
+\DoxyCodeLine{      --version  output version information and exit}
+\DoxyCodeLine{}
+\DoxyCodeLine{With no FILE, or when FILE is -, read standard input.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Examples:}
+\DoxyCodeLine{  cat f - g  Output f's contents, then standard input, then g's contents.}
+\DoxyCodeLine{  cat        Copy standard input to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{GNU coreutils online help: <http://www.gnu.org/software/coreutils/>}
+\DoxyCodeLine{Full documentation at: <http://www.gnu.org/software/coreutils/cat>}
+\DoxyCodeLine{or available locally via: info '(coreutils) cat invocation'}
+\DoxyCodeLine{}
+\DoxyCodeLine{cat: /proc/net/vlan/config: No such file or directory}
+\end{DoxyCode}
+ \subsection*{cat /proc/net/bonding/bond2}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cat: /proc/net/bonding/bond2: No such file or directory}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: cat [OPTION]... [FILE]...}
+\DoxyCodeLine{Concatenate FILE(s), or standard input, to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{  -A, --show-all           equivalent to -vET}
+\DoxyCodeLine{  -b, --number-nonblank    number nonempty output lines, overrides -n}
+\DoxyCodeLine{  -e                       equivalent to -vE}
+\DoxyCodeLine{  -E, --show-ends          display \$ at end of each line}
+\DoxyCodeLine{  -n, --number             number all output lines}
+\DoxyCodeLine{  -s, --squeeze-blank      suppress repeated empty output lines}
+\DoxyCodeLine{  -t                       equivalent to -vT}
+\DoxyCodeLine{  -T, --show-tabs          display TAB characters as \string^I}
+\DoxyCodeLine{  -u                       (ignored)}
+\DoxyCodeLine{  -v, --show-nonprinting   use \string^ and M- notation, except for LFD and TAB}
+\DoxyCodeLine{      --help     display this help and exit}
+\DoxyCodeLine{      --version  output version information and exit}
+\DoxyCodeLine{}
+\DoxyCodeLine{With no FILE, or when FILE is -, read standard input.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Examples:}
+\DoxyCodeLine{  cat f - g  Output f's contents, then standard input, then g's contents.}
+\DoxyCodeLine{  cat        Copy standard input to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{GNU coreutils online help: <http://www.gnu.org/software/coreutils/>}
+\DoxyCodeLine{Full documentation at: <http://www.gnu.org/software/coreutils/cat>}
+\DoxyCodeLine{or available locally via: info '(coreutils) cat invocation'}
+\DoxyCodeLine{}
+\DoxyCodeLine{cat: /proc/net/bonding/bond2: No such file or directory}
+\end{DoxyCode}
+ 

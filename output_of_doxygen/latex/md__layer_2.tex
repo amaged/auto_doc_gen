@@ -1,0 +1,671 @@
+\subsection*{sudo ifquery --check bond0}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{error: cannot find interfaces: bond0}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usage: ifquery [-h] [-a] [-v] [-d] [--allow CLASS] [-w] [-X EXCLUDEPATS]}
+\DoxyCodeLine{               [-i INTERFACESFILE] [-t \{native,json\}] [-T \{iface,vlan\}] [-l]}
+\DoxyCodeLine{               [-r | -c | -x] [-o \{native,json\}] [-p \{list,dot\}] [-s]}
+\DoxyCodeLine{               [--with-defaults] [-V]}
+\DoxyCodeLine{               [IFACE [IFACE ...]]}
+\DoxyCodeLine{}
+\DoxyCodeLine{query interfaces (all or interface list)}
+\DoxyCodeLine{}
+\DoxyCodeLine{positional arguments:}
+\DoxyCodeLine{  IFACE                 interface list separated by spaces. IFACE list is}
+\DoxyCodeLine{                        mutually exclusive with -a option.}
+\DoxyCodeLine{}
+\DoxyCodeLine{optional arguments:}
+\DoxyCodeLine{  -h, --help            show this help message and exit}
+\DoxyCodeLine{  -a, --all             process all interfaces marked "auto"}
+\DoxyCodeLine{  -v, --verbose         verbose}
+\DoxyCodeLine{  -d, --debug           output debug info}
+\DoxyCodeLine{  --allow CLASS         ignore non-"allow-CLASS" interfaces}
+\DoxyCodeLine{  -w, --with-depends    run with all dependent interfaces. This option is}
+\DoxyCodeLine{                        redundant when '-a' is specified. With '-a' interfaces}
+\DoxyCodeLine{                        are always executed in dependency order}
+\DoxyCodeLine{  -X EXCLUDEPATS, --exclude EXCLUDEPATS}
+\DoxyCodeLine{                        Exclude interfaces from the list of interfaces to}
+\DoxyCodeLine{                        operate on. Can be specified multiple times.}
+\DoxyCodeLine{  -i INTERFACESFILE, --interfaces INTERFACESFILE}
+\DoxyCodeLine{                        Specify interfaces file instead of file defined in}
+\DoxyCodeLine{                        ifupdown2.conf file}
+\DoxyCodeLine{  -t \{native,json\}, --interfaces-format \{native,json\}}
+\DoxyCodeLine{                        interfaces file format}
+\DoxyCodeLine{  -T \{iface,vlan\}, --type \{iface,vlan\}}
+\DoxyCodeLine{                        type of interface entry (iface or vlan). This option}
+\DoxyCodeLine{                        can be used in case of ambiguity between a vlan}
+\DoxyCodeLine{                        interface and an iface interface of the same name}
+\DoxyCodeLine{  -l, --list            list all matching known interfaces}
+\DoxyCodeLine{  -r, --running         query running state of an interface}
+\DoxyCodeLine{  -c, --check           check interface file contents against running state of}
+\DoxyCodeLine{                        an interface}
+\DoxyCodeLine{  -x, --raw             print raw config file entries}
+\DoxyCodeLine{  -o \{native,json\}, --format \{native,json\}}
+\DoxyCodeLine{                        interface display format}
+\DoxyCodeLine{  -p \{list,dot\}, --print-dependency \{list,dot\}}
+\DoxyCodeLine{                        print interface dependency}
+\DoxyCodeLine{  -s, --syntax-help     print supported interface config syntax}
+\DoxyCodeLine{  --with-defaults       check policy default file contents, for unconfigured}
+\DoxyCodeLine{                        attributes, against running state of an interface}
+\DoxyCodeLine{  -V, --version}
+\end{DoxyCode}
+ \subsection*{arp -\/n}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Address                  HWtype  HWaddress           Flags Mask            Iface}
+\DoxyCodeLine{192.168.0.32             ether   44:38:39:00:09:00   C                     eth1}
+\DoxyCodeLine{192.168.0.22             ether   44:38:39:00:07:00   C                     eth1}
+\DoxyCodeLine{169.254.0.1              ether   44:38:39:00:02:07   CM                    eth2}
+\DoxyCodeLine{192.168.0.13             ether   44:38:39:00:04:00   C                     eth1}
+\DoxyCodeLine{192.168.0.31             ether   44:38:39:00:08:00   C                     eth1}
+\DoxyCodeLine{169.254.0.1              ether   44:38:39:00:03:07   CM                    eth3}
+\DoxyCodeLine{192.168.0.14             ether   44:38:39:00:05:00   C                     eth1}
+\DoxyCodeLine{192.168.0.11             ether   44:38:39:00:02:00   C                     eth1}
+\DoxyCodeLine{192.168.0.33             ether   44:38:39:00:0a:00   C                     eth1}
+\DoxyCodeLine{10.255.0.3               ether   2c:c2:60:ff:00:4d   C                     eth0}
+\DoxyCodeLine{192.168.0.12             ether   44:38:39:00:03:00   C                     eth1}
+\DoxyCodeLine{192.168.0.34             ether   44:38:39:00:0b:00   C                     eth1}
+\DoxyCodeLine{192.168.0.21             ether   44:38:39:00:06:00   C                     eth1}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage:}
+\DoxyCodeLine{  arp [-vn]  [<HW>] [-i <if>] [-a] [<hostname>]             <-Display ARP cache}
+\DoxyCodeLine{  arp [-v]          [-i <if>] -d  <host> [pub]               <-Delete ARP entry}
+\DoxyCodeLine{  arp [-vnD] [<HW>] [-i <if>] -f  [<filename>]            <-Add entry from file}
+\DoxyCodeLine{  arp [-v]   [<HW>] [-i <if>] -s  <host> <hwaddr> [temp]            <-Add entry}
+\DoxyCodeLine{  arp [-v]   [<HW>] [-i <if>] -Ds <host> <if> [netmask <nm>] pub          <-''-}
+\DoxyCodeLine{}
+\DoxyCodeLine{        -a                       display (all) hosts in alternative (BSD) style}
+\DoxyCodeLine{        -s, --set                set a new ARP entry}
+\DoxyCodeLine{        -d, --delete             delete a specified entry}
+\DoxyCodeLine{        -v, --verbose            be verbose}
+\DoxyCodeLine{        -n, --numeric            don't resolve names}
+\DoxyCodeLine{        -i, --device             specify network interface (e.g. eth0)}
+\DoxyCodeLine{        -D, --use-device         read <hwaddr> from given device}
+\DoxyCodeLine{        -A, -p, --protocol       specify protocol family}
+\DoxyCodeLine{        -f, --file               read new entries from file or from /etc/ethers}
+\DoxyCodeLine{}
+\DoxyCodeLine{  <HW>=Use '-H <hw>' to specify hardware address type. Default: ether}
+\DoxyCodeLine{  List of possible hardware types (which support ARP):}
+\DoxyCodeLine{    ash (Ash) ether (Ethernet) ax25 (AMPR AX.25) }
+\DoxyCodeLine{    netrom (AMPR NET/ROM) rose (AMPR ROSE) arcnet (ARCnet) }
+\DoxyCodeLine{    dlci (Frame Relay DLCI) fddi (Fiber Distributed Data Interface) hippi (HIPPI) }
+\DoxyCodeLine{    irda (IrLAP) x25 (generic X.25) eui64 (Generic EUI-64) }
+\end{DoxyCode}
+ \subsection*{cat /etc/network/interfaces}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{auto lo}
+\DoxyCodeLine{iface lo inet loopback}
+\DoxyCodeLine{    address 10.0.0.41/32}
+\DoxyCodeLine{    address fd00::41/128}
+\DoxyCodeLine{}
+\DoxyCodeLine{auto eth0}
+\DoxyCodeLine{iface eth0 inet static}
+\DoxyCodeLine{    address 10.255.0.1}
+\DoxyCodeLine{    netmask 255.255.0.0}
+\DoxyCodeLine{    gateway 10.255.0.3}
+\DoxyCodeLine{auto eth1}
+\DoxyCodeLine{iface eth1 inet static}
+\DoxyCodeLine{    address 192.168.0.254}
+\DoxyCodeLine{    netmask 255.255.0.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{auto eth2}
+\DoxyCodeLine{iface eth2}
+\DoxyCodeLine{}
+\DoxyCodeLine{auto eth3}
+\DoxyCodeLine{iface eth3}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: cat [OPTION]... [FILE]...}
+\DoxyCodeLine{Concatenate FILE(s), or standard input, to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{  -A, --show-all           equivalent to -vET}
+\DoxyCodeLine{  -b, --number-nonblank    number nonempty output lines, overrides -n}
+\DoxyCodeLine{  -e                       equivalent to -vE}
+\DoxyCodeLine{  -E, --show-ends          display \$ at end of each line}
+\DoxyCodeLine{  -n, --number             number all output lines}
+\DoxyCodeLine{  -s, --squeeze-blank      suppress repeated empty output lines}
+\DoxyCodeLine{  -t                       equivalent to -vT}
+\DoxyCodeLine{  -T, --show-tabs          display TAB characters as \string^I}
+\DoxyCodeLine{  -u                       (ignored)}
+\DoxyCodeLine{  -v, --show-nonprinting   use \string^ and M- notation, except for LFD and TAB}
+\DoxyCodeLine{      --help     display this help and exit}
+\DoxyCodeLine{      --version  output version information and exit}
+\DoxyCodeLine{}
+\DoxyCodeLine{With no FILE, or when FILE is -, read standard input.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Examples:}
+\DoxyCodeLine{  cat f - g  Output f's contents, then standard input, then g's contents.}
+\DoxyCodeLine{  cat        Copy standard input to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{GNU coreutils online help: <http://www.gnu.org/software/coreutils/>}
+\DoxyCodeLine{Full documentation at: <http://www.gnu.org/software/coreutils/cat>}
+\DoxyCodeLine{or available locally via: info '(coreutils) cat invocation'}
+\DoxyCodeLine{}
+\DoxyCodeLine{auto lo}
+\DoxyCodeLine{iface lo inet loopback}
+\DoxyCodeLine{    address 10.0.0.41/32}
+\DoxyCodeLine{    address fd00::41/128}
+\DoxyCodeLine{}
+\DoxyCodeLine{auto eth0}
+\DoxyCodeLine{iface eth0 inet static}
+\DoxyCodeLine{    address 10.255.0.1}
+\DoxyCodeLine{    netmask 255.255.0.0}
+\DoxyCodeLine{    gateway 10.255.0.3}
+\DoxyCodeLine{auto eth1}
+\DoxyCodeLine{iface eth1 inet static}
+\DoxyCodeLine{    address 192.168.0.254}
+\DoxyCodeLine{    netmask 255.255.0.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{auto eth2}
+\DoxyCodeLine{iface eth2}
+\DoxyCodeLine{}
+\DoxyCodeLine{auto eth3}
+\DoxyCodeLine{iface eth3}
+\end{DoxyCode}
+ \subsection*{cat /proc/net/bonding/bond0}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cat: /proc/net/bonding/bond0: No such file or directory}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: cat [OPTION]... [FILE]...}
+\DoxyCodeLine{Concatenate FILE(s), or standard input, to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{  -A, --show-all           equivalent to -vET}
+\DoxyCodeLine{  -b, --number-nonblank    number nonempty output lines, overrides -n}
+\DoxyCodeLine{  -e                       equivalent to -vE}
+\DoxyCodeLine{  -E, --show-ends          display \$ at end of each line}
+\DoxyCodeLine{  -n, --number             number all output lines}
+\DoxyCodeLine{  -s, --squeeze-blank      suppress repeated empty output lines}
+\DoxyCodeLine{  -t                       equivalent to -vT}
+\DoxyCodeLine{  -T, --show-tabs          display TAB characters as \string^I}
+\DoxyCodeLine{  -u                       (ignored)}
+\DoxyCodeLine{  -v, --show-nonprinting   use \string^ and M- notation, except for LFD and TAB}
+\DoxyCodeLine{      --help     display this help and exit}
+\DoxyCodeLine{      --version  output version information and exit}
+\DoxyCodeLine{}
+\DoxyCodeLine{With no FILE, or when FILE is -, read standard input.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Examples:}
+\DoxyCodeLine{  cat f - g  Output f's contents, then standard input, then g's contents.}
+\DoxyCodeLine{  cat        Copy standard input to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{GNU coreutils online help: <http://www.gnu.org/software/coreutils/>}
+\DoxyCodeLine{Full documentation at: <http://www.gnu.org/software/coreutils/cat>}
+\DoxyCodeLine{or available locally via: info '(coreutils) cat invocation'}
+\DoxyCodeLine{}
+\DoxyCodeLine{cat: /proc/net/bonding/bond0: No such file or directory}
+\end{DoxyCode}
+ \subsection*{cl-\/netstat}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Kernel Interface table}
+\DoxyCodeLine{Iface      MTU    Met    RX\_OK    RX\_ERR    RX\_DRP    RX\_OVR    TX\_OK    TX\_ERR    TX\_DRP    TX\_OVR  Flg}
+\DoxyCodeLine{-------  -----  -----  -------  --------  --------  --------  -------  --------  --------  --------  -----}
+\DoxyCodeLine{docker0   1500      0        0         0         0         0        0         0         0         0  BMU}
+\DoxyCodeLine{eth0      1500      0    21494         0         0         0    20158         0         0         0  BMRU}
+\DoxyCodeLine{eth1      1500      0    53625         0         0         0    45404         0         0         0  BMRU}
+\DoxyCodeLine{eth2      1500      0     1246         0         0         0     1246         0         0         0  BMRU}
+\DoxyCodeLine{eth3      1500      0     1253         0         1         0     1256         0         0         0  BMRU}
+\DoxyCodeLine{lo       65536      0    31608         0         0         0    31608         0         0         0  LRU}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usage: cl-netstat [-h] [-v] [-c] [-d] [-D] [-j] [-r] [-t TAG]}
+\DoxyCodeLine{                  [--clear-interface CLEAR\_INTERFACE]}
+\DoxyCodeLine{}
+\DoxyCodeLine{Wrapper for netstat}
+\DoxyCodeLine{}
+\DoxyCodeLine{optional arguments:}
+\DoxyCodeLine{  -h, --help            show this help message and exit}
+\DoxyCodeLine{  -v, --version         show program's version number and exit}
+\DoxyCodeLine{  -c, --clear           Copy \& clear stats per user (tag)}
+\DoxyCodeLine{  -d, --delete          Delete saved stats, either the uid or the specified tag}
+\DoxyCodeLine{  -D, --delete-all      Delete all saved stats}
+\DoxyCodeLine{  -j, --json            Display in JSON format}
+\DoxyCodeLine{  -r, --raw             Raw stats (unmodified output of netstat)}
+\DoxyCodeLine{  -t TAG, --tag TAG     Save stats with name TAG}
+\DoxyCodeLine{  --clear-interface CLEAR\_INTERFACE}
+\DoxyCodeLine{                        clear stats for a single interface}
+\DoxyCodeLine{}
+\DoxyCodeLine{Note: Clearing stats does not affect hardware or software values.}
+\DoxyCodeLine{      cl-netstat saves the current stats when -c is given, so they can}
+\DoxyCodeLine{      be compared with later values.  The -c and -d options are per user (UID)}
+\DoxyCodeLine{      by default.  Use the -t TAG option to change this behavior.  You must}
+\DoxyCodeLine{      use the same -t TAG value with subsequent commands to get valid results.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Examples:}
+\DoxyCodeLine{  cl-netstat -c -t test}
+\DoxyCodeLine{  cl-netstat -t test}
+\DoxyCodeLine{  cl-netstat -d -t test}
+\DoxyCodeLine{  cl-netstat}
+\DoxyCodeLine{  cl-netstat -r}
+\end{DoxyCode}
+ \subsection*{ifquery DP}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{error: cannot find interfaces: \%DP}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usage: ifquery [-h] [-a] [-v] [-d] [--allow CLASS] [-w] [-X EXCLUDEPATS]}
+\DoxyCodeLine{               [-i INTERFACESFILE] [-t \{native,json\}] [-T \{iface,vlan\}] [-l]}
+\DoxyCodeLine{               [-r | -c | -x] [-o \{native,json\}] [-p \{list,dot\}] [-s]}
+\DoxyCodeLine{               [--with-defaults] [-V]}
+\DoxyCodeLine{               [IFACE [IFACE ...]]}
+\DoxyCodeLine{}
+\DoxyCodeLine{query interfaces (all or interface list)}
+\DoxyCodeLine{}
+\DoxyCodeLine{positional arguments:}
+\DoxyCodeLine{  IFACE                 interface list separated by spaces. IFACE list is}
+\DoxyCodeLine{                        mutually exclusive with -a option.}
+\DoxyCodeLine{}
+\DoxyCodeLine{optional arguments:}
+\DoxyCodeLine{  -h, --help            show this help message and exit}
+\DoxyCodeLine{  -a, --all             process all interfaces marked "auto"}
+\DoxyCodeLine{  -v, --verbose         verbose}
+\DoxyCodeLine{  -d, --debug           output debug info}
+\DoxyCodeLine{  --allow CLASS         ignore non-"allow-CLASS" interfaces}
+\DoxyCodeLine{  -w, --with-depends    run with all dependent interfaces. This option is}
+\DoxyCodeLine{                        redundant when '-a' is specified. With '-a' interfaces}
+\DoxyCodeLine{                        are always executed in dependency order}
+\DoxyCodeLine{  -X EXCLUDEPATS, --exclude EXCLUDEPATS}
+\DoxyCodeLine{                        Exclude interfaces from the list of interfaces to}
+\DoxyCodeLine{                        operate on. Can be specified multiple times.}
+\DoxyCodeLine{  -i INTERFACESFILE, --interfaces INTERFACESFILE}
+\DoxyCodeLine{                        Specify interfaces file instead of file defined in}
+\DoxyCodeLine{                        ifupdown2.conf file}
+\DoxyCodeLine{  -t \{native,json\}, --interfaces-format \{native,json\}}
+\DoxyCodeLine{                        interfaces file format}
+\DoxyCodeLine{  -T \{iface,vlan\}, --type \{iface,vlan\}}
+\DoxyCodeLine{                        type of interface entry (iface or vlan). This option}
+\DoxyCodeLine{                        can be used in case of ambiguity between a vlan}
+\DoxyCodeLine{                        interface and an iface interface of the same name}
+\DoxyCodeLine{  -l, --list            list all matching known interfaces}
+\DoxyCodeLine{  -r, --running         query running state of an interface}
+\DoxyCodeLine{  -c, --check           check interface file contents against running state of}
+\DoxyCodeLine{                        an interface}
+\DoxyCodeLine{  -x, --raw             print raw config file entries}
+\DoxyCodeLine{  -o \{native,json\}, --format \{native,json\}}
+\DoxyCodeLine{                        interface display format}
+\DoxyCodeLine{  -p \{list,dot\}, --print-dependency \{list,dot\}}
+\DoxyCodeLine{                        print interface dependency}
+\DoxyCodeLine{  -s, --syntax-help     print supported interface config syntax}
+\DoxyCodeLine{  --with-defaults       check policy default file contents, for unconfigured}
+\DoxyCodeLine{                        attributes, against running state of an interface}
+\DoxyCodeLine{  -V, --version}
+\end{DoxyCode}
+ \subsection*{ifreload -\/a}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usage: ifreload [-h] (-a | -c | --allow CLASS) [-n] [-v] [-d] [-u] [-f] [-s]}
+\DoxyCodeLine{                [-V]}
+\DoxyCodeLine{}
+\DoxyCodeLine{reload interface configuration.}
+\DoxyCodeLine{}
+\DoxyCodeLine{optional arguments:}
+\DoxyCodeLine{  -h, --help            show this help message and exit}
+\DoxyCodeLine{  -a, --all             process all interfaces marked "auto"}
+\DoxyCodeLine{  -c, --currently-up    Reload the configuration for all interfaces which are}
+\DoxyCodeLine{                        currently up regardless of whether an interface has}
+\DoxyCodeLine{                        "auto <interface>" configuration within the}
+\DoxyCodeLine{                        /etc/network/interfaces file.}
+\DoxyCodeLine{  --allow CLASS         ignore non-"allow-CLASS" interfaces}
+\DoxyCodeLine{  -n, --no-act          print out what would happen, but don't do it}
+\DoxyCodeLine{  -v, --verbose         verbose}
+\DoxyCodeLine{  -d, --debug           output debug info}
+\DoxyCodeLine{  -u, --use-current-config}
+\DoxyCodeLine{                        By default ifreload looks at saved state for}
+\DoxyCodeLine{                        interfaces to bring down. With this option ifreload}
+\DoxyCodeLine{                        will only look at the current interfaces file. Useful}
+\DoxyCodeLine{                        when your state file is corrupted or you want down to}
+\DoxyCodeLine{                        use the latest from the interfaces file}
+\DoxyCodeLine{  -f, --force           force run all operations}
+\DoxyCodeLine{  -s, --syntax-check    Only run the interfaces file parser}
+\DoxyCodeLine{  -V, --version}
+\end{DoxyCode}
+ \subsection*{ip link show}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1: lo: <LOOPBACK,UP,LOWER\_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default }
+\DoxyCodeLine{    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00}
+\DoxyCodeLine{2: eth0: <BROADCAST,MULTICAST,UP,LOWER\_UP> mtu 1500 qdisc pfifo\_fast state UP mode DEFAULT group default qlen 1000}
+\DoxyCodeLine{    link/ether 44:38:39:00:01:00 brd ff:ff:ff:ff:ff:ff}
+\DoxyCodeLine{3: eth1: <BROADCAST,MULTICAST,UP,LOWER\_UP> mtu 1500 qdisc pfifo\_fast state UP mode DEFAULT group default qlen 1000}
+\DoxyCodeLine{    link/ether 44:38:39:00:01:01 brd ff:ff:ff:ff:ff:ff}
+\DoxyCodeLine{4: eth2: <BROADCAST,MULTICAST,UP,LOWER\_UP> mtu 1500 qdisc pfifo\_fast state UP mode DEFAULT group default qlen 1000}
+\DoxyCodeLine{    link/ether 44:38:39:00:01:02 brd ff:ff:ff:ff:ff:ff}
+\DoxyCodeLine{5: eth3: <BROADCAST,MULTICAST,UP,LOWER\_UP> mtu 1500 qdisc pfifo\_fast state UP mode DEFAULT group default qlen 1000}
+\DoxyCodeLine{    link/ether 44:38:39:00:01:03 brd ff:ff:ff:ff:ff:ff}
+\DoxyCodeLine{6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default }
+\DoxyCodeLine{    link/ether 02:42:60:bd:70:55 brd ff:ff:ff:ff:ff:ff}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Device "--help" does not exist.}
+\DoxyCodeLine{}
+\DoxyCodeLine{1: lo: <LOOPBACK,UP,LOWER\_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default }
+\DoxyCodeLine{    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00}
+\DoxyCodeLine{2: eth0: <BROADCAST,MULTICAST,UP,LOWER\_UP> mtu 1500 qdisc pfifo\_fast state UP mode DEFAULT group default qlen 1000}
+\DoxyCodeLine{    link/ether 44:38:39:00:01:00 brd ff:ff:ff:ff:ff:ff}
+\DoxyCodeLine{3: eth1: <BROADCAST,MULTICAST,UP,LOWER\_UP> mtu 1500 qdisc pfifo\_fast state UP mode DEFAULT group default qlen 1000}
+\DoxyCodeLine{    link/ether 44:38:39:00:01:01 brd ff:ff:ff:ff:ff:ff}
+\DoxyCodeLine{4: eth2: <BROADCAST,MULTICAST,UP,LOWER\_UP> mtu 1500 qdisc pfifo\_fast state UP mode DEFAULT group default qlen 1000}
+\DoxyCodeLine{    link/ether 44:38:39:00:01:02 brd ff:ff:ff:ff:ff:ff}
+\DoxyCodeLine{5: eth3: <BROADCAST,MULTICAST,UP,LOWER\_UP> mtu 1500 qdisc pfifo\_fast state UP mode DEFAULT group default qlen 1000}
+\DoxyCodeLine{    link/ether 44:38:39:00:01:03 brd ff:ff:ff:ff:ff:ff}
+\DoxyCodeLine{6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default }
+\DoxyCodeLine{    link/ether 02:42:60:bd:70:55 brd ff:ff:ff:ff:ff:ff}
+\end{DoxyCode}
+ \subsection*{ip -\/s link}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1: lo: <LOOPBACK,UP,LOWER\_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default }
+\DoxyCodeLine{    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00}
+\DoxyCodeLine{    RX: bytes  packets  errors  dropped overrun mcast   }
+\DoxyCodeLine{    5782761    31608    0       0       0       0       }
+\DoxyCodeLine{    TX: bytes  packets  errors  dropped carrier collsns }
+\DoxyCodeLine{    5782761    31608    0       0       0       0       }
+\DoxyCodeLine{2: eth0: <BROADCAST,MULTICAST,UP,LOWER\_UP> mtu 1500 qdisc pfifo\_fast state UP mode DEFAULT group default qlen 1000}
+\DoxyCodeLine{    link/ether 44:38:39:00:01:00 brd ff:ff:ff:ff:ff:ff}
+\DoxyCodeLine{    RX: bytes  packets  errors  dropped overrun mcast   }
+\DoxyCodeLine{    21200264   21494    0       0       0       0       }
+\DoxyCodeLine{    TX: bytes  packets  errors  dropped carrier collsns }
+\DoxyCodeLine{    5141739    20158    0       0       0       0       }
+\DoxyCodeLine{3: eth1: <BROADCAST,MULTICAST,UP,LOWER\_UP> mtu 1500 qdisc pfifo\_fast state UP mode DEFAULT group default qlen 1000}
+\DoxyCodeLine{    link/ether 44:38:39:00:01:01 brd ff:ff:ff:ff:ff:ff}
+\DoxyCodeLine{    RX: bytes  packets  errors  dropped overrun mcast   }
+\DoxyCodeLine{    6452676    53647    0       0       0       0       }
+\DoxyCodeLine{    TX: bytes  packets  errors  dropped carrier collsns }
+\DoxyCodeLine{    31397994   45419    0       0       0       0       }
+\DoxyCodeLine{4: eth2: <BROADCAST,MULTICAST,UP,LOWER\_UP> mtu 1500 qdisc pfifo\_fast state UP mode DEFAULT group default qlen 1000}
+\DoxyCodeLine{    link/ether 44:38:39:00:01:02 brd ff:ff:ff:ff:ff:ff}
+\DoxyCodeLine{    RX: bytes  packets  errors  dropped overrun mcast   }
+\DoxyCodeLine{    133952     1246     0       0       0       0       }
+\DoxyCodeLine{    TX: bytes  packets  errors  dropped carrier collsns }
+\DoxyCodeLine{    125270     1246     0       0       0       0       }
+\DoxyCodeLine{5: eth3: <BROADCAST,MULTICAST,UP,LOWER\_UP> mtu 1500 qdisc pfifo\_fast state UP mode DEFAULT group default qlen 1000}
+\DoxyCodeLine{    link/ether 44:38:39:00:01:03 brd ff:ff:ff:ff:ff:ff}
+\DoxyCodeLine{    RX: bytes  packets  errors  dropped overrun mcast   }
+\DoxyCodeLine{    134370     1253     0       1       0       0       }
+\DoxyCodeLine{    TX: bytes  packets  errors  dropped carrier collsns }
+\DoxyCodeLine{    126006     1256     0       0       0       0       }
+\DoxyCodeLine{6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default }
+\DoxyCodeLine{    link/ether 02:42:60:bd:70:55 brd ff:ff:ff:ff:ff:ff}
+\DoxyCodeLine{    RX: bytes  packets  errors  dropped overrun mcast   }
+\DoxyCodeLine{    0          0        0       0       0       0       }
+\DoxyCodeLine{    TX: bytes  packets  errors  dropped carrier collsns }
+\DoxyCodeLine{    0          0        0       0       0       0       }
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Command "--help" is unknown, try "ip link help".}
+\DoxyCodeLine{}
+\DoxyCodeLine{1: lo: <LOOPBACK,UP,LOWER\_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default }
+\DoxyCodeLine{    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00}
+\DoxyCodeLine{    RX: bytes  packets  errors  dropped overrun mcast   }
+\DoxyCodeLine{    5782761    31608    0       0       0       0       }
+\DoxyCodeLine{    TX: bytes  packets  errors  dropped carrier collsns }
+\DoxyCodeLine{    5782761    31608    0       0       0       0       }
+\DoxyCodeLine{2: eth0: <BROADCAST,MULTICAST,UP,LOWER\_UP> mtu 1500 qdisc pfifo\_fast state UP mode DEFAULT group default qlen 1000}
+\DoxyCodeLine{    link/ether 44:38:39:00:01:00 brd ff:ff:ff:ff:ff:ff}
+\DoxyCodeLine{    RX: bytes  packets  errors  dropped overrun mcast   }
+\DoxyCodeLine{    21200264   21494    0       0       0       0       }
+\DoxyCodeLine{    TX: bytes  packets  errors  dropped carrier collsns }
+\DoxyCodeLine{    5141739    20158    0       0       0       0       }
+\DoxyCodeLine{3: eth1: <BROADCAST,MULTICAST,UP,LOWER\_UP> mtu 1500 qdisc pfifo\_fast state UP mode DEFAULT group default qlen 1000}
+\DoxyCodeLine{    link/ether 44:38:39:00:01:01 brd ff:ff:ff:ff:ff:ff}
+\DoxyCodeLine{    RX: bytes  packets  errors  dropped overrun mcast   }
+\DoxyCodeLine{    6452676    53647    0       0       0       0       }
+\DoxyCodeLine{    TX: bytes  packets  errors  dropped carrier collsns }
+\DoxyCodeLine{    31397994   45419    0       0       0       0       }
+\DoxyCodeLine{4: eth2: <BROADCAST,MULTICAST,UP,LOWER\_UP> mtu 1500 qdisc pfifo\_fast state UP mode DEFAULT group default qlen 1000}
+\DoxyCodeLine{    link/ether 44:38:39:00:01:02 brd ff:ff:ff:ff:ff:ff}
+\DoxyCodeLine{    RX: bytes  packets  errors  dropped overrun mcast   }
+\DoxyCodeLine{    133952     1246     0       0       0       0       }
+\DoxyCodeLine{    TX: bytes  packets  errors  dropped carrier collsns }
+\DoxyCodeLine{    125270     1246     0       0       0       0       }
+\DoxyCodeLine{5: eth3: <BROADCAST,MULTICAST,UP,LOWER\_UP> mtu 1500 qdisc pfifo\_fast state UP mode DEFAULT group default qlen 1000}
+\DoxyCodeLine{    link/ether 44:38:39:00:01:03 brd ff:ff:ff:ff:ff:ff}
+\DoxyCodeLine{    RX: bytes  packets  errors  dropped overrun mcast   }
+\DoxyCodeLine{    134370     1253     0       1       0       0       }
+\DoxyCodeLine{    TX: bytes  packets  errors  dropped carrier collsns }
+\DoxyCodeLine{    126006     1256     0       0       0       0       }
+\DoxyCodeLine{6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default }
+\DoxyCodeLine{    link/ether 02:42:60:bd:70:55 brd ff:ff:ff:ff:ff:ff}
+\DoxyCodeLine{    RX: bytes  packets  errors  dropped overrun mcast   }
+\DoxyCodeLine{    0          0        0       0       0       0       }
+\DoxyCodeLine{    TX: bytes  packets  errors  dropped carrier collsns }
+\DoxyCodeLine{    0          0        0       0       0       0       }
+\end{DoxyCode}
+ \subsection*{ip -\/br link show}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER\_UP> }
+\DoxyCodeLine{eth0             UP             44:38:39:00:01:00 <BROADCAST,MULTICAST,UP,LOWER\_UP> }
+\DoxyCodeLine{eth1             UP             44:38:39:00:01:01 <BROADCAST,MULTICAST,UP,LOWER\_UP> }
+\DoxyCodeLine{eth2             UP             44:38:39:00:01:02 <BROADCAST,MULTICAST,UP,LOWER\_UP> }
+\DoxyCodeLine{eth3             UP             44:38:39:00:01:03 <BROADCAST,MULTICAST,UP,LOWER\_UP> }
+\DoxyCodeLine{docker0          DOWN           02:42:60:bd:70:55 <NO-CARRIER,BROADCAST,MULTICAST,UP> }
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Device "--help" does not exist.}
+\DoxyCodeLine{}
+\DoxyCodeLine{lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER\_UP> }
+\DoxyCodeLine{eth0             UP             44:38:39:00:01:00 <BROADCAST,MULTICAST,UP,LOWER\_UP> }
+\DoxyCodeLine{eth1             UP             44:38:39:00:01:01 <BROADCAST,MULTICAST,UP,LOWER\_UP> }
+\DoxyCodeLine{eth2             UP             44:38:39:00:01:02 <BROADCAST,MULTICAST,UP,LOWER\_UP> }
+\DoxyCodeLine{eth3             UP             44:38:39:00:01:03 <BROADCAST,MULTICAST,UP,LOWER\_UP> }
+\DoxyCodeLine{docker0          DOWN           02:42:60:bd:70:55 <NO-CARRIER,BROADCAST,MULTICAST,UP> }
+\end{DoxyCode}
+ \subsection*{lldpcli snetstat -\/i}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{lldpcli: invalid option -- 'i'}
+\DoxyCodeLine{Usage:   lldpcli [OPTIONS ...] [COMMAND ...]}
+\DoxyCodeLine{Version: lldpd 0.7.16-555-g8c7dc90}
+\DoxyCodeLine{}
+\DoxyCodeLine{-d          Enable more debugging information.}
+\DoxyCodeLine{-u socket   Specify the Unix-domain socket used for communication with lldpd(8).}
+\DoxyCodeLine{-f format   Choose output format (plain, keyvalue, json, xml).}
+\DoxyCodeLine{-c conf     Read the provided configuration file.}
+\DoxyCodeLine{}
+\DoxyCodeLine{see manual page lldpcli(8) for more information}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{lldpcli: invalid option -- 'i'}
+\DoxyCodeLine{Usage:   lldpcli [OPTIONS ...] [COMMAND ...]}
+\DoxyCodeLine{Version: lldpd 0.7.16-555-g8c7dc90}
+\DoxyCodeLine{}
+\DoxyCodeLine{-d          Enable more debugging information.}
+\DoxyCodeLine{-u socket   Specify the Unix-domain socket used for communication with lldpd(8).}
+\DoxyCodeLine{-f format   Choose output format (plain, keyvalue, json, xml).}
+\DoxyCodeLine{-c conf     Read the provided configuration file.}
+\DoxyCodeLine{}
+\DoxyCodeLine{see manual page lldpcli(8) for more information}
+\end{DoxyCode}
+ \subsection*{bridge fdb show}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{02:42:60:bd:70:55 dev docker0 master docker0 permanent}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{02:42:60:bd:70:55 dev docker0 master docker0 permanent}
+\end{DoxyCode}
+ \subsection*{bridge vlan show}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{port    vlan ids}
+\DoxyCodeLine{docker0 None}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{port    vlan ids}
+\DoxyCodeLine{docker0 None}
+\end{DoxyCode}
+ \subsection*{clagctl -\/v}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Unable to communicate with clagd. Is it running?}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usage: clagctl [-h] [-j] [-v] [command [args]]}
+\DoxyCodeLine{}
+\DoxyCodeLine{CLAG daemon control interface, version 0.1.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{positional arguments:}
+\DoxyCodeLine{  command        Command to execute, default is 'status'}
+\DoxyCodeLine{  args           Additional command parameters}
+\DoxyCodeLine{}
+\DoxyCodeLine{optional arguments:}
+\DoxyCodeLine{  -h, --help     show this help message and exit}
+\DoxyCodeLine{  -v, --verbose  Increase the amount of output.}
+\DoxyCodeLine{  -j, --json     json output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{The commands are:}
+\DoxyCodeLine{cleardebugflags       Removes or clears the debug logging flags}
+\DoxyCodeLine{collectgarbage        Causes clagd to run python's garbage collection}
+\DoxyCodeLine{connstate             Display socket connection state with peer}
+\DoxyCodeLine{debug                 Sets the debugging level}
+\DoxyCodeLine{dumpneighs            Displays the neighs learned on this switch}
+\DoxyCodeLine{dumpourmacs           Displays the MACs learned on this switch}
+\DoxyCodeLine{dumpourmcast          Displays the multicast entries learned on this switch}
+\DoxyCodeLine{dumpourrport          Displays the multicast router ports learned on this switch}
+\DoxyCodeLine{dumppeermacs          Displays the MACs learned on the peer switch}
+\DoxyCodeLine{dumppeermcast         Displays the multicast entries learned on the peer switch}
+\DoxyCodeLine{dumppeerrport         Displays the multicast router ports learned on the peer switch}
+\DoxyCodeLine{echo                  Echo back the supplied string}
+\DoxyCodeLine{lacppoll              The frequency clagd collects information and sends to peer}
+\DoxyCodeLine{logfile               Sets the name of the log file}
+\DoxyCodeLine{logmsg                Outputs a message to the log file}
+\DoxyCodeLine{params                Display the parameters in use by clagd}
+\DoxyCodeLine{peerlacprate          Displays the peer's polling rate}
+\DoxyCodeLine{peerlinkpoll          The frequency clagd polls the status of the peer interface}
+\DoxyCodeLine{peertimeout           The time clagd expects a message from the peer}
+\DoxyCodeLine{priority              Sets the priority of clagd}
+\DoxyCodeLine{quiet                 Prevents output in the log file}
+\DoxyCodeLine{reloaddone            Config reload done}
+\DoxyCodeLine{sendbufsize           The size of the socket send buffer, in bytes}
+\DoxyCodeLine{sendtimeout           The time clagd send socket waits to enqueue data}
+\DoxyCodeLine{setanycastip          Sets the VXLAN anycast IP address}
+\DoxyCodeLine{setbackupip           Sets the backup IP address}
+\DoxyCodeLine{setclagid             Associates a bond with a clag id}
+\DoxyCodeLine{setdebugflags         Sets the debug logging flags}
+\DoxyCodeLine{showbackupip          Displays backup link info}
+\DoxyCodeLine{showclagid            Displays the CLAG bonds configured on this switch}
+\DoxyCodeLine{showdebugflags        Shows the debug logging flags}
+\DoxyCodeLine{showtimers            Displays CLAG related timers}
+\DoxyCodeLine{status                Display the status of the clagd daemon}
+\DoxyCodeLine{verbose               Enables additional output in log file}
+\DoxyCodeLine{verifyvlans           Verifies VLAN configuration with the peer}
+\DoxyCodeLine{}
+\DoxyCodeLine{See the clagctl man page for more information}
+\end{DoxyCode}
+ \subsection*{net show counters}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Kernel Interface table}
+\DoxyCodeLine{Iface      MTU    Met    RX\_OK    RX\_ERR    RX\_DRP    RX\_OVR    TX\_OK    TX\_ERR    TX\_DRP    TX\_OVR  Flg}
+\DoxyCodeLine{-------  -----  -----  -------  --------  --------  --------  -------  --------  --------  --------  -----}
+\DoxyCodeLine{docker0   1500      0        0         0         0         0        0         0         0         0  BMU}
+\DoxyCodeLine{eth0      1500      0    21496         0         0         0    20160         0         0         0  BMRU}
+\DoxyCodeLine{eth1      1500      0    53655         0         0         0    45424         0         0         0  BMRU}
+\DoxyCodeLine{eth2      1500      0     1246         0         0         0     1246         0         0         0  BMRU}
+\DoxyCodeLine{eth3      1500      0     1253         0         1         0     1256         0         0         0  BMRU}
+\DoxyCodeLine{lo       65536      0    31618         0         0         0    31618         0         0         0  LRU}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'counters', 'show'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show counters [json]}
+\end{DoxyCode}
+ \subsection*{net show lldp}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{LocalPort  Speed  Mode  RemoteHost  RemotePort}
+\DoxyCodeLine{---------  -----  ----  ----------  ----------}
+\DoxyCodeLine{eth2       1G     Mgmt  leaf01      swp44}
+\DoxyCodeLine{eth3       1G     Mgmt  leaf02      swp44}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'show', 'lldp'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show lldp [<interface>] [json]}
+\end{DoxyCode}
+ \subsection*{net show interface}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{State  Name     Spd  MTU    Mode       LLDP            Summary}
+\DoxyCodeLine{-----  -------  ---  -----  ---------  --------------  --------------------}
+\DoxyCodeLine{UP     lo       N/A  65536  Loopback                   IP: 127.0.0.1/8}
+\DoxyCodeLine{       lo                                              IP: 10.0.0.41/32}
+\DoxyCodeLine{       lo                                              IP: fd00::41/128}
+\DoxyCodeLine{       lo                                              IP: ::1/128}
+\DoxyCodeLine{UP     eth0     1G   1500   Mgmt                       IP: 10.255.0.1/16}
+\DoxyCodeLine{UP     eth1     1G   1500   Mgmt                       IP: 192.168.0.254/16}
+\DoxyCodeLine{UP     eth2     1G   1500   Mgmt       leaf01 (swp44)}
+\DoxyCodeLine{UP     eth3     1G   1500   Mgmt       leaf02 (swp44)}
+\DoxyCodeLine{DN     docker0  N/A  1500   Bridge/L3                  IP: 172.17.0.1/16}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'interface', 'show'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show configuration interface [<interface>]}
+\DoxyCodeLine{    net show dot1x interface <interface> [json]}
+\DoxyCodeLine{    net show dot1x interface <interface> details [json]}
+\DoxyCodeLine{    net show dot1x interface summary [json]}
+\DoxyCodeLine{    net show igmp interface [detail|<interface>] [json]}
+\DoxyCodeLine{    net show igmp vrf <text> interface [detail|<interface>] [json]}
+\DoxyCodeLine{    net show interface (all|bonds|bondmems) [mac|json]}
+\DoxyCodeLine{    net show interface <interface> detail}
+\DoxyCodeLine{    net show interface [<interface>] [json]}
+\DoxyCodeLine{    net show interface pluggables [json]}
+\DoxyCodeLine{    net show mpls ldp (binding|discovery|interface|neighbor)}
+\DoxyCodeLine{    net show mpls ldp (ipv4|ipv6) (binding|discovery|interface)}
+\DoxyCodeLine{    net show ospf interface [<interface>] [json]}
+\DoxyCodeLine{    net show ospf interface traffic [<interface>] [json]}
+\DoxyCodeLine{    net show ospf vrf <text> interface [<interface>] [json]}
+\DoxyCodeLine{    net show ospf vrf <text> interface traffic [<interface>] [json]}
+\DoxyCodeLine{    net show ospf6 interface [<interface>]}
+\DoxyCodeLine{    net show pbr interface [<interface>]}
+\DoxyCodeLine{    net show pim interface [detail|<interface>] [json]}
+\DoxyCodeLine{    net show pim interface traffic [<interface>] [json]}
+\DoxyCodeLine{    net show pim vrf <text> interface [detail|<interface>] [json]}
+\DoxyCodeLine{    net show pim vrf <text> interface traffic [<interface>] [json]}
+\end{DoxyCode}
+ 

@@ -1,0 +1,1323 @@
+\subsection*{netq show vxlan}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{No matching vxlan records found}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Error: The following commands contain keyword(s) 'vxlan', 'show'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    netq [<hostname>] show interfaces type (bond|bridge|eth|loopback|macvlan|swp|vlan|vrf|vxlan) [count] [json]}
+\DoxyCodeLine{    netq [<hostname>] show interfaces type (bond|bridge|eth|loopback|macvlan|swp|vlan|vrf|vxlan) around <text-time> [count] [json]}
+\DoxyCodeLine{    netq [<hostname>] show interfaces type (bond|bridge|eth|loopback|macvlan|swp|vlan|vrf|vxlan) changes [json]}
+\DoxyCodeLine{    netq [<hostname>] show interfaces type (bond|bridge|eth|loopback|macvlan|swp|vlan|vrf|vxlan) changes between <text-time> and <text-endtime> [json]}
+\DoxyCodeLine{    netq [<hostname>] show interfaces type (bond|bridge|eth|loopback|macvlan|swp|vlan|vrf|vxlan) state <remote-interface-state> [count] [json]}
+\DoxyCodeLine{    netq [<hostname>] show interfaces type (bond|bridge|eth|loopback|macvlan|swp|vlan|vrf|vxlan) state <remote-interface-state> around <text-time> [count] [json]}
+\DoxyCodeLine{    netq [<hostname>] show vxlan [json]}
+\DoxyCodeLine{    netq [<hostname>] show vxlan around <text-time> [json]}
+\DoxyCodeLine{    netq [<hostname>] show vxlan changes [json]}
+\DoxyCodeLine{    netq [<hostname>] show vxlan changes between <text-time> and <text-endtime> [json]}
+\DoxyCodeLine{    netq [<hostname>] show vxlan vni <text-vni> [json]}
+\DoxyCodeLine{    netq [<hostname>] show vxlan vni <text-vni> around <text-time> [json]}
+\DoxyCodeLine{    netq [<hostname>] show vxlan vni <text-vni> changes [json]}
+\DoxyCodeLine{    netq [<hostname>] show vxlan vni <text-vni> changes between <text-time> and <text-endtime> [json]}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{Unable to find command netq show vxlan --help}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{No matching vxlan records found}
+\end{DoxyCode}
+ \subsection*{netq check vxlan}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{No VXLAN info found}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Error: The following commands contain keyword(s) 'check', 'vxlan'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    netq check vxlan [json]}
+\DoxyCodeLine{    netq check vxlan around <text-time> [json]}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{Unable to find command netq check vxlan --help}
+\DoxyCodeLine{}
+\DoxyCodeLine{No VXLAN info found}
+\end{DoxyCode}
+ \subsection*{sudo bridge fdb show $\vert$ grep 00\+:00\+:00\+:00\+:00\+:00}
+
+\#\#\# ~\newline
+ Hi 
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: grep [OPTION]... PATTERN [FILE]...}
+\DoxyCodeLine{Search for PATTERN in each FILE or standard input.}
+\DoxyCodeLine{PATTERN is, by default, a basic regular expression (BRE).}
+\DoxyCodeLine{Example: grep -i 'hello world' menu.h main.c}
+\DoxyCodeLine{}
+\DoxyCodeLine{Regexp selection and interpretation:}
+\DoxyCodeLine{  -E, --extended-regexp     PATTERN is an extended regular expression (ERE)}
+\DoxyCodeLine{  -F, --fixed-strings       PATTERN is a set of newline-separated fixed strings}
+\DoxyCodeLine{  -G, --basic-regexp        PATTERN is a basic regular expression (BRE)}
+\DoxyCodeLine{  -P, --perl-regexp         PATTERN is a Perl regular expression}
+\DoxyCodeLine{  -e, --regexp=PATTERN      use PATTERN for matching}
+\DoxyCodeLine{  -f, --file=FILE           obtain PATTERN from FILE}
+\DoxyCodeLine{  -i, --ignore-case         ignore case distinctions}
+\DoxyCodeLine{  -w, --word-regexp         force PATTERN to match only whole words}
+\DoxyCodeLine{  -x, --line-regexp         force PATTERN to match only whole lines}
+\DoxyCodeLine{  -z, --null-data           a data line ends in 0 byte, not newline}
+\DoxyCodeLine{}
+\DoxyCodeLine{Miscellaneous:}
+\DoxyCodeLine{  -s, --no-messages         suppress error messages}
+\DoxyCodeLine{  -v, --invert-match        select non-matching lines}
+\DoxyCodeLine{  -V, --version             display version information and exit}
+\DoxyCodeLine{      --help                display this help text and exit}
+\DoxyCodeLine{}
+\DoxyCodeLine{Output control:}
+\DoxyCodeLine{  -m, --max-count=NUM       stop after NUM matches}
+\DoxyCodeLine{  -b, --byte-offset         print the byte offset with output lines}
+\DoxyCodeLine{  -n, --line-number         print line number with output lines}
+\DoxyCodeLine{      --line-buffered       flush output on every line}
+\DoxyCodeLine{  -H, --with-filename       print the file name for each match}
+\DoxyCodeLine{  -h, --no-filename         suppress the file name prefix on output}
+\DoxyCodeLine{      --label=LABEL         use LABEL as the standard input file name prefix}
+\DoxyCodeLine{  -o, --only-matching       show only the part of a line matching PATTERN}
+\DoxyCodeLine{  -q, --quiet, --silent     suppress all normal output}
+\DoxyCodeLine{      --binary-files=TYPE   assume that binary files are TYPE;}
+\DoxyCodeLine{                            TYPE is 'binary', 'text', or 'without-match'}
+\DoxyCodeLine{  -a, --text                equivalent to --binary-files=text}
+\DoxyCodeLine{  -I                        equivalent to --binary-files=without-match}
+\DoxyCodeLine{  -d, --directories=ACTION  how to handle directories;}
+\DoxyCodeLine{                            ACTION is 'read', 'recurse', or 'skip'}
+\DoxyCodeLine{  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;}
+\DoxyCodeLine{                            ACTION is 'read' or 'skip'}
+\DoxyCodeLine{  -r, --recursive           like --directories=recurse}
+\DoxyCodeLine{  -R, --dereference-recursive  likewise, but follow all symlinks}
+\DoxyCodeLine{      --include=FILE\_PATTERN  search only files that match FILE\_PATTERN}
+\DoxyCodeLine{      --exclude=FILE\_PATTERN  skip files and directories matching FILE\_PATTERN}
+\DoxyCodeLine{      --exclude-from=FILE   skip files matching any file pattern from FILE}
+\DoxyCodeLine{      --exclude-dir=PATTERN  directories that match PATTERN will be skipped.}
+\DoxyCodeLine{  -L, --files-without-match  print only names of FILEs containing no match}
+\DoxyCodeLine{  -l, --files-with-matches  print only names of FILEs containing matches}
+\DoxyCodeLine{  -c, --count               print only a count of matching lines per FILE}
+\DoxyCodeLine{  -T, --initial-tab         make tabs line up (if needed)}
+\DoxyCodeLine{  -Z, --null                print 0 byte after FILE name}
+\DoxyCodeLine{}
+\DoxyCodeLine{Context control:}
+\DoxyCodeLine{  -B, --before-context=NUM  print NUM lines of leading context}
+\DoxyCodeLine{  -A, --after-context=NUM   print NUM lines of trailing context}
+\DoxyCodeLine{  -C, --context=NUM         print NUM lines of output context}
+\DoxyCodeLine{  -NUM                      same as --context=NUM}
+\DoxyCodeLine{      --color[=WHEN],}
+\DoxyCodeLine{      --colour[=WHEN]       use markers to highlight the matching strings;}
+\DoxyCodeLine{                            WHEN is 'always', 'never', or 'auto'}
+\DoxyCodeLine{  -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)}
+\DoxyCodeLine{  -u, --unix-byte-offsets   report offsets as if CRs were not there}
+\DoxyCodeLine{                            (MSDOS/Windows)}
+\DoxyCodeLine{}
+\DoxyCodeLine{'egrep' means 'grep -E'.  'fgrep' means 'grep -F'.}
+\DoxyCodeLine{Direct invocation as either 'egrep' or 'fgrep' is deprecated.}
+\DoxyCodeLine{When FILE is -, read standard input.  With no FILE, read . if a command-line}
+\DoxyCodeLine{-r is given, - otherwise.  If fewer than two FILEs are given, assume -h.}
+\DoxyCodeLine{Exit status is 0 if any line is selected, 1 otherwise;}
+\DoxyCodeLine{if any error occurs and -q is not given, the exit status is 2.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Report bugs to: bug-grep@gnu.org}
+\DoxyCodeLine{GNU Grep home page: <http://www.gnu.org/software/grep/>}
+\DoxyCodeLine{General help using GNU software: <http://www.gnu.org/gethelp/>}
+\end{DoxyCode}
+ \subsection*{brctl show}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{bridge name bridge id       STP enabled interfaces}
+\DoxyCodeLine{docker0     8000.024260bd7055   no      }
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: brctl [commands]}
+\DoxyCodeLine{commands:}
+\DoxyCodeLine{    addbr       <bridge>        add bridge}
+\DoxyCodeLine{    delbr       <bridge>        delete bridge}
+\DoxyCodeLine{    addif       <bridge> <device>   add interface to bridge}
+\DoxyCodeLine{    delif       <bridge> <device>   delete interface from bridge}
+\DoxyCodeLine{    delmcqv4src <bridge> <vlan> delete multicast v4 querier address}
+\DoxyCodeLine{    hairpin     <bridge> <port> \{on|off\}    turn hairpin on/off}
+\DoxyCodeLine{    setageing   <bridge> <time>     set ageing time}
+\DoxyCodeLine{    setbridgeprio   <bridge> <prio>     set bridge priority}
+\DoxyCodeLine{    setfd       <bridge> <time>     set bridge forward delay}
+\DoxyCodeLine{    sethello    <bridge> <time>     set hello time}
+\DoxyCodeLine{    setmaxage   <bridge> <time>     set max message age}
+\DoxyCodeLine{    sethashel   <bridge> <int>      set hash elasticity}
+\DoxyCodeLine{    sethashmax  <bridge> <int>      set hash max}
+\DoxyCodeLine{    setmclmc    <bridge> <int>      set multicast last member count}
+\DoxyCodeLine{    setmcrouter <bridge> <int>      set multicast router}
+\DoxyCodeLine{    setmcsnoop  <bridge> <int>      set multicast snooping}
+\DoxyCodeLine{    setmcsqc    <bridge> <int>      set multicast startup query count}
+\DoxyCodeLine{    setmclmi    <bridge> <time>     set multicast last member interval}
+\DoxyCodeLine{    setmcmi     <bridge> <time>     set multicast membership interval}
+\DoxyCodeLine{    setmcqpi    <bridge> <time>     set multicast querier interval}
+\DoxyCodeLine{    setmcqi     <bridge> <time>     set multicast query interval}
+\DoxyCodeLine{    setmcqri    <bridge> <time>     set multicast query response interval}
+\DoxyCodeLine{    setmcsqi    <bridge> <time>     set multicast startup query interval}
+\DoxyCodeLine{    setmcqifaddr    <bridge> <int>      set multicast query to use ifaddr}
+\DoxyCodeLine{    setmcquerier    <bridge> <int>      set multicast querier}
+\DoxyCodeLine{    setmcqv4src <bridge> <vlan> <ipaddr>    set multicast ipv4 querier address}
+\DoxyCodeLine{    setpathcost <bridge> <port> <cost>  set path cost}
+\DoxyCodeLine{    setportmcfl <bridge> <port> <int>   set port multicast fast leave}
+\DoxyCodeLine{    setportprio <bridge> <port> <prio>  set port priority}
+\DoxyCodeLine{    setportmcrouter <bridge> <port> <int>   set port multicast router}
+\DoxyCodeLine{    show        [ <bridge> ]        show a list of bridges}
+\DoxyCodeLine{    showmacs    <bridge>        show a list of mac addrs}
+\DoxyCodeLine{    showmcqv4src    <bridge>        show a list of multicast v4 querier addresses}
+\DoxyCodeLine{    showstp     <bridge>        show bridge stp info}
+\DoxyCodeLine{    stp         <bridge> \{on|off\}   turn stp on/off}
+\DoxyCodeLine{    stpshowall              show stp for all bridges}
+\end{DoxyCode}
+ \subsection*{bridge fdb show}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{02:42:60:bd:70:55 dev docker0 master docker0 permanent}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{02:42:60:bd:70:55 dev docker0 master docker0 permanent}
+\end{DoxyCode}
+ \subsection*{ip –d link show vni-\/10}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Object "–d" is unknown, try "ip help".}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Object "–d" is unknown, try "ip help".}
+\end{DoxyCode}
+ \subsection*{sudo systemctl status vxsnd.\+service}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{● vxsnd.service - Lightweight Network Virt Discovery Svc and Replicator}
+\DoxyCodeLine{   Loaded: loaded (/lib/systemd/system/vxsnd.service; disabled)}
+\DoxyCodeLine{   Active: inactive (dead)}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{systemctl [OPTIONS...] \{COMMAND\} ...}
+\DoxyCodeLine{}
+\DoxyCodeLine{Query or send control commands to the systemd manager.}
+\DoxyCodeLine{}
+\DoxyCodeLine{  -h --help           Show this help}
+\DoxyCodeLine{     --version        Show package version}
+\DoxyCodeLine{     --system         Connect to system manager}
+\DoxyCodeLine{     --user           Connect to user service manager}
+\DoxyCodeLine{  -H --host=[USER@]HOST}
+\DoxyCodeLine{                      Operate on remote host}
+\DoxyCodeLine{  -M --machine=CONTAINER}
+\DoxyCodeLine{                      Operate on local container}
+\DoxyCodeLine{  -t --type=TYPE      List only units of a particular type}
+\DoxyCodeLine{     --state=STATE    List only units with particular LOAD or SUB or ACTIVE state}
+\DoxyCodeLine{  -p --property=NAME  Show only properties by this name}
+\DoxyCodeLine{  -a --all            Show all loaded units/properties, including dead/empty}
+\DoxyCodeLine{                      ones. To list all units installed on the system, use}
+\DoxyCodeLine{                      the 'list-unit-files' command instead.}
+\DoxyCodeLine{  -l --full           Don't ellipsize unit names on output}
+\DoxyCodeLine{  -r --recursive      Show unit list of host and local containers}
+\DoxyCodeLine{     --reverse        Show reverse dependencies with 'list-dependencies'}
+\DoxyCodeLine{     --job-mode=MODE  Specify how to deal with already queued jobs, when}
+\DoxyCodeLine{                      queueing a new job}
+\DoxyCodeLine{     --show-types     When showing sockets, explicitly show their type}
+\DoxyCodeLine{  -i --ignore-inhibitors}
+\DoxyCodeLine{                      When shutting down or sleeping, ignore inhibitors}
+\DoxyCodeLine{     --kill-who=WHO   Who to send signal to}
+\DoxyCodeLine{  -s --signal=SIGNAL  Which signal to send}
+\DoxyCodeLine{  -q --quiet          Suppress output}
+\DoxyCodeLine{     --no-block       Do not wait until operation finished}
+\DoxyCodeLine{     --no-wall        Don't send wall message before halt/power-off/reboot}
+\DoxyCodeLine{     --no-reload      When enabling/disabling unit files, don't reload daemon}
+\DoxyCodeLine{                      configuration}
+\DoxyCodeLine{     --no-legend      Do not print a legend (column headers and hints)}
+\DoxyCodeLine{     --no-pager       Do not pipe output into a pager}
+\DoxyCodeLine{     --no-ask-password}
+\DoxyCodeLine{                      Do not ask for system passwords}
+\DoxyCodeLine{     --global         Enable/disable unit files globally}
+\DoxyCodeLine{     --runtime        Enable unit files only temporarily until next reboot}
+\DoxyCodeLine{  -f --force          When enabling unit files, override existing symlinks}
+\DoxyCodeLine{                      When shutting down, execute action immediately}
+\DoxyCodeLine{     --preset-mode=   Specifies whether fully apply presets, or only enable,}
+\DoxyCodeLine{                      or only disable}
+\DoxyCodeLine{     --root=PATH      Enable unit files in the specified root directory}
+\DoxyCodeLine{  -n --lines=INTEGER  Number of journal entries to show}
+\DoxyCodeLine{  -o --output=STRING  Change journal output mode (short, short-monotonic,}
+\DoxyCodeLine{                      verbose, export, json, json-pretty, json-sse, cat)}
+\DoxyCodeLine{     --plain          Print unit dependencies as a list instead of a tree}
+\DoxyCodeLine{}
+\DoxyCodeLine{Unit Commands:}
+\DoxyCodeLine{  list-units [PATTERN...]         List loaded units}
+\DoxyCodeLine{  list-sockets [PATTERN...]       List loaded sockets ordered by address}
+\DoxyCodeLine{  list-timers [PATTERN...]        List loaded timers ordered by next elapse}
+\DoxyCodeLine{  start NAME...                   Start (activate) one or more units}
+\DoxyCodeLine{  stop NAME...                    Stop (deactivate) one or more units}
+\DoxyCodeLine{  reload NAME...                  Reload one or more units}
+\DoxyCodeLine{  restart NAME...                 Start or restart one or more units}
+\DoxyCodeLine{  try-restart NAME...             Restart one or more units if active}
+\DoxyCodeLine{  reload-or-restart NAME...       Reload one or more units if possible,}
+\DoxyCodeLine{                                  otherwise start or restart}
+\DoxyCodeLine{  reload-or-try-restart NAME...   Reload one or more units if possible,}
+\DoxyCodeLine{                                  otherwise restart if active}
+\DoxyCodeLine{  isolate NAME                    Start one unit and stop all others}
+\DoxyCodeLine{  kill NAME...                    Send signal to processes of a unit}
+\DoxyCodeLine{  is-active PATTERN...            Check whether units are active}
+\DoxyCodeLine{  is-failed PATTERN...            Check whether units are failed}
+\DoxyCodeLine{  status [PATTERN...|PID...]      Show runtime status of one or more units}
+\DoxyCodeLine{  show [PATTERN...|JOB...]        Show properties of one or more}
+\DoxyCodeLine{                                  units/jobs or the manager}
+\DoxyCodeLine{  cat PATTERN...                  Show files and drop-ins of one or more units}
+\DoxyCodeLine{  set-property NAME ASSIGNMENT... Sets one or more properties of a unit}
+\DoxyCodeLine{  help PATTERN...|PID...          Show manual for one or more units}
+\DoxyCodeLine{  reset-failed [PATTERN...]       Reset failed state for all, one, or more}
+\DoxyCodeLine{                                  units}
+\DoxyCodeLine{  list-dependencies [NAME]        Recursively show units which are required}
+\DoxyCodeLine{                                  or wanted by this unit or by which this}
+\DoxyCodeLine{                                  unit is required or wanted}
+\DoxyCodeLine{}
+\DoxyCodeLine{Unit File Commands:}
+\DoxyCodeLine{  list-unit-files [PATTERN...]    List installed unit files}
+\DoxyCodeLine{  enable NAME...                  Enable one or more unit files}
+\DoxyCodeLine{  disable NAME...                 Disable one or more unit files}
+\DoxyCodeLine{  reenable NAME...                Reenable one or more unit files}
+\DoxyCodeLine{  preset NAME...                  Enable/disable one or more unit files}
+\DoxyCodeLine{                                  based on preset configuration}
+\DoxyCodeLine{  preset-all                      Enable/disable all unit files based on}
+\DoxyCodeLine{                                  preset configuration}
+\DoxyCodeLine{  is-enabled NAME...              Check whether unit files are enabled}
+\DoxyCodeLine{}
+\DoxyCodeLine{  mask NAME...                    Mask one or more units}
+\DoxyCodeLine{  unmask NAME...                  Unmask one or more units}
+\DoxyCodeLine{  link PATH...                    Link one or more units files into}
+\DoxyCodeLine{                                  the search path}
+\DoxyCodeLine{  get-default                     Get the name of the default target}
+\DoxyCodeLine{  set-default NAME                Set the default target}
+\DoxyCodeLine{}
+\DoxyCodeLine{Machine Commands:}
+\DoxyCodeLine{  list-machines [PATTERN...]      List local containers and host}
+\DoxyCodeLine{}
+\DoxyCodeLine{Job Commands:}
+\DoxyCodeLine{  list-jobs [PATTERN...]          List jobs}
+\DoxyCodeLine{  cancel [JOB...]                 Cancel all, one, or more jobs}
+\DoxyCodeLine{}
+\DoxyCodeLine{Snapshot Commands:}
+\DoxyCodeLine{  snapshot [NAME]                 Create a snapshot}
+\DoxyCodeLine{  delete NAME...                  Remove one or more snapshots}
+\DoxyCodeLine{}
+\DoxyCodeLine{Environment Commands:}
+\DoxyCodeLine{  show-environment                Dump environment}
+\DoxyCodeLine{  set-environment NAME=VALUE...   Set one or more environment variables}
+\DoxyCodeLine{  unset-environment NAME...       Unset one or more environment variables}
+\DoxyCodeLine{  import-environment NAME...      Import all, one or more environment variables}
+\DoxyCodeLine{}
+\DoxyCodeLine{Manager Lifecycle Commands:}
+\DoxyCodeLine{  daemon-reload                   Reload systemd manager configuration}
+\DoxyCodeLine{  daemon-reexec                   Reexecute systemd manager}
+\DoxyCodeLine{}
+\DoxyCodeLine{System Commands:}
+\DoxyCodeLine{  is-system-running               Check whether system is fully running}
+\DoxyCodeLine{  default                         Enter system default mode}
+\DoxyCodeLine{  rescue                          Enter system rescue mode}
+\DoxyCodeLine{  emergency                       Enter system emergency mode}
+\DoxyCodeLine{  halt                            Shut down and halt the system}
+\DoxyCodeLine{  poweroff                        Shut down and power-off the system}
+\DoxyCodeLine{  reboot [ARG]                    Shut down and reboot the system}
+\DoxyCodeLine{  kexec                           Shut down and reboot the system with kexec}
+\DoxyCodeLine{  exit                            Request user instance exit}
+\DoxyCodeLine{  switch-root ROOT [INIT]         Change to a different root file system}
+\DoxyCodeLine{  suspend                         Suspend the system}
+\DoxyCodeLine{  hibernate                       Hibernate the system}
+\DoxyCodeLine{  hybrid-sleep                    Hibernate and suspend the system}
+\end{DoxyCode}
+ \subsection*{cat /etc/vxsnd.conf}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{[common]}
+\DoxyCodeLine{\# Log level is one of DEBUG, INFO, WARNING, ERROR, CRITICAL}
+\DoxyCodeLine{\#loglevel = INFO}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Destination for log message.  Can be a file name, 'stdout', or 'syslog'}
+\DoxyCodeLine{\#logdest = syslog}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# log file size in bytes. Used when logdest is a file}
+\DoxyCodeLine{\#logfilesize = 512000}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# maximum number of log files stored on disk. Used when logdest is a file}
+\DoxyCodeLine{\#logbackupcount = 14}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# The file to write the pid.}
+\DoxyCodeLine{\#pidfile = /var/run/vxsnd.pid}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# The file name for the unix domain socket used for mgmt.}
+\DoxyCodeLine{\#udsfile = /var/run/vxsnd.sock}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# UDP port for vxfld control messages}
+\DoxyCodeLine{\#vxfld\_port = 10001}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# This is the address to which registration daemons send control messages for}
+\DoxyCodeLine{\# registration and/or BUM packets for replication}
+\DoxyCodeLine{\#svcnode\_ip = 0.0.0.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Holdtime (in seconds) for soft state. It is used when sending a}
+\DoxyCodeLine{\# register msg to peers in response to learning a <vni, addr> from a}
+\DoxyCodeLine{\# VXLAN data pkt}
+\DoxyCodeLine{\#holdtime = 90}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Local IP address to bind to for receiving inter-vxsnd control traffic}
+\DoxyCodeLine{\#src\_ip = 0.0.0.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{[vxsnd]}
+\DoxyCodeLine{\# Space separated list of IP addresses of vxsnd to share state with}
+\DoxyCodeLine{\#svcnode\_peers =}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# When set to true, the service node will listen for vxlan data traffic}
+\DoxyCodeLine{\# Note: Use 1, yes, true, or on, for True and 0, no, false, or off,}
+\DoxyCodeLine{\# for False}
+\DoxyCodeLine{\#enable\_vxlan\_listen = true}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# When set to true, the svcnode\_ip will be installed on the loopback}
+\DoxyCodeLine{\# interface, and it will be withdrawn when the vxsnd is no longer in}
+\DoxyCodeLine{\# service.  If set to true, the svcnode\_ip configuration}
+\DoxyCodeLine{\# variable must be defined.}
+\DoxyCodeLine{\# Note: Use 1, yes, true, or on, for True and 0, no, false, or off,}
+\DoxyCodeLine{\# for False}
+\DoxyCodeLine{\#install\_svcnode\_ip = false}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Seconds to wait before checking the database to age out stale entries}
+\DoxyCodeLine{\#age\_check = 90}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: cat [OPTION]... [FILE]...}
+\DoxyCodeLine{Concatenate FILE(s), or standard input, to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{  -A, --show-all           equivalent to -vET}
+\DoxyCodeLine{  -b, --number-nonblank    number nonempty output lines, overrides -n}
+\DoxyCodeLine{  -e                       equivalent to -vE}
+\DoxyCodeLine{  -E, --show-ends          display \$ at end of each line}
+\DoxyCodeLine{  -n, --number             number all output lines}
+\DoxyCodeLine{  -s, --squeeze-blank      suppress repeated empty output lines}
+\DoxyCodeLine{  -t                       equivalent to -vT}
+\DoxyCodeLine{  -T, --show-tabs          display TAB characters as \string^I}
+\DoxyCodeLine{  -u                       (ignored)}
+\DoxyCodeLine{  -v, --show-nonprinting   use \string^ and M- notation, except for LFD and TAB}
+\DoxyCodeLine{      --help     display this help and exit}
+\DoxyCodeLine{      --version  output version information and exit}
+\DoxyCodeLine{}
+\DoxyCodeLine{With no FILE, or when FILE is -, read standard input.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Examples:}
+\DoxyCodeLine{  cat f - g  Output f's contents, then standard input, then g's contents.}
+\DoxyCodeLine{  cat        Copy standard input to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{GNU coreutils online help: <http://www.gnu.org/software/coreutils/>}
+\DoxyCodeLine{Full documentation at: <http://www.gnu.org/software/coreutils/cat>}
+\DoxyCodeLine{or available locally via: info '(coreutils) cat invocation'}
+\DoxyCodeLine{}
+\DoxyCodeLine{[common]}
+\DoxyCodeLine{\# Log level is one of DEBUG, INFO, WARNING, ERROR, CRITICAL}
+\DoxyCodeLine{\#loglevel = INFO}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Destination for log message.  Can be a file name, 'stdout', or 'syslog'}
+\DoxyCodeLine{\#logdest = syslog}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# log file size in bytes. Used when logdest is a file}
+\DoxyCodeLine{\#logfilesize = 512000}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# maximum number of log files stored on disk. Used when logdest is a file}
+\DoxyCodeLine{\#logbackupcount = 14}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# The file to write the pid.}
+\DoxyCodeLine{\#pidfile = /var/run/vxsnd.pid}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# The file name for the unix domain socket used for mgmt.}
+\DoxyCodeLine{\#udsfile = /var/run/vxsnd.sock}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# UDP port for vxfld control messages}
+\DoxyCodeLine{\#vxfld\_port = 10001}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# This is the address to which registration daemons send control messages for}
+\DoxyCodeLine{\# registration and/or BUM packets for replication}
+\DoxyCodeLine{\#svcnode\_ip = 0.0.0.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Holdtime (in seconds) for soft state. It is used when sending a}
+\DoxyCodeLine{\# register msg to peers in response to learning a <vni, addr> from a}
+\DoxyCodeLine{\# VXLAN data pkt}
+\DoxyCodeLine{\#holdtime = 90}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Local IP address to bind to for receiving inter-vxsnd control traffic}
+\DoxyCodeLine{\#src\_ip = 0.0.0.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{[vxsnd]}
+\DoxyCodeLine{\# Space separated list of IP addresses of vxsnd to share state with}
+\DoxyCodeLine{\#svcnode\_peers =}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# When set to true, the service node will listen for vxlan data traffic}
+\DoxyCodeLine{\# Note: Use 1, yes, true, or on, for True and 0, no, false, or off,}
+\DoxyCodeLine{\# for False}
+\DoxyCodeLine{\#enable\_vxlan\_listen = true}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# When set to true, the svcnode\_ip will be installed on the loopback}
+\DoxyCodeLine{\# interface, and it will be withdrawn when the vxsnd is no longer in}
+\DoxyCodeLine{\# service.  If set to true, the svcnode\_ip configuration}
+\DoxyCodeLine{\# variable must be defined.}
+\DoxyCodeLine{\# Note: Use 1, yes, true, or on, for True and 0, no, false, or off,}
+\DoxyCodeLine{\# for False}
+\DoxyCodeLine{\#install\_svcnode\_ip = false}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Seconds to wait before checking the database to age out stale entries}
+\DoxyCodeLine{\#age\_check = 90}
+\end{DoxyCode}
+ \subsection*{vxrdctl vxlans}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Unable to connect to daemon on socket /var/run/vxrd.sock [2]: No such file or directory}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage:}
+\DoxyCodeLine{    vxrdctl -h}
+\DoxyCodeLine{    vxrdctl [-u UDS\_FILE] [-j] get config [<parameter>]}
+\DoxyCodeLine{    vxrdctl [-u UDS\_FILE] [-j] vxlans [hrep] [<vni>]}
+\DoxyCodeLine{    vxrdctl [-u UDS\_FILE] [-j] peers [<vni>]}
+\DoxyCodeLine{    vxrdctl [-u UDS\_FILE] [-j] show}
+\DoxyCodeLine{}
+\DoxyCodeLine{Options:}
+\DoxyCodeLine{    -h, --help   : Show this screen and exit}
+\DoxyCodeLine{    -u UDS\_FILE  : File name for Unix domain socket}
+\DoxyCodeLine{                   [default: /var/run/vxrd.sock]}
+\DoxyCodeLine{    -j           : Print result as json string}
+\DoxyCodeLine{}
+\DoxyCodeLine{Commands:}
+\DoxyCodeLine{    get config: print the vxrd configuration}
+\DoxyCodeLine{    get config <parameter>: print single vxrd config option}
+\DoxyCodeLine{    vxlans: get the current set of vxlans the RD has reported to the snd}
+\DoxyCodeLine{    vxlans hrep: print the HREP addrs for the vxlan devices}
+\DoxyCodeLine{    peers:  get the list of vtep peers reported back by the snd}
+\DoxyCodeLine{    peers <vni>:  get the list of vtep peers reported back by the snd for}
+\DoxyCodeLine{                  a vni}
+\DoxyCodeLine{    show: print a snapshot of the runtime configuration}
+\end{DoxyCode}
+ \subsection*{vxrdctl peers}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Unable to connect to daemon on socket /var/run/vxrd.sock [2]: No such file or directory}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage:}
+\DoxyCodeLine{    vxrdctl -h}
+\DoxyCodeLine{    vxrdctl [-u UDS\_FILE] [-j] get config [<parameter>]}
+\DoxyCodeLine{    vxrdctl [-u UDS\_FILE] [-j] vxlans [hrep] [<vni>]}
+\DoxyCodeLine{    vxrdctl [-u UDS\_FILE] [-j] peers [<vni>]}
+\DoxyCodeLine{    vxrdctl [-u UDS\_FILE] [-j] show}
+\DoxyCodeLine{}
+\DoxyCodeLine{Options:}
+\DoxyCodeLine{    -h, --help   : Show this screen and exit}
+\DoxyCodeLine{    -u UDS\_FILE  : File name for Unix domain socket}
+\DoxyCodeLine{                   [default: /var/run/vxrd.sock]}
+\DoxyCodeLine{    -j           : Print result as json string}
+\DoxyCodeLine{}
+\DoxyCodeLine{Commands:}
+\DoxyCodeLine{    get config: print the vxrd configuration}
+\DoxyCodeLine{    get config <parameter>: print single vxrd config option}
+\DoxyCodeLine{    vxlans: get the current set of vxlans the RD has reported to the snd}
+\DoxyCodeLine{    vxlans hrep: print the HREP addrs for the vxlan devices}
+\DoxyCodeLine{    peers:  get the list of vtep peers reported back by the snd}
+\DoxyCodeLine{    peers <vni>:  get the list of vtep peers reported back by the snd for}
+\DoxyCodeLine{                  a vni}
+\DoxyCodeLine{    show: print a snapshot of the runtime configuration}
+\end{DoxyCode}
+ \subsection*{vxsndctl fdb}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Unable to connect to daemon on socket /var/run/vxsnd.sock [2]: No such file or directory}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage:}
+\DoxyCodeLine{    vxsndctl -h}
+\DoxyCodeLine{    vxsndctl [-u UDS\_FILE] [-j] fdb [debug]}
+\DoxyCodeLine{    vxsndctl [-u UDS\_FILE] [-j] fdb [<vni>] [debug]}
+\DoxyCodeLine{    vxsndctl [-u UDS\_FILE] [-j] fdb (add <vni> <ip> | del <vni> <ip> |}
+\DoxyCodeLine{                                     file <filename>)}
+\DoxyCodeLine{    vxsndctl [-u UDS\_FILE] [-j] get config [<parameter>]}
+\DoxyCodeLine{    vxsndctl [-u UDS\_FILE] [-j] set config <parameter> [<value>]}
+\DoxyCodeLine{    vxsndctl [-u UDS\_FILE] [-j] set debug (on | off)}
+\DoxyCodeLine{    vxsndctl [-u UDS\_FILE] [-j] show [detail]}
+\DoxyCodeLine{}
+\DoxyCodeLine{Options:}
+\DoxyCodeLine{    -h, --help   : Show this screen and exit}
+\DoxyCodeLine{    -u UDS\_FILE  : File name for Unix domain socket}
+\DoxyCodeLine{                   [default: /var/run/vxsnd.sock]}
+\DoxyCodeLine{    -j           : Print result as json string}
+\DoxyCodeLine{}
+\DoxyCodeLine{Commands:}
+\DoxyCodeLine{    fdb: print the vxsnd forwarding DB}
+\DoxyCodeLine{    fdb <vni>: print the vxsnd forwarding DB for a vni}
+\DoxyCodeLine{    get config: print the vxsnd configuration}
+\DoxyCodeLine{    get config <parameter>: print single vxsnd config option}
+\DoxyCodeLine{    set config <parameter> [<value>]: set a single vxsnd config option}
+\DoxyCodeLine{    set debug on: enable debug mode and set loglevel to debug}
+\DoxyCodeLine{    set debug off: disable debug mode and set loglevel to previous level}
+\DoxyCodeLine{    show: print a snapshot of the runtime configuration}
+\DoxyCodeLine{    show detail: print a detailed snapshot of the runtime configuration}
+\end{DoxyCode}
+ \subsection*{cat /cumulus/switchd/run/stats/vxlan/all}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cat: /cumulus/switchd/run/stats/vxlan/all: No such file or directory}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: cat [OPTION]... [FILE]...}
+\DoxyCodeLine{Concatenate FILE(s), or standard input, to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{  -A, --show-all           equivalent to -vET}
+\DoxyCodeLine{  -b, --number-nonblank    number nonempty output lines, overrides -n}
+\DoxyCodeLine{  -e                       equivalent to -vE}
+\DoxyCodeLine{  -E, --show-ends          display \$ at end of each line}
+\DoxyCodeLine{  -n, --number             number all output lines}
+\DoxyCodeLine{  -s, --squeeze-blank      suppress repeated empty output lines}
+\DoxyCodeLine{  -t                       equivalent to -vT}
+\DoxyCodeLine{  -T, --show-tabs          display TAB characters as \string^I}
+\DoxyCodeLine{  -u                       (ignored)}
+\DoxyCodeLine{  -v, --show-nonprinting   use \string^ and M- notation, except for LFD and TAB}
+\DoxyCodeLine{      --help     display this help and exit}
+\DoxyCodeLine{      --version  output version information and exit}
+\DoxyCodeLine{}
+\DoxyCodeLine{With no FILE, or when FILE is -, read standard input.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Examples:}
+\DoxyCodeLine{  cat f - g  Output f's contents, then standard input, then g's contents.}
+\DoxyCodeLine{  cat        Copy standard input to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{GNU coreutils online help: <http://www.gnu.org/software/coreutils/>}
+\DoxyCodeLine{Full documentation at: <http://www.gnu.org/software/coreutils/cat>}
+\DoxyCodeLine{or available locally via: info '(coreutils) cat invocation'}
+\DoxyCodeLine{}
+\DoxyCodeLine{cat: /cumulus/switchd/run/stats/vxlan/all: No such file or directory}
+\end{DoxyCode}
+ \subsection*{brctl showmacs br-\/10}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{read of forward table failed: No such device}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: brctl [commands]}
+\DoxyCodeLine{commands:}
+\DoxyCodeLine{    addbr       <bridge>        add bridge}
+\DoxyCodeLine{    delbr       <bridge>        delete bridge}
+\DoxyCodeLine{    addif       <bridge> <device>   add interface to bridge}
+\DoxyCodeLine{    delif       <bridge> <device>   delete interface from bridge}
+\DoxyCodeLine{    delmcqv4src <bridge> <vlan> delete multicast v4 querier address}
+\DoxyCodeLine{    hairpin     <bridge> <port> \{on|off\}    turn hairpin on/off}
+\DoxyCodeLine{    setageing   <bridge> <time>     set ageing time}
+\DoxyCodeLine{    setbridgeprio   <bridge> <prio>     set bridge priority}
+\DoxyCodeLine{    setfd       <bridge> <time>     set bridge forward delay}
+\DoxyCodeLine{    sethello    <bridge> <time>     set hello time}
+\DoxyCodeLine{    setmaxage   <bridge> <time>     set max message age}
+\DoxyCodeLine{    sethashel   <bridge> <int>      set hash elasticity}
+\DoxyCodeLine{    sethashmax  <bridge> <int>      set hash max}
+\DoxyCodeLine{    setmclmc    <bridge> <int>      set multicast last member count}
+\DoxyCodeLine{    setmcrouter <bridge> <int>      set multicast router}
+\DoxyCodeLine{    setmcsnoop  <bridge> <int>      set multicast snooping}
+\DoxyCodeLine{    setmcsqc    <bridge> <int>      set multicast startup query count}
+\DoxyCodeLine{    setmclmi    <bridge> <time>     set multicast last member interval}
+\DoxyCodeLine{    setmcmi     <bridge> <time>     set multicast membership interval}
+\DoxyCodeLine{    setmcqpi    <bridge> <time>     set multicast querier interval}
+\DoxyCodeLine{    setmcqi     <bridge> <time>     set multicast query interval}
+\DoxyCodeLine{    setmcqri    <bridge> <time>     set multicast query response interval}
+\DoxyCodeLine{    setmcsqi    <bridge> <time>     set multicast startup query interval}
+\DoxyCodeLine{    setmcqifaddr    <bridge> <int>      set multicast query to use ifaddr}
+\DoxyCodeLine{    setmcquerier    <bridge> <int>      set multicast querier}
+\DoxyCodeLine{    setmcqv4src <bridge> <vlan> <ipaddr>    set multicast ipv4 querier address}
+\DoxyCodeLine{    setpathcost <bridge> <port> <cost>  set path cost}
+\DoxyCodeLine{    setportmcfl <bridge> <port> <int>   set port multicast fast leave}
+\DoxyCodeLine{    setportprio <bridge> <port> <prio>  set port priority}
+\DoxyCodeLine{    setportmcrouter <bridge> <port> <int>   set port multicast router}
+\DoxyCodeLine{    show        [ <bridge> ]        show a list of bridges}
+\DoxyCodeLine{    showmacs    <bridge>        show a list of mac addrs}
+\DoxyCodeLine{    showmcqv4src    <bridge>        show a list of multicast v4 querier addresses}
+\DoxyCodeLine{    showstp     <bridge>        show bridge stp info}
+\DoxyCodeLine{    stp         <bridge> \{on|off\}   turn stp on/off}
+\DoxyCodeLine{    stpshowall              show stp for all bridges}
+\end{DoxyCode}
+ \subsection*{vxrdctl get config}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Unable to connect to daemon on socket /var/run/vxrd.sock [2]: No such file or directory}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage:}
+\DoxyCodeLine{    vxrdctl -h}
+\DoxyCodeLine{    vxrdctl [-u UDS\_FILE] [-j] get config [<parameter>]}
+\DoxyCodeLine{    vxrdctl [-u UDS\_FILE] [-j] vxlans [hrep] [<vni>]}
+\DoxyCodeLine{    vxrdctl [-u UDS\_FILE] [-j] peers [<vni>]}
+\DoxyCodeLine{    vxrdctl [-u UDS\_FILE] [-j] show}
+\DoxyCodeLine{}
+\DoxyCodeLine{Options:}
+\DoxyCodeLine{    -h, --help   : Show this screen and exit}
+\DoxyCodeLine{    -u UDS\_FILE  : File name for Unix domain socket}
+\DoxyCodeLine{                   [default: /var/run/vxrd.sock]}
+\DoxyCodeLine{    -j           : Print result as json string}
+\DoxyCodeLine{}
+\DoxyCodeLine{Commands:}
+\DoxyCodeLine{    get config: print the vxrd configuration}
+\DoxyCodeLine{    get config <parameter>: print single vxrd config option}
+\DoxyCodeLine{    vxlans: get the current set of vxlans the RD has reported to the snd}
+\DoxyCodeLine{    vxlans hrep: print the HREP addrs for the vxlan devices}
+\DoxyCodeLine{    peers:  get the list of vtep peers reported back by the snd}
+\DoxyCodeLine{    peers <vni>:  get the list of vtep peers reported back by the snd for}
+\DoxyCodeLine{                  a vni}
+\DoxyCodeLine{    show: print a snapshot of the runtime configuration}
+\end{DoxyCode}
+ \subsection*{clagctl}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Unable to communicate with clagd. Is it running?}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usage: clagctl [-h] [-j] [-v] [command [args]]}
+\DoxyCodeLine{}
+\DoxyCodeLine{CLAG daemon control interface, version 0.1.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{positional arguments:}
+\DoxyCodeLine{  command        Command to execute, default is 'status'}
+\DoxyCodeLine{  args           Additional command parameters}
+\DoxyCodeLine{}
+\DoxyCodeLine{optional arguments:}
+\DoxyCodeLine{  -h, --help     show this help message and exit}
+\DoxyCodeLine{  -v, --verbose  Increase the amount of output.}
+\DoxyCodeLine{  -j, --json     json output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{The commands are:}
+\DoxyCodeLine{cleardebugflags       Removes or clears the debug logging flags}
+\DoxyCodeLine{collectgarbage        Causes clagd to run python's garbage collection}
+\DoxyCodeLine{connstate             Display socket connection state with peer}
+\DoxyCodeLine{debug                 Sets the debugging level}
+\DoxyCodeLine{dumpneighs            Displays the neighs learned on this switch}
+\DoxyCodeLine{dumpourmacs           Displays the MACs learned on this switch}
+\DoxyCodeLine{dumpourmcast          Displays the multicast entries learned on this switch}
+\DoxyCodeLine{dumpourrport          Displays the multicast router ports learned on this switch}
+\DoxyCodeLine{dumppeermacs          Displays the MACs learned on the peer switch}
+\DoxyCodeLine{dumppeermcast         Displays the multicast entries learned on the peer switch}
+\DoxyCodeLine{dumppeerrport         Displays the multicast router ports learned on the peer switch}
+\DoxyCodeLine{echo                  Echo back the supplied string}
+\DoxyCodeLine{lacppoll              The frequency clagd collects information and sends to peer}
+\DoxyCodeLine{logfile               Sets the name of the log file}
+\DoxyCodeLine{logmsg                Outputs a message to the log file}
+\DoxyCodeLine{params                Display the parameters in use by clagd}
+\DoxyCodeLine{peerlacprate          Displays the peer's polling rate}
+\DoxyCodeLine{peerlinkpoll          The frequency clagd polls the status of the peer interface}
+\DoxyCodeLine{peertimeout           The time clagd expects a message from the peer}
+\DoxyCodeLine{priority              Sets the priority of clagd}
+\DoxyCodeLine{quiet                 Prevents output in the log file}
+\DoxyCodeLine{reloaddone            Config reload done}
+\DoxyCodeLine{sendbufsize           The size of the socket send buffer, in bytes}
+\DoxyCodeLine{sendtimeout           The time clagd send socket waits to enqueue data}
+\DoxyCodeLine{setanycastip          Sets the VXLAN anycast IP address}
+\DoxyCodeLine{setbackupip           Sets the backup IP address}
+\DoxyCodeLine{setclagid             Associates a bond with a clag id}
+\DoxyCodeLine{setdebugflags         Sets the debug logging flags}
+\DoxyCodeLine{showbackupip          Displays backup link info}
+\DoxyCodeLine{showclagid            Displays the CLAG bonds configured on this switch}
+\DoxyCodeLine{showdebugflags        Shows the debug logging flags}
+\DoxyCodeLine{showtimers            Displays CLAG related timers}
+\DoxyCodeLine{status                Display the status of the clagd daemon}
+\DoxyCodeLine{verbose               Enables additional output in log file}
+\DoxyCodeLine{verifyvlans           Verifies VLAN configuration with the peer}
+\DoxyCodeLine{}
+\DoxyCodeLine{See the clagctl man page for more information}
+\end{DoxyCode}
+ \subsection*{cat /etc/frr/frr.conf}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{frr version 4.0+cl3u2}
+\DoxyCodeLine{frr defaults datacenter}
+\DoxyCodeLine{hostname oob-mgmt-server}
+\DoxyCodeLine{username cumulus nopassword}
+\DoxyCodeLine{!}
+\DoxyCodeLine{service integrated-vtysh-config}
+\DoxyCodeLine{!}
+\DoxyCodeLine{log syslog informational}
+\DoxyCodeLine{!}
+\DoxyCodeLine{interface eth2}
+\DoxyCodeLine{ ipv6 nd ra-interval 10}
+\DoxyCodeLine{ no ipv6 nd suppress-ra}
+\DoxyCodeLine{!}
+\DoxyCodeLine{interface eth3}
+\DoxyCodeLine{ ipv6 nd ra-interval 10}
+\DoxyCodeLine{ no ipv6 nd suppress-ra}
+\DoxyCodeLine{!}
+\DoxyCodeLine{line vty}
+\DoxyCodeLine{!}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: cat [OPTION]... [FILE]...}
+\DoxyCodeLine{Concatenate FILE(s), or standard input, to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{  -A, --show-all           equivalent to -vET}
+\DoxyCodeLine{  -b, --number-nonblank    number nonempty output lines, overrides -n}
+\DoxyCodeLine{  -e                       equivalent to -vE}
+\DoxyCodeLine{  -E, --show-ends          display \$ at end of each line}
+\DoxyCodeLine{  -n, --number             number all output lines}
+\DoxyCodeLine{  -s, --squeeze-blank      suppress repeated empty output lines}
+\DoxyCodeLine{  -t                       equivalent to -vT}
+\DoxyCodeLine{  -T, --show-tabs          display TAB characters as \string^I}
+\DoxyCodeLine{  -u                       (ignored)}
+\DoxyCodeLine{  -v, --show-nonprinting   use \string^ and M- notation, except for LFD and TAB}
+\DoxyCodeLine{      --help     display this help and exit}
+\DoxyCodeLine{      --version  output version information and exit}
+\DoxyCodeLine{}
+\DoxyCodeLine{With no FILE, or when FILE is -, read standard input.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Examples:}
+\DoxyCodeLine{  cat f - g  Output f's contents, then standard input, then g's contents.}
+\DoxyCodeLine{  cat        Copy standard input to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{GNU coreutils online help: <http://www.gnu.org/software/coreutils/>}
+\DoxyCodeLine{Full documentation at: <http://www.gnu.org/software/coreutils/cat>}
+\DoxyCodeLine{or available locally via: info '(coreutils) cat invocation'}
+\DoxyCodeLine{}
+\DoxyCodeLine{frr version 4.0+cl3u2}
+\DoxyCodeLine{frr defaults datacenter}
+\DoxyCodeLine{hostname oob-mgmt-server}
+\DoxyCodeLine{username cumulus nopassword}
+\DoxyCodeLine{!}
+\DoxyCodeLine{service integrated-vtysh-config}
+\DoxyCodeLine{!}
+\DoxyCodeLine{log syslog informational}
+\DoxyCodeLine{!}
+\DoxyCodeLine{interface eth2}
+\DoxyCodeLine{ ipv6 nd ra-interval 10}
+\DoxyCodeLine{ no ipv6 nd suppress-ra}
+\DoxyCodeLine{!}
+\DoxyCodeLine{interface eth3}
+\DoxyCodeLine{ ipv6 nd ra-interval 10}
+\DoxyCodeLine{ no ipv6 nd suppress-ra}
+\DoxyCodeLine{!}
+\DoxyCodeLine{line vty}
+\DoxyCodeLine{!}
+\end{DoxyCode}
+ \subsection*{net show vxlan}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ERROR: Command not found.}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show vxlan}
+\DoxyCodeLine{             \string^ Invalid value here.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Use "net help KEYWORD(s)" to list all options that use KEYWORD(s).}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ERROR: There are no commands with keyword(s) 'vxlan', 'show'}
+\end{DoxyCode}
+ \subsection*{cat /usr/lib/python2.\+7/dist-\/packages/cumulus/\+\_\+\+\_\+chip\+\_\+config/bcm/datapath.\+conf}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# Default datapath configuration for Broadcom chips}
+\DoxyCodeLine{\# Copyright 2014, 2015, 2016, 2017, Cumulus Networks, Inc.  All rights reserved.}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# priority group ID assigned to each priority group}
+\DoxyCodeLine{priority\_group.control.id = 7}
+\DoxyCodeLine{priority\_group.service.id = 2}
+\DoxyCodeLine{priority\_group.bulk.id = 0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# service pools assigned to each priority group}
+\DoxyCodeLine{priority\_group.control.service\_pool = 1}
+\DoxyCodeLine{priority\_group.service.service\_pool = 2}
+\DoxyCodeLine{priority\_group.bulk.service\_pool = 0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# --- ingress buffer space allocations ---}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# total buffer}
+\DoxyCodeLine{\#  - ingress minimum buffer allocations}
+\DoxyCodeLine{\#  - ingress service pool buffer allocations}
+\DoxyCodeLine{\#  - priority group ingress headroom allocations}
+\DoxyCodeLine{\#  - ingress global headroom allocations}
+\DoxyCodeLine{\#  = total ingress shared buffer size}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# ingress service pool buffer allocation: percent of total buffer}
+\DoxyCodeLine{\# If a service pool has no priority groups, the buffer is added}
+\DoxyCodeLine{\# to the shared buffer space.}
+\DoxyCodeLine{ingress\_service\_pool.0.percent = 0.0  \# bulk}
+\DoxyCodeLine{ingress\_service\_pool.1.percent = 3.0  \# control}
+\DoxyCodeLine{ingress\_service\_pool.2.percent = 2.0  \# service}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# priority group minimum buffer allocation: percent of total buffer cells}
+\DoxyCodeLine{\# priority group shared buffer allocation: percent of total shared buffer size}
+\DoxyCodeLine{\# if a priority group has no packet priority values assigned to it, the buffers will not be allocated}
+\DoxyCodeLine{}
+\DoxyCodeLine{priority\_group.control.ingress\_buffer.min\_percent = 0.0}
+\DoxyCodeLine{priority\_group.control.ingress\_buffer.shared\_percent = 44.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{priority\_group.service.ingress\_buffer.min\_percent = 0.0}
+\DoxyCodeLine{priority\_group.service.ingress\_buffer.shared\_percent = 4.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{priority\_group.bulk.ingress\_buffer.min\_percent = 40.0}
+\DoxyCodeLine{priority\_group.bulk.ingress\_buffer.shared\_percent = 20.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# ingress buffer limits for ports with pause configured}
+\DoxyCodeLine{\# this configuration overrides default values}
+\DoxyCodeLine{\#     default minimum cell limit :  512}
+\DoxyCodeLine{\#     default shared cell limit  : 1024}
+\DoxyCodeLine{\# link\_pause.port\_group\_0.minimum\_cell\_limit = 200}
+\DoxyCodeLine{\# link\_pause.port\_group\_0.shared\_cell\_limit  = 600}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# --- egress buffer space allocations ---}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# total egress buffer}
+\DoxyCodeLine{\#  - minimum buffer allocations}
+\DoxyCodeLine{\#  = total service pool buffer size}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# Service pool buffer allocation: percent of total}
+\DoxyCodeLine{\# buffer size.}
+\DoxyCodeLine{egress\_service\_pool.0.percent = 75.0   \# bulk}
+\DoxyCodeLine{egress\_service\_pool.1.percent = 90.0   \# control}
+\DoxyCodeLine{egress\_service\_pool.2.percent = 90.0   \# service}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Front panel port egress buffer limits enforced for each}
+\DoxyCodeLine{\# priority group.}
+\DoxyCodeLine{priority\_group.control.unlimited\_egress\_buffer = true}
+\DoxyCodeLine{priority\_group.service.unlimited\_egress\_buffer = true}
+\DoxyCodeLine{priority\_group.bulk.unlimited\_egress\_buffer = false}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# if a priority group has no cos values assigned to it, the buffers will not be allocated}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# priority group minimum buffer allocation: percent of total buffer}
+\DoxyCodeLine{priority\_group.bulk.egress\_buffer.uc.min\_percent  = 5.0}
+\DoxyCodeLine{priority\_group.bulk.egress\_buffer.mc.min\_percent  = 2.0}
+\DoxyCodeLine{priority\_group.bulk.egress\_buffer.cpu.min\_percent = 4.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Priority group service pool buffer limits: percent of the}
+\DoxyCodeLine{\# assigned service pool.}
+\DoxyCodeLine{priority\_group.bulk.egress\_buffer.uc.sp\_percent = 45.0}
+\DoxyCodeLine{priority\_group.bulk.egress\_buffer.mc.sp\_percent = 45.0}
+\DoxyCodeLine{priority\_group.bulk.egress\_buffer.cpu.sp\_percent = 10.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# internal cos values mapped to egress queues}
+\DoxyCodeLine{\# multicast queue: same as unicast queue}
+\DoxyCodeLine{cos\_egr\_queue.cos\_0.uc  = 0}
+\DoxyCodeLine{cos\_egr\_queue.cos\_0.cpu = 0}
+\DoxyCodeLine{}
+\DoxyCodeLine{cos\_egr\_queue.cos\_1.uc  = 1}
+\DoxyCodeLine{cos\_egr\_queue.cos\_1.cpu = 1}
+\DoxyCodeLine{}
+\DoxyCodeLine{cos\_egr\_queue.cos\_2.uc  = 2}
+\DoxyCodeLine{cos\_egr\_queue.cos\_2.cpu = 2}
+\DoxyCodeLine{}
+\DoxyCodeLine{cos\_egr\_queue.cos\_3.uc  = 3}
+\DoxyCodeLine{cos\_egr\_queue.cos\_3.cpu = 3}
+\DoxyCodeLine{}
+\DoxyCodeLine{cos\_egr\_queue.cos\_4.uc  = 4}
+\DoxyCodeLine{cos\_egr\_queue.cos\_4.cpu = 4}
+\DoxyCodeLine{}
+\DoxyCodeLine{cos\_egr\_queue.cos\_5.uc  = 5}
+\DoxyCodeLine{cos\_egr\_queue.cos\_5.cpu = 5}
+\DoxyCodeLine{}
+\DoxyCodeLine{cos\_egr\_queue.cos\_6.uc  = 6}
+\DoxyCodeLine{cos\_egr\_queue.cos\_6.cpu = 6}
+\DoxyCodeLine{}
+\DoxyCodeLine{cos\_egr\_queue.cos\_7.uc  = 7}
+\DoxyCodeLine{cos\_egr\_queue.cos\_7.cpu = 7}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Enabling/disabling Denial of service (DOS) prevetion checks}
+\DoxyCodeLine{\# To change the default configuration:}
+\DoxyCodeLine{\# enable/disable the individual DOS checks.}
+\DoxyCodeLine{dos.sip\_eq\_dip = false}
+\DoxyCodeLine{dos.smac\_eq\_dmac = false}
+\DoxyCodeLine{dos.tcp\_hdr\_partial = false}
+\DoxyCodeLine{dos.tcp\_syn\_frag = false}
+\DoxyCodeLine{dos.tcp\_ports\_eq = false}
+\DoxyCodeLine{dos.tcp\_flags\_syn\_fin = false}
+\DoxyCodeLine{dos.tcp\_flags\_fup\_seq0 = false}
+\DoxyCodeLine{dos.tcp\_offset1 = false}
+\DoxyCodeLine{dos.tcp\_ctrl0\_seq0 = false}
+\DoxyCodeLine{dos.udp\_ports\_eq = false}
+\DoxyCodeLine{dos.icmp\_frag = false}
+\DoxyCodeLine{dos.icmpv4\_length = false}
+\DoxyCodeLine{dos.icmpv6\_length = false}
+\DoxyCodeLine{dos.ipv6\_min\_frag = false}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Specify a VxLan Routing Profile - the profile selected determines the}
+\DoxyCodeLine{\# maximum number of overlay next hops that can be allocated.}
+\DoxyCodeLine{\# This is supported only on TridentTwoPlus and Maverick}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# Profile can be one of \{'default', 'mode-1', 'mode-2', 'mode-3', 'disable'\}}
+\DoxyCodeLine{\# default: 15\% of the overall nexthops are for overlay.}
+\DoxyCodeLine{\# mode-1:  25\% of the overall nexthops are for overlay.}
+\DoxyCodeLine{\# mode-2:  50\% of the overall nexthops are for overlay.}
+\DoxyCodeLine{\# mode-3:  80\% of the overall nexthops are for overlay.}
+\DoxyCodeLine{\# disable: VxLan Routing is disabled}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# By default VxLan Routing is enabled with the default profile.}
+\DoxyCodeLine{vxlan\_routing\_overlay.profile = default}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: cat [OPTION]... [FILE]...}
+\DoxyCodeLine{Concatenate FILE(s), or standard input, to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{  -A, --show-all           equivalent to -vET}
+\DoxyCodeLine{  -b, --number-nonblank    number nonempty output lines, overrides -n}
+\DoxyCodeLine{  -e                       equivalent to -vE}
+\DoxyCodeLine{  -E, --show-ends          display \$ at end of each line}
+\DoxyCodeLine{  -n, --number             number all output lines}
+\DoxyCodeLine{  -s, --squeeze-blank      suppress repeated empty output lines}
+\DoxyCodeLine{  -t                       equivalent to -vT}
+\DoxyCodeLine{  -T, --show-tabs          display TAB characters as \string^I}
+\DoxyCodeLine{  -u                       (ignored)}
+\DoxyCodeLine{  -v, --show-nonprinting   use \string^ and M- notation, except for LFD and TAB}
+\DoxyCodeLine{      --help     display this help and exit}
+\DoxyCodeLine{      --version  output version information and exit}
+\DoxyCodeLine{}
+\DoxyCodeLine{With no FILE, or when FILE is -, read standard input.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Examples:}
+\DoxyCodeLine{  cat f - g  Output f's contents, then standard input, then g's contents.}
+\DoxyCodeLine{  cat        Copy standard input to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{GNU coreutils online help: <http://www.gnu.org/software/coreutils/>}
+\DoxyCodeLine{Full documentation at: <http://www.gnu.org/software/coreutils/cat>}
+\DoxyCodeLine{or available locally via: info '(coreutils) cat invocation'}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# Default datapath configuration for Broadcom chips}
+\DoxyCodeLine{\# Copyright 2014, 2015, 2016, 2017, Cumulus Networks, Inc.  All rights reserved.}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# priority group ID assigned to each priority group}
+\DoxyCodeLine{priority\_group.control.id = 7}
+\DoxyCodeLine{priority\_group.service.id = 2}
+\DoxyCodeLine{priority\_group.bulk.id = 0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# service pools assigned to each priority group}
+\DoxyCodeLine{priority\_group.control.service\_pool = 1}
+\DoxyCodeLine{priority\_group.service.service\_pool = 2}
+\DoxyCodeLine{priority\_group.bulk.service\_pool = 0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# --- ingress buffer space allocations ---}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# total buffer}
+\DoxyCodeLine{\#  - ingress minimum buffer allocations}
+\DoxyCodeLine{\#  - ingress service pool buffer allocations}
+\DoxyCodeLine{\#  - priority group ingress headroom allocations}
+\DoxyCodeLine{\#  - ingress global headroom allocations}
+\DoxyCodeLine{\#  = total ingress shared buffer size}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# ingress service pool buffer allocation: percent of total buffer}
+\DoxyCodeLine{\# If a service pool has no priority groups, the buffer is added}
+\DoxyCodeLine{\# to the shared buffer space.}
+\DoxyCodeLine{ingress\_service\_pool.0.percent = 0.0  \# bulk}
+\DoxyCodeLine{ingress\_service\_pool.1.percent = 3.0  \# control}
+\DoxyCodeLine{ingress\_service\_pool.2.percent = 2.0  \# service}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# priority group minimum buffer allocation: percent of total buffer cells}
+\DoxyCodeLine{\# priority group shared buffer allocation: percent of total shared buffer size}
+\DoxyCodeLine{\# if a priority group has no packet priority values assigned to it, the buffers will not be allocated}
+\DoxyCodeLine{}
+\DoxyCodeLine{priority\_group.control.ingress\_buffer.min\_percent = 0.0}
+\DoxyCodeLine{priority\_group.control.ingress\_buffer.shared\_percent = 44.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{priority\_group.service.ingress\_buffer.min\_percent = 0.0}
+\DoxyCodeLine{priority\_group.service.ingress\_buffer.shared\_percent = 4.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{priority\_group.bulk.ingress\_buffer.min\_percent = 40.0}
+\DoxyCodeLine{priority\_group.bulk.ingress\_buffer.shared\_percent = 20.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# ingress buffer limits for ports with pause configured}
+\DoxyCodeLine{\# this configuration overrides default values}
+\DoxyCodeLine{\#     default minimum cell limit :  512}
+\DoxyCodeLine{\#     default shared cell limit  : 1024}
+\DoxyCodeLine{\# link\_pause.port\_group\_0.minimum\_cell\_limit = 200}
+\DoxyCodeLine{\# link\_pause.port\_group\_0.shared\_cell\_limit  = 600}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# --- egress buffer space allocations ---}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# total egress buffer}
+\DoxyCodeLine{\#  - minimum buffer allocations}
+\DoxyCodeLine{\#  = total service pool buffer size}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# Service pool buffer allocation: percent of total}
+\DoxyCodeLine{\# buffer size.}
+\DoxyCodeLine{egress\_service\_pool.0.percent = 75.0   \# bulk}
+\DoxyCodeLine{egress\_service\_pool.1.percent = 90.0   \# control}
+\DoxyCodeLine{egress\_service\_pool.2.percent = 90.0   \# service}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Front panel port egress buffer limits enforced for each}
+\DoxyCodeLine{\# priority group.}
+\DoxyCodeLine{priority\_group.control.unlimited\_egress\_buffer = true}
+\DoxyCodeLine{priority\_group.service.unlimited\_egress\_buffer = true}
+\DoxyCodeLine{priority\_group.bulk.unlimited\_egress\_buffer = false}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# if a priority group has no cos values assigned to it, the buffers will not be allocated}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# priority group minimum buffer allocation: percent of total buffer}
+\DoxyCodeLine{priority\_group.bulk.egress\_buffer.uc.min\_percent  = 5.0}
+\DoxyCodeLine{priority\_group.bulk.egress\_buffer.mc.min\_percent  = 2.0}
+\DoxyCodeLine{priority\_group.bulk.egress\_buffer.cpu.min\_percent = 4.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Priority group service pool buffer limits: percent of the}
+\DoxyCodeLine{\# assigned service pool.}
+\DoxyCodeLine{priority\_group.bulk.egress\_buffer.uc.sp\_percent = 45.0}
+\DoxyCodeLine{priority\_group.bulk.egress\_buffer.mc.sp\_percent = 45.0}
+\DoxyCodeLine{priority\_group.bulk.egress\_buffer.cpu.sp\_percent = 10.0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# internal cos values mapped to egress queues}
+\DoxyCodeLine{\# multicast queue: same as unicast queue}
+\DoxyCodeLine{cos\_egr\_queue.cos\_0.uc  = 0}
+\DoxyCodeLine{cos\_egr\_queue.cos\_0.cpu = 0}
+\DoxyCodeLine{}
+\DoxyCodeLine{cos\_egr\_queue.cos\_1.uc  = 1}
+\DoxyCodeLine{cos\_egr\_queue.cos\_1.cpu = 1}
+\DoxyCodeLine{}
+\DoxyCodeLine{cos\_egr\_queue.cos\_2.uc  = 2}
+\DoxyCodeLine{cos\_egr\_queue.cos\_2.cpu = 2}
+\DoxyCodeLine{}
+\DoxyCodeLine{cos\_egr\_queue.cos\_3.uc  = 3}
+\DoxyCodeLine{cos\_egr\_queue.cos\_3.cpu = 3}
+\DoxyCodeLine{}
+\DoxyCodeLine{cos\_egr\_queue.cos\_4.uc  = 4}
+\DoxyCodeLine{cos\_egr\_queue.cos\_4.cpu = 4}
+\DoxyCodeLine{}
+\DoxyCodeLine{cos\_egr\_queue.cos\_5.uc  = 5}
+\DoxyCodeLine{cos\_egr\_queue.cos\_5.cpu = 5}
+\DoxyCodeLine{}
+\DoxyCodeLine{cos\_egr\_queue.cos\_6.uc  = 6}
+\DoxyCodeLine{cos\_egr\_queue.cos\_6.cpu = 6}
+\DoxyCodeLine{}
+\DoxyCodeLine{cos\_egr\_queue.cos\_7.uc  = 7}
+\DoxyCodeLine{cos\_egr\_queue.cos\_7.cpu = 7}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Enabling/disabling Denial of service (DOS) prevetion checks}
+\DoxyCodeLine{\# To change the default configuration:}
+\DoxyCodeLine{\# enable/disable the individual DOS checks.}
+\DoxyCodeLine{dos.sip\_eq\_dip = false}
+\DoxyCodeLine{dos.smac\_eq\_dmac = false}
+\DoxyCodeLine{dos.tcp\_hdr\_partial = false}
+\DoxyCodeLine{dos.tcp\_syn\_frag = false}
+\DoxyCodeLine{dos.tcp\_ports\_eq = false}
+\DoxyCodeLine{dos.tcp\_flags\_syn\_fin = false}
+\DoxyCodeLine{dos.tcp\_flags\_fup\_seq0 = false}
+\DoxyCodeLine{dos.tcp\_offset1 = false}
+\DoxyCodeLine{dos.tcp\_ctrl0\_seq0 = false}
+\DoxyCodeLine{dos.udp\_ports\_eq = false}
+\DoxyCodeLine{dos.icmp\_frag = false}
+\DoxyCodeLine{dos.icmpv4\_length = false}
+\DoxyCodeLine{dos.icmpv6\_length = false}
+\DoxyCodeLine{dos.ipv6\_min\_frag = false}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Specify a VxLan Routing Profile - the profile selected determines the}
+\DoxyCodeLine{\# maximum number of overlay next hops that can be allocated.}
+\DoxyCodeLine{\# This is supported only on TridentTwoPlus and Maverick}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# Profile can be one of \{'default', 'mode-1', 'mode-2', 'mode-3', 'disable'\}}
+\DoxyCodeLine{\# default: 15\% of the overall nexthops are for overlay.}
+\DoxyCodeLine{\# mode-1:  25\% of the overall nexthops are for overlay.}
+\DoxyCodeLine{\# mode-2:  50\% of the overall nexthops are for overlay.}
+\DoxyCodeLine{\# mode-3:  80\% of the overall nexthops are for overlay.}
+\DoxyCodeLine{\# disable: VxLan Routing is disabled}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# By default VxLan Routing is enabled with the default profile.}
+\DoxyCodeLine{vxlan\_routing\_overlay.profile = default}
+\end{DoxyCode}
+ \subsection*{sudo nano /etc/cumulus/ports.conf}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Error opening terminal: unknown.}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: nano [OPTIONS] [[+LINE,COLUMN] FILE]...}
+\DoxyCodeLine{}
+\DoxyCodeLine{Option      GNU long option     Meaning}
+\DoxyCodeLine{ -h, -?     --help          Show this message}
+\DoxyCodeLine{ +LINE,COLUMN               Start at line LINE, column COLUMN}
+\DoxyCodeLine{ -A     --smarthome     Enable smart home key}
+\DoxyCodeLine{ -B     --backup        Save backups of existing files}
+\DoxyCodeLine{ -C <dir>   --backupdir=<dir>   Directory for saving unique backup files}
+\DoxyCodeLine{ -D     --boldtext      Use bold instead of reverse video text}
+\DoxyCodeLine{ -E     --tabstospaces      Convert typed tabs to spaces}
+\DoxyCodeLine{ -F     --multibuffer       Enable multiple file buffers}
+\DoxyCodeLine{ -H     --historylog        Log \& read search/replace string history}
+\DoxyCodeLine{ -I     --ignorercfiles     Don't look at nanorc files}
+\DoxyCodeLine{ -K     --rebindkeypad      Fix numeric keypad key confusion problem}
+\DoxyCodeLine{ -L     --nonewlines        Don't add newlines to the ends of files}
+\DoxyCodeLine{ -N     --noconvert     Don't convert files from DOS/Mac format}
+\DoxyCodeLine{ -O     --morespace     Use one more line for editing}
+\DoxyCodeLine{ -Q <str>   --quotestr=<str>    Quoting string}
+\DoxyCodeLine{ -R     --restricted        Restricted mode}
+\DoxyCodeLine{ -S     --smooth        Scroll by line instead of half-screen}
+\DoxyCodeLine{ -T <\#cols> --tabsize=<\#cols>   Set width of a tab to \#cols columns}
+\DoxyCodeLine{ -U     --quickblank        Do quick statusbar blanking}
+\DoxyCodeLine{ -V     --version       Print version information and exit}
+\DoxyCodeLine{ -W     --wordbounds        Detect word boundaries more accurately}
+\DoxyCodeLine{ -Y <str>   --syntax=<str>      Syntax definition to use for coloring}
+\DoxyCodeLine{ -c     --const         Constantly show cursor position}
+\DoxyCodeLine{ -d     --rebinddelete      Fix Backspace/Delete confusion problem}
+\DoxyCodeLine{ -i     --autoindent        Automatically indent new lines}
+\DoxyCodeLine{ -k     --cut           Cut from cursor to end of line}
+\DoxyCodeLine{ -l     --nofollow      Don't follow symbolic links, overwrite}
+\DoxyCodeLine{ -m     --mouse         Enable the use of the mouse}
+\DoxyCodeLine{ -o <dir>   --operatingdir=<dir>    Set operating directory}
+\DoxyCodeLine{ -p     --preserve      Preserve XON (\string^Q) and XOFF (\string^S) keys}
+\DoxyCodeLine{ -q     --quiet         Silently ignore startup issues like rc file errors}
+\DoxyCodeLine{ -r <\#cols> --fill=<\#cols>      Set wrapping point at column \#cols}
+\DoxyCodeLine{ -s <prog>  --speller=<prog>    Enable alternate speller}
+\DoxyCodeLine{ -t     --tempfile      Auto save on exit, don't prompt}
+\DoxyCodeLine{ -u     --undo          Allow generic undo [EXPERIMENTAL]}
+\DoxyCodeLine{ -v     --view          View mode (read-only)}
+\DoxyCodeLine{ -w     --nowrap        Don't wrap long lines}
+\DoxyCodeLine{ -x     --nohelp        Don't show the two help lines}
+\DoxyCodeLine{ -z     --suspend       Enable suspension}
+\DoxyCodeLine{ -\$     --softwrap      Enable soft line wrapping}
+\DoxyCodeLine{ -a, -b, -e,                }
+\DoxyCodeLine{ -f, -g, -j             (ignored, for Pico compatibility)}
+\end{DoxyCode}
+ \subsection*{sudo nano /etc/cumulus/switchd.conf}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Error opening terminal: unknown.}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: nano [OPTIONS] [[+LINE,COLUMN] FILE]...}
+\DoxyCodeLine{}
+\DoxyCodeLine{Option      GNU long option     Meaning}
+\DoxyCodeLine{ -h, -?     --help          Show this message}
+\DoxyCodeLine{ +LINE,COLUMN               Start at line LINE, column COLUMN}
+\DoxyCodeLine{ -A     --smarthome     Enable smart home key}
+\DoxyCodeLine{ -B     --backup        Save backups of existing files}
+\DoxyCodeLine{ -C <dir>   --backupdir=<dir>   Directory for saving unique backup files}
+\DoxyCodeLine{ -D     --boldtext      Use bold instead of reverse video text}
+\DoxyCodeLine{ -E     --tabstospaces      Convert typed tabs to spaces}
+\DoxyCodeLine{ -F     --multibuffer       Enable multiple file buffers}
+\DoxyCodeLine{ -H     --historylog        Log \& read search/replace string history}
+\DoxyCodeLine{ -I     --ignorercfiles     Don't look at nanorc files}
+\DoxyCodeLine{ -K     --rebindkeypad      Fix numeric keypad key confusion problem}
+\DoxyCodeLine{ -L     --nonewlines        Don't add newlines to the ends of files}
+\DoxyCodeLine{ -N     --noconvert     Don't convert files from DOS/Mac format}
+\DoxyCodeLine{ -O     --morespace     Use one more line for editing}
+\DoxyCodeLine{ -Q <str>   --quotestr=<str>    Quoting string}
+\DoxyCodeLine{ -R     --restricted        Restricted mode}
+\DoxyCodeLine{ -S     --smooth        Scroll by line instead of half-screen}
+\DoxyCodeLine{ -T <\#cols> --tabsize=<\#cols>   Set width of a tab to \#cols columns}
+\DoxyCodeLine{ -U     --quickblank        Do quick statusbar blanking}
+\DoxyCodeLine{ -V     --version       Print version information and exit}
+\DoxyCodeLine{ -W     --wordbounds        Detect word boundaries more accurately}
+\DoxyCodeLine{ -Y <str>   --syntax=<str>      Syntax definition to use for coloring}
+\DoxyCodeLine{ -c     --const         Constantly show cursor position}
+\DoxyCodeLine{ -d     --rebinddelete      Fix Backspace/Delete confusion problem}
+\DoxyCodeLine{ -i     --autoindent        Automatically indent new lines}
+\DoxyCodeLine{ -k     --cut           Cut from cursor to end of line}
+\DoxyCodeLine{ -l     --nofollow      Don't follow symbolic links, overwrite}
+\DoxyCodeLine{ -m     --mouse         Enable the use of the mouse}
+\DoxyCodeLine{ -o <dir>   --operatingdir=<dir>    Set operating directory}
+\DoxyCodeLine{ -p     --preserve      Preserve XON (\string^Q) and XOFF (\string^S) keys}
+\DoxyCodeLine{ -q     --quiet         Silently ignore startup issues like rc file errors}
+\DoxyCodeLine{ -r <\#cols> --fill=<\#cols>      Set wrapping point at column \#cols}
+\DoxyCodeLine{ -s <prog>  --speller=<prog>    Enable alternate speller}
+\DoxyCodeLine{ -t     --tempfile      Auto save on exit, don't prompt}
+\DoxyCodeLine{ -u     --undo          Allow generic undo [EXPERIMENTAL]}
+\DoxyCodeLine{ -v     --view          View mode (read-only)}
+\DoxyCodeLine{ -w     --nowrap        Don't wrap long lines}
+\DoxyCodeLine{ -x     --nohelp        Don't show the two help lines}
+\DoxyCodeLine{ -z     --suspend       Enable suspension}
+\DoxyCodeLine{ -\$     --softwrap      Enable soft line wrapping}
+\DoxyCodeLine{ -a, -b, -e,                }
+\DoxyCodeLine{ -f, -g, -j             (ignored, for Pico compatibility)}
+\end{DoxyCode}
+ \subsection*{cat /etc/default/openvswitch-\/vtep}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\# This is a POSIX shell fragment                -*- sh -*-}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Start openvswitch at boot ? yes/no}
+\DoxyCodeLine{START=no}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# FORCE\_COREFILES: If 'yes' then core files will be enabled.}
+\DoxyCodeLine{\# FORCE\_COREFILES=yes}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# BRCOMPAT: If 'yes' and the openvswitch-brcompat package is installed, then}
+\DoxyCodeLine{\# Linux bridge compatibility will be enabled.}
+\DoxyCodeLine{\# BRCOMPAT=no}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: cat [OPTION]... [FILE]...}
+\DoxyCodeLine{Concatenate FILE(s), or standard input, to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{  -A, --show-all           equivalent to -vET}
+\DoxyCodeLine{  -b, --number-nonblank    number nonempty output lines, overrides -n}
+\DoxyCodeLine{  -e                       equivalent to -vE}
+\DoxyCodeLine{  -E, --show-ends          display \$ at end of each line}
+\DoxyCodeLine{  -n, --number             number all output lines}
+\DoxyCodeLine{  -s, --squeeze-blank      suppress repeated empty output lines}
+\DoxyCodeLine{  -t                       equivalent to -vT}
+\DoxyCodeLine{  -T, --show-tabs          display TAB characters as \string^I}
+\DoxyCodeLine{  -u                       (ignored)}
+\DoxyCodeLine{  -v, --show-nonprinting   use \string^ and M- notation, except for LFD and TAB}
+\DoxyCodeLine{      --help     display this help and exit}
+\DoxyCodeLine{      --version  output version information and exit}
+\DoxyCodeLine{}
+\DoxyCodeLine{With no FILE, or when FILE is -, read standard input.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Examples:}
+\DoxyCodeLine{  cat f - g  Output f's contents, then standard input, then g's contents.}
+\DoxyCodeLine{  cat        Copy standard input to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{GNU coreutils online help: <http://www.gnu.org/software/coreutils/>}
+\DoxyCodeLine{Full documentation at: <http://www.gnu.org/software/coreutils/cat>}
+\DoxyCodeLine{or available locally via: info '(coreutils) cat invocation'}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# This is a POSIX shell fragment                -*- sh -*-}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Start openvswitch at boot ? yes/no}
+\DoxyCodeLine{START=no}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# FORCE\_COREFILES: If 'yes' then core files will be enabled.}
+\DoxyCodeLine{\# FORCE\_COREFILES=yes}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# BRCOMPAT: If 'yes' and the openvswitch-brcompat package is installed, then}
+\DoxyCodeLine{\# Linux bridge compatibility will be enabled.}
+\DoxyCodeLine{\# BRCOMPAT=no}
+\end{DoxyCode}
+ 

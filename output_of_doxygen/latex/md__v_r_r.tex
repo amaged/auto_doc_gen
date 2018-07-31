@@ -1,0 +1,51 @@
+\subsection*{net example vrr}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Scenario}
+\DoxyCodeLine{========}
+\DoxyCodeLine{}
+\DoxyCodeLine{        +------------------------+}
+\DoxyCodeLine{        |                        |}
+\DoxyCodeLine{     +--+                        |}
+\DoxyCodeLine{     |             cloud         +---+}
+\DoxyCodeLine{     |                               |}
+\DoxyCodeLine{     +----+                          |}
+\DoxyCodeLine{          +--+----------------+------+}
+\DoxyCodeLine{             |                |}
+\DoxyCodeLine{             |                |}
+\DoxyCodeLine{  +----------+--+          +--+---------+}
+\DoxyCodeLine{  |  router1    |          |  router2   |}
+\DoxyCodeLine{  |             | peerbond |            |}
+\DoxyCodeLine{  |  +------+   | +------+ | +------+   |}
+\DoxyCodeLine{  |  |bridge|-----+------+---|bridge|   |}
+\DoxyCodeLine{  |  +------+   | +------+ | +------+   |}
+\DoxyCodeLine{  |             |          |            |}
+\DoxyCodeLine{  +--+----------+          +---------+--+}
+\DoxyCodeLine{ swp1|    swp2 \(\backslash\)        swp1 /       | swp2}
+\DoxyCodeLine{     |          \(\backslash\)           /        |}
+\DoxyCodeLine{     |           \(\backslash\)         /         |}
+\DoxyCodeLine{ eth0|        +-----------+          | eth0}
+\DoxyCodeLine{  +--+----+  /     \(\backslash\)            +----+--+}
+\DoxyCodeLine{  | host1 |-+       +-----------| host2 |}
+\DoxyCodeLine{  +-------+ eth1           eth1 +-------+}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{net commands}
+\DoxyCodeLine{============}
+\DoxyCodeLine{router1\# net add bridge}
+\DoxyCodeLine{router1\# net add vlan 500 ip address 192.168.0.252/24}
+\DoxyCodeLine{router1\# net add vlan 500 ip address-virtual 00:00:5e:00:01:01 192.168.0.254/24}
+\DoxyCodeLine{router1\# net add vlan 500 ipv6 address 2001:aa::1/48}
+\DoxyCodeLine{router1\# net add vlan 500 ipv6 address-virtual 00:00:5e:00:01:01 2001:aa::1/48}
+\DoxyCodeLine{router1\# net commit}
+\DoxyCodeLine{}
+\DoxyCodeLine{Run similar commands on router2.}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'example', 'vrr'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net example vrr}
+\end{DoxyCode}
+ 

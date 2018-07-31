@@ -1,0 +1,758 @@
+\subsection*{netq show bgp}
+
+\#\#\# Who your neighbors are 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Matching bgp records:}
+\DoxyCodeLine{Hostname          Neighbor                         VRF              ASN        Peer ASN   PfxRx        Last Changed}
+\DoxyCodeLine{----------------- -------------------------------- ---------------- ---------- ---------- ------------ ----------------}
+\DoxyCodeLine{[91mleaf01           [0m [91mswp44                           [0m [91mdefault         [0m 65011      [91m-         [0m [91mNotEstd     [0m 8d:19h:26m:25s}
+\DoxyCodeLine{[91mleaf02           [0m [91mswp44                           [0m [91mdefault         [0m 65012      [91m-         [0m [91mNotEstd     [0m 8d:19h:26m:37s}
+\DoxyCodeLine{leaf01            swp1(server01)                   default          65011      65031      2/1/-        1h:23m:34s}
+\DoxyCodeLine{leaf01            swp2(server02)                   default          65011      65032      2/1/-        1h:23m:42s}
+\DoxyCodeLine{leaf01            swp51(spine01)                   default          65011      65020      8/4/-        1h:24m:0s}
+\DoxyCodeLine{leaf01            swp52(spine02)                   default          65011      65020      8/4/-        1h:23m:55s}
+\DoxyCodeLine{leaf02            swp1(server01)                   default          65012      65031      2/5/-        1h:23m:28s}
+\DoxyCodeLine{leaf02            swp2(server02)                   default          65012      65032      2/5/-        1h:23m:37s}
+\DoxyCodeLine{leaf02            swp51(spine01)                   default          65012      65020      12/4/-       1h:24m:17s}
+\DoxyCodeLine{leaf02            swp52(spine02)                   default          65012      65020      12/4/-       1h:24m:24s}
+\DoxyCodeLine{leaf03            swp1(server03)                   default          65013      65033      2/1/-        1h:23m:45s}
+\DoxyCodeLine{leaf03            swp2(server04)                   default          65013      65034      2/1/-        1h:23m:33s}
+\DoxyCodeLine{leaf03            swp51(spine01)                   default          65013      65020      8/4/-        1h:24m:8s}
+\DoxyCodeLine{leaf03            swp52(spine02)                   default          65013      65020      8/4/-        1h:24m:14s}
+\DoxyCodeLine{leaf04            swp1(server03)                   default          65014      65033      2/5/-        1h:23m:44s}
+\DoxyCodeLine{leaf04            swp2(server04)                   default          65014      65034      2/5/-        1h:23m:33s}
+\DoxyCodeLine{leaf04            swp51(spine01)                   default          65014      65020      12/4/-       1h:23m:49s}
+\DoxyCodeLine{leaf04            swp52(spine02)                   default          65014      65020      12/4/-       1h:23m:54s}
+\DoxyCodeLine{server01          eth1(leaf01)                     default          65031      65011      12/6/-       1h:23m:34s}
+\DoxyCodeLine{server01          eth2(leaf02)                     default          65031      65012      12/6/-       1h:23m:28s}
+\DoxyCodeLine{server02          eth1(leaf01)                     default          65032      65011      12/6/-       1h:23m:43s}
+\DoxyCodeLine{server02          eth2(leaf02)                     default          65032      65012      12/6/-       1h:23m:37s}
+\DoxyCodeLine{server03          eth1(leaf03)                     default          65033      65013      12/6/-       1h:23m:45s}
+\DoxyCodeLine{server03          eth2(leaf04)                     default          65033      65014      12/6/-       1h:23m:43s}
+\DoxyCodeLine{server04          eth1(leaf03)                     default          65034      65013      12/6/-       1h:23m:34s}
+\DoxyCodeLine{server04          eth2(leaf04)                     default          65034      65014      12/6/-       1h:23m:33s}
+\DoxyCodeLine{spine01           swp1(leaf01)                     default          65020      65011      5/1/-        1h:23m:59s}
+\DoxyCodeLine{spine01           swp2(leaf02)                     default          65020      65012      5/1/-        1h:24m:17s}
+\DoxyCodeLine{spine01           swp3(leaf03)                     default          65020      65013      5/1/-        1h:24m:8s}
+\DoxyCodeLine{spine01           swp4(leaf04)                     default          65020      65014      5/1/-        1h:23m:48s}
+\DoxyCodeLine{spine02           swp1(leaf01)                     default          65020      65011      5/1/-        1h:23m:56s}
+\DoxyCodeLine{spine02           swp2(leaf02)                     default          65020      65012      5/1/-        1h:24m:25s}
+\DoxyCodeLine{spine02           swp3(leaf03)                     default          65020      65013      5/1/-        1h:24m:15s}
+\DoxyCodeLine{spine02           swp4(leaf04)                     default          65020      65014      5/1/-        1h:23m:55s}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Error: The following commands contain keyword(s) 'show', 'bgp'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    netq [<hostname>] show bgp <bgp-session> [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp <bgp-session> around <text-time> [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp <bgp-session> changes [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp <bgp-session> changes between <text-time> and <text-endtime> [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp <bgp-session> vrf <vrf> [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp <bgp-session> vrf <vrf> around <text-time> [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp <bgp-session> vrf <vrf> changes [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp <bgp-session> vrf <vrf> changes between <text-time> and <text-endtime> [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp around <text-time> [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp asn <number-asn> [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp asn <number-asn> around <text-time> [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp asn <number-asn> changes [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp asn <number-asn> changes between <text-time> and <text-endtime> [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp asn <number-asn> vrf <vrf> [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp asn <number-asn> vrf <vrf> around <text-time> [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp asn <number-asn> vrf <vrf> changes [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp asn <number-asn> vrf <vrf> changes between <text-time> and <text-endtime> [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp changes [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp changes between <text-time> and <text-endtime> [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp vrf <vrf> [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp vrf <vrf> around <text-time> [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp vrf <vrf> changes [json]}
+\DoxyCodeLine{    netq [<hostname>] show bgp vrf <vrf> changes between <text-time> and <text-endtime> [json]}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{Unable to find command netq show bgp --help}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{Matching bgp records:}
+\DoxyCodeLine{Hostname          Neighbor                         VRF              ASN        Peer ASN   PfxRx        Last Changed}
+\DoxyCodeLine{----------------- -------------------------------- ---------------- ---------- ---------- ------------ ----------------}
+\DoxyCodeLine{[91mleaf01           [0m [91mswp44                           [0m [91mdefault         [0m 65011      [91m-         [0m [91mNotEstd     [0m 8d:19h:26m:25s}
+\DoxyCodeLine{[91mleaf02           [0m [91mswp44                           [0m [91mdefault         [0m 65012      [91m-         [0m [91mNotEstd     [0m 8d:19h:26m:37s}
+\DoxyCodeLine{leaf01            swp1(server01)                   default          65011      65031      2/1/-        1h:23m:34s}
+\DoxyCodeLine{leaf01            swp2(server02)                   default          65011      65032      2/1/-        1h:23m:42s}
+\DoxyCodeLine{leaf01            swp51(spine01)                   default          65011      65020      8/4/-        1h:24m:0s}
+\DoxyCodeLine{leaf01            swp52(spine02)                   default          65011      65020      8/4/-        1h:23m:55s}
+\DoxyCodeLine{leaf02            swp1(server01)                   default          65012      65031      2/5/-        1h:23m:28s}
+\DoxyCodeLine{leaf02            swp2(server02)                   default          65012      65032      2/5/-        1h:23m:37s}
+\DoxyCodeLine{leaf02            swp51(spine01)                   default          65012      65020      12/4/-       1h:24m:17s}
+\DoxyCodeLine{leaf02            swp52(spine02)                   default          65012      65020      12/4/-       1h:24m:24s}
+\DoxyCodeLine{leaf03            swp1(server03)                   default          65013      65033      2/1/-        1h:23m:45s}
+\DoxyCodeLine{leaf03            swp2(server04)                   default          65013      65034      2/1/-        1h:23m:33s}
+\DoxyCodeLine{leaf03            swp51(spine01)                   default          65013      65020      8/4/-        1h:24m:8s}
+\DoxyCodeLine{leaf03            swp52(spine02)                   default          65013      65020      8/4/-        1h:24m:14s}
+\DoxyCodeLine{leaf04            swp1(server03)                   default          65014      65033      2/5/-        1h:23m:44s}
+\DoxyCodeLine{leaf04            swp2(server04)                   default          65014      65034      2/5/-        1h:23m:33s}
+\DoxyCodeLine{leaf04            swp51(spine01)                   default          65014      65020      12/4/-       1h:23m:49s}
+\DoxyCodeLine{leaf04            swp52(spine02)                   default          65014      65020      12/4/-       1h:23m:54s}
+\DoxyCodeLine{server01          eth1(leaf01)                     default          65031      65011      12/6/-       1h:23m:34s}
+\DoxyCodeLine{server01          eth2(leaf02)                     default          65031      65012      12/6/-       1h:23m:28s}
+\DoxyCodeLine{server02          eth1(leaf01)                     default          65032      65011      12/6/-       1h:23m:43s}
+\DoxyCodeLine{server02          eth2(leaf02)                     default          65032      65012      12/6/-       1h:23m:37s}
+\DoxyCodeLine{server03          eth1(leaf03)                     default          65033      65013      12/6/-       1h:23m:45s}
+\DoxyCodeLine{server03          eth2(leaf04)                     default          65033      65014      12/6/-       1h:23m:43s}
+\DoxyCodeLine{server04          eth1(leaf03)                     default          65034      65013      12/6/-       1h:23m:34s}
+\DoxyCodeLine{server04          eth2(leaf04)                     default          65034      65014      12/6/-       1h:23m:33s}
+\DoxyCodeLine{spine01           swp1(leaf01)                     default          65020      65011      5/1/-        1h:23m:59s}
+\DoxyCodeLine{spine01           swp2(leaf02)                     default          65020      65012      5/1/-        1h:24m:17s}
+\DoxyCodeLine{spine01           swp3(leaf03)                     default          65020      65013      5/1/-        1h:24m:8s}
+\DoxyCodeLine{spine01           swp4(leaf04)                     default          65020      65014      5/1/-        1h:23m:48s}
+\DoxyCodeLine{spine02           swp1(leaf01)                     default          65020      65011      5/1/-        1h:23m:56s}
+\DoxyCodeLine{spine02           swp2(leaf02)                     default          65020      65012      5/1/-        1h:24m:25s}
+\DoxyCodeLine{spine02           swp3(leaf03)                     default          65020      65013      5/1/-        1h:24m:15s}
+\DoxyCodeLine{spine02           swp4(leaf04)                     default          65020      65014      5/1/-        1h:23m:55s}
+\end{DoxyCode}
+ \subsection*{net example bgp unnumbered}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Scenario}
+\DoxyCodeLine{========}
+\DoxyCodeLine{}
+\DoxyCodeLine{  +------------+}
+\DoxyCodeLine{  |  AS 65100  |}
+\DoxyCodeLine{  |            |}
+\DoxyCodeLine{  |  spine-01  |}
+\DoxyCodeLine{  +------------+}
+\DoxyCodeLine{        | swp1}
+\DoxyCodeLine{        |}
+\DoxyCodeLine{        |}
+\DoxyCodeLine{        | swp2}
+\DoxyCodeLine{  +------------+}
+\DoxyCodeLine{  |  AS 65200  |}
+\DoxyCodeLine{  |            |}
+\DoxyCodeLine{  |  leaf-01   |}
+\DoxyCodeLine{  +------------+}
+\DoxyCodeLine{}
+\DoxyCodeLine{spine-01's loopback IPs are:}
+\DoxyCodeLine{- 10.0.0.1/32}
+\DoxyCodeLine{- 2001:1:1:1::1/128}
+\DoxyCodeLine{}
+\DoxyCodeLine{leaf-01's loopback IPs:}
+\DoxyCodeLine{- 10.0.0.2/32}
+\DoxyCodeLine{- 2001:1:1:1::2/128}
+\DoxyCodeLine{}
+\DoxyCodeLine{We want to configure spine-01 and leaf-01 to be "unnumbered" BGP peers and to}
+\DoxyCodeLine{advertise the subnets for their loopback IPs. An "unnumbered" BGP peer actually}
+\DoxyCodeLine{peers to the IPv6 link-local address but it is unnumbered in the sense that we}
+\DoxyCodeLine{do not have to configure an IP address on the interface. To configure BGP for}
+\DoxyCodeLine{unnumbered peering on an interface use:}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net add bgp neighbor <interface> interface remote-as (internal|external)}
+\DoxyCodeLine{}
+\DoxyCodeLine{We must now specify which address-families our peer is "active" for. The}
+\DoxyCodeLine{ipv4 unicast address-family is active by default but to advertise}
+\DoxyCodeLine{routes for other address-families they must be "activated" per peer:}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net add bgp ipv6 unicast neighbor <interface> activate}
+\DoxyCodeLine{}
+\DoxyCodeLine{Last but not least we want to tell BGP to advertise our loopback subnets. Use}
+\DoxyCodeLine{the 'network' command to configure BGP to originate a prefix into the BGP table:}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net add bgp network <ipv4/prefixlen>}
+\DoxyCodeLine{    net add bgp ipv6 unicast network <ipv6/prefixlen>}
+\DoxyCodeLine{}
+\DoxyCodeLine{net commands}
+\DoxyCodeLine{============}
+\DoxyCodeLine{spine-01\# net add bgp autonomous-system 65100}
+\DoxyCodeLine{spine-01\# net add bgp router-id 10.0.0.1}
+\DoxyCodeLine{spine-01\# net add bgp neighbor swp1 interface remote-as external}
+\DoxyCodeLine{spine-01\# net add bgp ipv6 unicast neighbor swp1 activate}
+\DoxyCodeLine{spine-01\# net add bgp ipv6 unicast network 2001:1:1:1::1/128}
+\DoxyCodeLine{spine-01\# net add bgp network 10.0.0.1/32}
+\DoxyCodeLine{spine-01\# net pending}
+\DoxyCodeLine{spine-01\# net commit}
+\DoxyCodeLine{}
+\DoxyCodeLine{leaf-01\# net add bgp autonomous-system 65200}
+\DoxyCodeLine{leaf-01\# net add bgp router-id 10.0.0.2}
+\DoxyCodeLine{leaf-01\# net add bgp neighbor swp2 interface remote-as external}
+\DoxyCodeLine{leaf-01\# net add bgp ipv6 unicast neighbor swp2 activate}
+\DoxyCodeLine{leaf-01\# net add bgp ipv6 unicast network 2001:1:1:1::2/128}
+\DoxyCodeLine{leaf-01\# net add bgp network 10.0.0.2/32}
+\DoxyCodeLine{leaf-01\# net pending}
+\DoxyCodeLine{leaf-01\# net commit}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{Verification}
+\DoxyCodeLine{============}
+\DoxyCodeLine{spine-01\# net show bgp summary}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'unnumbered', 'example', 'bgp'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net example bgp unnumbered}
+\end{DoxyCode}
+ \subsection*{netq check bgp}
+
+\#\#\# Let NetQ does it magic and tell you who is doing what 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{[91mTotal Nodes: 11, Failed Nodes: 2, Total Sessions: 34 , Failed Sessions: 2, [0m}
+\DoxyCodeLine{Hostname          VRF             Peer Name Peer Hostname     Reason                                        Last Changed}
+\DoxyCodeLine{----------------- --------------- --------- ----------------- --------------------------------------------- ----------------}
+\DoxyCodeLine{[91mleaf01           [0m [91mdefault        [0m [91mswp44    [0m [91moob-mgmt-server  [0m [91mPeer not configured                          [0m 8d:19h:26m:27s}
+\DoxyCodeLine{[91mleaf02           [0m [91mdefault        [0m [91mswp44    [0m [91moob-mgmt-server  [0m [91mPeer not configured                          [0m 8d:19h:26m:39s}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Error: The following commands contain keyword(s) 'check', 'bgp'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    netq check bgp [json]}
+\DoxyCodeLine{    netq check bgp around <text-time> [json]}
+\DoxyCodeLine{    netq check bgp vrf <vrf> [json]}
+\DoxyCodeLine{    netq check bgp vrf <vrf> around <text-time> [json]}
+\DoxyCodeLine{    netq example check bgp}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{Unable to find command netq check bgp --help}
+\DoxyCodeLine{}
+\DoxyCodeLine{[91mTotal Nodes: 11, Failed Nodes: 2, Total Sessions: 34 , Failed Sessions: 2, [0m}
+\DoxyCodeLine{Hostname          VRF             Peer Name Peer Hostname     Reason                                        Last Changed}
+\DoxyCodeLine{----------------- --------------- --------- ----------------- --------------------------------------------- ----------------}
+\DoxyCodeLine{[91mleaf01           [0m [91mdefault        [0m [91mswp44    [0m [91moob-mgmt-server  [0m [91mPeer not configured                          [0m 8d:19h:26m:27s}
+\DoxyCodeLine{[91mleaf02           [0m [91mdefault        [0m [91mswp44    [0m [91moob-mgmt-server  [0m [91mPeer not configured                          [0m 8d:19h:26m:39s}
+\end{DoxyCode}
+ \subsection*{net show bgp summary}
+
+\#\#\# Duh 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{show bgp ipv4 unicast summary}
+\DoxyCodeLine{=============================}
+\DoxyCodeLine{bgpd is not running}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{show bgp ipv6 unicast summary}
+\DoxyCodeLine{=============================}
+\DoxyCodeLine{bgpd is not running}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{show bgp l2vpn evpn summary}
+\DoxyCodeLine{===========================}
+\DoxyCodeLine{bgpd is not running}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'summary', 'show', 'bgp'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn summary [json]}
+\DoxyCodeLine{    net show bgp [summary] [json]}
+\DoxyCodeLine{    net show bgp ipv4 (unicast|labeled-unicast) [<ipv4>|<ipv4/prefixlen>|summary] [json]}
+\DoxyCodeLine{    net show bgp ipv6 (unicast|labeled-unicast) [<ipv6>|<ipv6/prefixlen>|summary] [json]}
+\DoxyCodeLine{    net show bgp vrf <text> [summary] [json]}
+\DoxyCodeLine{    net show bgp vrf <text> ipv4 unicast [<ipv4>|<ipv4/prefixlen>|summary] [json]}
+\DoxyCodeLine{    net show bgp vrf <text> ipv6 unicast [<ipv6>|<ipv6/prefixlen>|summary] [json]}
+\end{DoxyCode}
+ \subsection*{net show evpn vni}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'show', 'evpn', 'vni'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni <1-16777215> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni <1-16777215> mac <mac> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni <1-16777215> mac <mac> ip <ip> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni <1-16777215> multicast <ipv4> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni <1-16777215> type (macip|multicast) [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni <1-16777215> vtep <ipv4> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni all [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni all vtep <ipv4> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn vni [<1-16777215>] [json]}
+\DoxyCodeLine{    net show evpn arp-cache vni <1-16777215> [json]}
+\DoxyCodeLine{    net show evpn arp-cache vni <1-16777215> ip <ip> [json]}
+\DoxyCodeLine{    net show evpn arp-cache vni <1-16777215> vtep <ipv4> [json]}
+\DoxyCodeLine{    net show evpn arp-cache vni all [json]}
+\DoxyCodeLine{    net show evpn mac vni <1-16777215> [json]}
+\DoxyCodeLine{    net show evpn mac vni <1-16777215> mac <mac>}
+\DoxyCodeLine{    net show evpn mac vni <1-16777215> vtep <ipv4> [json]}
+\DoxyCodeLine{    net show evpn mac vni all [json]}
+\DoxyCodeLine{    net show evpn mac vni all vtep <ipv4> [json]}
+\DoxyCodeLine{    net show evpn next-hops vni [<1-16777215>] [json]}
+\DoxyCodeLine{    net show evpn next-hops vni [<1-16777215>] ip <ip> [json]}
+\DoxyCodeLine{    net show evpn next-hops vni all [json]}
+\DoxyCodeLine{    net show evpn rmac vni [<1-16777215>] [json]}
+\DoxyCodeLine{    net show evpn rmac vni [<1-16777215>] mac <mac> [json]}
+\DoxyCodeLine{    net show evpn rmac vni all [json]}
+\DoxyCodeLine{    net show evpn vni [<1-16777215>] [json]}
+\end{DoxyCode}
+ \subsection*{net show evpn mac vni all}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'show', 'evpn', 'mac', 'vni', 'all'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show evpn mac vni all [json]}
+\DoxyCodeLine{    net show evpn mac vni all vtep <ipv4> [json]}
+\DoxyCodeLine{    net show evpn rmac vni all [json]}
+\end{DoxyCode}
+ \subsection*{net show bgp l2vpn evpn route}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{bgpd is not running}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'l2vpn', 'route', 'show', 'evpn', 'bgp'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route rd <rd> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route rd <rd> mac <mac> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route rd <rd> mac <mac> ip <ip> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route rd <rd> type (macip|multicast|prefix) [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route type (macip|multicast|prefix) [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni <1-16777215> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni <1-16777215> mac <mac> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni <1-16777215> mac <mac> ip <ip> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni <1-16777215> multicast <ipv4> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni <1-16777215> type (macip|multicast) [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni <1-16777215> vtep <ipv4> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni all [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni all vtep <ipv4> [json]}
+\end{DoxyCode}
+ \subsection*{net show time}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Mon Jul 30 23:59:35 UTC 2018}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'show', 'time'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show time [zone]}
+\DoxyCodeLine{    net show time ntp servers}
+\end{DoxyCode}
+ \subsection*{net show time ntp servers}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{     remote           refid      st t when poll reach   delay   offset  jitter}
+\DoxyCodeLine{==============================================================================}
+\DoxyCodeLine{-195.21.152.161  195.66.241.2     2 u   38  256  377  139.143   59.663   2.353}
+\DoxyCodeLine{+155.94.238.29   128.59.0.245     2 u    6  256  377   36.598   12.794   2.304}
+\DoxyCodeLine{*smtp-01.poblene 127.67.113.92    2 u   72  256  377   29.006   11.297   1.938}
+\DoxyCodeLine{+ns3.weiszhostin 132.163.96.2     2 u  250  256  377   39.069    8.189   1.694}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'servers', 'show', 'time', 'ntp'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show time ntp servers}
+\end{DoxyCode}
+ \subsection*{sudo systemctl status dhcrelay}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{● dhcrelay.service - DHCPv4 Relay Agent Daemon}
+\DoxyCodeLine{   Loaded: loaded (/lib/systemd/system/dhcrelay.service; disabled)}
+\DoxyCodeLine{   Active: inactive (dead)}
+\DoxyCodeLine{     Docs: man:dhcrelay(8)}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{systemctl [OPTIONS...] \{COMMAND\} ...}
+\DoxyCodeLine{}
+\DoxyCodeLine{Query or send control commands to the systemd manager.}
+\DoxyCodeLine{}
+\DoxyCodeLine{  -h --help           Show this help}
+\DoxyCodeLine{     --version        Show package version}
+\DoxyCodeLine{     --system         Connect to system manager}
+\DoxyCodeLine{     --user           Connect to user service manager}
+\DoxyCodeLine{  -H --host=[USER@]HOST}
+\DoxyCodeLine{                      Operate on remote host}
+\DoxyCodeLine{  -M --machine=CONTAINER}
+\DoxyCodeLine{                      Operate on local container}
+\DoxyCodeLine{  -t --type=TYPE      List only units of a particular type}
+\DoxyCodeLine{     --state=STATE    List only units with particular LOAD or SUB or ACTIVE state}
+\DoxyCodeLine{  -p --property=NAME  Show only properties by this name}
+\DoxyCodeLine{  -a --all            Show all loaded units/properties, including dead/empty}
+\DoxyCodeLine{                      ones. To list all units installed on the system, use}
+\DoxyCodeLine{                      the 'list-unit-files' command instead.}
+\DoxyCodeLine{  -l --full           Don't ellipsize unit names on output}
+\DoxyCodeLine{  -r --recursive      Show unit list of host and local containers}
+\DoxyCodeLine{     --reverse        Show reverse dependencies with 'list-dependencies'}
+\DoxyCodeLine{     --job-mode=MODE  Specify how to deal with already queued jobs, when}
+\DoxyCodeLine{                      queueing a new job}
+\DoxyCodeLine{     --show-types     When showing sockets, explicitly show their type}
+\DoxyCodeLine{  -i --ignore-inhibitors}
+\DoxyCodeLine{                      When shutting down or sleeping, ignore inhibitors}
+\DoxyCodeLine{     --kill-who=WHO   Who to send signal to}
+\DoxyCodeLine{  -s --signal=SIGNAL  Which signal to send}
+\DoxyCodeLine{  -q --quiet          Suppress output}
+\DoxyCodeLine{     --no-block       Do not wait until operation finished}
+\DoxyCodeLine{     --no-wall        Don't send wall message before halt/power-off/reboot}
+\DoxyCodeLine{     --no-reload      When enabling/disabling unit files, don't reload daemon}
+\DoxyCodeLine{                      configuration}
+\DoxyCodeLine{     --no-legend      Do not print a legend (column headers and hints)}
+\DoxyCodeLine{     --no-pager       Do not pipe output into a pager}
+\DoxyCodeLine{     --no-ask-password}
+\DoxyCodeLine{                      Do not ask for system passwords}
+\DoxyCodeLine{     --global         Enable/disable unit files globally}
+\DoxyCodeLine{     --runtime        Enable unit files only temporarily until next reboot}
+\DoxyCodeLine{  -f --force          When enabling unit files, override existing symlinks}
+\DoxyCodeLine{                      When shutting down, execute action immediately}
+\DoxyCodeLine{     --preset-mode=   Specifies whether fully apply presets, or only enable,}
+\DoxyCodeLine{                      or only disable}
+\DoxyCodeLine{     --root=PATH      Enable unit files in the specified root directory}
+\DoxyCodeLine{  -n --lines=INTEGER  Number of journal entries to show}
+\DoxyCodeLine{  -o --output=STRING  Change journal output mode (short, short-monotonic,}
+\DoxyCodeLine{                      verbose, export, json, json-pretty, json-sse, cat)}
+\DoxyCodeLine{     --plain          Print unit dependencies as a list instead of a tree}
+\DoxyCodeLine{}
+\DoxyCodeLine{Unit Commands:}
+\DoxyCodeLine{  list-units [PATTERN...]         List loaded units}
+\DoxyCodeLine{  list-sockets [PATTERN...]       List loaded sockets ordered by address}
+\DoxyCodeLine{  list-timers [PATTERN...]        List loaded timers ordered by next elapse}
+\DoxyCodeLine{  start NAME...                   Start (activate) one or more units}
+\DoxyCodeLine{  stop NAME...                    Stop (deactivate) one or more units}
+\DoxyCodeLine{  reload NAME...                  Reload one or more units}
+\DoxyCodeLine{  restart NAME...                 Start or restart one or more units}
+\DoxyCodeLine{  try-restart NAME...             Restart one or more units if active}
+\DoxyCodeLine{  reload-or-restart NAME...       Reload one or more units if possible,}
+\DoxyCodeLine{                                  otherwise start or restart}
+\DoxyCodeLine{  reload-or-try-restart NAME...   Reload one or more units if possible,}
+\DoxyCodeLine{                                  otherwise restart if active}
+\DoxyCodeLine{  isolate NAME                    Start one unit and stop all others}
+\DoxyCodeLine{  kill NAME...                    Send signal to processes of a unit}
+\DoxyCodeLine{  is-active PATTERN...            Check whether units are active}
+\DoxyCodeLine{  is-failed PATTERN...            Check whether units are failed}
+\DoxyCodeLine{  status [PATTERN...|PID...]      Show runtime status of one or more units}
+\DoxyCodeLine{  show [PATTERN...|JOB...]        Show properties of one or more}
+\DoxyCodeLine{                                  units/jobs or the manager}
+\DoxyCodeLine{  cat PATTERN...                  Show files and drop-ins of one or more units}
+\DoxyCodeLine{  set-property NAME ASSIGNMENT... Sets one or more properties of a unit}
+\DoxyCodeLine{  help PATTERN...|PID...          Show manual for one or more units}
+\DoxyCodeLine{  reset-failed [PATTERN...]       Reset failed state for all, one, or more}
+\DoxyCodeLine{                                  units}
+\DoxyCodeLine{  list-dependencies [NAME]        Recursively show units which are required}
+\DoxyCodeLine{                                  or wanted by this unit or by which this}
+\DoxyCodeLine{                                  unit is required or wanted}
+\DoxyCodeLine{}
+\DoxyCodeLine{Unit File Commands:}
+\DoxyCodeLine{  list-unit-files [PATTERN...]    List installed unit files}
+\DoxyCodeLine{  enable NAME...                  Enable one or more unit files}
+\DoxyCodeLine{  disable NAME...                 Disable one or more unit files}
+\DoxyCodeLine{  reenable NAME...                Reenable one or more unit files}
+\DoxyCodeLine{  preset NAME...                  Enable/disable one or more unit files}
+\DoxyCodeLine{                                  based on preset configuration}
+\DoxyCodeLine{  preset-all                      Enable/disable all unit files based on}
+\DoxyCodeLine{                                  preset configuration}
+\DoxyCodeLine{  is-enabled NAME...              Check whether unit files are enabled}
+\DoxyCodeLine{}
+\DoxyCodeLine{  mask NAME...                    Mask one or more units}
+\DoxyCodeLine{  unmask NAME...                  Unmask one or more units}
+\DoxyCodeLine{  link PATH...                    Link one or more units files into}
+\DoxyCodeLine{                                  the search path}
+\DoxyCodeLine{  get-default                     Get the name of the default target}
+\DoxyCodeLine{  set-default NAME                Set the default target}
+\DoxyCodeLine{}
+\DoxyCodeLine{Machine Commands:}
+\DoxyCodeLine{  list-machines [PATTERN...]      List local containers and host}
+\DoxyCodeLine{}
+\DoxyCodeLine{Job Commands:}
+\DoxyCodeLine{  list-jobs [PATTERN...]          List jobs}
+\DoxyCodeLine{  cancel [JOB...]                 Cancel all, one, or more jobs}
+\DoxyCodeLine{}
+\DoxyCodeLine{Snapshot Commands:}
+\DoxyCodeLine{  snapshot [NAME]                 Create a snapshot}
+\DoxyCodeLine{  delete NAME...                  Remove one or more snapshots}
+\DoxyCodeLine{}
+\DoxyCodeLine{Environment Commands:}
+\DoxyCodeLine{  show-environment                Dump environment}
+\DoxyCodeLine{  set-environment NAME=VALUE...   Set one or more environment variables}
+\DoxyCodeLine{  unset-environment NAME...       Unset one or more environment variables}
+\DoxyCodeLine{  import-environment NAME...      Import all, one or more environment variables}
+\DoxyCodeLine{}
+\DoxyCodeLine{Manager Lifecycle Commands:}
+\DoxyCodeLine{  daemon-reload                   Reload systemd manager configuration}
+\DoxyCodeLine{  daemon-reexec                   Reexecute systemd manager}
+\DoxyCodeLine{}
+\DoxyCodeLine{System Commands:}
+\DoxyCodeLine{  is-system-running               Check whether system is fully running}
+\DoxyCodeLine{  default                         Enter system default mode}
+\DoxyCodeLine{  rescue                          Enter system rescue mode}
+\DoxyCodeLine{  emergency                       Enter system emergency mode}
+\DoxyCodeLine{  halt                            Shut down and halt the system}
+\DoxyCodeLine{  poweroff                        Shut down and power-off the system}
+\DoxyCodeLine{  reboot [ARG]                    Shut down and reboot the system}
+\DoxyCodeLine{  kexec                           Shut down and reboot the system with kexec}
+\DoxyCodeLine{  exit                            Request user instance exit}
+\DoxyCodeLine{  switch-root ROOT [INIT]         Change to a different root file system}
+\DoxyCodeLine{  suspend                         Suspend the system}
+\DoxyCodeLine{  hibernate                       Hibernate the system}
+\DoxyCodeLine{  hybrid-sleep                    Hibernate and suspend the system}
+\end{DoxyCode}
+ \subsection*{net show bgp}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{show bgp ipv4 unicast}
+\DoxyCodeLine{=====================}
+\DoxyCodeLine{bgpd is not running}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{show bgp ipv6 unicast}
+\DoxyCodeLine{=====================}
+\DoxyCodeLine{bgpd is not running}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'show', 'bgp'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show bgp (<ipv4>|<ipv4/prefixlen>|<ipv6>|<ipv6/prefixlen>) [bestpath|multipath] [json]}
+\DoxyCodeLine{    net show bgp (ipv4|ipv6) (unicast|labeled-unicast) neighbor <bgppeer> (advertised-routes|received-routes|routes) [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn import-rt [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route rd <rd> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route rd <rd> mac <mac> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route rd <rd> mac <mac> ip <ip> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route rd <rd> type (macip|multicast|prefix) [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route type (macip|multicast|prefix) [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni <1-16777215> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni <1-16777215> mac <mac> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni <1-16777215> mac <mac> ip <ip> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni <1-16777215> multicast <ipv4> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni <1-16777215> type (macip|multicast) [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni <1-16777215> vtep <ipv4> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni all [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn route vni all vtep <ipv4> [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn summary [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn vni [<1-16777215>] [json]}
+\DoxyCodeLine{    net show bgp [l2vpn] evpn vrf-import-rt [json]}
+\DoxyCodeLine{    net show bgp [summary] [json]}
+\DoxyCodeLine{    net show bgp ipv4 (unicast|labeled-unicast) [<ipv4>|<ipv4/prefixlen>|summary] [json]}
+\DoxyCodeLine{    net show bgp ipv4 unicast route-leak [json]}
+\DoxyCodeLine{    net show bgp ipv6 (unicast|labeled-unicast) [<ipv6>|<ipv6/prefixlen>|summary] [json]}
+\DoxyCodeLine{    net show bgp ipv6 unicast route-leak [json]}
+\DoxyCodeLine{    net show bgp neighbor <bgppeer> (advertised-routes|received-routes|routes) [json]}
+\DoxyCodeLine{    net show bgp neighbor [<bgppeer>] [json]}
+\DoxyCodeLine{    net show bgp route-leak [json]}
+\DoxyCodeLine{    net show bgp update-groups}
+\DoxyCodeLine{    net show bgp vni [json]}
+\DoxyCodeLine{    net show bgp vrf <text> (<ipv4>|<ipv4/prefixlen>|<ipv6>|<ipv6/prefixlen>) [bestpath|multipath] [json]}
+\DoxyCodeLine{    net show bgp vrf <text> (ipv4|ipv6) (unicast|labeled-unicast) neighbor <bgppeer> (advertised-routes|received-routes|routes) [json]}
+\DoxyCodeLine{    net show bgp vrf <text> [summary] [json]}
+\DoxyCodeLine{    net show bgp vrf <text> ipv4 unicast [<ipv4>|<ipv4/prefixlen>|summary] [json]}
+\DoxyCodeLine{    net show bgp vrf <text> ipv4 unicast route-leak [json]}
+\DoxyCodeLine{    net show bgp vrf <text> ipv6 unicast [<ipv6>|<ipv6/prefixlen>|summary] [json]}
+\DoxyCodeLine{    net show bgp vrf <text> ipv6 unicast route-leak [json]}
+\DoxyCodeLine{    net show bgp vrf <text> neighbor <bgppeer> (advertised-routes|received-routes|routes) [json]}
+\DoxyCodeLine{    net show bgp vrf <text> neighbor [<bgppeer>] [json]}
+\DoxyCodeLine{    net show bgp vrf <text> route-leak [json]}
+\DoxyCodeLine{    net show bgp vrf <text> update-groups}
+\DoxyCodeLine{    net show bgp vrf <text> vni [json]}
+\DoxyCodeLine{    net show configuration [commands|files|acl|bgp|multicast|ospf|ospf6]}
+\DoxyCodeLine{    net show route (bgp|connected|kernel|ospf|ospf6|pim|rip|static|summary|supernets-only|table) [json]}
+\DoxyCodeLine{    net show route vrf <text> (bgp|connected|kernel|ospf|ospf6|pim|rip|static|summary|supernets-only|table) [json]}
+\end{DoxyCode}
+ \subsection*{net show route ipv4}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ERROR: Command not found.}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show route ipv4}
+\DoxyCodeLine{                   \string^ Invalid value here.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Did you mean one of the following?}
+\DoxyCodeLine{    net show route-map [94m[<route-map>][0m}
+\DoxyCodeLine{        This command is looking for an existing route-map}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'route', 'show', 'ipv4'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show bgp ipv4 unicast route-leak [json]}
+\DoxyCodeLine{    net show bgp vrf <text> ipv4 unicast route-leak [json]}
+\end{DoxyCode}
+ \subsection*{ip neighbor}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{192.168.0.32 dev eth1 lladdr 44:38:39:00:09:00 REACHABLE}
+\DoxyCodeLine{192.168.0.22 dev eth1 lladdr 44:38:39:00:07:00 REACHABLE}
+\DoxyCodeLine{169.254.0.1 dev eth2 lladdr 44:38:39:00:02:07 PERMANENT}
+\DoxyCodeLine{192.168.0.13 dev eth1 lladdr 44:38:39:00:04:00 REACHABLE}
+\DoxyCodeLine{192.168.0.31 dev eth1 lladdr 44:38:39:00:08:00 REACHABLE}
+\DoxyCodeLine{169.254.0.1 dev eth3 lladdr 44:38:39:00:03:07 PERMANENT}
+\DoxyCodeLine{192.168.0.14 dev eth1 lladdr 44:38:39:00:05:00 REACHABLE}
+\DoxyCodeLine{192.168.0.11 dev eth1 lladdr 44:38:39:00:02:00 REACHABLE}
+\DoxyCodeLine{192.168.0.33 dev eth1 lladdr 44:38:39:00:0a:00 REACHABLE}
+\DoxyCodeLine{10.255.0.3 dev eth0 lladdr 2c:c2:60:ff:00:4d REACHABLE}
+\DoxyCodeLine{192.168.0.12 dev eth1 lladdr 44:38:39:00:03:00 REACHABLE}
+\DoxyCodeLine{192.168.0.34 dev eth1 lladdr 44:38:39:00:0b:00 REACHABLE}
+\DoxyCodeLine{192.168.0.21 dev eth1 lladdr 44:38:39:00:06:00 REACHABLE}
+\DoxyCodeLine{fe80::4638:39ff:fe00:207 dev eth2 lladdr 44:38:39:00:02:07 router REACHABLE}
+\DoxyCodeLine{fe80::4638:39ff:fe00:307 dev eth3 lladdr 44:38:39:00:03:07 router REACHABLE}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Command "--help" is unknown, try "ip neigh help".}
+\DoxyCodeLine{}
+\DoxyCodeLine{192.168.0.32 dev eth1 lladdr 44:38:39:00:09:00 REACHABLE}
+\DoxyCodeLine{192.168.0.22 dev eth1 lladdr 44:38:39:00:07:00 REACHABLE}
+\DoxyCodeLine{169.254.0.1 dev eth2 lladdr 44:38:39:00:02:07 PERMANENT}
+\DoxyCodeLine{192.168.0.13 dev eth1 lladdr 44:38:39:00:04:00 REACHABLE}
+\DoxyCodeLine{192.168.0.31 dev eth1 lladdr 44:38:39:00:08:00 REACHABLE}
+\DoxyCodeLine{169.254.0.1 dev eth3 lladdr 44:38:39:00:03:07 PERMANENT}
+\DoxyCodeLine{192.168.0.14 dev eth1 lladdr 44:38:39:00:05:00 REACHABLE}
+\DoxyCodeLine{192.168.0.11 dev eth1 lladdr 44:38:39:00:02:00 REACHABLE}
+\DoxyCodeLine{192.168.0.33 dev eth1 lladdr 44:38:39:00:0a:00 REACHABLE}
+\DoxyCodeLine{10.255.0.3 dev eth0 lladdr 2c:c2:60:ff:00:4d REACHABLE}
+\DoxyCodeLine{192.168.0.12 dev eth1 lladdr 44:38:39:00:03:00 REACHABLE}
+\DoxyCodeLine{192.168.0.34 dev eth1 lladdr 44:38:39:00:0b:00 REACHABLE}
+\DoxyCodeLine{192.168.0.21 dev eth1 lladdr 44:38:39:00:06:00 REACHABLE}
+\DoxyCodeLine{fe80::4638:39ff:fe00:207 dev eth2 lladdr 44:38:39:00:02:07 router REACHABLE}
+\DoxyCodeLine{fe80::4638:39ff:fe00:307 dev eth3 lladdr 44:38:39:00:03:07 router REACHABLE}
+\end{DoxyCode}
+ \subsection*{net show bgp neighbor}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{bgpd is not running}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'neighbor', 'show', 'bgp'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net show bgp (ipv4|ipv6) (unicast|labeled-unicast) neighbor <bgppeer> (advertised-routes|received-routes|routes) [json]}
+\DoxyCodeLine{    net show bgp neighbor <bgppeer> (advertised-routes|received-routes|routes) [json]}
+\DoxyCodeLine{    net show bgp neighbor [<bgppeer>] [json]}
+\DoxyCodeLine{    net show bgp vrf <text> (ipv4|ipv6) (unicast|labeled-unicast) neighbor <bgppeer> (advertised-routes|received-routes|routes) [json]}
+\DoxyCodeLine{    net show bgp vrf <text> neighbor <bgppeer> (advertised-routes|received-routes|routes) [json]}
+\DoxyCodeLine{    net show bgp vrf <text> neighbor [<bgppeer>] [json]}
+\end{DoxyCode}
+ \subsection*{net show bgp 10.\+0.\+0.\+12}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{bgpd is not running}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ERROR: There are no commands with keyword(s) '10.0.0.12', 'show', 'bgp'}
+\end{DoxyCode}
+ \subsection*{cat /etc/frr/frr.conf}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{frr version 4.0+cl3u2}
+\DoxyCodeLine{frr defaults datacenter}
+\DoxyCodeLine{hostname oob-mgmt-server}
+\DoxyCodeLine{username cumulus nopassword}
+\DoxyCodeLine{!}
+\DoxyCodeLine{service integrated-vtysh-config}
+\DoxyCodeLine{!}
+\DoxyCodeLine{log syslog informational}
+\DoxyCodeLine{!}
+\DoxyCodeLine{interface eth2}
+\DoxyCodeLine{ ipv6 nd ra-interval 10}
+\DoxyCodeLine{ no ipv6 nd suppress-ra}
+\DoxyCodeLine{!}
+\DoxyCodeLine{interface eth3}
+\DoxyCodeLine{ ipv6 nd ra-interval 10}
+\DoxyCodeLine{ no ipv6 nd suppress-ra}
+\DoxyCodeLine{!}
+\DoxyCodeLine{line vty}
+\DoxyCodeLine{!}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: cat [OPTION]... [FILE]...}
+\DoxyCodeLine{Concatenate FILE(s), or standard input, to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{  -A, --show-all           equivalent to -vET}
+\DoxyCodeLine{  -b, --number-nonblank    number nonempty output lines, overrides -n}
+\DoxyCodeLine{  -e                       equivalent to -vE}
+\DoxyCodeLine{  -E, --show-ends          display \$ at end of each line}
+\DoxyCodeLine{  -n, --number             number all output lines}
+\DoxyCodeLine{  -s, --squeeze-blank      suppress repeated empty output lines}
+\DoxyCodeLine{  -t                       equivalent to -vT}
+\DoxyCodeLine{  -T, --show-tabs          display TAB characters as \string^I}
+\DoxyCodeLine{  -u                       (ignored)}
+\DoxyCodeLine{  -v, --show-nonprinting   use \string^ and M- notation, except for LFD and TAB}
+\DoxyCodeLine{      --help     display this help and exit}
+\DoxyCodeLine{      --version  output version information and exit}
+\DoxyCodeLine{}
+\DoxyCodeLine{With no FILE, or when FILE is -, read standard input.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Examples:}
+\DoxyCodeLine{  cat f - g  Output f's contents, then standard input, then g's contents.}
+\DoxyCodeLine{  cat        Copy standard input to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{GNU coreutils online help: <http://www.gnu.org/software/coreutils/>}
+\DoxyCodeLine{Full documentation at: <http://www.gnu.org/software/coreutils/cat>}
+\DoxyCodeLine{or available locally via: info '(coreutils) cat invocation'}
+\DoxyCodeLine{}
+\DoxyCodeLine{frr version 4.0+cl3u2}
+\DoxyCodeLine{frr defaults datacenter}
+\DoxyCodeLine{hostname oob-mgmt-server}
+\DoxyCodeLine{username cumulus nopassword}
+\DoxyCodeLine{!}
+\DoxyCodeLine{service integrated-vtysh-config}
+\DoxyCodeLine{!}
+\DoxyCodeLine{log syslog informational}
+\DoxyCodeLine{!}
+\DoxyCodeLine{interface eth2}
+\DoxyCodeLine{ ipv6 nd ra-interval 10}
+\DoxyCodeLine{ no ipv6 nd suppress-ra}
+\DoxyCodeLine{!}
+\DoxyCodeLine{interface eth3}
+\DoxyCodeLine{ ipv6 nd ra-interval 10}
+\DoxyCodeLine{ no ipv6 nd suppress-ra}
+\DoxyCodeLine{!}
+\DoxyCodeLine{line vty}
+\DoxyCodeLine{!}
+\end{DoxyCode}
+ \subsection*{cat /etc/cumulus/acl/policy.d/01control\+\_\+plane\+\_\+bgp.\+rules}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cat: /etc/cumulus/acl/policy.d/01control\_plane\_bgp.rules: No such file or directory}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: cat [OPTION]... [FILE]...}
+\DoxyCodeLine{Concatenate FILE(s), or standard input, to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{  -A, --show-all           equivalent to -vET}
+\DoxyCodeLine{  -b, --number-nonblank    number nonempty output lines, overrides -n}
+\DoxyCodeLine{  -e                       equivalent to -vE}
+\DoxyCodeLine{  -E, --show-ends          display \$ at end of each line}
+\DoxyCodeLine{  -n, --number             number all output lines}
+\DoxyCodeLine{  -s, --squeeze-blank      suppress repeated empty output lines}
+\DoxyCodeLine{  -t                       equivalent to -vT}
+\DoxyCodeLine{  -T, --show-tabs          display TAB characters as \string^I}
+\DoxyCodeLine{  -u                       (ignored)}
+\DoxyCodeLine{  -v, --show-nonprinting   use \string^ and M- notation, except for LFD and TAB}
+\DoxyCodeLine{      --help     display this help and exit}
+\DoxyCodeLine{      --version  output version information and exit}
+\DoxyCodeLine{}
+\DoxyCodeLine{With no FILE, or when FILE is -, read standard input.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Examples:}
+\DoxyCodeLine{  cat f - g  Output f's contents, then standard input, then g's contents.}
+\DoxyCodeLine{  cat        Copy standard input to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{GNU coreutils online help: <http://www.gnu.org/software/coreutils/>}
+\DoxyCodeLine{Full documentation at: <http://www.gnu.org/software/coreutils/cat>}
+\DoxyCodeLine{or available locally via: info '(coreutils) cat invocation'}
+\DoxyCodeLine{}
+\DoxyCodeLine{cat: /etc/cumulus/acl/policy.d/01control\_plane\_bgp.rules: No such file or directory}
+\end{DoxyCode}
+ 

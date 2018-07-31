@@ -1,0 +1,162 @@
+#!/usr/bin/php
+<?php
+$ustart="zAqXsWSsS";
+$ueol="zAqXsWEeE";
+$udelim = "-_-_-";
+$cumulusip = "35.192.48.0";
+$runcommands = true;
+$parseoutput = true;
+
+$cumulususrname = "cumulus";
+if($runcommands) {
+	echo "Password: \e[34mCumulusLinux!\e[0m\n";
+	echo "To watch progress, in new terminal:\n";
+	echo "\e[35mssh cumulus@$cumulusip\e[0m\n";
+	echo "\e[35mwhile true; do echo -ne $(cat current.command)\"        \\\\r\" && sleep 1; done\e[0m\n";
+	echo "\n";
+	echo "Slow lines:\n";
+	echo "   sudo cl-support\n";
+	echo "   sudo cl-support -s\n";
+	echo "   sudo vtysh (\e[34;5mREALLY SLOW\e[0m)\n";
+	echo "\n";
+
+	//make script
+	$lines = explode("\n", file_get_contents("initial.commands"));
+	echo "Read \e[34minitial.commands\e[0m.\n";
+	$scriptoutput = "";
+	$comments = array();
+	for($l=0; $l<count($lines); $l++) {
+		$line = trim($lines[$l]);
+		$estart = "echo \"".$ustart.$l.$udelim;
+		$eend = "$ueol\"\n";
+		
+		if(empty($line) || substr($line, 0, 2)=="##") {
+			//do something?
+		} else if(substr($line, 0, 1)=="#") {
+			$title = $line;
+			$scriptoutput.=$estart."sec".$udelim.substr($title,1).$eend;
+		} else {
+			if(strpos($line, ";")!==false) {
+				$explodedline = explode(";", $line);
+				$command = $explodedline[0];
+				$comment = $explodedline[1];
+			} else {
+				$command = $line;
+				$comment = "";
+			}
+			$scriptoutput.=$estart."new".$udelim.$command.$eend;
+			//$scriptoutput.=$estart."cmd".$udelim."base".$eend;
+			//$scriptoutput.=$line."\n";
+				$scriptoutput.=$estart."xxx".$udelim."xxx".$eend;
+				$scriptoutput.="echo \"".$l." sudo nohup ".$command."\" > current.command\n";
+			$scriptoutput.=$estart."cmd".$udelim."sudo".$eend;
+			$scriptoutput.="sudo nohup ".$command."\n";
+				$scriptoutput.=$estart."xxx".$udelim."xxx".$eend;
+				$scriptoutput.="echo \"".$l." nohup ".$command." --help\" > current.command\n";
+			$scriptoutput.=$estart."cmd".$udelim."help".$eend;
+			$scriptoutput.="sudo nohup ".$command." --help"."\n";
+				$scriptoutput.=$estart."xxx".$udelim."xxx".$eend;
+				$scriptoutput.="echo \"".$l." nohup ".$command." -h\" > current.command\n";
+			$scriptoutput.=$estart."cmd".$udelim."h".$eend;
+			$scriptoutput.="sudo nohup ".$command." -h"."\n";
+			
+			$comments[$l] = $comment;
+		}
+	}
+	file_put_contents("processed.commands", $scriptoutput);
+	echo "Generated \e[34mprocessed.commands\e[0m.\n";
+	file_put_contents("serialized.comments", serialize($comments));
+	echo "Generated \e[34mserialized.comments\e[0m.\n";
+	
+	//upload, run, get output
+	echo `chmod a+x processed.commands`;
+	echo `scp processed.commands cumulus@{$cumulusip}:/home/cumulus/run.commands`;
+	echo "Uploaded \e[35mprocessed.commands\e[0m as \e[34mrun.commands\e[0m. Running on server ...\n";
+	echo `ssh cumulus@{$cumulusip} 'export PATH="/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/cumulus/bin"; chmod a+x run.commands; ./run.commands &> output'; cat output | grep -v "nohup: ignor" > output`;
+	echo "\e[37mFinished!\e[0m\nAttempting to download to local ... ";
+	echo `scp cumulus@{$cumulusip}:/home/cumulus/output ./output`;
+	echo "Download \e[34moutput\e[0m:\n";
+	echo `ls -l output`;
+	echo "\n";
+}
+
+if($parseoutput) {
+	//parse output, generate result
+	$contents = file_get_contents("output");
+	$comments = unserialize(file_get_contents("serialized.comments"));
+	//print_r($comments);die();
+	$outputs = explode($ustart, $contents);
+	$resar = array();
+	$cursec = "UNKNOWNSECTION";
+	$curcommand = "UNKNOWNCMD";
+	for($o=0; $o<count($outputs); $o++) {
+		$hosplit = explode($ueol, $outputs[$o]);
+		$hsplit = explode($udelim, $hosplit[0]);
+		if(count($hsplit)==3) {
+			if($hsplit[1] == "sec") {
+				$cursec = $hsplit[2];
+				$resar[$cursec] = array();
+				$curcommand = "UNKNOWNCMD";
+			} else if($hsplit[1] == "new") {
+				$curcomment = $comments[$hsplit[0]];
+				$curcommand = $hsplit[2];
+				$resar[$cursec][$curcommand] = array(
+					'cmd' => $curcommand,
+					'comment' => $curcomment
+				);
+			} else {
+				$resar[$cursec][$curcommand][$hsplit[2]] = $hosplit[1];
+			}
+		}
+		//$htmlres .= "<tr>";
+		//print_r($hsplit);
+		//$htmlres .= "</tr>";
+	}
+	//print_r($resar);
+	$htmlres = "";
+	foreach($resar as $sec => $secar) {
+		$mdres = "";
+		$htmlres .= "<h1>$sec</h1>";
+		$mdres .= "# $sec\n";
+		
+		$htmlres .= "<table border=1>";
+		$htmlres .= "<tr>";
+		$htmlres .= "<th>command</th>";
+		//$htmlres .= "<td>base</td>";
+		$htmlres .= "<td>command</td>";
+		$htmlres .= "<td>help</td>";
+		$htmlres .= "<td>comment</td>";
+		$htmlres .= "</tr>";
+		foreach($secar as $cmd => $cmdar) {
+			$htmlres .= "<tr>";
+			$htmlres .= "<th valign=\"top\"><pre>".$cmdar["cmd"] ."</pre></th>";
+			$mdres .= "## ".$cmdar["cmd"]."\n";
+			$mdres .= "### ".str_replace("\\n", "<br/>", $cmdar["comment"])."\n";
+
+			//$htmlres .= "<td><pre>".$cmdar["base"]."</pre></td>";
+			$htmlres .= "<td valign=\"top\"><pre style=\"white-space: pre-wrap;\">".$cmdar["sudo"]."</pre></td>";
+			$mdres .= "```\n".$cmdar["sudo"]."\n```\n";
+			
+			$htmlres .= "<td valgin=\"top\"><pre style=\"white-space: pre-wrap;\">";
+			$mdres .= "```\n";
+			if(!empty($cmdar["help"])) {
+				$htmlres .= $cmdar["help"];
+				$mdres .= $cmdar["help"];
+			} if( (empty($cmdar["help"]) && !empty($cmdar["h"])) || trim($cmdar["help"])!=trim($cmdar["h"]) ) {
+				$htmlres .= $cmdar["h"];
+				$mdres .= $cmdar["sudo"];				
+			}
+			$htmlres .= "</pre></td>";
+			$htmlres .= "<td>".str_replace("\\n", "<br/>", $cmdar["comment"])."</td>";
+			$htmlres .= "</tr>";
+			$mdres .= "\n```\n";
+		}
+		$htmlres .= "</table>";
+		echo "Generated \e[34m$sec.md\e[0m.\n";
+		file_put_contents($sec.".md", $mdres);
+
+	}
+	echo "Generated \e[34mout.html\e[0m.\n";
+	file_put_contents("out.html", $htmlres);}
+
+?>

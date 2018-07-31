@@ -1,0 +1,553 @@
+\subsection*{sudo cl-\/ecmpcalc}
+
+\#\#\# You know that already 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ecmpcalc: asicTool not available, unable to query hardware}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usage: cl-ecmpcalc [-h] [-v] [-p PROTOCOL] [-s SRC] [--sport SPORT] [-d DST]}
+\DoxyCodeLine{                   [--dport DPORT] [--vid VID] [-i IN\_INTERFACE]}
+\DoxyCodeLine{                   [--sportid SPORTID] [--smodid SMODID] [-o OUT\_INTERFACE]}
+\DoxyCodeLine{                   [--dportid DPORTID] [--dmodid DMODID] [--hardware]}
+\DoxyCodeLine{                   [--nohardware] [-hs HASHSEED]}
+\DoxyCodeLine{                   [-hf HASHFIELDS [HASHFIELDS ...]]}
+\DoxyCodeLine{                   [--hashfunction \{crc16-ccitt,crc16-bisync\}] [-e EGRESS]}
+\DoxyCodeLine{                   [-c MCOUNT]}
+\DoxyCodeLine{}
+\DoxyCodeLine{Determine the ECMP egress interface for a frame}
+\DoxyCodeLine{}
+\DoxyCodeLine{optional arguments:}
+\DoxyCodeLine{  -h, --help            show this help message and exit}
+\DoxyCodeLine{  -v, --verbose         Verbose output}
+\DoxyCodeLine{  -p PROTOCOL, --protocol PROTOCOL}
+\DoxyCodeLine{                        IP protocol ("tcp", "udp", or integer)}
+\DoxyCodeLine{  -s SRC, --src SRC     Source IPv4 or IPv6 address}
+\DoxyCodeLine{  --sport SPORT         Source L4 port}
+\DoxyCodeLine{  -d DST, --dst DST     Destination IPv4 or IPv6 address}
+\DoxyCodeLine{  --dport DPORT         Destination L4 port}
+\DoxyCodeLine{  --vid VID             VLAN ID}
+\DoxyCodeLine{  -i IN\_INTERFACE, --in-interface IN\_INTERFACE}
+\DoxyCodeLine{                        Input interface}
+\DoxyCodeLine{  --sportid SPORTID     Hardware source port ID}
+\DoxyCodeLine{  --smodid SMODID       Hardware source module ID}
+\DoxyCodeLine{  -o OUT\_INTERFACE, --out-interface OUT\_INTERFACE}
+\DoxyCodeLine{                        Output interface}
+\DoxyCodeLine{  --dportid DPORTID     Hardware destination port ID}
+\DoxyCodeLine{  --dmodid DMODID       Hardware destination module ID}
+\DoxyCodeLine{  --hardware            Force hardware query, ecmpcalc will read the hash}
+\DoxyCodeLine{                        configuration from hardware}
+\DoxyCodeLine{  --nohardware          Force no hardware query}
+\DoxyCodeLine{  -hs HASHSEED, --hashseed HASHSEED}
+\DoxyCodeLine{                        RTAG7 hash seed}
+\DoxyCodeLine{  -hf HASHFIELDS [HASHFIELDS ...], --hashfields HASHFIELDS [HASHFIELDS ...]}
+\DoxyCodeLine{                        list of RTAG7 hash fields, one or more of (srcH, srcL,}
+\DoxyCodeLine{                        dstH, dstL, vid, sport, dport, protocol, sportid,}
+\DoxyCodeLine{                        smodid, dportid, dmodid)}
+\DoxyCodeLine{  --hashfunction \{crc16-ccitt,crc16-bisync\}}
+\DoxyCodeLine{                        RTAG7 hash function}
+\DoxyCodeLine{  -e EGRESS, --egress EGRESS}
+\DoxyCodeLine{                        multipath egress object as from}
+\DoxyCodeLine{                        "/usr/lib/cumulus/bcmcmd l3 defip show"}
+\DoxyCodeLine{  -c MCOUNT, --mcount MCOUNT}
+\DoxyCodeLine{                        ECMP group member count}
+\end{DoxyCode}
+ \subsection*{net example link-\/settings}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Scenarios}
+\DoxyCodeLine{=========}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{---- Breakout a QSFP into four individual interfaces}
+\DoxyCodeLine{}
+\DoxyCodeLine{switch\# net add interface swp2 breakout 4x}
+\DoxyCodeLine{switch\# net commit}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{---- Gang 4 SFP interfaces together into a higher speed interface}
+\DoxyCodeLine{     NOTE: the starting interface in the glob must be a multiple of four + 1}
+\DoxyCodeLine{}
+\DoxyCodeLine{switch\# net add interface swp5-8 breakout /4}
+\DoxyCodeLine{switch\# net commit}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{---- Set the a 10G interface to 1G with auto-negotiation on}
+\DoxyCodeLine{}
+\DoxyCodeLine{switch\# net add interface swp3 link speed 10000}
+\DoxyCodeLine{switch\# net add interface swp3 link autoneg on}
+\DoxyCodeLine{switch\# net commit}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{---- Breakout a 100G interface to 4x25G and set one to 10G}
+\DoxyCodeLine{}
+\DoxyCodeLine{switch\# net add interface swp20 breakout 4x}
+\DoxyCodeLine{switch\# net add interface swp20s0 link speed 10000}
+\DoxyCodeLine{switch\# net commit}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'link-settings', 'example'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net example link-settings}
+\end{DoxyCode}
+ \subsection*{ip route show 10.\+1.\+1.\+0/24}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Error: an inet prefix is expected rather than "--help".}
+\end{DoxyCode}
+ \subsection*{cat /etc/cumulus/datapath/traffic.conf}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# /etc/cumulus/datapath/traffic.conf}
+\DoxyCodeLine{\# Copyright 2014, 2015, 2016, 2017, Cumulus Networks, Inc.  All rights reserved.}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# packet header field used to determine the packet priority level}
+\DoxyCodeLine{\# fields include \{802.1p, dscp\}}
+\DoxyCodeLine{traffic.packet\_priority\_source\_set = [802.1p]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# packet priority source values assigned to each internal cos value}
+\DoxyCodeLine{\# internal cos values \{cos\_0..cos\_7\}}
+\DoxyCodeLine{\# (internal cos 3 has been reserved for CPU-generated traffic)}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# 802.1p values = \{0..7\}}
+\DoxyCodeLine{traffic.cos\_0.priority\_source.8021p = [0]}
+\DoxyCodeLine{traffic.cos\_1.priority\_source.8021p = [1]}
+\DoxyCodeLine{traffic.cos\_2.priority\_source.8021p = [2]}
+\DoxyCodeLine{traffic.cos\_3.priority\_source.8021p = []}
+\DoxyCodeLine{traffic.cos\_4.priority\_source.8021p = [3,4]}
+\DoxyCodeLine{traffic.cos\_5.priority\_source.8021p = [5]}
+\DoxyCodeLine{traffic.cos\_6.priority\_source.8021p = [6]}
+\DoxyCodeLine{traffic.cos\_7.priority\_source.8021p = [7]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# dscp values = \{0..63\}}
+\DoxyCodeLine{\#traffic.cos\_0.priority\_source.dscp = [0,1,2,3,4,5,6,7]}
+\DoxyCodeLine{\#traffic.cos\_1.priority\_source.dscp = [8,9,10,11,12,13,14,15]}
+\DoxyCodeLine{\#traffic.cos\_2.priority\_source.dscp = [16,17,18,19,20,21,22,23]}
+\DoxyCodeLine{\#traffic.cos\_3.priority\_source.dscp = [24,25,26,27,28,29,30,31]}
+\DoxyCodeLine{\#traffic.cos\_4.priority\_source.dscp = [32,33,34,35,36,37,38,39]}
+\DoxyCodeLine{\#traffic.cos\_5.priority\_source.dscp = [40,41,42,43,44,45,46,47]}
+\DoxyCodeLine{\#traffic.cos\_6.priority\_source.dscp = [48,49,50,51,52,53,54,55]}
+\DoxyCodeLine{\#traffic.cos\_7.priority\_source.dscp = [56,57,58,59,60,61,62,63]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# remark packet priority value}
+\DoxyCodeLine{\# fields include \{802.1p, dscp\}}
+\DoxyCodeLine{traffic.packet\_priority\_remark\_set = []}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# packet priority remark values assigned from each internal cos value}
+\DoxyCodeLine{\# internal cos values \{cos\_0..cos\_7\}}
+\DoxyCodeLine{\# (internal cos 3 has been reserved for CPU-generated traffic)}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# 802.1p values = \{0..7\}}
+\DoxyCodeLine{\#traffic.cos\_0.priority\_remark.8021p = [0]}
+\DoxyCodeLine{\#traffic.cos\_1.priority\_remark.8021p = [1]}
+\DoxyCodeLine{\#traffic.cos\_2.priority\_remark.8021p = [2]}
+\DoxyCodeLine{\#traffic.cos\_3.priority\_remark.8021p = [3]}
+\DoxyCodeLine{\#traffic.cos\_4.priority\_remark.8021p = [4]}
+\DoxyCodeLine{\#traffic.cos\_5.priority\_remark.8021p = [5]}
+\DoxyCodeLine{\#traffic.cos\_6.priority\_remark.8021p = [6]}
+\DoxyCodeLine{\#traffic.cos\_7.priority\_remark.8021p = [7]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# dscp values = \{0..63\}}
+\DoxyCodeLine{\#traffic.cos\_0.priority\_remark.dscp = [0]}
+\DoxyCodeLine{\#traffic.cos\_1.priority\_remark.dscp = [8]}
+\DoxyCodeLine{\#traffic.cos\_2.priority\_remark.dscp = [16]}
+\DoxyCodeLine{\#traffic.cos\_3.priority\_remark.dscp = [24]}
+\DoxyCodeLine{\#traffic.cos\_4.priority\_remark.dscp = [32]}
+\DoxyCodeLine{\#traffic.cos\_5.priority\_remark.dscp = [40]}
+\DoxyCodeLine{\#traffic.cos\_6.priority\_remark.dscp = [48]}
+\DoxyCodeLine{\#traffic.cos\_7.priority\_remark.dscp = [56]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# source.port\_group\_list = [source\_port\_group]}
+\DoxyCodeLine{\# source.source\_port\_group.packet\_priority\_source\_set = [dscp]}
+\DoxyCodeLine{\# source.source\_port\_group.port\_set = swp1-swp4,swp6}
+\DoxyCodeLine{\# source.source\_port\_group.cos\_0.priority\_source.dscp = [0,1,2,3,4,5,6,7]}
+\DoxyCodeLine{\# source.source\_port\_group.cos\_1.priority\_source.dscp = [8,9,10,11,12,13,14,15]}
+\DoxyCodeLine{\# source.source\_port\_group.cos\_2.priority\_source.dscp = [16,17,18,19,20,21,22,23]}
+\DoxyCodeLine{\# source.source\_port\_group.cos\_3.priority\_source.dscp = [24,25,26,27,28,29,30,31]}
+\DoxyCodeLine{\# source.source\_port\_group.cos\_4.priority\_source.dscp = [32,33,34,35,36,37,38,39]}
+\DoxyCodeLine{\# source.source\_port\_group.cos\_5.priority\_source.dscp = [40,41,42,43,44,45,46,47]}
+\DoxyCodeLine{\# source.source\_port\_group.cos\_6.priority\_source.dscp = [48,49,50,51,52,53,54,55]}
+\DoxyCodeLine{\# source.source\_port\_group.cos\_7.priority\_source.dscp = [56,57,58,59,60,61,62,63]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# remark.port\_group\_list = [remark\_port\_group]}
+\DoxyCodeLine{\# remark.remark\_port\_group.packet\_priority\_remark\_set = [dscp]}
+\DoxyCodeLine{\# remark.remark\_port\_group.port\_set = swp1-swp4,swp6}
+\DoxyCodeLine{\# remark.remark\_port\_group.cos\_0.priority\_remark.dscp = [0]}
+\DoxyCodeLine{\# remark.remark\_port\_group.cos\_1.priority\_remark.dscp = [8]}
+\DoxyCodeLine{\# remark.remark\_port\_group.cos\_2.priority\_remark.dscp = [16]}
+\DoxyCodeLine{\# remark.remark\_port\_group.cos\_3.priority\_remark.dscp = [24]}
+\DoxyCodeLine{\# remark.remark\_port\_group.cos\_4.priority\_remark.dscp = [32]}
+\DoxyCodeLine{\# remark.remark\_port\_group.cos\_5.priority\_remark.dscp = [40]}
+\DoxyCodeLine{\# remark.remark\_port\_group.cos\_6.priority\_remark.dscp = [48]}
+\DoxyCodeLine{\# remark.remark\_port\_group.cos\_7.priority\_remark.dscp = [56]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# priority groups}
+\DoxyCodeLine{traffic.priority\_group\_list = [control, service, bulk]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# internal cos values assigned to each priority group}
+\DoxyCodeLine{\# each cos value should be assigned exactly once}
+\DoxyCodeLine{\# internal cos values \{0..7\}}
+\DoxyCodeLine{priority\_group.control.cos\_list = [7]}
+\DoxyCodeLine{priority\_group.service.cos\_list = [2]}
+\DoxyCodeLine{priority\_group.bulk.cos\_list = [0,1,3,4,5,6]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# to configure priority flow control on a group of ports:}
+\DoxyCodeLine{\# -- assign cos value(s) to the cos list}
+\DoxyCodeLine{\# -- add or replace a port group names in the port group list}
+\DoxyCodeLine{\# -- for each port group in the list}
+\DoxyCodeLine{\#    -- populate the port set, e.g.}
+\DoxyCodeLine{\#       swp1-swp4,swp8,swp50s0-swp50s3}
+\DoxyCodeLine{\#    -- set a PFC buffer size in bytes for each port in the group}
+\DoxyCodeLine{\#    -- set the xoff byte limit (buffer limit that triggers PFC frames transmit to start)}
+\DoxyCodeLine{\#    -- set the xon byte delta (buffer limit that triggers PFC frames transmit to stop)}
+\DoxyCodeLine{\#    -- enable PFC frame transmit and/or PFC frame receive}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# priority flow control}
+\DoxyCodeLine{\# pfc.port\_group\_list = [pfc\_port\_group]}
+\DoxyCodeLine{\# pfc.pfc\_port\_group.cos\_list = []}
+\DoxyCodeLine{\# pfc.pfc\_port\_group.port\_set = swp1-swp4,swp6}
+\DoxyCodeLine{\# pfc.pfc\_port\_group.port\_buffer\_bytes = 25000}
+\DoxyCodeLine{\# pfc.pfc\_port\_group.xoff\_size = 10000}
+\DoxyCodeLine{\# pfc.pfc\_port\_group.xon\_delta = 2000}
+\DoxyCodeLine{\# pfc.pfc\_port\_group.tx\_enable = true}
+\DoxyCodeLine{\# pfc.pfc\_port\_group.rx\_enable = true}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# to configure pause on a group of ports:}
+\DoxyCodeLine{\# -- add or replace port group names in the port group list}
+\DoxyCodeLine{\# -- for each port group in the list}
+\DoxyCodeLine{\#    -- populate the port set, e.g.}
+\DoxyCodeLine{\#       swp1-swp4,swp8,swp50s0-swp50s3}
+\DoxyCodeLine{\#    -- set a pause buffer size in bytes for each port}
+\DoxyCodeLine{\#    -- set the xoff byte limit (buffer limit that triggers pause frames transmit to start)}
+\DoxyCodeLine{\#    -- set the xon byte delta (buffer limit that triggers pause frames transmit to stop)}
+\DoxyCodeLine{\#    -- enable pause frame transmit and/or pause frame receive}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# link pause}
+\DoxyCodeLine{\# link\_pause.port\_group\_list = [pause\_port\_group]}
+\DoxyCodeLine{\# link\_pause.pause\_port\_group.port\_set = swp1-swp4,swp6}
+\DoxyCodeLine{\# link\_pause.pause\_port\_group.port\_buffer\_bytes = 25000}
+\DoxyCodeLine{\# link\_pause.pause\_port\_group.xoff\_size = 10000}
+\DoxyCodeLine{\# link\_pause.pause\_port\_group.xon\_delta = 2000}
+\DoxyCodeLine{\# link\_pause.pause\_port\_group.rx\_enable = true}
+\DoxyCodeLine{\# link\_pause.pause\_port\_group.tx\_enable = true}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Explicit Congestion Notification}
+\DoxyCodeLine{\# to configure ECN and RED on a group of ports:}
+\DoxyCodeLine{\# -- add or replace port group names in the port group list}
+\DoxyCodeLine{\# -- assign cos value(s) to the cos list}
+\DoxyCodeLine{\# -- for each port group in the list}
+\DoxyCodeLine{\#    -- populate the port set, e.g.}
+\DoxyCodeLine{\#       swp1-swp4,swp8,swp50s0-swp50s3}
+\DoxyCodeLine{\# -- to enable RED requires the latest traffic.conf}
+\DoxyCodeLine{\# ecn\_red.port\_group\_list = [ecn\_red\_port\_group]}
+\DoxyCodeLine{\# ecn\_red.ecn\_red\_port\_group.cos\_list = []}
+\DoxyCodeLine{\# ecn\_red.ecn\_red\_port\_group.port\_set = swp1-swp4,swp6}
+\DoxyCodeLine{\# ecn\_red.ecn\_red\_port\_group.ecn\_enable = true}
+\DoxyCodeLine{\# ecn\_red.ecn\_red\_port\_group.red\_enable = false}
+\DoxyCodeLine{\# ecn\_red.ecn\_red\_port\_group.min\_threshold\_bytes = 40000}
+\DoxyCodeLine{\# ecn\_red.ecn\_red\_port\_group.max\_threshold\_bytes = 200000}
+\DoxyCodeLine{\# ecn\_red.ecn\_red\_port\_group.probability = 100}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# scheduling algorithm: algorithm values = \{dwrr\}}
+\DoxyCodeLine{scheduling.algorithm = dwrr}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# traffic group scheduling weight}
+\DoxyCodeLine{\# weight values = \{0..127\}}
+\DoxyCodeLine{\# '0' indicates strict priority}
+\DoxyCodeLine{priority\_group.control.weight = 0}
+\DoxyCodeLine{priority\_group.service.weight = 32}
+\DoxyCodeLine{priority\_group.bulk.weight = 16}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# To turn on/off Denial of service (DOS) prevention checks}
+\DoxyCodeLine{dos\_enable = false}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Cut-through is disabled by default on all chips with the exception of}
+\DoxyCodeLine{\# Spectrum.  On Spectrum cut-through cannot be disabled.}
+\DoxyCodeLine{\#cut\_through\_enable = false}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Enable resilient hashing}
+\DoxyCodeLine{\#resilient\_hash\_enable = FALSE}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Resilient hashing flowset entries per ECMP group}
+\DoxyCodeLine{\# Valid values - 64, 128, 256, 512, 1024}
+\DoxyCodeLine{\#resilient\_hash\_entries\_ecmp = 128}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Enable symmetric hashing}
+\DoxyCodeLine{\#symmetric\_hash\_enable = TRUE}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Set sflow/sample ingress cpu packet rate and burst in packets/sec}
+\DoxyCodeLine{\# Values: \{0..16384\}}
+\DoxyCodeLine{\#sflow.rate = 16384}
+\DoxyCodeLine{\#sflow.burst = 16384}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#Specify the maximum number of paths per route entry.}
+\DoxyCodeLine{\#  Maximum paths supported is 200.}
+\DoxyCodeLine{\#  Default value 0 takes the number of physical ports as the max path size.}
+\DoxyCodeLine{\#ecmp\_max\_paths = 0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#Specify the hash seed for Equal cost multipath entries}
+\DoxyCodeLine{\# Default value 0}
+\DoxyCodeLine{\# Value Rang: \{0..4294967295\}}
+\DoxyCodeLine{\#ecmp\_hash\_seed = 42}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Specify the forwarding table resource allocation profile, applicable}
+\DoxyCodeLine{\# only on platforms that support universal forwarding resources.}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# /usr/cumulus/sbin/cl-resource-query reports the allocated table sizes}
+\DoxyCodeLine{\# based on the profile setting.}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\#   Values: one of \{'default', 'l2-heavy', 'v4-lpm-heavy', 'v6-lpm-heavy',}
+\DoxyCodeLine{\#                   'ipmc-heavy'\}}
+\DoxyCodeLine{\#   Default value: 'default'}
+\DoxyCodeLine{\#   Note: some devices may support more modes, please consult user}
+\DoxyCodeLine{\#         guide for more details}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\#forwarding\_table.profile = default}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: cat [OPTION]... [FILE]...}
+\DoxyCodeLine{Concatenate FILE(s), or standard input, to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{  -A, --show-all           equivalent to -vET}
+\DoxyCodeLine{  -b, --number-nonblank    number nonempty output lines, overrides -n}
+\DoxyCodeLine{  -e                       equivalent to -vE}
+\DoxyCodeLine{  -E, --show-ends          display \$ at end of each line}
+\DoxyCodeLine{  -n, --number             number all output lines}
+\DoxyCodeLine{  -s, --squeeze-blank      suppress repeated empty output lines}
+\DoxyCodeLine{  -t                       equivalent to -vT}
+\DoxyCodeLine{  -T, --show-tabs          display TAB characters as \string^I}
+\DoxyCodeLine{  -u                       (ignored)}
+\DoxyCodeLine{  -v, --show-nonprinting   use \string^ and M- notation, except for LFD and TAB}
+\DoxyCodeLine{      --help     display this help and exit}
+\DoxyCodeLine{      --version  output version information and exit}
+\DoxyCodeLine{}
+\DoxyCodeLine{With no FILE, or when FILE is -, read standard input.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Examples:}
+\DoxyCodeLine{  cat f - g  Output f's contents, then standard input, then g's contents.}
+\DoxyCodeLine{  cat        Copy standard input to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{GNU coreutils online help: <http://www.gnu.org/software/coreutils/>}
+\DoxyCodeLine{Full documentation at: <http://www.gnu.org/software/coreutils/cat>}
+\DoxyCodeLine{or available locally via: info '(coreutils) cat invocation'}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# /etc/cumulus/datapath/traffic.conf}
+\DoxyCodeLine{\# Copyright 2014, 2015, 2016, 2017, Cumulus Networks, Inc.  All rights reserved.}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# packet header field used to determine the packet priority level}
+\DoxyCodeLine{\# fields include \{802.1p, dscp\}}
+\DoxyCodeLine{traffic.packet\_priority\_source\_set = [802.1p]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# packet priority source values assigned to each internal cos value}
+\DoxyCodeLine{\# internal cos values \{cos\_0..cos\_7\}}
+\DoxyCodeLine{\# (internal cos 3 has been reserved for CPU-generated traffic)}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# 802.1p values = \{0..7\}}
+\DoxyCodeLine{traffic.cos\_0.priority\_source.8021p = [0]}
+\DoxyCodeLine{traffic.cos\_1.priority\_source.8021p = [1]}
+\DoxyCodeLine{traffic.cos\_2.priority\_source.8021p = [2]}
+\DoxyCodeLine{traffic.cos\_3.priority\_source.8021p = []}
+\DoxyCodeLine{traffic.cos\_4.priority\_source.8021p = [3,4]}
+\DoxyCodeLine{traffic.cos\_5.priority\_source.8021p = [5]}
+\DoxyCodeLine{traffic.cos\_6.priority\_source.8021p = [6]}
+\DoxyCodeLine{traffic.cos\_7.priority\_source.8021p = [7]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# dscp values = \{0..63\}}
+\DoxyCodeLine{\#traffic.cos\_0.priority\_source.dscp = [0,1,2,3,4,5,6,7]}
+\DoxyCodeLine{\#traffic.cos\_1.priority\_source.dscp = [8,9,10,11,12,13,14,15]}
+\DoxyCodeLine{\#traffic.cos\_2.priority\_source.dscp = [16,17,18,19,20,21,22,23]}
+\DoxyCodeLine{\#traffic.cos\_3.priority\_source.dscp = [24,25,26,27,28,29,30,31]}
+\DoxyCodeLine{\#traffic.cos\_4.priority\_source.dscp = [32,33,34,35,36,37,38,39]}
+\DoxyCodeLine{\#traffic.cos\_5.priority\_source.dscp = [40,41,42,43,44,45,46,47]}
+\DoxyCodeLine{\#traffic.cos\_6.priority\_source.dscp = [48,49,50,51,52,53,54,55]}
+\DoxyCodeLine{\#traffic.cos\_7.priority\_source.dscp = [56,57,58,59,60,61,62,63]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# remark packet priority value}
+\DoxyCodeLine{\# fields include \{802.1p, dscp\}}
+\DoxyCodeLine{traffic.packet\_priority\_remark\_set = []}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# packet priority remark values assigned from each internal cos value}
+\DoxyCodeLine{\# internal cos values \{cos\_0..cos\_7\}}
+\DoxyCodeLine{\# (internal cos 3 has been reserved for CPU-generated traffic)}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# 802.1p values = \{0..7\}}
+\DoxyCodeLine{\#traffic.cos\_0.priority\_remark.8021p = [0]}
+\DoxyCodeLine{\#traffic.cos\_1.priority\_remark.8021p = [1]}
+\DoxyCodeLine{\#traffic.cos\_2.priority\_remark.8021p = [2]}
+\DoxyCodeLine{\#traffic.cos\_3.priority\_remark.8021p = [3]}
+\DoxyCodeLine{\#traffic.cos\_4.priority\_remark.8021p = [4]}
+\DoxyCodeLine{\#traffic.cos\_5.priority\_remark.8021p = [5]}
+\DoxyCodeLine{\#traffic.cos\_6.priority\_remark.8021p = [6]}
+\DoxyCodeLine{\#traffic.cos\_7.priority\_remark.8021p = [7]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# dscp values = \{0..63\}}
+\DoxyCodeLine{\#traffic.cos\_0.priority\_remark.dscp = [0]}
+\DoxyCodeLine{\#traffic.cos\_1.priority\_remark.dscp = [8]}
+\DoxyCodeLine{\#traffic.cos\_2.priority\_remark.dscp = [16]}
+\DoxyCodeLine{\#traffic.cos\_3.priority\_remark.dscp = [24]}
+\DoxyCodeLine{\#traffic.cos\_4.priority\_remark.dscp = [32]}
+\DoxyCodeLine{\#traffic.cos\_5.priority\_remark.dscp = [40]}
+\DoxyCodeLine{\#traffic.cos\_6.priority\_remark.dscp = [48]}
+\DoxyCodeLine{\#traffic.cos\_7.priority\_remark.dscp = [56]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# source.port\_group\_list = [source\_port\_group]}
+\DoxyCodeLine{\# source.source\_port\_group.packet\_priority\_source\_set = [dscp]}
+\DoxyCodeLine{\# source.source\_port\_group.port\_set = swp1-swp4,swp6}
+\DoxyCodeLine{\# source.source\_port\_group.cos\_0.priority\_source.dscp = [0,1,2,3,4,5,6,7]}
+\DoxyCodeLine{\# source.source\_port\_group.cos\_1.priority\_source.dscp = [8,9,10,11,12,13,14,15]}
+\DoxyCodeLine{\# source.source\_port\_group.cos\_2.priority\_source.dscp = [16,17,18,19,20,21,22,23]}
+\DoxyCodeLine{\# source.source\_port\_group.cos\_3.priority\_source.dscp = [24,25,26,27,28,29,30,31]}
+\DoxyCodeLine{\# source.source\_port\_group.cos\_4.priority\_source.dscp = [32,33,34,35,36,37,38,39]}
+\DoxyCodeLine{\# source.source\_port\_group.cos\_5.priority\_source.dscp = [40,41,42,43,44,45,46,47]}
+\DoxyCodeLine{\# source.source\_port\_group.cos\_6.priority\_source.dscp = [48,49,50,51,52,53,54,55]}
+\DoxyCodeLine{\# source.source\_port\_group.cos\_7.priority\_source.dscp = [56,57,58,59,60,61,62,63]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# remark.port\_group\_list = [remark\_port\_group]}
+\DoxyCodeLine{\# remark.remark\_port\_group.packet\_priority\_remark\_set = [dscp]}
+\DoxyCodeLine{\# remark.remark\_port\_group.port\_set = swp1-swp4,swp6}
+\DoxyCodeLine{\# remark.remark\_port\_group.cos\_0.priority\_remark.dscp = [0]}
+\DoxyCodeLine{\# remark.remark\_port\_group.cos\_1.priority\_remark.dscp = [8]}
+\DoxyCodeLine{\# remark.remark\_port\_group.cos\_2.priority\_remark.dscp = [16]}
+\DoxyCodeLine{\# remark.remark\_port\_group.cos\_3.priority\_remark.dscp = [24]}
+\DoxyCodeLine{\# remark.remark\_port\_group.cos\_4.priority\_remark.dscp = [32]}
+\DoxyCodeLine{\# remark.remark\_port\_group.cos\_5.priority\_remark.dscp = [40]}
+\DoxyCodeLine{\# remark.remark\_port\_group.cos\_6.priority\_remark.dscp = [48]}
+\DoxyCodeLine{\# remark.remark\_port\_group.cos\_7.priority\_remark.dscp = [56]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# priority groups}
+\DoxyCodeLine{traffic.priority\_group\_list = [control, service, bulk]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# internal cos values assigned to each priority group}
+\DoxyCodeLine{\# each cos value should be assigned exactly once}
+\DoxyCodeLine{\# internal cos values \{0..7\}}
+\DoxyCodeLine{priority\_group.control.cos\_list = [7]}
+\DoxyCodeLine{priority\_group.service.cos\_list = [2]}
+\DoxyCodeLine{priority\_group.bulk.cos\_list = [0,1,3,4,5,6]}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# to configure priority flow control on a group of ports:}
+\DoxyCodeLine{\# -- assign cos value(s) to the cos list}
+\DoxyCodeLine{\# -- add or replace a port group names in the port group list}
+\DoxyCodeLine{\# -- for each port group in the list}
+\DoxyCodeLine{\#    -- populate the port set, e.g.}
+\DoxyCodeLine{\#       swp1-swp4,swp8,swp50s0-swp50s3}
+\DoxyCodeLine{\#    -- set a PFC buffer size in bytes for each port in the group}
+\DoxyCodeLine{\#    -- set the xoff byte limit (buffer limit that triggers PFC frames transmit to start)}
+\DoxyCodeLine{\#    -- set the xon byte delta (buffer limit that triggers PFC frames transmit to stop)}
+\DoxyCodeLine{\#    -- enable PFC frame transmit and/or PFC frame receive}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# priority flow control}
+\DoxyCodeLine{\# pfc.port\_group\_list = [pfc\_port\_group]}
+\DoxyCodeLine{\# pfc.pfc\_port\_group.cos\_list = []}
+\DoxyCodeLine{\# pfc.pfc\_port\_group.port\_set = swp1-swp4,swp6}
+\DoxyCodeLine{\# pfc.pfc\_port\_group.port\_buffer\_bytes = 25000}
+\DoxyCodeLine{\# pfc.pfc\_port\_group.xoff\_size = 10000}
+\DoxyCodeLine{\# pfc.pfc\_port\_group.xon\_delta = 2000}
+\DoxyCodeLine{\# pfc.pfc\_port\_group.tx\_enable = true}
+\DoxyCodeLine{\# pfc.pfc\_port\_group.rx\_enable = true}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# to configure pause on a group of ports:}
+\DoxyCodeLine{\# -- add or replace port group names in the port group list}
+\DoxyCodeLine{\# -- for each port group in the list}
+\DoxyCodeLine{\#    -- populate the port set, e.g.}
+\DoxyCodeLine{\#       swp1-swp4,swp8,swp50s0-swp50s3}
+\DoxyCodeLine{\#    -- set a pause buffer size in bytes for each port}
+\DoxyCodeLine{\#    -- set the xoff byte limit (buffer limit that triggers pause frames transmit to start)}
+\DoxyCodeLine{\#    -- set the xon byte delta (buffer limit that triggers pause frames transmit to stop)}
+\DoxyCodeLine{\#    -- enable pause frame transmit and/or pause frame receive}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# link pause}
+\DoxyCodeLine{\# link\_pause.port\_group\_list = [pause\_port\_group]}
+\DoxyCodeLine{\# link\_pause.pause\_port\_group.port\_set = swp1-swp4,swp6}
+\DoxyCodeLine{\# link\_pause.pause\_port\_group.port\_buffer\_bytes = 25000}
+\DoxyCodeLine{\# link\_pause.pause\_port\_group.xoff\_size = 10000}
+\DoxyCodeLine{\# link\_pause.pause\_port\_group.xon\_delta = 2000}
+\DoxyCodeLine{\# link\_pause.pause\_port\_group.rx\_enable = true}
+\DoxyCodeLine{\# link\_pause.pause\_port\_group.tx\_enable = true}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Explicit Congestion Notification}
+\DoxyCodeLine{\# to configure ECN and RED on a group of ports:}
+\DoxyCodeLine{\# -- add or replace port group names in the port group list}
+\DoxyCodeLine{\# -- assign cos value(s) to the cos list}
+\DoxyCodeLine{\# -- for each port group in the list}
+\DoxyCodeLine{\#    -- populate the port set, e.g.}
+\DoxyCodeLine{\#       swp1-swp4,swp8,swp50s0-swp50s3}
+\DoxyCodeLine{\# -- to enable RED requires the latest traffic.conf}
+\DoxyCodeLine{\# ecn\_red.port\_group\_list = [ecn\_red\_port\_group]}
+\DoxyCodeLine{\# ecn\_red.ecn\_red\_port\_group.cos\_list = []}
+\DoxyCodeLine{\# ecn\_red.ecn\_red\_port\_group.port\_set = swp1-swp4,swp6}
+\DoxyCodeLine{\# ecn\_red.ecn\_red\_port\_group.ecn\_enable = true}
+\DoxyCodeLine{\# ecn\_red.ecn\_red\_port\_group.red\_enable = false}
+\DoxyCodeLine{\# ecn\_red.ecn\_red\_port\_group.min\_threshold\_bytes = 40000}
+\DoxyCodeLine{\# ecn\_red.ecn\_red\_port\_group.max\_threshold\_bytes = 200000}
+\DoxyCodeLine{\# ecn\_red.ecn\_red\_port\_group.probability = 100}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# scheduling algorithm: algorithm values = \{dwrr\}}
+\DoxyCodeLine{scheduling.algorithm = dwrr}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# traffic group scheduling weight}
+\DoxyCodeLine{\# weight values = \{0..127\}}
+\DoxyCodeLine{\# '0' indicates strict priority}
+\DoxyCodeLine{priority\_group.control.weight = 0}
+\DoxyCodeLine{priority\_group.service.weight = 32}
+\DoxyCodeLine{priority\_group.bulk.weight = 16}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# To turn on/off Denial of service (DOS) prevention checks}
+\DoxyCodeLine{dos\_enable = false}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Cut-through is disabled by default on all chips with the exception of}
+\DoxyCodeLine{\# Spectrum.  On Spectrum cut-through cannot be disabled.}
+\DoxyCodeLine{\#cut\_through\_enable = false}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Enable resilient hashing}
+\DoxyCodeLine{\#resilient\_hash\_enable = FALSE}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Resilient hashing flowset entries per ECMP group}
+\DoxyCodeLine{\# Valid values - 64, 128, 256, 512, 1024}
+\DoxyCodeLine{\#resilient\_hash\_entries\_ecmp = 128}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Enable symmetric hashing}
+\DoxyCodeLine{\#symmetric\_hash\_enable = TRUE}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Set sflow/sample ingress cpu packet rate and burst in packets/sec}
+\DoxyCodeLine{\# Values: \{0..16384\}}
+\DoxyCodeLine{\#sflow.rate = 16384}
+\DoxyCodeLine{\#sflow.burst = 16384}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#Specify the maximum number of paths per route entry.}
+\DoxyCodeLine{\#  Maximum paths supported is 200.}
+\DoxyCodeLine{\#  Default value 0 takes the number of physical ports as the max path size.}
+\DoxyCodeLine{\#ecmp\_max\_paths = 0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#Specify the hash seed for Equal cost multipath entries}
+\DoxyCodeLine{\# Default value 0}
+\DoxyCodeLine{\# Value Rang: \{0..4294967295\}}
+\DoxyCodeLine{\#ecmp\_hash\_seed = 42}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Specify the forwarding table resource allocation profile, applicable}
+\DoxyCodeLine{\# only on platforms that support universal forwarding resources.}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\# /usr/cumulus/sbin/cl-resource-query reports the allocated table sizes}
+\DoxyCodeLine{\# based on the profile setting.}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\#   Values: one of \{'default', 'l2-heavy', 'v4-lpm-heavy', 'v6-lpm-heavy',}
+\DoxyCodeLine{\#                   'ipmc-heavy'\}}
+\DoxyCodeLine{\#   Default value: 'default'}
+\DoxyCodeLine{\#   Note: some devices may support more modes, please consult user}
+\DoxyCodeLine{\#         guide for more details}
+\DoxyCodeLine{\#}
+\DoxyCodeLine{\#forwarding\_table.profile = default}
+\end{DoxyCode}
+ 

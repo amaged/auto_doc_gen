@@ -1,0 +1,437 @@
+##
+## This list needs to be modified first to fit your needs.
+##
+## Genre for this list
+## Genre : one pound (#) for a section, two pounds ## for comments. (Some commands are commented out already)
+##
+## Refer to README file for information on how to use the doc_gen_script : 
+##
+## For now, Variables can only be manually substituted. (Search and replace all)
+##
+## Static Variables : %SP for SOURCE_INTERFACE
+## Static Variables : %DP for DESTINATION_INTERFACE
+## Static Variables : %4I1 for v4 IP4_ADDRESS_1
+## Static Variables : %4I2 for v4 IP4_ADDRESS_2
+## Static Variables : %6I1 for v6 IP6_ADDRESS_1
+## Static Variables : %6I2 for v6 IP6_ADDRESS_2
+## Static Variables : %B for BRIDGE
+## Static Variables : %V for VRF
+## Static Variables : %VNI for VNI
+## Static Variables : %H for LAB_HOST and %SSHPORT for the Host SSH port
+##
+## All commands are ran with sudo
+
+
+
+#System_Resources
+
+sudo cl-resource-query;etrieve information about host entries, MAC entries, L2 and L3 routes, and ECMPs (equal-cost multi-path routes, see Load Balancing) that are in use
+ps -elf;Check operating system processes running on the system
+decode-syseeprom;you get the picture
+sensors
+sudo smonctl
+sudo systemctl status wd_keepalive.service
+ethtool -p --identify %DP TIME
+netq show sensors
+netq check sensors
+netq show interfaces
+netq check interfaces
+redis-cli info memory
+cat /etc/cumulus/datapath/monitor.conf
+##tail -f /var/log/syslog
+##sudo cl-support -s
+cat /etc/default/networking
+cl-acltool -L 
+iptables -L
+ip6tables -L  
+ebtables -L   
+netstat -l     
+netstat -at    
+netstat -au    
+ps -ef
+sudo lsof -i
+##ping 192.1.1.1
+##ping6 -I %DP %6I2
+traceroute www.google.com
+arp -a
+##arp -d %4I1
+arp -a
+arp -a
+ip link set arp off dev swp1
+##sudo mz %DP -A 11.0.0.1 -B 11.0.0.2 -c 2 -v -t tcp "dp=23-24"
+
+#Software_and_Licenses
+
+cat /etc/lsb-release;Check all the information you need
+cat /etc/os-release;Check all the info \n Another Line to check the info
+onie-select -d;Check info /n Just trying to find a bug with the Forward slash here :)
+decode-syseeprom;* These additional info can be combined with blah blah \n to generate blah blah for your system blah.
+dmesg;you know what it is
+history;most loved command of all time
+hostname;who is this system
+date;duh
+uname -a;duh       
+net show version;oh yeah
+net show system
+##sudo cl-support 
+
+#Logging
+net example syslog
+net example snmp-server
+cat /etc/rsyslog.d/11-remotesyslog.conf
+cat /etc/rsyslog.conf
+sudo systemctl status rsyslog.service
+##tail -f /var/log/btmp
+
+#Filters_and_Access_Lists
+
+cat sample_count.rules
+net example acl
+sudo cl-acltool -i -p sample_count.rules
+sudo iptables -L -v
+##sudo bash -c 'cat <<EOF > /etc/cumulus/acl/policy.d/span.rules
+sudo iptables -L -v
+sudo cl-acltool 
+sudo cl-acltool -i  -P /etc/cumulus/acl/policy.d/span.rules;Hello
+sudo cl-acltool -L all | grep SPAN
+##sudo bash -c 'cat <<EOF > /etc/cumulus/acl/policy.d/span_bond.rules
+sudo cl-acltool -i
+sudo iptables -L -v | grep SPAN
+##sudo bash -c 'cat <<EOF > /etc/cumulus/acl/policy.d/erspan.rules
+sudo cl-acltool -i
+sudo iptables -L -v | grep SPAN
+##sudo rm /etc/cumulus/acl/policy.d/span.rules
+sudo cl-acltool -i
+sudo cl-acltool -L all | grep SPAN
+sudo tcpdump -i bond0 host 169.254.0.2 -c 10
+
+
+#Layer_1
+
+sudo ethtool -m swp1;Collect Serial numbers, model numbers, power levels for interface swp1
+sudo ethtool %DP
+sudo lldpcli show statistics
+sudo lldpcli show neighbors
+sensors -f   
+##sudo tail -f /var/log/daemon.log  | grep lldp
+sudo lldpcli show statistics summary
+sudo lldpcli show running-configuration
+
+#Pluggables
+
+net show int pluggables;Collect info about pluggables
+sudo ethtool -S %DP
+sudo cl-netstat
+
+
+#Layer_2
+
+##sudo tail -f /var/log/daemon.log  | grep lldp
+sudo ifquery --check bond0
+arp -n
+cat /etc/network/interfaces    
+cat /proc/net/bonding/bond0    
+cl-netstat
+##ethtool %DP  
+##ethtool -S %DP
+ifquery %DP    
+ifreload -a
+##ifdown %DP ip addr show   
+ip link show   
+ip -s link     
+ip -br link show        
+lldpcli snetstat -i    
+##brctl showstp %B  
+bridge fdb show         
+bridge vlan show        
+clagctl -v     
+net show counters       
+net show lldp  
+net show interface      
+ip link show
+
+
+#VLANs
+net example vlan-interfaces
+net show bridge vlan
+sudo mstpctl showbridge %B100
+sudo mstpctl showportde
+##tail %B100  | grep -B 2 state
+cat /proc/net/vlan/config
+cat /proc/net/bonding/bond2
+
+
+#Bridges
+
+ifquery eth0;Whats up with eth0
+net example bridge;Get some help
+net example bond
+bridge fdb show;
+net show bridge macs;Tell me whats the bridge status please
+cat /etc/network/interfaces
+ip link show;You know what this is for
+net show configuration files
+net show bridge vlan
+netq show vlan
+netq check vlan
+netq show ip neighbors
+netq show ip route
+
+
+#Spanning_Tree
+
+mstpctl showbridge     
+##mstpctl showport %B      
+##mstpctl showportdetail %B       
+net show bridge spanning-tree
+sudo grep -in assurance /var/log/syslog | grep mstp;Hello again\n Hi
+
+
+#CLAG
+netq check clag
+net example clag basic-clag
+net show clag
+cat /etc/network/interfaces
+net show bridge link %DP
+net show clag backup-ip
+net show configuration
+net show clag status verbose
+sudo cl-service-summary summary
+sudo systemctl status clagd.service
+net show bridge spanning-tree
+##sudo tail /var/log/clagd.log
+net show counters 
+sudo ethtool -S %DP
+net show interface bond1
+clagctl
+
+#LACP
+
+cat /sys/class/net/bond1/bonding/lacp_bypass
+cat /sys/class/net/bond1/bonding/slaves
+cat /sys/class/net/%DP/bonding_slave/ad_rx_bypass
+cat /sys/class/net/%DP/bonding_slave/ad_rx_bypass
+
+
+#VXLAN
+
+netq show vxlan
+netq check vxlan
+sudo bridge fdb show | grep 00:00:00:00:00:00; \n Hi
+brctl show
+bridge fdb show
+ip –d link show vni-10
+sudo systemctl status vxsnd.service
+cat /etc/vxsnd.conf
+vxrdctl vxlans
+vxrdctl peers
+vxsndctl fdb
+cat /cumulus/switchd/run/stats/vxlan/all
+##ip addr show eth3.10 | grep ether
+##cat /etc/network/interfaces
+brctl showmacs br-10
+vxrdctl get config
+clagctl
+cat /etc/vxsnd.conf
+cat /etc/frr/frr.conf
+net show vxlan
+cat /usr/lib/python2.7/dist-packages/cumulus/__chip_config/bcm/datapath.conf
+sudo nano /etc/cumulus/ports.conf
+sudo nano /etc/cumulus/switchd.conf
+cat /etc/default/openvswitch-vtep
+
+
+#EVPN
+
+net example evpn
+cat /etc/frr/frr.conf
+cat /etc/network/interfaces 
+cat /etc/sysctl.d/neigh.conf
+net show vxlan
+ip -d link show
+bridge link show
+bridge vlan show
+bridge -s fdb show
+ip neighbor show
+ip route show [table <vrf-name>]
+net show bgp summary
+net show route ipv4
+net show bridge macs
+net show bgp l2vpn evpn summary
+net show evpn vni
+net show evpn vni 10100
+net show evpn mac vni 10100
+net show evpn mac vni 10100 mac 00:02:00:00:00:02
+net show evpn mac vni 10100 vtep 10.0.0.3
+net show evpn arp-cache vni 10100
+net show evpn rmac vni 104001
+net show evpn rmac vni all
+net show evpn next-hops vni 104001 ip 10.0.0.4
+net show route vrf vrf1
+net show bgp l2vpn evpn route
+net show bgp l2vpn evpn route rd 10.0.0.4:3 mac 00:02:00:00:00:10 ip 172.16.130.44
+net show bgp l2vpn evpn route rd 172.16.100.2:3 type prefix
+net show bgp l2vpn evpn route vni 10110
+net show bgp vrf vrf1 ipv4 unicast
+net show bgp l2vpn evpn route vni 10109 mac 00:02:22:22:22:02
+net show bgp l2vpn evpn route vni 10101 mac 00:02:00:00:00:01
+#debug zebra vxlan
+#debug zebra kernel 
+#debug bgp updates
+#debug bgp zebra
+
+
+#Layer_3
+
+net show route static
+##slow? finishes?
+##sudo vtysh
+show ip rpf 230.0.0.0
+ip route show
+sudo cl-resource-query
+cat /etc/cumulus/datapath/traffic.conf
+cat /usr/lib/python2.7/dist-packages/cumulus/__chip_config/mlx/datapath.conf
+cat /etc/cumulus/switchd.conf
+sudo systemctl -l status frr.service
+cat /etc/frr/daemons
+cat  /etc/frr/frr.conf
+net show configuration
+net show debugs
+ps -ax | grep ospf
+sudo tcpdump -v -i %DP ip proto ospf
+net show ospf6 neighbor [detail|drchoice]
+net show route ospf6
+net show ospf6 database detail
+net show bfd sessions
+net show bfd sessions detail
+
+#PBR
+
+net show pbr interface
+net show pbr map
+net show pbr nexthop-group
+
+#ECMP
+
+sudo cl-ecmpcalc;You know that already
+net example link-settings
+##sudo cl-ecmpcalc -i %DP -s 10.0.0.1 -d 10.0.0.1 -p tcp --sport 20000 --dport 80
+ip route show 10.1.1.0/24
+cat /etc/cumulus/datapath/traffic.conf
+
+#Redistribute
+
+cat /etc/default/ifplugd
+systemctl status rdnbrd.service
+cat /etc/iproute2/rt_tables
+ip route show table 10
+
+
+#GRE
+
+cat /etc/network/interfaces
+ip tunnel show
+
+#PIM
+
+net show mroute
+net show pim local-membership
+net show pim state
+net show pim upstream
+net show pim upstream-join-desired
+net show igmp groups
+net show igmp sources
+cat /etc/network/interfaces
+cat  /etc/frr/frr.conf
+net show mroute vrf blue
+cl-resource-query  | grep Mcast
+net show msdp sa  
+
+#VRF
+
+##chef-client
+##collectd
+##dhcpd
+##dhcrelay
+##hsflowd
+##netq-agent
+##ntp
+##ntpq -pn
+##puppet
+##snmpd
+##snmptrapd
+##ssh
+##zabbix-agent
+net example management-vrf
+vrf list
+vrf task list rocket
+vrf task identify 2829
+net show bgp vrf turtle ipv4 unicast route-leak
+net show route vrf turtle ipv4
+cat /etc/frr/frr.conf
+net show bgp vrf rocket summary
+net show bgp vrf vrf1012
+net show ospf vrf all
+net show ospf vrf vrf1012 route
+ip -d link show type vrf     
+ip -d link show vrf vrf1012
+ip route show table vrf1012
+ip -6 route show table vrf1012
+ip link list rocket
+net show mroute vrf blue
+sudo systemctl status dhcrelay@rocket.service
+sudo vrf task exec rocket /usr/sbin/dhcrelay -d -q -i %DP -i %DP 102.0.0.2
+##ping -I turtle
+##sudo traceroute -i turtle
+
+#VRR
+net example vrr
+
+#IGP_MLD_Snooping
+
+sudo brctl showstp bridge
+sudo bridge -d -s mdb show
+cat /etc/frr/frr.conf
+net show route
+net show vrf
+vrf link list
+sudo vrf task exec CLD ping 4.2.2.2
+cl-rctl running-config     
+ip route show   
+ptmctl -d       
+##vtysh
+cl-rctl 
+ip route
+cl-ospf neighbor 
+cl-bgp summary
+cl-bgp route
+ 
+
+
+#BGP
+
+netq show bgp;Who your neighbors are
+net example bgp unnumbered
+netq check bgp;Let NetQ does it magic and tell you who is doing what
+net show bgp summary;Duh
+##net show bgp neighbor %DP
+net show evpn vni
+net show evpn mac vni all
+net show bgp l2vpn evpn route
+net show time
+net show time ntp servers
+sudo systemctl status dhcrelay
+net show bgp
+net show route ipv4
+ip neighbor
+net show bgp neighbor
+net show bgp 10.0.0.12
+cat /etc/frr/frr.conf 
+cat /etc/cumulus/acl/policy.d/01control_plane_bgp.rules
+
+#Customer A
+#Add commands to document a customer specific service
+#This could be customized easily
+
+#NTP
+net show time ntp servers;Lets see those NTP servers

@@ -1,0 +1,3578 @@
+echo "zAqXsWSsS25-_-_-sec-_-_-System ResourceszAqXsWEeE"
+echo "zAqXsWSsS27-_-_-new-_-_-sudo cl-resource-queryzAqXsWEeE"
+echo "zAqXsWSsS27-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "27 sudo nohup sudo cl-resource-query" > current.command
+echo "zAqXsWSsS27-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo cl-resource-query
+echo "zAqXsWSsS27-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "27 nohup sudo cl-resource-query --help" > current.command
+echo "zAqXsWSsS27-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo cl-resource-query --help
+echo "zAqXsWSsS27-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "27 nohup sudo cl-resource-query -h" > current.command
+echo "zAqXsWSsS27-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo cl-resource-query -h
+echo "zAqXsWSsS28-_-_-new-_-_-ps -elfzAqXsWEeE"
+echo "zAqXsWSsS28-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "28 sudo nohup ps -elf" > current.command
+echo "zAqXsWSsS28-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ps -elf
+echo "zAqXsWSsS28-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "28 nohup ps -elf --help" > current.command
+echo "zAqXsWSsS28-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ps -elf --help
+echo "zAqXsWSsS28-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "28 nohup ps -elf -h" > current.command
+echo "zAqXsWSsS28-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ps -elf -h
+echo "zAqXsWSsS29-_-_-new-_-_-decode-syseepromzAqXsWEeE"
+echo "zAqXsWSsS29-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "29 sudo nohup decode-syseeprom" > current.command
+echo "zAqXsWSsS29-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup decode-syseeprom
+echo "zAqXsWSsS29-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "29 nohup decode-syseeprom --help" > current.command
+echo "zAqXsWSsS29-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup decode-syseeprom --help
+echo "zAqXsWSsS29-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "29 nohup decode-syseeprom -h" > current.command
+echo "zAqXsWSsS29-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup decode-syseeprom -h
+echo "zAqXsWSsS30-_-_-new-_-_-sensorszAqXsWEeE"
+echo "zAqXsWSsS30-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "30 sudo nohup sensors" > current.command
+echo "zAqXsWSsS30-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sensors
+echo "zAqXsWSsS30-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "30 nohup sensors --help" > current.command
+echo "zAqXsWSsS30-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sensors --help
+echo "zAqXsWSsS30-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "30 nohup sensors -h" > current.command
+echo "zAqXsWSsS30-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sensors -h
+echo "zAqXsWSsS31-_-_-new-_-_-sudo smonctlzAqXsWEeE"
+echo "zAqXsWSsS31-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "31 sudo nohup sudo smonctl" > current.command
+echo "zAqXsWSsS31-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo smonctl
+echo "zAqXsWSsS31-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "31 nohup sudo smonctl --help" > current.command
+echo "zAqXsWSsS31-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo smonctl --help
+echo "zAqXsWSsS31-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "31 nohup sudo smonctl -h" > current.command
+echo "zAqXsWSsS31-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo smonctl -h
+echo "zAqXsWSsS32-_-_-new-_-_-sudo systemctl status wd_keepalive.servicezAqXsWEeE"
+echo "zAqXsWSsS32-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "32 sudo nohup sudo systemctl status wd_keepalive.service" > current.command
+echo "zAqXsWSsS32-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo systemctl status wd_keepalive.service
+echo "zAqXsWSsS32-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "32 nohup sudo systemctl status wd_keepalive.service --help" > current.command
+echo "zAqXsWSsS32-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo systemctl status wd_keepalive.service --help
+echo "zAqXsWSsS32-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "32 nohup sudo systemctl status wd_keepalive.service -h" > current.command
+echo "zAqXsWSsS32-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo systemctl status wd_keepalive.service -h
+echo "zAqXsWSsS33-_-_-new-_-_-ethtool -p --identify %DP TIMEzAqXsWEeE"
+echo "zAqXsWSsS33-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "33 sudo nohup ethtool -p --identify %DP TIME" > current.command
+echo "zAqXsWSsS33-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ethtool -p --identify %DP TIME
+echo "zAqXsWSsS33-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "33 nohup ethtool -p --identify %DP TIME --help" > current.command
+echo "zAqXsWSsS33-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ethtool -p --identify %DP TIME --help
+echo "zAqXsWSsS33-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "33 nohup ethtool -p --identify %DP TIME -h" > current.command
+echo "zAqXsWSsS33-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ethtool -p --identify %DP TIME -h
+echo "zAqXsWSsS34-_-_-new-_-_-netq show sensorszAqXsWEeE"
+echo "zAqXsWSsS34-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "34 sudo nohup netq show sensors" > current.command
+echo "zAqXsWSsS34-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup netq show sensors
+echo "zAqXsWSsS34-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "34 nohup netq show sensors --help" > current.command
+echo "zAqXsWSsS34-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup netq show sensors --help
+echo "zAqXsWSsS34-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "34 nohup netq show sensors -h" > current.command
+echo "zAqXsWSsS34-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup netq show sensors -h
+echo "zAqXsWSsS35-_-_-new-_-_-netq check sensorszAqXsWEeE"
+echo "zAqXsWSsS35-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "35 sudo nohup netq check sensors" > current.command
+echo "zAqXsWSsS35-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup netq check sensors
+echo "zAqXsWSsS35-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "35 nohup netq check sensors --help" > current.command
+echo "zAqXsWSsS35-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup netq check sensors --help
+echo "zAqXsWSsS35-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "35 nohup netq check sensors -h" > current.command
+echo "zAqXsWSsS35-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup netq check sensors -h
+echo "zAqXsWSsS36-_-_-new-_-_-netq show interfaceszAqXsWEeE"
+echo "zAqXsWSsS36-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "36 sudo nohup netq show interfaces" > current.command
+echo "zAqXsWSsS36-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup netq show interfaces
+echo "zAqXsWSsS36-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "36 nohup netq show interfaces --help" > current.command
+echo "zAqXsWSsS36-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup netq show interfaces --help
+echo "zAqXsWSsS36-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "36 nohup netq show interfaces -h" > current.command
+echo "zAqXsWSsS36-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup netq show interfaces -h
+echo "zAqXsWSsS37-_-_-new-_-_-netq check interfaceszAqXsWEeE"
+echo "zAqXsWSsS37-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "37 sudo nohup netq check interfaces" > current.command
+echo "zAqXsWSsS37-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup netq check interfaces
+echo "zAqXsWSsS37-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "37 nohup netq check interfaces --help" > current.command
+echo "zAqXsWSsS37-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup netq check interfaces --help
+echo "zAqXsWSsS37-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "37 nohup netq check interfaces -h" > current.command
+echo "zAqXsWSsS37-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup netq check interfaces -h
+echo "zAqXsWSsS38-_-_-new-_-_-redis-cli info memoryzAqXsWEeE"
+echo "zAqXsWSsS38-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "38 sudo nohup redis-cli info memory" > current.command
+echo "zAqXsWSsS38-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup redis-cli info memory
+echo "zAqXsWSsS38-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "38 nohup redis-cli info memory --help" > current.command
+echo "zAqXsWSsS38-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup redis-cli info memory --help
+echo "zAqXsWSsS38-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "38 nohup redis-cli info memory -h" > current.command
+echo "zAqXsWSsS38-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup redis-cli info memory -h
+echo "zAqXsWSsS39-_-_-new-_-_-cat /etc/cumulus/datapath/monitor.confzAqXsWEeE"
+echo "zAqXsWSsS39-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "39 sudo nohup cat /etc/cumulus/datapath/monitor.conf" > current.command
+echo "zAqXsWSsS39-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/cumulus/datapath/monitor.conf
+echo "zAqXsWSsS39-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "39 nohup cat /etc/cumulus/datapath/monitor.conf --help" > current.command
+echo "zAqXsWSsS39-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/cumulus/datapath/monitor.conf --help
+echo "zAqXsWSsS39-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "39 nohup cat /etc/cumulus/datapath/monitor.conf -h" > current.command
+echo "zAqXsWSsS39-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/cumulus/datapath/monitor.conf -h
+echo "zAqXsWSsS42-_-_-new-_-_-cat /etc/default/networkingzAqXsWEeE"
+echo "zAqXsWSsS42-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "42 sudo nohup cat /etc/default/networking" > current.command
+echo "zAqXsWSsS42-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/default/networking
+echo "zAqXsWSsS42-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "42 nohup cat /etc/default/networking --help" > current.command
+echo "zAqXsWSsS42-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/default/networking --help
+echo "zAqXsWSsS42-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "42 nohup cat /etc/default/networking -h" > current.command
+echo "zAqXsWSsS42-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/default/networking -h
+echo "zAqXsWSsS43-_-_-new-_-_-cl-acltool -LzAqXsWEeE"
+echo "zAqXsWSsS43-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "43 sudo nohup cl-acltool -L" > current.command
+echo "zAqXsWSsS43-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cl-acltool -L
+echo "zAqXsWSsS43-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "43 nohup cl-acltool -L --help" > current.command
+echo "zAqXsWSsS43-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cl-acltool -L --help
+echo "zAqXsWSsS43-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "43 nohup cl-acltool -L -h" > current.command
+echo "zAqXsWSsS43-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cl-acltool -L -h
+echo "zAqXsWSsS44-_-_-new-_-_-iptables -LzAqXsWEeE"
+echo "zAqXsWSsS44-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "44 sudo nohup iptables -L" > current.command
+echo "zAqXsWSsS44-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup iptables -L
+echo "zAqXsWSsS44-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "44 nohup iptables -L --help" > current.command
+echo "zAqXsWSsS44-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup iptables -L --help
+echo "zAqXsWSsS44-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "44 nohup iptables -L -h" > current.command
+echo "zAqXsWSsS44-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup iptables -L -h
+echo "zAqXsWSsS45-_-_-new-_-_-ip6tables -LzAqXsWEeE"
+echo "zAqXsWSsS45-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "45 sudo nohup ip6tables -L" > current.command
+echo "zAqXsWSsS45-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip6tables -L
+echo "zAqXsWSsS45-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "45 nohup ip6tables -L --help" > current.command
+echo "zAqXsWSsS45-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip6tables -L --help
+echo "zAqXsWSsS45-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "45 nohup ip6tables -L -h" > current.command
+echo "zAqXsWSsS45-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip6tables -L -h
+echo "zAqXsWSsS46-_-_-new-_-_-ebtables -LzAqXsWEeE"
+echo "zAqXsWSsS46-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "46 sudo nohup ebtables -L" > current.command
+echo "zAqXsWSsS46-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ebtables -L
+echo "zAqXsWSsS46-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "46 nohup ebtables -L --help" > current.command
+echo "zAqXsWSsS46-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ebtables -L --help
+echo "zAqXsWSsS46-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "46 nohup ebtables -L -h" > current.command
+echo "zAqXsWSsS46-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ebtables -L -h
+echo "zAqXsWSsS47-_-_-new-_-_-netstat -lzAqXsWEeE"
+echo "zAqXsWSsS47-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "47 sudo nohup netstat -l" > current.command
+echo "zAqXsWSsS47-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup netstat -l
+echo "zAqXsWSsS47-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "47 nohup netstat -l --help" > current.command
+echo "zAqXsWSsS47-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup netstat -l --help
+echo "zAqXsWSsS47-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "47 nohup netstat -l -h" > current.command
+echo "zAqXsWSsS47-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup netstat -l -h
+echo "zAqXsWSsS48-_-_-new-_-_-netstat -atzAqXsWEeE"
+echo "zAqXsWSsS48-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "48 sudo nohup netstat -at" > current.command
+echo "zAqXsWSsS48-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup netstat -at
+echo "zAqXsWSsS48-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "48 nohup netstat -at --help" > current.command
+echo "zAqXsWSsS48-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup netstat -at --help
+echo "zAqXsWSsS48-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "48 nohup netstat -at -h" > current.command
+echo "zAqXsWSsS48-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup netstat -at -h
+echo "zAqXsWSsS49-_-_-new-_-_-netstat -auzAqXsWEeE"
+echo "zAqXsWSsS49-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "49 sudo nohup netstat -au" > current.command
+echo "zAqXsWSsS49-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup netstat -au
+echo "zAqXsWSsS49-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "49 nohup netstat -au --help" > current.command
+echo "zAqXsWSsS49-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup netstat -au --help
+echo "zAqXsWSsS49-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "49 nohup netstat -au -h" > current.command
+echo "zAqXsWSsS49-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup netstat -au -h
+echo "zAqXsWSsS50-_-_-new-_-_-ps -efzAqXsWEeE"
+echo "zAqXsWSsS50-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "50 sudo nohup ps -ef" > current.command
+echo "zAqXsWSsS50-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ps -ef
+echo "zAqXsWSsS50-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "50 nohup ps -ef --help" > current.command
+echo "zAqXsWSsS50-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ps -ef --help
+echo "zAqXsWSsS50-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "50 nohup ps -ef -h" > current.command
+echo "zAqXsWSsS50-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ps -ef -h
+echo "zAqXsWSsS51-_-_-new-_-_-sudo lsof -izAqXsWEeE"
+echo "zAqXsWSsS51-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "51 sudo nohup sudo lsof -i" > current.command
+echo "zAqXsWSsS51-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo lsof -i
+echo "zAqXsWSsS51-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "51 nohup sudo lsof -i --help" > current.command
+echo "zAqXsWSsS51-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo lsof -i --help
+echo "zAqXsWSsS51-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "51 nohup sudo lsof -i -h" > current.command
+echo "zAqXsWSsS51-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo lsof -i -h
+echo "zAqXsWSsS54-_-_-new-_-_-traceroute www.google.comzAqXsWEeE"
+echo "zAqXsWSsS54-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "54 sudo nohup traceroute www.google.com" > current.command
+echo "zAqXsWSsS54-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup traceroute www.google.com
+echo "zAqXsWSsS54-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "54 nohup traceroute www.google.com --help" > current.command
+echo "zAqXsWSsS54-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup traceroute www.google.com --help
+echo "zAqXsWSsS54-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "54 nohup traceroute www.google.com -h" > current.command
+echo "zAqXsWSsS54-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup traceroute www.google.com -h
+echo "zAqXsWSsS55-_-_-new-_-_-arp -azAqXsWEeE"
+echo "zAqXsWSsS55-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "55 sudo nohup arp -a" > current.command
+echo "zAqXsWSsS55-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup arp -a
+echo "zAqXsWSsS55-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "55 nohup arp -a --help" > current.command
+echo "zAqXsWSsS55-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup arp -a --help
+echo "zAqXsWSsS55-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "55 nohup arp -a -h" > current.command
+echo "zAqXsWSsS55-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup arp -a -h
+echo "zAqXsWSsS57-_-_-new-_-_-arp -azAqXsWEeE"
+echo "zAqXsWSsS57-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "57 sudo nohup arp -a" > current.command
+echo "zAqXsWSsS57-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup arp -a
+echo "zAqXsWSsS57-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "57 nohup arp -a --help" > current.command
+echo "zAqXsWSsS57-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup arp -a --help
+echo "zAqXsWSsS57-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "57 nohup arp -a -h" > current.command
+echo "zAqXsWSsS57-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup arp -a -h
+echo "zAqXsWSsS58-_-_-new-_-_-arp -azAqXsWEeE"
+echo "zAqXsWSsS58-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "58 sudo nohup arp -a" > current.command
+echo "zAqXsWSsS58-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup arp -a
+echo "zAqXsWSsS58-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "58 nohup arp -a --help" > current.command
+echo "zAqXsWSsS58-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup arp -a --help
+echo "zAqXsWSsS58-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "58 nohup arp -a -h" > current.command
+echo "zAqXsWSsS58-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup arp -a -h
+echo "zAqXsWSsS59-_-_-new-_-_-ip link set arp off dev swp1zAqXsWEeE"
+echo "zAqXsWSsS59-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "59 sudo nohup ip link set arp off dev swp1" > current.command
+echo "zAqXsWSsS59-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip link set arp off dev swp1
+echo "zAqXsWSsS59-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "59 nohup ip link set arp off dev swp1 --help" > current.command
+echo "zAqXsWSsS59-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip link set arp off dev swp1 --help
+echo "zAqXsWSsS59-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "59 nohup ip link set arp off dev swp1 -h" > current.command
+echo "zAqXsWSsS59-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip link set arp off dev swp1 -h
+echo "zAqXsWSsS62-_-_-sec-_-_-Software and LicenseszAqXsWEeE"
+echo "zAqXsWSsS64-_-_-new-_-_-cat /etc/lsb-releasezAqXsWEeE"
+echo "zAqXsWSsS64-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "64 sudo nohup cat /etc/lsb-release" > current.command
+echo "zAqXsWSsS64-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/lsb-release
+echo "zAqXsWSsS64-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "64 nohup cat /etc/lsb-release --help" > current.command
+echo "zAqXsWSsS64-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/lsb-release --help
+echo "zAqXsWSsS64-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "64 nohup cat /etc/lsb-release -h" > current.command
+echo "zAqXsWSsS64-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/lsb-release -h
+echo "zAqXsWSsS65-_-_-new-_-_-cat /etc/os-releasezAqXsWEeE"
+echo "zAqXsWSsS65-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "65 sudo nohup cat /etc/os-release" > current.command
+echo "zAqXsWSsS65-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/os-release
+echo "zAqXsWSsS65-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "65 nohup cat /etc/os-release --help" > current.command
+echo "zAqXsWSsS65-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/os-release --help
+echo "zAqXsWSsS65-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "65 nohup cat /etc/os-release -h" > current.command
+echo "zAqXsWSsS65-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/os-release -h
+echo "zAqXsWSsS66-_-_-new-_-_-onie-select -dzAqXsWEeE"
+echo "zAqXsWSsS66-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "66 sudo nohup onie-select -d" > current.command
+echo "zAqXsWSsS66-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup onie-select -d
+echo "zAqXsWSsS66-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "66 nohup onie-select -d --help" > current.command
+echo "zAqXsWSsS66-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup onie-select -d --help
+echo "zAqXsWSsS66-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "66 nohup onie-select -d -h" > current.command
+echo "zAqXsWSsS66-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup onie-select -d -h
+echo "zAqXsWSsS67-_-_-new-_-_-decode-syseepromzAqXsWEeE"
+echo "zAqXsWSsS67-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "67 sudo nohup decode-syseeprom" > current.command
+echo "zAqXsWSsS67-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup decode-syseeprom
+echo "zAqXsWSsS67-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "67 nohup decode-syseeprom --help" > current.command
+echo "zAqXsWSsS67-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup decode-syseeprom --help
+echo "zAqXsWSsS67-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "67 nohup decode-syseeprom -h" > current.command
+echo "zAqXsWSsS67-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup decode-syseeprom -h
+echo "zAqXsWSsS68-_-_-new-_-_-dmesgzAqXsWEeE"
+echo "zAqXsWSsS68-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "68 sudo nohup dmesg" > current.command
+echo "zAqXsWSsS68-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup dmesg
+echo "zAqXsWSsS68-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "68 nohup dmesg --help" > current.command
+echo "zAqXsWSsS68-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup dmesg --help
+echo "zAqXsWSsS68-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "68 nohup dmesg -h" > current.command
+echo "zAqXsWSsS68-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup dmesg -h
+echo "zAqXsWSsS69-_-_-new-_-_-historyzAqXsWEeE"
+echo "zAqXsWSsS69-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "69 sudo nohup history" > current.command
+echo "zAqXsWSsS69-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup history
+echo "zAqXsWSsS69-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "69 nohup history --help" > current.command
+echo "zAqXsWSsS69-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup history --help
+echo "zAqXsWSsS69-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "69 nohup history -h" > current.command
+echo "zAqXsWSsS69-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup history -h
+echo "zAqXsWSsS70-_-_-new-_-_-hostnamezAqXsWEeE"
+echo "zAqXsWSsS70-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "70 sudo nohup hostname" > current.command
+echo "zAqXsWSsS70-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup hostname
+echo "zAqXsWSsS70-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "70 nohup hostname --help" > current.command
+echo "zAqXsWSsS70-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup hostname --help
+echo "zAqXsWSsS70-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "70 nohup hostname -h" > current.command
+echo "zAqXsWSsS70-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup hostname -h
+echo "zAqXsWSsS71-_-_-new-_-_-datezAqXsWEeE"
+echo "zAqXsWSsS71-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "71 sudo nohup date" > current.command
+echo "zAqXsWSsS71-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup date
+echo "zAqXsWSsS71-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "71 nohup date --help" > current.command
+echo "zAqXsWSsS71-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup date --help
+echo "zAqXsWSsS71-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "71 nohup date -h" > current.command
+echo "zAqXsWSsS71-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup date -h
+echo "zAqXsWSsS72-_-_-new-_-_-uname -azAqXsWEeE"
+echo "zAqXsWSsS72-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "72 sudo nohup uname -a" > current.command
+echo "zAqXsWSsS72-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup uname -a
+echo "zAqXsWSsS72-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "72 nohup uname -a --help" > current.command
+echo "zAqXsWSsS72-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup uname -a --help
+echo "zAqXsWSsS72-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "72 nohup uname -a -h" > current.command
+echo "zAqXsWSsS72-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup uname -a -h
+echo "zAqXsWSsS73-_-_-new-_-_-net show versionzAqXsWEeE"
+echo "zAqXsWSsS73-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "73 sudo nohup net show version" > current.command
+echo "zAqXsWSsS73-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show version
+echo "zAqXsWSsS73-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "73 nohup net show version --help" > current.command
+echo "zAqXsWSsS73-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show version --help
+echo "zAqXsWSsS73-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "73 nohup net show version -h" > current.command
+echo "zAqXsWSsS73-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show version -h
+echo "zAqXsWSsS74-_-_-new-_-_-net show systemzAqXsWEeE"
+echo "zAqXsWSsS74-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "74 sudo nohup net show system" > current.command
+echo "zAqXsWSsS74-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show system
+echo "zAqXsWSsS74-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "74 nohup net show system --help" > current.command
+echo "zAqXsWSsS74-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show system --help
+echo "zAqXsWSsS74-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "74 nohup net show system -h" > current.command
+echo "zAqXsWSsS74-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show system -h
+echo "zAqXsWSsS77-_-_-sec-_-_-LoggingzAqXsWEeE"
+echo "zAqXsWSsS79-_-_-new-_-_-cat /etc/rsyslog.d/11-remotesyslog.confzAqXsWEeE"
+echo "zAqXsWSsS79-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "79 sudo nohup cat /etc/rsyslog.d/11-remotesyslog.conf" > current.command
+echo "zAqXsWSsS79-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/rsyslog.d/11-remotesyslog.conf
+echo "zAqXsWSsS79-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "79 nohup cat /etc/rsyslog.d/11-remotesyslog.conf --help" > current.command
+echo "zAqXsWSsS79-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/rsyslog.d/11-remotesyslog.conf --help
+echo "zAqXsWSsS79-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "79 nohup cat /etc/rsyslog.d/11-remotesyslog.conf -h" > current.command
+echo "zAqXsWSsS79-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/rsyslog.d/11-remotesyslog.conf -h
+echo "zAqXsWSsS80-_-_-new-_-_-cat /etc/rsyslog.confzAqXsWEeE"
+echo "zAqXsWSsS80-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "80 sudo nohup cat /etc/rsyslog.conf" > current.command
+echo "zAqXsWSsS80-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/rsyslog.conf
+echo "zAqXsWSsS80-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "80 nohup cat /etc/rsyslog.conf --help" > current.command
+echo "zAqXsWSsS80-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/rsyslog.conf --help
+echo "zAqXsWSsS80-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "80 nohup cat /etc/rsyslog.conf -h" > current.command
+echo "zAqXsWSsS80-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/rsyslog.conf -h
+echo "zAqXsWSsS81-_-_-new-_-_-sudo systemctl status rsyslog.servicezAqXsWEeE"
+echo "zAqXsWSsS81-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "81 sudo nohup sudo systemctl status rsyslog.service" > current.command
+echo "zAqXsWSsS81-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo systemctl status rsyslog.service
+echo "zAqXsWSsS81-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "81 nohup sudo systemctl status rsyslog.service --help" > current.command
+echo "zAqXsWSsS81-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo systemctl status rsyslog.service --help
+echo "zAqXsWSsS81-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "81 nohup sudo systemctl status rsyslog.service -h" > current.command
+echo "zAqXsWSsS81-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo systemctl status rsyslog.service -h
+echo "zAqXsWSsS84-_-_-sec-_-_-Filters and Access ListszAqXsWEeE"
+echo "zAqXsWSsS86-_-_-new-_-_-cat sample_count.ruleszAqXsWEeE"
+echo "zAqXsWSsS86-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "86 sudo nohup cat sample_count.rules" > current.command
+echo "zAqXsWSsS86-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat sample_count.rules
+echo "zAqXsWSsS86-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "86 nohup cat sample_count.rules --help" > current.command
+echo "zAqXsWSsS86-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat sample_count.rules --help
+echo "zAqXsWSsS86-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "86 nohup cat sample_count.rules -h" > current.command
+echo "zAqXsWSsS86-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat sample_count.rules -h
+echo "zAqXsWSsS87-_-_-new-_-_-net example aclzAqXsWEeE"
+echo "zAqXsWSsS87-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "87 sudo nohup net example acl" > current.command
+echo "zAqXsWSsS87-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net example acl
+echo "zAqXsWSsS87-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "87 nohup net example acl --help" > current.command
+echo "zAqXsWSsS87-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net example acl --help
+echo "zAqXsWSsS87-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "87 nohup net example acl -h" > current.command
+echo "zAqXsWSsS87-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net example acl -h
+echo "zAqXsWSsS88-_-_-new-_-_-sudo cl-acltool -i -p sample_count.ruleszAqXsWEeE"
+echo "zAqXsWSsS88-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "88 sudo nohup sudo cl-acltool -i -p sample_count.rules" > current.command
+echo "zAqXsWSsS88-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo cl-acltool -i -p sample_count.rules
+echo "zAqXsWSsS88-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "88 nohup sudo cl-acltool -i -p sample_count.rules --help" > current.command
+echo "zAqXsWSsS88-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo cl-acltool -i -p sample_count.rules --help
+echo "zAqXsWSsS88-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "88 nohup sudo cl-acltool -i -p sample_count.rules -h" > current.command
+echo "zAqXsWSsS88-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo cl-acltool -i -p sample_count.rules -h
+echo "zAqXsWSsS89-_-_-new-_-_-sudo iptables -L -vzAqXsWEeE"
+echo "zAqXsWSsS89-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "89 sudo nohup sudo iptables -L -v" > current.command
+echo "zAqXsWSsS89-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo iptables -L -v
+echo "zAqXsWSsS89-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "89 nohup sudo iptables -L -v --help" > current.command
+echo "zAqXsWSsS89-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo iptables -L -v --help
+echo "zAqXsWSsS89-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "89 nohup sudo iptables -L -v -h" > current.command
+echo "zAqXsWSsS89-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo iptables -L -v -h
+echo "zAqXsWSsS91-_-_-new-_-_-sudo iptables -L -vzAqXsWEeE"
+echo "zAqXsWSsS91-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "91 sudo nohup sudo iptables -L -v" > current.command
+echo "zAqXsWSsS91-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo iptables -L -v
+echo "zAqXsWSsS91-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "91 nohup sudo iptables -L -v --help" > current.command
+echo "zAqXsWSsS91-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo iptables -L -v --help
+echo "zAqXsWSsS91-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "91 nohup sudo iptables -L -v -h" > current.command
+echo "zAqXsWSsS91-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo iptables -L -v -h
+echo "zAqXsWSsS92-_-_-new-_-_-sudo cl-acltoolzAqXsWEeE"
+echo "zAqXsWSsS92-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "92 sudo nohup sudo cl-acltool" > current.command
+echo "zAqXsWSsS92-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo cl-acltool
+echo "zAqXsWSsS92-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "92 nohup sudo cl-acltool --help" > current.command
+echo "zAqXsWSsS92-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo cl-acltool --help
+echo "zAqXsWSsS92-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "92 nohup sudo cl-acltool -h" > current.command
+echo "zAqXsWSsS92-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo cl-acltool -h
+echo "zAqXsWSsS93-_-_-new-_-_-sudo cl-acltool -i  -P /etc/cumulus/acl/policy.d/span.ruleszAqXsWEeE"
+echo "zAqXsWSsS93-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "93 sudo nohup sudo cl-acltool -i  -P /etc/cumulus/acl/policy.d/span.rules" > current.command
+echo "zAqXsWSsS93-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo cl-acltool -i  -P /etc/cumulus/acl/policy.d/span.rules
+echo "zAqXsWSsS93-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "93 nohup sudo cl-acltool -i  -P /etc/cumulus/acl/policy.d/span.rules --help" > current.command
+echo "zAqXsWSsS93-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo cl-acltool -i  -P /etc/cumulus/acl/policy.d/span.rules --help
+echo "zAqXsWSsS93-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "93 nohup sudo cl-acltool -i  -P /etc/cumulus/acl/policy.d/span.rules -h" > current.command
+echo "zAqXsWSsS93-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo cl-acltool -i  -P /etc/cumulus/acl/policy.d/span.rules -h
+echo "zAqXsWSsS94-_-_-new-_-_-sudo cl-acltool -L all | grep SPANzAqXsWEeE"
+echo "zAqXsWSsS94-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "94 sudo nohup sudo cl-acltool -L all | grep SPAN" > current.command
+echo "zAqXsWSsS94-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo cl-acltool -L all | grep SPAN
+echo "zAqXsWSsS94-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "94 nohup sudo cl-acltool -L all | grep SPAN --help" > current.command
+echo "zAqXsWSsS94-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo cl-acltool -L all | grep SPAN --help
+echo "zAqXsWSsS94-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "94 nohup sudo cl-acltool -L all | grep SPAN -h" > current.command
+echo "zAqXsWSsS94-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo cl-acltool -L all | grep SPAN -h
+echo "zAqXsWSsS96-_-_-new-_-_-sudo cl-acltool -izAqXsWEeE"
+echo "zAqXsWSsS96-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "96 sudo nohup sudo cl-acltool -i" > current.command
+echo "zAqXsWSsS96-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo cl-acltool -i
+echo "zAqXsWSsS96-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "96 nohup sudo cl-acltool -i --help" > current.command
+echo "zAqXsWSsS96-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo cl-acltool -i --help
+echo "zAqXsWSsS96-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "96 nohup sudo cl-acltool -i -h" > current.command
+echo "zAqXsWSsS96-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo cl-acltool -i -h
+echo "zAqXsWSsS97-_-_-new-_-_-sudo iptables -L -v | grep SPANzAqXsWEeE"
+echo "zAqXsWSsS97-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "97 sudo nohup sudo iptables -L -v | grep SPAN" > current.command
+echo "zAqXsWSsS97-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo iptables -L -v | grep SPAN
+echo "zAqXsWSsS97-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "97 nohup sudo iptables -L -v | grep SPAN --help" > current.command
+echo "zAqXsWSsS97-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo iptables -L -v | grep SPAN --help
+echo "zAqXsWSsS97-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "97 nohup sudo iptables -L -v | grep SPAN -h" > current.command
+echo "zAqXsWSsS97-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo iptables -L -v | grep SPAN -h
+echo "zAqXsWSsS99-_-_-new-_-_-sudo cl-acltool -izAqXsWEeE"
+echo "zAqXsWSsS99-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "99 sudo nohup sudo cl-acltool -i" > current.command
+echo "zAqXsWSsS99-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo cl-acltool -i
+echo "zAqXsWSsS99-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "99 nohup sudo cl-acltool -i --help" > current.command
+echo "zAqXsWSsS99-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo cl-acltool -i --help
+echo "zAqXsWSsS99-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "99 nohup sudo cl-acltool -i -h" > current.command
+echo "zAqXsWSsS99-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo cl-acltool -i -h
+echo "zAqXsWSsS100-_-_-new-_-_-sudo iptables -L -v | grep SPANzAqXsWEeE"
+echo "zAqXsWSsS100-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "100 sudo nohup sudo iptables -L -v | grep SPAN" > current.command
+echo "zAqXsWSsS100-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo iptables -L -v | grep SPAN
+echo "zAqXsWSsS100-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "100 nohup sudo iptables -L -v | grep SPAN --help" > current.command
+echo "zAqXsWSsS100-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo iptables -L -v | grep SPAN --help
+echo "zAqXsWSsS100-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "100 nohup sudo iptables -L -v | grep SPAN -h" > current.command
+echo "zAqXsWSsS100-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo iptables -L -v | grep SPAN -h
+echo "zAqXsWSsS102-_-_-new-_-_-sudo cl-acltool -izAqXsWEeE"
+echo "zAqXsWSsS102-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "102 sudo nohup sudo cl-acltool -i" > current.command
+echo "zAqXsWSsS102-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo cl-acltool -i
+echo "zAqXsWSsS102-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "102 nohup sudo cl-acltool -i --help" > current.command
+echo "zAqXsWSsS102-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo cl-acltool -i --help
+echo "zAqXsWSsS102-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "102 nohup sudo cl-acltool -i -h" > current.command
+echo "zAqXsWSsS102-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo cl-acltool -i -h
+echo "zAqXsWSsS103-_-_-new-_-_-sudo cl-acltool -L all | grep SPANzAqXsWEeE"
+echo "zAqXsWSsS103-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "103 sudo nohup sudo cl-acltool -L all | grep SPAN" > current.command
+echo "zAqXsWSsS103-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo cl-acltool -L all | grep SPAN
+echo "zAqXsWSsS103-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "103 nohup sudo cl-acltool -L all | grep SPAN --help" > current.command
+echo "zAqXsWSsS103-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo cl-acltool -L all | grep SPAN --help
+echo "zAqXsWSsS103-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "103 nohup sudo cl-acltool -L all | grep SPAN -h" > current.command
+echo "zAqXsWSsS103-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo cl-acltool -L all | grep SPAN -h
+echo "zAqXsWSsS104-_-_-new-_-_-sudo tcpdump -i bond0 host 169.254.0.2 -c 10zAqXsWEeE"
+echo "zAqXsWSsS104-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "104 sudo nohup sudo tcpdump -i bond0 host 169.254.0.2 -c 10" > current.command
+echo "zAqXsWSsS104-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo tcpdump -i bond0 host 169.254.0.2 -c 10
+echo "zAqXsWSsS104-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "104 nohup sudo tcpdump -i bond0 host 169.254.0.2 -c 10 --help" > current.command
+echo "zAqXsWSsS104-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo tcpdump -i bond0 host 169.254.0.2 -c 10 --help
+echo "zAqXsWSsS104-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "104 nohup sudo tcpdump -i bond0 host 169.254.0.2 -c 10 -h" > current.command
+echo "zAqXsWSsS104-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo tcpdump -i bond0 host 169.254.0.2 -c 10 -h
+echo "zAqXsWSsS107-_-_-sec-_-_-Layer 1zAqXsWEeE"
+echo "zAqXsWSsS109-_-_-new-_-_-sudo ethtool -m swp1zAqXsWEeE"
+echo "zAqXsWSsS109-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "109 sudo nohup sudo ethtool -m swp1" > current.command
+echo "zAqXsWSsS109-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo ethtool -m swp1
+echo "zAqXsWSsS109-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "109 nohup sudo ethtool -m swp1 --help" > current.command
+echo "zAqXsWSsS109-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo ethtool -m swp1 --help
+echo "zAqXsWSsS109-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "109 nohup sudo ethtool -m swp1 -h" > current.command
+echo "zAqXsWSsS109-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo ethtool -m swp1 -h
+echo "zAqXsWSsS110-_-_-new-_-_-sudo ethtool %DPzAqXsWEeE"
+echo "zAqXsWSsS110-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "110 sudo nohup sudo ethtool %DP" > current.command
+echo "zAqXsWSsS110-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo ethtool %DP
+echo "zAqXsWSsS110-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "110 nohup sudo ethtool %DP --help" > current.command
+echo "zAqXsWSsS110-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo ethtool %DP --help
+echo "zAqXsWSsS110-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "110 nohup sudo ethtool %DP -h" > current.command
+echo "zAqXsWSsS110-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo ethtool %DP -h
+echo "zAqXsWSsS111-_-_-new-_-_-sudo lldpcli show statisticszAqXsWEeE"
+echo "zAqXsWSsS111-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "111 sudo nohup sudo lldpcli show statistics" > current.command
+echo "zAqXsWSsS111-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo lldpcli show statistics
+echo "zAqXsWSsS111-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "111 nohup sudo lldpcli show statistics --help" > current.command
+echo "zAqXsWSsS111-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo lldpcli show statistics --help
+echo "zAqXsWSsS111-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "111 nohup sudo lldpcli show statistics -h" > current.command
+echo "zAqXsWSsS111-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo lldpcli show statistics -h
+echo "zAqXsWSsS112-_-_-new-_-_-sudo lldpcli show neighborszAqXsWEeE"
+echo "zAqXsWSsS112-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "112 sudo nohup sudo lldpcli show neighbors" > current.command
+echo "zAqXsWSsS112-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo lldpcli show neighbors
+echo "zAqXsWSsS112-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "112 nohup sudo lldpcli show neighbors --help" > current.command
+echo "zAqXsWSsS112-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo lldpcli show neighbors --help
+echo "zAqXsWSsS112-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "112 nohup sudo lldpcli show neighbors -h" > current.command
+echo "zAqXsWSsS112-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo lldpcli show neighbors -h
+echo "zAqXsWSsS113-_-_-new-_-_-sensors -fzAqXsWEeE"
+echo "zAqXsWSsS113-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "113 sudo nohup sensors -f" > current.command
+echo "zAqXsWSsS113-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sensors -f
+echo "zAqXsWSsS113-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "113 nohup sensors -f --help" > current.command
+echo "zAqXsWSsS113-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sensors -f --help
+echo "zAqXsWSsS113-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "113 nohup sensors -f -h" > current.command
+echo "zAqXsWSsS113-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sensors -f -h
+echo "zAqXsWSsS115-_-_-new-_-_-sudo lldpcli show statistics summaryzAqXsWEeE"
+echo "zAqXsWSsS115-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "115 sudo nohup sudo lldpcli show statistics summary" > current.command
+echo "zAqXsWSsS115-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo lldpcli show statistics summary
+echo "zAqXsWSsS115-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "115 nohup sudo lldpcli show statistics summary --help" > current.command
+echo "zAqXsWSsS115-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo lldpcli show statistics summary --help
+echo "zAqXsWSsS115-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "115 nohup sudo lldpcli show statistics summary -h" > current.command
+echo "zAqXsWSsS115-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo lldpcli show statistics summary -h
+echo "zAqXsWSsS116-_-_-new-_-_-sudo lldpcli show running-configurationzAqXsWEeE"
+echo "zAqXsWSsS116-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "116 sudo nohup sudo lldpcli show running-configuration" > current.command
+echo "zAqXsWSsS116-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo lldpcli show running-configuration
+echo "zAqXsWSsS116-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "116 nohup sudo lldpcli show running-configuration --help" > current.command
+echo "zAqXsWSsS116-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo lldpcli show running-configuration --help
+echo "zAqXsWSsS116-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "116 nohup sudo lldpcli show running-configuration -h" > current.command
+echo "zAqXsWSsS116-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo lldpcli show running-configuration -h
+echo "zAqXsWSsS118-_-_-sec-_-_-PluggableszAqXsWEeE"
+echo "zAqXsWSsS120-_-_-new-_-_-net show int pluggableszAqXsWEeE"
+echo "zAqXsWSsS120-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "120 sudo nohup net show int pluggables" > current.command
+echo "zAqXsWSsS120-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show int pluggables
+echo "zAqXsWSsS120-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "120 nohup net show int pluggables --help" > current.command
+echo "zAqXsWSsS120-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show int pluggables --help
+echo "zAqXsWSsS120-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "120 nohup net show int pluggables -h" > current.command
+echo "zAqXsWSsS120-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show int pluggables -h
+echo "zAqXsWSsS121-_-_-new-_-_-sudo ethtool -S %DPzAqXsWEeE"
+echo "zAqXsWSsS121-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "121 sudo nohup sudo ethtool -S %DP" > current.command
+echo "zAqXsWSsS121-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo ethtool -S %DP
+echo "zAqXsWSsS121-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "121 nohup sudo ethtool -S %DP --help" > current.command
+echo "zAqXsWSsS121-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo ethtool -S %DP --help
+echo "zAqXsWSsS121-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "121 nohup sudo ethtool -S %DP -h" > current.command
+echo "zAqXsWSsS121-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo ethtool -S %DP -h
+echo "zAqXsWSsS122-_-_-new-_-_-sudo cl-netstatzAqXsWEeE"
+echo "zAqXsWSsS122-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "122 sudo nohup sudo cl-netstat" > current.command
+echo "zAqXsWSsS122-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo cl-netstat
+echo "zAqXsWSsS122-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "122 nohup sudo cl-netstat --help" > current.command
+echo "zAqXsWSsS122-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo cl-netstat --help
+echo "zAqXsWSsS122-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "122 nohup sudo cl-netstat -h" > current.command
+echo "zAqXsWSsS122-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo cl-netstat -h
+echo "zAqXsWSsS125-_-_-sec-_-_-Layer 2zAqXsWEeE"
+echo "zAqXsWSsS128-_-_-new-_-_-sudo ifquery --check bond0zAqXsWEeE"
+echo "zAqXsWSsS128-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "128 sudo nohup sudo ifquery --check bond0" > current.command
+echo "zAqXsWSsS128-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo ifquery --check bond0
+echo "zAqXsWSsS128-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "128 nohup sudo ifquery --check bond0 --help" > current.command
+echo "zAqXsWSsS128-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo ifquery --check bond0 --help
+echo "zAqXsWSsS128-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "128 nohup sudo ifquery --check bond0 -h" > current.command
+echo "zAqXsWSsS128-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo ifquery --check bond0 -h
+echo "zAqXsWSsS129-_-_-new-_-_-arp -nzAqXsWEeE"
+echo "zAqXsWSsS129-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "129 sudo nohup arp -n" > current.command
+echo "zAqXsWSsS129-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup arp -n
+echo "zAqXsWSsS129-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "129 nohup arp -n --help" > current.command
+echo "zAqXsWSsS129-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup arp -n --help
+echo "zAqXsWSsS129-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "129 nohup arp -n -h" > current.command
+echo "zAqXsWSsS129-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup arp -n -h
+echo "zAqXsWSsS130-_-_-new-_-_-cat /etc/network/interfaceszAqXsWEeE"
+echo "zAqXsWSsS130-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "130 sudo nohup cat /etc/network/interfaces" > current.command
+echo "zAqXsWSsS130-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/network/interfaces
+echo "zAqXsWSsS130-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "130 nohup cat /etc/network/interfaces --help" > current.command
+echo "zAqXsWSsS130-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/network/interfaces --help
+echo "zAqXsWSsS130-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "130 nohup cat /etc/network/interfaces -h" > current.command
+echo "zAqXsWSsS130-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/network/interfaces -h
+echo "zAqXsWSsS131-_-_-new-_-_-cat /proc/net/bonding/bond0zAqXsWEeE"
+echo "zAqXsWSsS131-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "131 sudo nohup cat /proc/net/bonding/bond0" > current.command
+echo "zAqXsWSsS131-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /proc/net/bonding/bond0
+echo "zAqXsWSsS131-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "131 nohup cat /proc/net/bonding/bond0 --help" > current.command
+echo "zAqXsWSsS131-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /proc/net/bonding/bond0 --help
+echo "zAqXsWSsS131-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "131 nohup cat /proc/net/bonding/bond0 -h" > current.command
+echo "zAqXsWSsS131-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /proc/net/bonding/bond0 -h
+echo "zAqXsWSsS132-_-_-new-_-_-cl-netstatzAqXsWEeE"
+echo "zAqXsWSsS132-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "132 sudo nohup cl-netstat" > current.command
+echo "zAqXsWSsS132-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cl-netstat
+echo "zAqXsWSsS132-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "132 nohup cl-netstat --help" > current.command
+echo "zAqXsWSsS132-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cl-netstat --help
+echo "zAqXsWSsS132-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "132 nohup cl-netstat -h" > current.command
+echo "zAqXsWSsS132-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cl-netstat -h
+echo "zAqXsWSsS135-_-_-new-_-_-ifquery %DPzAqXsWEeE"
+echo "zAqXsWSsS135-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "135 sudo nohup ifquery %DP" > current.command
+echo "zAqXsWSsS135-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ifquery %DP
+echo "zAqXsWSsS135-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "135 nohup ifquery %DP --help" > current.command
+echo "zAqXsWSsS135-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ifquery %DP --help
+echo "zAqXsWSsS135-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "135 nohup ifquery %DP -h" > current.command
+echo "zAqXsWSsS135-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ifquery %DP -h
+echo "zAqXsWSsS136-_-_-new-_-_-ifreload -azAqXsWEeE"
+echo "zAqXsWSsS136-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "136 sudo nohup ifreload -a" > current.command
+echo "zAqXsWSsS136-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ifreload -a
+echo "zAqXsWSsS136-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "136 nohup ifreload -a --help" > current.command
+echo "zAqXsWSsS136-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ifreload -a --help
+echo "zAqXsWSsS136-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "136 nohup ifreload -a -h" > current.command
+echo "zAqXsWSsS136-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ifreload -a -h
+echo "zAqXsWSsS138-_-_-new-_-_-ip link showzAqXsWEeE"
+echo "zAqXsWSsS138-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "138 sudo nohup ip link show" > current.command
+echo "zAqXsWSsS138-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip link show
+echo "zAqXsWSsS138-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "138 nohup ip link show --help" > current.command
+echo "zAqXsWSsS138-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip link show --help
+echo "zAqXsWSsS138-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "138 nohup ip link show -h" > current.command
+echo "zAqXsWSsS138-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip link show -h
+echo "zAqXsWSsS139-_-_-new-_-_-ip -s linkzAqXsWEeE"
+echo "zAqXsWSsS139-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "139 sudo nohup ip -s link" > current.command
+echo "zAqXsWSsS139-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip -s link
+echo "zAqXsWSsS139-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "139 nohup ip -s link --help" > current.command
+echo "zAqXsWSsS139-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip -s link --help
+echo "zAqXsWSsS139-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "139 nohup ip -s link -h" > current.command
+echo "zAqXsWSsS139-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip -s link -h
+echo "zAqXsWSsS140-_-_-new-_-_-ip -br link showzAqXsWEeE"
+echo "zAqXsWSsS140-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "140 sudo nohup ip -br link show" > current.command
+echo "zAqXsWSsS140-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip -br link show
+echo "zAqXsWSsS140-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "140 nohup ip -br link show --help" > current.command
+echo "zAqXsWSsS140-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip -br link show --help
+echo "zAqXsWSsS140-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "140 nohup ip -br link show -h" > current.command
+echo "zAqXsWSsS140-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip -br link show -h
+echo "zAqXsWSsS141-_-_-new-_-_-lldpcli snetstat -izAqXsWEeE"
+echo "zAqXsWSsS141-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "141 sudo nohup lldpcli snetstat -i" > current.command
+echo "zAqXsWSsS141-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup lldpcli snetstat -i
+echo "zAqXsWSsS141-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "141 nohup lldpcli snetstat -i --help" > current.command
+echo "zAqXsWSsS141-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup lldpcli snetstat -i --help
+echo "zAqXsWSsS141-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "141 nohup lldpcli snetstat -i -h" > current.command
+echo "zAqXsWSsS141-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup lldpcli snetstat -i -h
+echo "zAqXsWSsS143-_-_-new-_-_-bridge fdb showzAqXsWEeE"
+echo "zAqXsWSsS143-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "143 sudo nohup bridge fdb show" > current.command
+echo "zAqXsWSsS143-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup bridge fdb show
+echo "zAqXsWSsS143-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "143 nohup bridge fdb show --help" > current.command
+echo "zAqXsWSsS143-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup bridge fdb show --help
+echo "zAqXsWSsS143-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "143 nohup bridge fdb show -h" > current.command
+echo "zAqXsWSsS143-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup bridge fdb show -h
+echo "zAqXsWSsS144-_-_-new-_-_-bridge vlan showzAqXsWEeE"
+echo "zAqXsWSsS144-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "144 sudo nohup bridge vlan show" > current.command
+echo "zAqXsWSsS144-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup bridge vlan show
+echo "zAqXsWSsS144-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "144 nohup bridge vlan show --help" > current.command
+echo "zAqXsWSsS144-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup bridge vlan show --help
+echo "zAqXsWSsS144-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "144 nohup bridge vlan show -h" > current.command
+echo "zAqXsWSsS144-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup bridge vlan show -h
+echo "zAqXsWSsS145-_-_-new-_-_-clagctl -vzAqXsWEeE"
+echo "zAqXsWSsS145-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "145 sudo nohup clagctl -v" > current.command
+echo "zAqXsWSsS145-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup clagctl -v
+echo "zAqXsWSsS145-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "145 nohup clagctl -v --help" > current.command
+echo "zAqXsWSsS145-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup clagctl -v --help
+echo "zAqXsWSsS145-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "145 nohup clagctl -v -h" > current.command
+echo "zAqXsWSsS145-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup clagctl -v -h
+echo "zAqXsWSsS146-_-_-new-_-_-net show counterszAqXsWEeE"
+echo "zAqXsWSsS146-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "146 sudo nohup net show counters" > current.command
+echo "zAqXsWSsS146-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show counters
+echo "zAqXsWSsS146-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "146 nohup net show counters --help" > current.command
+echo "zAqXsWSsS146-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show counters --help
+echo "zAqXsWSsS146-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "146 nohup net show counters -h" > current.command
+echo "zAqXsWSsS146-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show counters -h
+echo "zAqXsWSsS147-_-_-new-_-_-net show lldpzAqXsWEeE"
+echo "zAqXsWSsS147-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "147 sudo nohup net show lldp" > current.command
+echo "zAqXsWSsS147-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show lldp
+echo "zAqXsWSsS147-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "147 nohup net show lldp --help" > current.command
+echo "zAqXsWSsS147-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show lldp --help
+echo "zAqXsWSsS147-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "147 nohup net show lldp -h" > current.command
+echo "zAqXsWSsS147-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show lldp -h
+echo "zAqXsWSsS148-_-_-new-_-_-net show interfacezAqXsWEeE"
+echo "zAqXsWSsS148-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "148 sudo nohup net show interface" > current.command
+echo "zAqXsWSsS148-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show interface
+echo "zAqXsWSsS148-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "148 nohup net show interface --help" > current.command
+echo "zAqXsWSsS148-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show interface --help
+echo "zAqXsWSsS148-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "148 nohup net show interface -h" > current.command
+echo "zAqXsWSsS148-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show interface -h
+echo "zAqXsWSsS149-_-_-new-_-_-ip link showzAqXsWEeE"
+echo "zAqXsWSsS149-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "149 sudo nohup ip link show" > current.command
+echo "zAqXsWSsS149-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip link show
+echo "zAqXsWSsS149-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "149 nohup ip link show --help" > current.command
+echo "zAqXsWSsS149-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip link show --help
+echo "zAqXsWSsS149-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "149 nohup ip link show -h" > current.command
+echo "zAqXsWSsS149-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip link show -h
+echo "zAqXsWSsS152-_-_-sec-_-_-VLANszAqXsWEeE"
+echo "zAqXsWSsS153-_-_-new-_-_-net show bridge vlanzAqXsWEeE"
+echo "zAqXsWSsS153-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "153 sudo nohup net show bridge vlan" > current.command
+echo "zAqXsWSsS153-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bridge vlan
+echo "zAqXsWSsS153-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "153 nohup net show bridge vlan --help" > current.command
+echo "zAqXsWSsS153-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bridge vlan --help
+echo "zAqXsWSsS153-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "153 nohup net show bridge vlan -h" > current.command
+echo "zAqXsWSsS153-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bridge vlan -h
+echo "zAqXsWSsS154-_-_-new-_-_-sudo mstpctl showbridge %B100zAqXsWEeE"
+echo "zAqXsWSsS154-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "154 sudo nohup sudo mstpctl showbridge %B100" > current.command
+echo "zAqXsWSsS154-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo mstpctl showbridge %B100
+echo "zAqXsWSsS154-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "154 nohup sudo mstpctl showbridge %B100 --help" > current.command
+echo "zAqXsWSsS154-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo mstpctl showbridge %B100 --help
+echo "zAqXsWSsS154-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "154 nohup sudo mstpctl showbridge %B100 -h" > current.command
+echo "zAqXsWSsS154-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo mstpctl showbridge %B100 -h
+echo "zAqXsWSsS155-_-_-new-_-_-sudo mstpctl showportdezAqXsWEeE"
+echo "zAqXsWSsS155-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "155 sudo nohup sudo mstpctl showportde" > current.command
+echo "zAqXsWSsS155-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo mstpctl showportde
+echo "zAqXsWSsS155-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "155 nohup sudo mstpctl showportde --help" > current.command
+echo "zAqXsWSsS155-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo mstpctl showportde --help
+echo "zAqXsWSsS155-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "155 nohup sudo mstpctl showportde -h" > current.command
+echo "zAqXsWSsS155-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo mstpctl showportde -h
+echo "zAqXsWSsS157-_-_-new-_-_-cat /proc/net/vlan/configzAqXsWEeE"
+echo "zAqXsWSsS157-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "157 sudo nohup cat /proc/net/vlan/config" > current.command
+echo "zAqXsWSsS157-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /proc/net/vlan/config
+echo "zAqXsWSsS157-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "157 nohup cat /proc/net/vlan/config --help" > current.command
+echo "zAqXsWSsS157-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /proc/net/vlan/config --help
+echo "zAqXsWSsS157-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "157 nohup cat /proc/net/vlan/config -h" > current.command
+echo "zAqXsWSsS157-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /proc/net/vlan/config -h
+echo "zAqXsWSsS158-_-_-new-_-_-cat /proc/net/bonding/bond2zAqXsWEeE"
+echo "zAqXsWSsS158-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "158 sudo nohup cat /proc/net/bonding/bond2" > current.command
+echo "zAqXsWSsS158-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /proc/net/bonding/bond2
+echo "zAqXsWSsS158-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "158 nohup cat /proc/net/bonding/bond2 --help" > current.command
+echo "zAqXsWSsS158-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /proc/net/bonding/bond2 --help
+echo "zAqXsWSsS158-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "158 nohup cat /proc/net/bonding/bond2 -h" > current.command
+echo "zAqXsWSsS158-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /proc/net/bonding/bond2 -h
+echo "zAqXsWSsS161-_-_-sec-_-_-BridgeszAqXsWEeE"
+echo "zAqXsWSsS163-_-_-new-_-_-ifquery eth0zAqXsWEeE"
+echo "zAqXsWSsS163-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "163 sudo nohup ifquery eth0" > current.command
+echo "zAqXsWSsS163-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ifquery eth0
+echo "zAqXsWSsS163-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "163 nohup ifquery eth0 --help" > current.command
+echo "zAqXsWSsS163-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ifquery eth0 --help
+echo "zAqXsWSsS163-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "163 nohup ifquery eth0 -h" > current.command
+echo "zAqXsWSsS163-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ifquery eth0 -h
+echo "zAqXsWSsS164-_-_-new-_-_-net example bridgezAqXsWEeE"
+echo "zAqXsWSsS164-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "164 sudo nohup net example bridge" > current.command
+echo "zAqXsWSsS164-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net example bridge
+echo "zAqXsWSsS164-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "164 nohup net example bridge --help" > current.command
+echo "zAqXsWSsS164-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net example bridge --help
+echo "zAqXsWSsS164-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "164 nohup net example bridge -h" > current.command
+echo "zAqXsWSsS164-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net example bridge -h
+echo "zAqXsWSsS165-_-_-new-_-_-net example bondzAqXsWEeE"
+echo "zAqXsWSsS165-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "165 sudo nohup net example bond" > current.command
+echo "zAqXsWSsS165-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net example bond
+echo "zAqXsWSsS165-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "165 nohup net example bond --help" > current.command
+echo "zAqXsWSsS165-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net example bond --help
+echo "zAqXsWSsS165-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "165 nohup net example bond -h" > current.command
+echo "zAqXsWSsS165-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net example bond -h
+echo "zAqXsWSsS166-_-_-new-_-_-bridge fdb showzAqXsWEeE"
+echo "zAqXsWSsS166-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "166 sudo nohup bridge fdb show" > current.command
+echo "zAqXsWSsS166-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup bridge fdb show
+echo "zAqXsWSsS166-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "166 nohup bridge fdb show --help" > current.command
+echo "zAqXsWSsS166-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup bridge fdb show --help
+echo "zAqXsWSsS166-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "166 nohup bridge fdb show -h" > current.command
+echo "zAqXsWSsS166-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup bridge fdb show -h
+echo "zAqXsWSsS167-_-_-new-_-_-net show bridge macszAqXsWEeE"
+echo "zAqXsWSsS167-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "167 sudo nohup net show bridge macs" > current.command
+echo "zAqXsWSsS167-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bridge macs
+echo "zAqXsWSsS167-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "167 nohup net show bridge macs --help" > current.command
+echo "zAqXsWSsS167-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bridge macs --help
+echo "zAqXsWSsS167-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "167 nohup net show bridge macs -h" > current.command
+echo "zAqXsWSsS167-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bridge macs -h
+echo "zAqXsWSsS168-_-_-new-_-_-cat /etc/network/interfaceszAqXsWEeE"
+echo "zAqXsWSsS168-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "168 sudo nohup cat /etc/network/interfaces" > current.command
+echo "zAqXsWSsS168-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/network/interfaces
+echo "zAqXsWSsS168-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "168 nohup cat /etc/network/interfaces --help" > current.command
+echo "zAqXsWSsS168-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/network/interfaces --help
+echo "zAqXsWSsS168-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "168 nohup cat /etc/network/interfaces -h" > current.command
+echo "zAqXsWSsS168-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/network/interfaces -h
+echo "zAqXsWSsS169-_-_-new-_-_-ip link showzAqXsWEeE"
+echo "zAqXsWSsS169-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "169 sudo nohup ip link show" > current.command
+echo "zAqXsWSsS169-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip link show
+echo "zAqXsWSsS169-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "169 nohup ip link show --help" > current.command
+echo "zAqXsWSsS169-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip link show --help
+echo "zAqXsWSsS169-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "169 nohup ip link show -h" > current.command
+echo "zAqXsWSsS169-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip link show -h
+echo "zAqXsWSsS170-_-_-new-_-_-net show configuration fileszAqXsWEeE"
+echo "zAqXsWSsS170-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "170 sudo nohup net show configuration files" > current.command
+echo "zAqXsWSsS170-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show configuration files
+echo "zAqXsWSsS170-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "170 nohup net show configuration files --help" > current.command
+echo "zAqXsWSsS170-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show configuration files --help
+echo "zAqXsWSsS170-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "170 nohup net show configuration files -h" > current.command
+echo "zAqXsWSsS170-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show configuration files -h
+echo "zAqXsWSsS171-_-_-new-_-_-net show bridge vlanzAqXsWEeE"
+echo "zAqXsWSsS171-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "171 sudo nohup net show bridge vlan" > current.command
+echo "zAqXsWSsS171-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bridge vlan
+echo "zAqXsWSsS171-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "171 nohup net show bridge vlan --help" > current.command
+echo "zAqXsWSsS171-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bridge vlan --help
+echo "zAqXsWSsS171-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "171 nohup net show bridge vlan -h" > current.command
+echo "zAqXsWSsS171-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bridge vlan -h
+echo "zAqXsWSsS172-_-_-new-_-_-netq show vlanzAqXsWEeE"
+echo "zAqXsWSsS172-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "172 sudo nohup netq show vlan" > current.command
+echo "zAqXsWSsS172-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup netq show vlan
+echo "zAqXsWSsS172-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "172 nohup netq show vlan --help" > current.command
+echo "zAqXsWSsS172-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup netq show vlan --help
+echo "zAqXsWSsS172-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "172 nohup netq show vlan -h" > current.command
+echo "zAqXsWSsS172-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup netq show vlan -h
+echo "zAqXsWSsS173-_-_-new-_-_-netq check vlanzAqXsWEeE"
+echo "zAqXsWSsS173-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "173 sudo nohup netq check vlan" > current.command
+echo "zAqXsWSsS173-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup netq check vlan
+echo "zAqXsWSsS173-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "173 nohup netq check vlan --help" > current.command
+echo "zAqXsWSsS173-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup netq check vlan --help
+echo "zAqXsWSsS173-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "173 nohup netq check vlan -h" > current.command
+echo "zAqXsWSsS173-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup netq check vlan -h
+echo "zAqXsWSsS174-_-_-new-_-_-netq show ip neighborszAqXsWEeE"
+echo "zAqXsWSsS174-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "174 sudo nohup netq show ip neighbors" > current.command
+echo "zAqXsWSsS174-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup netq show ip neighbors
+echo "zAqXsWSsS174-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "174 nohup netq show ip neighbors --help" > current.command
+echo "zAqXsWSsS174-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup netq show ip neighbors --help
+echo "zAqXsWSsS174-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "174 nohup netq show ip neighbors -h" > current.command
+echo "zAqXsWSsS174-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup netq show ip neighbors -h
+echo "zAqXsWSsS175-_-_-new-_-_-netq show ip routezAqXsWEeE"
+echo "zAqXsWSsS175-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "175 sudo nohup netq show ip route" > current.command
+echo "zAqXsWSsS175-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup netq show ip route
+echo "zAqXsWSsS175-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "175 nohup netq show ip route --help" > current.command
+echo "zAqXsWSsS175-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup netq show ip route --help
+echo "zAqXsWSsS175-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "175 nohup netq show ip route -h" > current.command
+echo "zAqXsWSsS175-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup netq show ip route -h
+echo "zAqXsWSsS178-_-_-sec-_-_-Spanning TreezAqXsWEeE"
+echo "zAqXsWSsS180-_-_-new-_-_-mstpctl showbridgezAqXsWEeE"
+echo "zAqXsWSsS180-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "180 sudo nohup mstpctl showbridge" > current.command
+echo "zAqXsWSsS180-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup mstpctl showbridge
+echo "zAqXsWSsS180-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "180 nohup mstpctl showbridge --help" > current.command
+echo "zAqXsWSsS180-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup mstpctl showbridge --help
+echo "zAqXsWSsS180-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "180 nohup mstpctl showbridge -h" > current.command
+echo "zAqXsWSsS180-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup mstpctl showbridge -h
+echo "zAqXsWSsS183-_-_-new-_-_-net show bridge spanning-treezAqXsWEeE"
+echo "zAqXsWSsS183-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "183 sudo nohup net show bridge spanning-tree" > current.command
+echo "zAqXsWSsS183-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bridge spanning-tree
+echo "zAqXsWSsS183-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "183 nohup net show bridge spanning-tree --help" > current.command
+echo "zAqXsWSsS183-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bridge spanning-tree --help
+echo "zAqXsWSsS183-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "183 nohup net show bridge spanning-tree -h" > current.command
+echo "zAqXsWSsS183-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bridge spanning-tree -h
+echo "zAqXsWSsS184-_-_-new-_-_-sudo grep -in assurance /var/log/syslog | grep mstpzAqXsWEeE"
+echo "zAqXsWSsS184-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "184 sudo nohup sudo grep -in assurance /var/log/syslog | grep mstp" > current.command
+echo "zAqXsWSsS184-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo grep -in assurance /var/log/syslog | grep mstp
+echo "zAqXsWSsS184-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "184 nohup sudo grep -in assurance /var/log/syslog | grep mstp --help" > current.command
+echo "zAqXsWSsS184-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo grep -in assurance /var/log/syslog | grep mstp --help
+echo "zAqXsWSsS184-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "184 nohup sudo grep -in assurance /var/log/syslog | grep mstp -h" > current.command
+echo "zAqXsWSsS184-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo grep -in assurance /var/log/syslog | grep mstp -h
+echo "zAqXsWSsS187-_-_-sec-_-_-CLAGzAqXsWEeE"
+echo "zAqXsWSsS188-_-_-new-_-_-netq check clagzAqXsWEeE"
+echo "zAqXsWSsS188-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "188 sudo nohup netq check clag" > current.command
+echo "zAqXsWSsS188-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup netq check clag
+echo "zAqXsWSsS188-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "188 nohup netq check clag --help" > current.command
+echo "zAqXsWSsS188-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup netq check clag --help
+echo "zAqXsWSsS188-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "188 nohup netq check clag -h" > current.command
+echo "zAqXsWSsS188-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup netq check clag -h
+echo "zAqXsWSsS189-_-_-new-_-_-net example clag basic-clagzAqXsWEeE"
+echo "zAqXsWSsS189-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "189 sudo nohup net example clag basic-clag" > current.command
+echo "zAqXsWSsS189-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net example clag basic-clag
+echo "zAqXsWSsS189-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "189 nohup net example clag basic-clag --help" > current.command
+echo "zAqXsWSsS189-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net example clag basic-clag --help
+echo "zAqXsWSsS189-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "189 nohup net example clag basic-clag -h" > current.command
+echo "zAqXsWSsS189-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net example clag basic-clag -h
+echo "zAqXsWSsS190-_-_-new-_-_-net show clagzAqXsWEeE"
+echo "zAqXsWSsS190-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "190 sudo nohup net show clag" > current.command
+echo "zAqXsWSsS190-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show clag
+echo "zAqXsWSsS190-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "190 nohup net show clag --help" > current.command
+echo "zAqXsWSsS190-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show clag --help
+echo "zAqXsWSsS190-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "190 nohup net show clag -h" > current.command
+echo "zAqXsWSsS190-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show clag -h
+echo "zAqXsWSsS191-_-_-new-_-_-cat /etc/network/interfaceszAqXsWEeE"
+echo "zAqXsWSsS191-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "191 sudo nohup cat /etc/network/interfaces" > current.command
+echo "zAqXsWSsS191-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/network/interfaces
+echo "zAqXsWSsS191-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "191 nohup cat /etc/network/interfaces --help" > current.command
+echo "zAqXsWSsS191-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/network/interfaces --help
+echo "zAqXsWSsS191-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "191 nohup cat /etc/network/interfaces -h" > current.command
+echo "zAqXsWSsS191-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/network/interfaces -h
+echo "zAqXsWSsS192-_-_-new-_-_-net show bridge link %DPzAqXsWEeE"
+echo "zAqXsWSsS192-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "192 sudo nohup net show bridge link %DP" > current.command
+echo "zAqXsWSsS192-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bridge link %DP
+echo "zAqXsWSsS192-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "192 nohup net show bridge link %DP --help" > current.command
+echo "zAqXsWSsS192-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bridge link %DP --help
+echo "zAqXsWSsS192-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "192 nohup net show bridge link %DP -h" > current.command
+echo "zAqXsWSsS192-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bridge link %DP -h
+echo "zAqXsWSsS193-_-_-new-_-_-net show clag backup-ipzAqXsWEeE"
+echo "zAqXsWSsS193-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "193 sudo nohup net show clag backup-ip" > current.command
+echo "zAqXsWSsS193-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show clag backup-ip
+echo "zAqXsWSsS193-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "193 nohup net show clag backup-ip --help" > current.command
+echo "zAqXsWSsS193-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show clag backup-ip --help
+echo "zAqXsWSsS193-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "193 nohup net show clag backup-ip -h" > current.command
+echo "zAqXsWSsS193-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show clag backup-ip -h
+echo "zAqXsWSsS194-_-_-new-_-_-net show configurationzAqXsWEeE"
+echo "zAqXsWSsS194-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "194 sudo nohup net show configuration" > current.command
+echo "zAqXsWSsS194-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show configuration
+echo "zAqXsWSsS194-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "194 nohup net show configuration --help" > current.command
+echo "zAqXsWSsS194-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show configuration --help
+echo "zAqXsWSsS194-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "194 nohup net show configuration -h" > current.command
+echo "zAqXsWSsS194-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show configuration -h
+echo "zAqXsWSsS195-_-_-new-_-_-net show clag status verbosezAqXsWEeE"
+echo "zAqXsWSsS195-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "195 sudo nohup net show clag status verbose" > current.command
+echo "zAqXsWSsS195-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show clag status verbose
+echo "zAqXsWSsS195-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "195 nohup net show clag status verbose --help" > current.command
+echo "zAqXsWSsS195-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show clag status verbose --help
+echo "zAqXsWSsS195-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "195 nohup net show clag status verbose -h" > current.command
+echo "zAqXsWSsS195-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show clag status verbose -h
+echo "zAqXsWSsS196-_-_-new-_-_-sudo cl-service-summary summaryzAqXsWEeE"
+echo "zAqXsWSsS196-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "196 sudo nohup sudo cl-service-summary summary" > current.command
+echo "zAqXsWSsS196-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo cl-service-summary summary
+echo "zAqXsWSsS196-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "196 nohup sudo cl-service-summary summary --help" > current.command
+echo "zAqXsWSsS196-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo cl-service-summary summary --help
+echo "zAqXsWSsS196-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "196 nohup sudo cl-service-summary summary -h" > current.command
+echo "zAqXsWSsS196-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo cl-service-summary summary -h
+echo "zAqXsWSsS197-_-_-new-_-_-sudo systemctl status clagd.servicezAqXsWEeE"
+echo "zAqXsWSsS197-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "197 sudo nohup sudo systemctl status clagd.service" > current.command
+echo "zAqXsWSsS197-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo systemctl status clagd.service
+echo "zAqXsWSsS197-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "197 nohup sudo systemctl status clagd.service --help" > current.command
+echo "zAqXsWSsS197-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo systemctl status clagd.service --help
+echo "zAqXsWSsS197-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "197 nohup sudo systemctl status clagd.service -h" > current.command
+echo "zAqXsWSsS197-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo systemctl status clagd.service -h
+echo "zAqXsWSsS198-_-_-new-_-_-net show bridge spanning-treezAqXsWEeE"
+echo "zAqXsWSsS198-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "198 sudo nohup net show bridge spanning-tree" > current.command
+echo "zAqXsWSsS198-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bridge spanning-tree
+echo "zAqXsWSsS198-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "198 nohup net show bridge spanning-tree --help" > current.command
+echo "zAqXsWSsS198-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bridge spanning-tree --help
+echo "zAqXsWSsS198-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "198 nohup net show bridge spanning-tree -h" > current.command
+echo "zAqXsWSsS198-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bridge spanning-tree -h
+echo "zAqXsWSsS200-_-_-new-_-_-net show counterszAqXsWEeE"
+echo "zAqXsWSsS200-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "200 sudo nohup net show counters" > current.command
+echo "zAqXsWSsS200-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show counters
+echo "zAqXsWSsS200-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "200 nohup net show counters --help" > current.command
+echo "zAqXsWSsS200-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show counters --help
+echo "zAqXsWSsS200-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "200 nohup net show counters -h" > current.command
+echo "zAqXsWSsS200-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show counters -h
+echo "zAqXsWSsS201-_-_-new-_-_-sudo ethtool -S %DPzAqXsWEeE"
+echo "zAqXsWSsS201-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "201 sudo nohup sudo ethtool -S %DP" > current.command
+echo "zAqXsWSsS201-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo ethtool -S %DP
+echo "zAqXsWSsS201-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "201 nohup sudo ethtool -S %DP --help" > current.command
+echo "zAqXsWSsS201-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo ethtool -S %DP --help
+echo "zAqXsWSsS201-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "201 nohup sudo ethtool -S %DP -h" > current.command
+echo "zAqXsWSsS201-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo ethtool -S %DP -h
+echo "zAqXsWSsS202-_-_-new-_-_-net show interface bond1zAqXsWEeE"
+echo "zAqXsWSsS202-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "202 sudo nohup net show interface bond1" > current.command
+echo "zAqXsWSsS202-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show interface bond1
+echo "zAqXsWSsS202-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "202 nohup net show interface bond1 --help" > current.command
+echo "zAqXsWSsS202-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show interface bond1 --help
+echo "zAqXsWSsS202-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "202 nohup net show interface bond1 -h" > current.command
+echo "zAqXsWSsS202-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show interface bond1 -h
+echo "zAqXsWSsS203-_-_-new-_-_-clagctlzAqXsWEeE"
+echo "zAqXsWSsS203-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "203 sudo nohup clagctl" > current.command
+echo "zAqXsWSsS203-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup clagctl
+echo "zAqXsWSsS203-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "203 nohup clagctl --help" > current.command
+echo "zAqXsWSsS203-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup clagctl --help
+echo "zAqXsWSsS203-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "203 nohup clagctl -h" > current.command
+echo "zAqXsWSsS203-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup clagctl -h
+echo "zAqXsWSsS205-_-_-sec-_-_-LACPzAqXsWEeE"
+echo "zAqXsWSsS207-_-_-new-_-_-cat /sys/class/net/bond1/bonding/lacp_bypasszAqXsWEeE"
+echo "zAqXsWSsS207-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "207 sudo nohup cat /sys/class/net/bond1/bonding/lacp_bypass" > current.command
+echo "zAqXsWSsS207-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /sys/class/net/bond1/bonding/lacp_bypass
+echo "zAqXsWSsS207-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "207 nohup cat /sys/class/net/bond1/bonding/lacp_bypass --help" > current.command
+echo "zAqXsWSsS207-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /sys/class/net/bond1/bonding/lacp_bypass --help
+echo "zAqXsWSsS207-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "207 nohup cat /sys/class/net/bond1/bonding/lacp_bypass -h" > current.command
+echo "zAqXsWSsS207-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /sys/class/net/bond1/bonding/lacp_bypass -h
+echo "zAqXsWSsS208-_-_-new-_-_-cat /sys/class/net/bond1/bonding/slaveszAqXsWEeE"
+echo "zAqXsWSsS208-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "208 sudo nohup cat /sys/class/net/bond1/bonding/slaves" > current.command
+echo "zAqXsWSsS208-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /sys/class/net/bond1/bonding/slaves
+echo "zAqXsWSsS208-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "208 nohup cat /sys/class/net/bond1/bonding/slaves --help" > current.command
+echo "zAqXsWSsS208-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /sys/class/net/bond1/bonding/slaves --help
+echo "zAqXsWSsS208-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "208 nohup cat /sys/class/net/bond1/bonding/slaves -h" > current.command
+echo "zAqXsWSsS208-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /sys/class/net/bond1/bonding/slaves -h
+echo "zAqXsWSsS209-_-_-new-_-_-cat /sys/class/net/%DP/bonding_slave/ad_rx_bypasszAqXsWEeE"
+echo "zAqXsWSsS209-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "209 sudo nohup cat /sys/class/net/%DP/bonding_slave/ad_rx_bypass" > current.command
+echo "zAqXsWSsS209-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /sys/class/net/%DP/bonding_slave/ad_rx_bypass
+echo "zAqXsWSsS209-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "209 nohup cat /sys/class/net/%DP/bonding_slave/ad_rx_bypass --help" > current.command
+echo "zAqXsWSsS209-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /sys/class/net/%DP/bonding_slave/ad_rx_bypass --help
+echo "zAqXsWSsS209-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "209 nohup cat /sys/class/net/%DP/bonding_slave/ad_rx_bypass -h" > current.command
+echo "zAqXsWSsS209-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /sys/class/net/%DP/bonding_slave/ad_rx_bypass -h
+echo "zAqXsWSsS210-_-_-new-_-_-cat /sys/class/net/%DP/bonding_slave/ad_rx_bypasszAqXsWEeE"
+echo "zAqXsWSsS210-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "210 sudo nohup cat /sys/class/net/%DP/bonding_slave/ad_rx_bypass" > current.command
+echo "zAqXsWSsS210-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /sys/class/net/%DP/bonding_slave/ad_rx_bypass
+echo "zAqXsWSsS210-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "210 nohup cat /sys/class/net/%DP/bonding_slave/ad_rx_bypass --help" > current.command
+echo "zAqXsWSsS210-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /sys/class/net/%DP/bonding_slave/ad_rx_bypass --help
+echo "zAqXsWSsS210-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "210 nohup cat /sys/class/net/%DP/bonding_slave/ad_rx_bypass -h" > current.command
+echo "zAqXsWSsS210-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /sys/class/net/%DP/bonding_slave/ad_rx_bypass -h
+echo "zAqXsWSsS213-_-_-sec-_-_-VXLANzAqXsWEeE"
+echo "zAqXsWSsS215-_-_-new-_-_-netq show vxlanzAqXsWEeE"
+echo "zAqXsWSsS215-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "215 sudo nohup netq show vxlan" > current.command
+echo "zAqXsWSsS215-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup netq show vxlan
+echo "zAqXsWSsS215-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "215 nohup netq show vxlan --help" > current.command
+echo "zAqXsWSsS215-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup netq show vxlan --help
+echo "zAqXsWSsS215-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "215 nohup netq show vxlan -h" > current.command
+echo "zAqXsWSsS215-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup netq show vxlan -h
+echo "zAqXsWSsS216-_-_-new-_-_-netq check vxlanzAqXsWEeE"
+echo "zAqXsWSsS216-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "216 sudo nohup netq check vxlan" > current.command
+echo "zAqXsWSsS216-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup netq check vxlan
+echo "zAqXsWSsS216-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "216 nohup netq check vxlan --help" > current.command
+echo "zAqXsWSsS216-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup netq check vxlan --help
+echo "zAqXsWSsS216-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "216 nohup netq check vxlan -h" > current.command
+echo "zAqXsWSsS216-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup netq check vxlan -h
+echo "zAqXsWSsS217-_-_-new-_-_-sudo bridge fdb show | grep 00:00:00:00:00:00zAqXsWEeE"
+echo "zAqXsWSsS217-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "217 sudo nohup sudo bridge fdb show | grep 00:00:00:00:00:00" > current.command
+echo "zAqXsWSsS217-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo bridge fdb show | grep 00:00:00:00:00:00
+echo "zAqXsWSsS217-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "217 nohup sudo bridge fdb show | grep 00:00:00:00:00:00 --help" > current.command
+echo "zAqXsWSsS217-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo bridge fdb show | grep 00:00:00:00:00:00 --help
+echo "zAqXsWSsS217-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "217 nohup sudo bridge fdb show | grep 00:00:00:00:00:00 -h" > current.command
+echo "zAqXsWSsS217-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo bridge fdb show | grep 00:00:00:00:00:00 -h
+echo "zAqXsWSsS218-_-_-new-_-_-brctl showzAqXsWEeE"
+echo "zAqXsWSsS218-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "218 sudo nohup brctl show" > current.command
+echo "zAqXsWSsS218-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup brctl show
+echo "zAqXsWSsS218-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "218 nohup brctl show --help" > current.command
+echo "zAqXsWSsS218-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup brctl show --help
+echo "zAqXsWSsS218-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "218 nohup brctl show -h" > current.command
+echo "zAqXsWSsS218-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup brctl show -h
+echo "zAqXsWSsS219-_-_-new-_-_-bridge fdb showzAqXsWEeE"
+echo "zAqXsWSsS219-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "219 sudo nohup bridge fdb show" > current.command
+echo "zAqXsWSsS219-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup bridge fdb show
+echo "zAqXsWSsS219-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "219 nohup bridge fdb show --help" > current.command
+echo "zAqXsWSsS219-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup bridge fdb show --help
+echo "zAqXsWSsS219-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "219 nohup bridge fdb show -h" > current.command
+echo "zAqXsWSsS219-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup bridge fdb show -h
+echo "zAqXsWSsS220-_-_-new-_-_-ip –d link show vni-10zAqXsWEeE"
+echo "zAqXsWSsS220-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "220 sudo nohup ip –d link show vni-10" > current.command
+echo "zAqXsWSsS220-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip –d link show vni-10
+echo "zAqXsWSsS220-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "220 nohup ip –d link show vni-10 --help" > current.command
+echo "zAqXsWSsS220-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip –d link show vni-10 --help
+echo "zAqXsWSsS220-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "220 nohup ip –d link show vni-10 -h" > current.command
+echo "zAqXsWSsS220-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip –d link show vni-10 -h
+echo "zAqXsWSsS221-_-_-new-_-_-sudo systemctl status vxsnd.servicezAqXsWEeE"
+echo "zAqXsWSsS221-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "221 sudo nohup sudo systemctl status vxsnd.service" > current.command
+echo "zAqXsWSsS221-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo systemctl status vxsnd.service
+echo "zAqXsWSsS221-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "221 nohup sudo systemctl status vxsnd.service --help" > current.command
+echo "zAqXsWSsS221-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo systemctl status vxsnd.service --help
+echo "zAqXsWSsS221-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "221 nohup sudo systemctl status vxsnd.service -h" > current.command
+echo "zAqXsWSsS221-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo systemctl status vxsnd.service -h
+echo "zAqXsWSsS222-_-_-new-_-_-cat /etc/vxsnd.confzAqXsWEeE"
+echo "zAqXsWSsS222-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "222 sudo nohup cat /etc/vxsnd.conf" > current.command
+echo "zAqXsWSsS222-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/vxsnd.conf
+echo "zAqXsWSsS222-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "222 nohup cat /etc/vxsnd.conf --help" > current.command
+echo "zAqXsWSsS222-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/vxsnd.conf --help
+echo "zAqXsWSsS222-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "222 nohup cat /etc/vxsnd.conf -h" > current.command
+echo "zAqXsWSsS222-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/vxsnd.conf -h
+echo "zAqXsWSsS223-_-_-new-_-_-vxrdctl vxlanszAqXsWEeE"
+echo "zAqXsWSsS223-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "223 sudo nohup vxrdctl vxlans" > current.command
+echo "zAqXsWSsS223-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup vxrdctl vxlans
+echo "zAqXsWSsS223-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "223 nohup vxrdctl vxlans --help" > current.command
+echo "zAqXsWSsS223-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup vxrdctl vxlans --help
+echo "zAqXsWSsS223-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "223 nohup vxrdctl vxlans -h" > current.command
+echo "zAqXsWSsS223-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup vxrdctl vxlans -h
+echo "zAqXsWSsS224-_-_-new-_-_-vxrdctl peerszAqXsWEeE"
+echo "zAqXsWSsS224-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "224 sudo nohup vxrdctl peers" > current.command
+echo "zAqXsWSsS224-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup vxrdctl peers
+echo "zAqXsWSsS224-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "224 nohup vxrdctl peers --help" > current.command
+echo "zAqXsWSsS224-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup vxrdctl peers --help
+echo "zAqXsWSsS224-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "224 nohup vxrdctl peers -h" > current.command
+echo "zAqXsWSsS224-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup vxrdctl peers -h
+echo "zAqXsWSsS225-_-_-new-_-_-vxsndctl fdbzAqXsWEeE"
+echo "zAqXsWSsS225-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "225 sudo nohup vxsndctl fdb" > current.command
+echo "zAqXsWSsS225-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup vxsndctl fdb
+echo "zAqXsWSsS225-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "225 nohup vxsndctl fdb --help" > current.command
+echo "zAqXsWSsS225-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup vxsndctl fdb --help
+echo "zAqXsWSsS225-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "225 nohup vxsndctl fdb -h" > current.command
+echo "zAqXsWSsS225-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup vxsndctl fdb -h
+echo "zAqXsWSsS226-_-_-new-_-_-cat /cumulus/switchd/run/stats/vxlan/allzAqXsWEeE"
+echo "zAqXsWSsS226-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "226 sudo nohup cat /cumulus/switchd/run/stats/vxlan/all" > current.command
+echo "zAqXsWSsS226-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /cumulus/switchd/run/stats/vxlan/all
+echo "zAqXsWSsS226-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "226 nohup cat /cumulus/switchd/run/stats/vxlan/all --help" > current.command
+echo "zAqXsWSsS226-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /cumulus/switchd/run/stats/vxlan/all --help
+echo "zAqXsWSsS226-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "226 nohup cat /cumulus/switchd/run/stats/vxlan/all -h" > current.command
+echo "zAqXsWSsS226-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /cumulus/switchd/run/stats/vxlan/all -h
+echo "zAqXsWSsS229-_-_-new-_-_-brctl showmacs br-10zAqXsWEeE"
+echo "zAqXsWSsS229-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "229 sudo nohup brctl showmacs br-10" > current.command
+echo "zAqXsWSsS229-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup brctl showmacs br-10
+echo "zAqXsWSsS229-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "229 nohup brctl showmacs br-10 --help" > current.command
+echo "zAqXsWSsS229-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup brctl showmacs br-10 --help
+echo "zAqXsWSsS229-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "229 nohup brctl showmacs br-10 -h" > current.command
+echo "zAqXsWSsS229-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup brctl showmacs br-10 -h
+echo "zAqXsWSsS230-_-_-new-_-_-vxrdctl get configzAqXsWEeE"
+echo "zAqXsWSsS230-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "230 sudo nohup vxrdctl get config" > current.command
+echo "zAqXsWSsS230-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup vxrdctl get config
+echo "zAqXsWSsS230-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "230 nohup vxrdctl get config --help" > current.command
+echo "zAqXsWSsS230-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup vxrdctl get config --help
+echo "zAqXsWSsS230-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "230 nohup vxrdctl get config -h" > current.command
+echo "zAqXsWSsS230-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup vxrdctl get config -h
+echo "zAqXsWSsS231-_-_-new-_-_-clagctlzAqXsWEeE"
+echo "zAqXsWSsS231-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "231 sudo nohup clagctl" > current.command
+echo "zAqXsWSsS231-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup clagctl
+echo "zAqXsWSsS231-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "231 nohup clagctl --help" > current.command
+echo "zAqXsWSsS231-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup clagctl --help
+echo "zAqXsWSsS231-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "231 nohup clagctl -h" > current.command
+echo "zAqXsWSsS231-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup clagctl -h
+echo "zAqXsWSsS232-_-_-new-_-_-cat /etc/vxsnd.confzAqXsWEeE"
+echo "zAqXsWSsS232-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "232 sudo nohup cat /etc/vxsnd.conf" > current.command
+echo "zAqXsWSsS232-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/vxsnd.conf
+echo "zAqXsWSsS232-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "232 nohup cat /etc/vxsnd.conf --help" > current.command
+echo "zAqXsWSsS232-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/vxsnd.conf --help
+echo "zAqXsWSsS232-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "232 nohup cat /etc/vxsnd.conf -h" > current.command
+echo "zAqXsWSsS232-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/vxsnd.conf -h
+echo "zAqXsWSsS233-_-_-new-_-_-cat /etc/frr/frr.confzAqXsWEeE"
+echo "zAqXsWSsS233-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "233 sudo nohup cat /etc/frr/frr.conf" > current.command
+echo "zAqXsWSsS233-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/frr/frr.conf
+echo "zAqXsWSsS233-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "233 nohup cat /etc/frr/frr.conf --help" > current.command
+echo "zAqXsWSsS233-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/frr/frr.conf --help
+echo "zAqXsWSsS233-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "233 nohup cat /etc/frr/frr.conf -h" > current.command
+echo "zAqXsWSsS233-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/frr/frr.conf -h
+echo "zAqXsWSsS234-_-_-new-_-_-net show vxlanzAqXsWEeE"
+echo "zAqXsWSsS234-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "234 sudo nohup net show vxlan" > current.command
+echo "zAqXsWSsS234-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show vxlan
+echo "zAqXsWSsS234-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "234 nohup net show vxlan --help" > current.command
+echo "zAqXsWSsS234-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show vxlan --help
+echo "zAqXsWSsS234-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "234 nohup net show vxlan -h" > current.command
+echo "zAqXsWSsS234-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show vxlan -h
+echo "zAqXsWSsS235-_-_-new-_-_-cat /usr/lib/python2.7/dist-packages/cumulus/__chip_config/bcm/datapath.confzAqXsWEeE"
+echo "zAqXsWSsS235-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "235 sudo nohup cat /usr/lib/python2.7/dist-packages/cumulus/__chip_config/bcm/datapath.conf" > current.command
+echo "zAqXsWSsS235-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /usr/lib/python2.7/dist-packages/cumulus/__chip_config/bcm/datapath.conf
+echo "zAqXsWSsS235-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "235 nohup cat /usr/lib/python2.7/dist-packages/cumulus/__chip_config/bcm/datapath.conf --help" > current.command
+echo "zAqXsWSsS235-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /usr/lib/python2.7/dist-packages/cumulus/__chip_config/bcm/datapath.conf --help
+echo "zAqXsWSsS235-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "235 nohup cat /usr/lib/python2.7/dist-packages/cumulus/__chip_config/bcm/datapath.conf -h" > current.command
+echo "zAqXsWSsS235-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /usr/lib/python2.7/dist-packages/cumulus/__chip_config/bcm/datapath.conf -h
+echo "zAqXsWSsS236-_-_-new-_-_-sudo nano /etc/cumulus/ports.confzAqXsWEeE"
+echo "zAqXsWSsS236-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "236 sudo nohup sudo nano /etc/cumulus/ports.conf" > current.command
+echo "zAqXsWSsS236-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo nano /etc/cumulus/ports.conf
+echo "zAqXsWSsS236-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "236 nohup sudo nano /etc/cumulus/ports.conf --help" > current.command
+echo "zAqXsWSsS236-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo nano /etc/cumulus/ports.conf --help
+echo "zAqXsWSsS236-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "236 nohup sudo nano /etc/cumulus/ports.conf -h" > current.command
+echo "zAqXsWSsS236-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo nano /etc/cumulus/ports.conf -h
+echo "zAqXsWSsS237-_-_-new-_-_-sudo nano /etc/cumulus/switchd.confzAqXsWEeE"
+echo "zAqXsWSsS237-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "237 sudo nohup sudo nano /etc/cumulus/switchd.conf" > current.command
+echo "zAqXsWSsS237-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo nano /etc/cumulus/switchd.conf
+echo "zAqXsWSsS237-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "237 nohup sudo nano /etc/cumulus/switchd.conf --help" > current.command
+echo "zAqXsWSsS237-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo nano /etc/cumulus/switchd.conf --help
+echo "zAqXsWSsS237-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "237 nohup sudo nano /etc/cumulus/switchd.conf -h" > current.command
+echo "zAqXsWSsS237-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo nano /etc/cumulus/switchd.conf -h
+echo "zAqXsWSsS238-_-_-new-_-_-cat /etc/default/openvswitch-vtepzAqXsWEeE"
+echo "zAqXsWSsS238-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "238 sudo nohup cat /etc/default/openvswitch-vtep" > current.command
+echo "zAqXsWSsS238-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/default/openvswitch-vtep
+echo "zAqXsWSsS238-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "238 nohup cat /etc/default/openvswitch-vtep --help" > current.command
+echo "zAqXsWSsS238-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/default/openvswitch-vtep --help
+echo "zAqXsWSsS238-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "238 nohup cat /etc/default/openvswitch-vtep -h" > current.command
+echo "zAqXsWSsS238-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/default/openvswitch-vtep -h
+echo "zAqXsWSsS241-_-_-sec-_-_-EVPNzAqXsWEeE"
+echo "zAqXsWSsS243-_-_-new-_-_-net example evpnzAqXsWEeE"
+echo "zAqXsWSsS243-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "243 sudo nohup net example evpn" > current.command
+echo "zAqXsWSsS243-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net example evpn
+echo "zAqXsWSsS243-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "243 nohup net example evpn --help" > current.command
+echo "zAqXsWSsS243-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net example evpn --help
+echo "zAqXsWSsS243-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "243 nohup net example evpn -h" > current.command
+echo "zAqXsWSsS243-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net example evpn -h
+echo "zAqXsWSsS244-_-_-new-_-_-cat /etc/frr/frr.confzAqXsWEeE"
+echo "zAqXsWSsS244-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "244 sudo nohup cat /etc/frr/frr.conf" > current.command
+echo "zAqXsWSsS244-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/frr/frr.conf
+echo "zAqXsWSsS244-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "244 nohup cat /etc/frr/frr.conf --help" > current.command
+echo "zAqXsWSsS244-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/frr/frr.conf --help
+echo "zAqXsWSsS244-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "244 nohup cat /etc/frr/frr.conf -h" > current.command
+echo "zAqXsWSsS244-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/frr/frr.conf -h
+echo "zAqXsWSsS245-_-_-new-_-_-cat /etc/network/interfaceszAqXsWEeE"
+echo "zAqXsWSsS245-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "245 sudo nohup cat /etc/network/interfaces" > current.command
+echo "zAqXsWSsS245-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/network/interfaces
+echo "zAqXsWSsS245-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "245 nohup cat /etc/network/interfaces --help" > current.command
+echo "zAqXsWSsS245-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/network/interfaces --help
+echo "zAqXsWSsS245-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "245 nohup cat /etc/network/interfaces -h" > current.command
+echo "zAqXsWSsS245-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/network/interfaces -h
+echo "zAqXsWSsS246-_-_-new-_-_-cat /etc/sysctl.d/neigh.confzAqXsWEeE"
+echo "zAqXsWSsS246-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "246 sudo nohup cat /etc/sysctl.d/neigh.conf" > current.command
+echo "zAqXsWSsS246-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/sysctl.d/neigh.conf
+echo "zAqXsWSsS246-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "246 nohup cat /etc/sysctl.d/neigh.conf --help" > current.command
+echo "zAqXsWSsS246-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/sysctl.d/neigh.conf --help
+echo "zAqXsWSsS246-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "246 nohup cat /etc/sysctl.d/neigh.conf -h" > current.command
+echo "zAqXsWSsS246-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/sysctl.d/neigh.conf -h
+echo "zAqXsWSsS247-_-_-new-_-_-net show vxlanzAqXsWEeE"
+echo "zAqXsWSsS247-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "247 sudo nohup net show vxlan" > current.command
+echo "zAqXsWSsS247-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show vxlan
+echo "zAqXsWSsS247-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "247 nohup net show vxlan --help" > current.command
+echo "zAqXsWSsS247-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show vxlan --help
+echo "zAqXsWSsS247-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "247 nohup net show vxlan -h" > current.command
+echo "zAqXsWSsS247-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show vxlan -h
+echo "zAqXsWSsS248-_-_-new-_-_-ip -d link showzAqXsWEeE"
+echo "zAqXsWSsS248-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "248 sudo nohup ip -d link show" > current.command
+echo "zAqXsWSsS248-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip -d link show
+echo "zAqXsWSsS248-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "248 nohup ip -d link show --help" > current.command
+echo "zAqXsWSsS248-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip -d link show --help
+echo "zAqXsWSsS248-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "248 nohup ip -d link show -h" > current.command
+echo "zAqXsWSsS248-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip -d link show -h
+echo "zAqXsWSsS249-_-_-new-_-_-bridge link showzAqXsWEeE"
+echo "zAqXsWSsS249-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "249 sudo nohup bridge link show" > current.command
+echo "zAqXsWSsS249-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup bridge link show
+echo "zAqXsWSsS249-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "249 nohup bridge link show --help" > current.command
+echo "zAqXsWSsS249-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup bridge link show --help
+echo "zAqXsWSsS249-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "249 nohup bridge link show -h" > current.command
+echo "zAqXsWSsS249-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup bridge link show -h
+echo "zAqXsWSsS250-_-_-new-_-_-bridge vlan showzAqXsWEeE"
+echo "zAqXsWSsS250-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "250 sudo nohup bridge vlan show" > current.command
+echo "zAqXsWSsS250-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup bridge vlan show
+echo "zAqXsWSsS250-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "250 nohup bridge vlan show --help" > current.command
+echo "zAqXsWSsS250-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup bridge vlan show --help
+echo "zAqXsWSsS250-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "250 nohup bridge vlan show -h" > current.command
+echo "zAqXsWSsS250-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup bridge vlan show -h
+echo "zAqXsWSsS251-_-_-new-_-_-bridge -s fdb showzAqXsWEeE"
+echo "zAqXsWSsS251-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "251 sudo nohup bridge -s fdb show" > current.command
+echo "zAqXsWSsS251-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup bridge -s fdb show
+echo "zAqXsWSsS251-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "251 nohup bridge -s fdb show --help" > current.command
+echo "zAqXsWSsS251-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup bridge -s fdb show --help
+echo "zAqXsWSsS251-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "251 nohup bridge -s fdb show -h" > current.command
+echo "zAqXsWSsS251-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup bridge -s fdb show -h
+echo "zAqXsWSsS252-_-_-new-_-_-ip neighbor showzAqXsWEeE"
+echo "zAqXsWSsS252-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "252 sudo nohup ip neighbor show" > current.command
+echo "zAqXsWSsS252-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip neighbor show
+echo "zAqXsWSsS252-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "252 nohup ip neighbor show --help" > current.command
+echo "zAqXsWSsS252-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip neighbor show --help
+echo "zAqXsWSsS252-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "252 nohup ip neighbor show -h" > current.command
+echo "zAqXsWSsS252-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip neighbor show -h
+echo "zAqXsWSsS253-_-_-new-_-_-ip route show [table <vrf-name>]zAqXsWEeE"
+echo "zAqXsWSsS253-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "253 sudo nohup ip route show [table <vrf-name>]" > current.command
+echo "zAqXsWSsS253-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip route show [table <vrf-name>]
+echo "zAqXsWSsS253-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "253 nohup ip route show [table <vrf-name>] --help" > current.command
+echo "zAqXsWSsS253-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip route show [table <vrf-name>] --help
+echo "zAqXsWSsS253-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "253 nohup ip route show [table <vrf-name>] -h" > current.command
+echo "zAqXsWSsS253-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip route show [table <vrf-name>] -h
+echo "zAqXsWSsS254-_-_-new-_-_-net show bgp summaryzAqXsWEeE"
+echo "zAqXsWSsS254-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "254 sudo nohup net show bgp summary" > current.command
+echo "zAqXsWSsS254-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bgp summary
+echo "zAqXsWSsS254-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "254 nohup net show bgp summary --help" > current.command
+echo "zAqXsWSsS254-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bgp summary --help
+echo "zAqXsWSsS254-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "254 nohup net show bgp summary -h" > current.command
+echo "zAqXsWSsS254-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bgp summary -h
+echo "zAqXsWSsS255-_-_-new-_-_-net show route ipv4zAqXsWEeE"
+echo "zAqXsWSsS255-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "255 sudo nohup net show route ipv4" > current.command
+echo "zAqXsWSsS255-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show route ipv4
+echo "zAqXsWSsS255-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "255 nohup net show route ipv4 --help" > current.command
+echo "zAqXsWSsS255-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show route ipv4 --help
+echo "zAqXsWSsS255-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "255 nohup net show route ipv4 -h" > current.command
+echo "zAqXsWSsS255-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show route ipv4 -h
+echo "zAqXsWSsS256-_-_-new-_-_-net show bridge macszAqXsWEeE"
+echo "zAqXsWSsS256-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "256 sudo nohup net show bridge macs" > current.command
+echo "zAqXsWSsS256-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bridge macs
+echo "zAqXsWSsS256-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "256 nohup net show bridge macs --help" > current.command
+echo "zAqXsWSsS256-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bridge macs --help
+echo "zAqXsWSsS256-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "256 nohup net show bridge macs -h" > current.command
+echo "zAqXsWSsS256-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bridge macs -h
+echo "zAqXsWSsS257-_-_-new-_-_-net show bgp l2vpn evpn summaryzAqXsWEeE"
+echo "zAqXsWSsS257-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "257 sudo nohup net show bgp l2vpn evpn summary" > current.command
+echo "zAqXsWSsS257-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn summary
+echo "zAqXsWSsS257-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "257 nohup net show bgp l2vpn evpn summary --help" > current.command
+echo "zAqXsWSsS257-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn summary --help
+echo "zAqXsWSsS257-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "257 nohup net show bgp l2vpn evpn summary -h" > current.command
+echo "zAqXsWSsS257-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn summary -h
+echo "zAqXsWSsS258-_-_-new-_-_-net show evpn vnizAqXsWEeE"
+echo "zAqXsWSsS258-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "258 sudo nohup net show evpn vni" > current.command
+echo "zAqXsWSsS258-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show evpn vni
+echo "zAqXsWSsS258-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "258 nohup net show evpn vni --help" > current.command
+echo "zAqXsWSsS258-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show evpn vni --help
+echo "zAqXsWSsS258-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "258 nohup net show evpn vni -h" > current.command
+echo "zAqXsWSsS258-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show evpn vni -h
+echo "zAqXsWSsS259-_-_-new-_-_-net show evpn vni 10100zAqXsWEeE"
+echo "zAqXsWSsS259-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "259 sudo nohup net show evpn vni 10100" > current.command
+echo "zAqXsWSsS259-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show evpn vni 10100
+echo "zAqXsWSsS259-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "259 nohup net show evpn vni 10100 --help" > current.command
+echo "zAqXsWSsS259-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show evpn vni 10100 --help
+echo "zAqXsWSsS259-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "259 nohup net show evpn vni 10100 -h" > current.command
+echo "zAqXsWSsS259-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show evpn vni 10100 -h
+echo "zAqXsWSsS260-_-_-new-_-_-net show evpn mac vni 10100zAqXsWEeE"
+echo "zAqXsWSsS260-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "260 sudo nohup net show evpn mac vni 10100" > current.command
+echo "zAqXsWSsS260-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show evpn mac vni 10100
+echo "zAqXsWSsS260-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "260 nohup net show evpn mac vni 10100 --help" > current.command
+echo "zAqXsWSsS260-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show evpn mac vni 10100 --help
+echo "zAqXsWSsS260-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "260 nohup net show evpn mac vni 10100 -h" > current.command
+echo "zAqXsWSsS260-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show evpn mac vni 10100 -h
+echo "zAqXsWSsS261-_-_-new-_-_-net show evpn mac vni 10100 mac 00:02:00:00:00:02zAqXsWEeE"
+echo "zAqXsWSsS261-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "261 sudo nohup net show evpn mac vni 10100 mac 00:02:00:00:00:02" > current.command
+echo "zAqXsWSsS261-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show evpn mac vni 10100 mac 00:02:00:00:00:02
+echo "zAqXsWSsS261-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "261 nohup net show evpn mac vni 10100 mac 00:02:00:00:00:02 --help" > current.command
+echo "zAqXsWSsS261-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show evpn mac vni 10100 mac 00:02:00:00:00:02 --help
+echo "zAqXsWSsS261-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "261 nohup net show evpn mac vni 10100 mac 00:02:00:00:00:02 -h" > current.command
+echo "zAqXsWSsS261-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show evpn mac vni 10100 mac 00:02:00:00:00:02 -h
+echo "zAqXsWSsS262-_-_-new-_-_-net show evpn mac vni 10100 vtep 10.0.0.3zAqXsWEeE"
+echo "zAqXsWSsS262-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "262 sudo nohup net show evpn mac vni 10100 vtep 10.0.0.3" > current.command
+echo "zAqXsWSsS262-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show evpn mac vni 10100 vtep 10.0.0.3
+echo "zAqXsWSsS262-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "262 nohup net show evpn mac vni 10100 vtep 10.0.0.3 --help" > current.command
+echo "zAqXsWSsS262-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show evpn mac vni 10100 vtep 10.0.0.3 --help
+echo "zAqXsWSsS262-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "262 nohup net show evpn mac vni 10100 vtep 10.0.0.3 -h" > current.command
+echo "zAqXsWSsS262-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show evpn mac vni 10100 vtep 10.0.0.3 -h
+echo "zAqXsWSsS263-_-_-new-_-_-net show evpn arp-cache vni 10100zAqXsWEeE"
+echo "zAqXsWSsS263-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "263 sudo nohup net show evpn arp-cache vni 10100" > current.command
+echo "zAqXsWSsS263-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show evpn arp-cache vni 10100
+echo "zAqXsWSsS263-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "263 nohup net show evpn arp-cache vni 10100 --help" > current.command
+echo "zAqXsWSsS263-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show evpn arp-cache vni 10100 --help
+echo "zAqXsWSsS263-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "263 nohup net show evpn arp-cache vni 10100 -h" > current.command
+echo "zAqXsWSsS263-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show evpn arp-cache vni 10100 -h
+echo "zAqXsWSsS264-_-_-new-_-_-net show evpn rmac vni 104001zAqXsWEeE"
+echo "zAqXsWSsS264-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "264 sudo nohup net show evpn rmac vni 104001" > current.command
+echo "zAqXsWSsS264-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show evpn rmac vni 104001
+echo "zAqXsWSsS264-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "264 nohup net show evpn rmac vni 104001 --help" > current.command
+echo "zAqXsWSsS264-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show evpn rmac vni 104001 --help
+echo "zAqXsWSsS264-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "264 nohup net show evpn rmac vni 104001 -h" > current.command
+echo "zAqXsWSsS264-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show evpn rmac vni 104001 -h
+echo "zAqXsWSsS265-_-_-new-_-_-net show evpn rmac vni allzAqXsWEeE"
+echo "zAqXsWSsS265-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "265 sudo nohup net show evpn rmac vni all" > current.command
+echo "zAqXsWSsS265-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show evpn rmac vni all
+echo "zAqXsWSsS265-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "265 nohup net show evpn rmac vni all --help" > current.command
+echo "zAqXsWSsS265-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show evpn rmac vni all --help
+echo "zAqXsWSsS265-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "265 nohup net show evpn rmac vni all -h" > current.command
+echo "zAqXsWSsS265-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show evpn rmac vni all -h
+echo "zAqXsWSsS266-_-_-new-_-_-net show evpn next-hops vni 104001 ip 10.0.0.4zAqXsWEeE"
+echo "zAqXsWSsS266-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "266 sudo nohup net show evpn next-hops vni 104001 ip 10.0.0.4" > current.command
+echo "zAqXsWSsS266-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show evpn next-hops vni 104001 ip 10.0.0.4
+echo "zAqXsWSsS266-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "266 nohup net show evpn next-hops vni 104001 ip 10.0.0.4 --help" > current.command
+echo "zAqXsWSsS266-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show evpn next-hops vni 104001 ip 10.0.0.4 --help
+echo "zAqXsWSsS266-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "266 nohup net show evpn next-hops vni 104001 ip 10.0.0.4 -h" > current.command
+echo "zAqXsWSsS266-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show evpn next-hops vni 104001 ip 10.0.0.4 -h
+echo "zAqXsWSsS267-_-_-new-_-_-net show route vrf vrf1zAqXsWEeE"
+echo "zAqXsWSsS267-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "267 sudo nohup net show route vrf vrf1" > current.command
+echo "zAqXsWSsS267-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show route vrf vrf1
+echo "zAqXsWSsS267-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "267 nohup net show route vrf vrf1 --help" > current.command
+echo "zAqXsWSsS267-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show route vrf vrf1 --help
+echo "zAqXsWSsS267-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "267 nohup net show route vrf vrf1 -h" > current.command
+echo "zAqXsWSsS267-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show route vrf vrf1 -h
+echo "zAqXsWSsS268-_-_-new-_-_-net show bgp l2vpn evpn routezAqXsWEeE"
+echo "zAqXsWSsS268-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "268 sudo nohup net show bgp l2vpn evpn route" > current.command
+echo "zAqXsWSsS268-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route
+echo "zAqXsWSsS268-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "268 nohup net show bgp l2vpn evpn route --help" > current.command
+echo "zAqXsWSsS268-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route --help
+echo "zAqXsWSsS268-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "268 nohup net show bgp l2vpn evpn route -h" > current.command
+echo "zAqXsWSsS268-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route -h
+echo "zAqXsWSsS269-_-_-new-_-_-net show bgp l2vpn evpn route rd 10.0.0.4:3 mac 00:02:00:00:00:10 ip 172.16.130.44zAqXsWEeE"
+echo "zAqXsWSsS269-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "269 sudo nohup net show bgp l2vpn evpn route rd 10.0.0.4:3 mac 00:02:00:00:00:10 ip 172.16.130.44" > current.command
+echo "zAqXsWSsS269-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route rd 10.0.0.4:3 mac 00:02:00:00:00:10 ip 172.16.130.44
+echo "zAqXsWSsS269-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "269 nohup net show bgp l2vpn evpn route rd 10.0.0.4:3 mac 00:02:00:00:00:10 ip 172.16.130.44 --help" > current.command
+echo "zAqXsWSsS269-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route rd 10.0.0.4:3 mac 00:02:00:00:00:10 ip 172.16.130.44 --help
+echo "zAqXsWSsS269-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "269 nohup net show bgp l2vpn evpn route rd 10.0.0.4:3 mac 00:02:00:00:00:10 ip 172.16.130.44 -h" > current.command
+echo "zAqXsWSsS269-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route rd 10.0.0.4:3 mac 00:02:00:00:00:10 ip 172.16.130.44 -h
+echo "zAqXsWSsS270-_-_-new-_-_-net show bgp l2vpn evpn route rd 172.16.100.2:3 type prefixzAqXsWEeE"
+echo "zAqXsWSsS270-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "270 sudo nohup net show bgp l2vpn evpn route rd 172.16.100.2:3 type prefix" > current.command
+echo "zAqXsWSsS270-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route rd 172.16.100.2:3 type prefix
+echo "zAqXsWSsS270-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "270 nohup net show bgp l2vpn evpn route rd 172.16.100.2:3 type prefix --help" > current.command
+echo "zAqXsWSsS270-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route rd 172.16.100.2:3 type prefix --help
+echo "zAqXsWSsS270-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "270 nohup net show bgp l2vpn evpn route rd 172.16.100.2:3 type prefix -h" > current.command
+echo "zAqXsWSsS270-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route rd 172.16.100.2:3 type prefix -h
+echo "zAqXsWSsS271-_-_-new-_-_-net show bgp l2vpn evpn route vni 10110zAqXsWEeE"
+echo "zAqXsWSsS271-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "271 sudo nohup net show bgp l2vpn evpn route vni 10110" > current.command
+echo "zAqXsWSsS271-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route vni 10110
+echo "zAqXsWSsS271-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "271 nohup net show bgp l2vpn evpn route vni 10110 --help" > current.command
+echo "zAqXsWSsS271-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route vni 10110 --help
+echo "zAqXsWSsS271-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "271 nohup net show bgp l2vpn evpn route vni 10110 -h" > current.command
+echo "zAqXsWSsS271-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route vni 10110 -h
+echo "zAqXsWSsS272-_-_-new-_-_-net show bgp vrf vrf1 ipv4 unicastzAqXsWEeE"
+echo "zAqXsWSsS272-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "272 sudo nohup net show bgp vrf vrf1 ipv4 unicast" > current.command
+echo "zAqXsWSsS272-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bgp vrf vrf1 ipv4 unicast
+echo "zAqXsWSsS272-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "272 nohup net show bgp vrf vrf1 ipv4 unicast --help" > current.command
+echo "zAqXsWSsS272-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bgp vrf vrf1 ipv4 unicast --help
+echo "zAqXsWSsS272-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "272 nohup net show bgp vrf vrf1 ipv4 unicast -h" > current.command
+echo "zAqXsWSsS272-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bgp vrf vrf1 ipv4 unicast -h
+echo "zAqXsWSsS273-_-_-new-_-_-net show bgp l2vpn evpn route vni 10109 mac 00:02:22:22:22:02zAqXsWEeE"
+echo "zAqXsWSsS273-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "273 sudo nohup net show bgp l2vpn evpn route vni 10109 mac 00:02:22:22:22:02" > current.command
+echo "zAqXsWSsS273-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route vni 10109 mac 00:02:22:22:22:02
+echo "zAqXsWSsS273-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "273 nohup net show bgp l2vpn evpn route vni 10109 mac 00:02:22:22:22:02 --help" > current.command
+echo "zAqXsWSsS273-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route vni 10109 mac 00:02:22:22:22:02 --help
+echo "zAqXsWSsS273-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "273 nohup net show bgp l2vpn evpn route vni 10109 mac 00:02:22:22:22:02 -h" > current.command
+echo "zAqXsWSsS273-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route vni 10109 mac 00:02:22:22:22:02 -h
+echo "zAqXsWSsS274-_-_-new-_-_-net show bgp l2vpn evpn route vni 10101 mac 00:02:00:00:00:01zAqXsWEeE"
+echo "zAqXsWSsS274-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "274 sudo nohup net show bgp l2vpn evpn route vni 10101 mac 00:02:00:00:00:01" > current.command
+echo "zAqXsWSsS274-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route vni 10101 mac 00:02:00:00:00:01
+echo "zAqXsWSsS274-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "274 nohup net show bgp l2vpn evpn route vni 10101 mac 00:02:00:00:00:01 --help" > current.command
+echo "zAqXsWSsS274-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route vni 10101 mac 00:02:00:00:00:01 --help
+echo "zAqXsWSsS274-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "274 nohup net show bgp l2vpn evpn route vni 10101 mac 00:02:00:00:00:01 -h" > current.command
+echo "zAqXsWSsS274-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route vni 10101 mac 00:02:00:00:00:01 -h
+echo "zAqXsWSsS275-_-_-sec-_-_-debug zebra vxlanzAqXsWEeE"
+echo "zAqXsWSsS276-_-_-sec-_-_-debug zebra kernelzAqXsWEeE"
+echo "zAqXsWSsS277-_-_-sec-_-_-debug bgp updateszAqXsWEeE"
+echo "zAqXsWSsS278-_-_-sec-_-_-debug bgp zebrazAqXsWEeE"
+echo "zAqXsWSsS281-_-_-sec-_-_-Layer 3zAqXsWEeE"
+echo "zAqXsWSsS283-_-_-new-_-_-net show route staticzAqXsWEeE"
+echo "zAqXsWSsS283-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "283 sudo nohup net show route static" > current.command
+echo "zAqXsWSsS283-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show route static
+echo "zAqXsWSsS283-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "283 nohup net show route static --help" > current.command
+echo "zAqXsWSsS283-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show route static --help
+echo "zAqXsWSsS283-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "283 nohup net show route static -h" > current.command
+echo "zAqXsWSsS283-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show route static -h
+echo "zAqXsWSsS286-_-_-new-_-_-show ip rpf 230.0.0.0zAqXsWEeE"
+echo "zAqXsWSsS286-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "286 sudo nohup show ip rpf 230.0.0.0" > current.command
+echo "zAqXsWSsS286-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup show ip rpf 230.0.0.0
+echo "zAqXsWSsS286-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "286 nohup show ip rpf 230.0.0.0 --help" > current.command
+echo "zAqXsWSsS286-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup show ip rpf 230.0.0.0 --help
+echo "zAqXsWSsS286-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "286 nohup show ip rpf 230.0.0.0 -h" > current.command
+echo "zAqXsWSsS286-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup show ip rpf 230.0.0.0 -h
+echo "zAqXsWSsS287-_-_-new-_-_-ip route showzAqXsWEeE"
+echo "zAqXsWSsS287-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "287 sudo nohup ip route show" > current.command
+echo "zAqXsWSsS287-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip route show
+echo "zAqXsWSsS287-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "287 nohup ip route show --help" > current.command
+echo "zAqXsWSsS287-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip route show --help
+echo "zAqXsWSsS287-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "287 nohup ip route show -h" > current.command
+echo "zAqXsWSsS287-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip route show -h
+echo "zAqXsWSsS288-_-_-new-_-_-sudo cl-resource-queryzAqXsWEeE"
+echo "zAqXsWSsS288-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "288 sudo nohup sudo cl-resource-query" > current.command
+echo "zAqXsWSsS288-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo cl-resource-query
+echo "zAqXsWSsS288-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "288 nohup sudo cl-resource-query --help" > current.command
+echo "zAqXsWSsS288-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo cl-resource-query --help
+echo "zAqXsWSsS288-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "288 nohup sudo cl-resource-query -h" > current.command
+echo "zAqXsWSsS288-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo cl-resource-query -h
+echo "zAqXsWSsS289-_-_-new-_-_-cat /etc/cumulus/datapath/traffic.confzAqXsWEeE"
+echo "zAqXsWSsS289-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "289 sudo nohup cat /etc/cumulus/datapath/traffic.conf" > current.command
+echo "zAqXsWSsS289-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/cumulus/datapath/traffic.conf
+echo "zAqXsWSsS289-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "289 nohup cat /etc/cumulus/datapath/traffic.conf --help" > current.command
+echo "zAqXsWSsS289-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/cumulus/datapath/traffic.conf --help
+echo "zAqXsWSsS289-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "289 nohup cat /etc/cumulus/datapath/traffic.conf -h" > current.command
+echo "zAqXsWSsS289-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/cumulus/datapath/traffic.conf -h
+echo "zAqXsWSsS290-_-_-new-_-_-cat /usr/lib/python2.7/dist-packages/cumulus/__chip_config/mlx/datapath.confzAqXsWEeE"
+echo "zAqXsWSsS290-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "290 sudo nohup cat /usr/lib/python2.7/dist-packages/cumulus/__chip_config/mlx/datapath.conf" > current.command
+echo "zAqXsWSsS290-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /usr/lib/python2.7/dist-packages/cumulus/__chip_config/mlx/datapath.conf
+echo "zAqXsWSsS290-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "290 nohup cat /usr/lib/python2.7/dist-packages/cumulus/__chip_config/mlx/datapath.conf --help" > current.command
+echo "zAqXsWSsS290-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /usr/lib/python2.7/dist-packages/cumulus/__chip_config/mlx/datapath.conf --help
+echo "zAqXsWSsS290-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "290 nohup cat /usr/lib/python2.7/dist-packages/cumulus/__chip_config/mlx/datapath.conf -h" > current.command
+echo "zAqXsWSsS290-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /usr/lib/python2.7/dist-packages/cumulus/__chip_config/mlx/datapath.conf -h
+echo "zAqXsWSsS291-_-_-new-_-_-cat /etc/cumulus/switchd.confzAqXsWEeE"
+echo "zAqXsWSsS291-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "291 sudo nohup cat /etc/cumulus/switchd.conf" > current.command
+echo "zAqXsWSsS291-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/cumulus/switchd.conf
+echo "zAqXsWSsS291-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "291 nohup cat /etc/cumulus/switchd.conf --help" > current.command
+echo "zAqXsWSsS291-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/cumulus/switchd.conf --help
+echo "zAqXsWSsS291-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "291 nohup cat /etc/cumulus/switchd.conf -h" > current.command
+echo "zAqXsWSsS291-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/cumulus/switchd.conf -h
+echo "zAqXsWSsS292-_-_-new-_-_-sudo systemctl -l status frr.servicezAqXsWEeE"
+echo "zAqXsWSsS292-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "292 sudo nohup sudo systemctl -l status frr.service" > current.command
+echo "zAqXsWSsS292-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo systemctl -l status frr.service
+echo "zAqXsWSsS292-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "292 nohup sudo systemctl -l status frr.service --help" > current.command
+echo "zAqXsWSsS292-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo systemctl -l status frr.service --help
+echo "zAqXsWSsS292-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "292 nohup sudo systemctl -l status frr.service -h" > current.command
+echo "zAqXsWSsS292-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo systemctl -l status frr.service -h
+echo "zAqXsWSsS293-_-_-new-_-_-cat /etc/frr/daemonszAqXsWEeE"
+echo "zAqXsWSsS293-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "293 sudo nohup cat /etc/frr/daemons" > current.command
+echo "zAqXsWSsS293-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/frr/daemons
+echo "zAqXsWSsS293-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "293 nohup cat /etc/frr/daemons --help" > current.command
+echo "zAqXsWSsS293-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/frr/daemons --help
+echo "zAqXsWSsS293-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "293 nohup cat /etc/frr/daemons -h" > current.command
+echo "zAqXsWSsS293-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/frr/daemons -h
+echo "zAqXsWSsS294-_-_-new-_-_-cat  /etc/frr/frr.confzAqXsWEeE"
+echo "zAqXsWSsS294-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "294 sudo nohup cat  /etc/frr/frr.conf" > current.command
+echo "zAqXsWSsS294-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat  /etc/frr/frr.conf
+echo "zAqXsWSsS294-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "294 nohup cat  /etc/frr/frr.conf --help" > current.command
+echo "zAqXsWSsS294-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat  /etc/frr/frr.conf --help
+echo "zAqXsWSsS294-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "294 nohup cat  /etc/frr/frr.conf -h" > current.command
+echo "zAqXsWSsS294-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat  /etc/frr/frr.conf -h
+echo "zAqXsWSsS295-_-_-new-_-_-net show configurationzAqXsWEeE"
+echo "zAqXsWSsS295-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "295 sudo nohup net show configuration" > current.command
+echo "zAqXsWSsS295-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show configuration
+echo "zAqXsWSsS295-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "295 nohup net show configuration --help" > current.command
+echo "zAqXsWSsS295-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show configuration --help
+echo "zAqXsWSsS295-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "295 nohup net show configuration -h" > current.command
+echo "zAqXsWSsS295-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show configuration -h
+echo "zAqXsWSsS296-_-_-new-_-_-net show debugszAqXsWEeE"
+echo "zAqXsWSsS296-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "296 sudo nohup net show debugs" > current.command
+echo "zAqXsWSsS296-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show debugs
+echo "zAqXsWSsS296-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "296 nohup net show debugs --help" > current.command
+echo "zAqXsWSsS296-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show debugs --help
+echo "zAqXsWSsS296-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "296 nohup net show debugs -h" > current.command
+echo "zAqXsWSsS296-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show debugs -h
+echo "zAqXsWSsS297-_-_-new-_-_-ps -ax | grep ospfzAqXsWEeE"
+echo "zAqXsWSsS297-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "297 sudo nohup ps -ax | grep ospf" > current.command
+echo "zAqXsWSsS297-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ps -ax | grep ospf
+echo "zAqXsWSsS297-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "297 nohup ps -ax | grep ospf --help" > current.command
+echo "zAqXsWSsS297-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ps -ax | grep ospf --help
+echo "zAqXsWSsS297-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "297 nohup ps -ax | grep ospf -h" > current.command
+echo "zAqXsWSsS297-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ps -ax | grep ospf -h
+echo "zAqXsWSsS298-_-_-new-_-_-sudo tcpdump -v -i %DP ip proto ospfzAqXsWEeE"
+echo "zAqXsWSsS298-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "298 sudo nohup sudo tcpdump -v -i %DP ip proto ospf" > current.command
+echo "zAqXsWSsS298-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo tcpdump -v -i %DP ip proto ospf
+echo "zAqXsWSsS298-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "298 nohup sudo tcpdump -v -i %DP ip proto ospf --help" > current.command
+echo "zAqXsWSsS298-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo tcpdump -v -i %DP ip proto ospf --help
+echo "zAqXsWSsS298-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "298 nohup sudo tcpdump -v -i %DP ip proto ospf -h" > current.command
+echo "zAqXsWSsS298-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo tcpdump -v -i %DP ip proto ospf -h
+echo "zAqXsWSsS299-_-_-new-_-_-net show ospf6 neighbor [detail|drchoice]zAqXsWEeE"
+echo "zAqXsWSsS299-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "299 sudo nohup net show ospf6 neighbor [detail|drchoice]" > current.command
+echo "zAqXsWSsS299-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show ospf6 neighbor [detail|drchoice]
+echo "zAqXsWSsS299-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "299 nohup net show ospf6 neighbor [detail|drchoice] --help" > current.command
+echo "zAqXsWSsS299-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show ospf6 neighbor [detail|drchoice] --help
+echo "zAqXsWSsS299-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "299 nohup net show ospf6 neighbor [detail|drchoice] -h" > current.command
+echo "zAqXsWSsS299-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show ospf6 neighbor [detail|drchoice] -h
+echo "zAqXsWSsS300-_-_-new-_-_-net show route ospf6zAqXsWEeE"
+echo "zAqXsWSsS300-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "300 sudo nohup net show route ospf6" > current.command
+echo "zAqXsWSsS300-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show route ospf6
+echo "zAqXsWSsS300-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "300 nohup net show route ospf6 --help" > current.command
+echo "zAqXsWSsS300-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show route ospf6 --help
+echo "zAqXsWSsS300-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "300 nohup net show route ospf6 -h" > current.command
+echo "zAqXsWSsS300-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show route ospf6 -h
+echo "zAqXsWSsS301-_-_-new-_-_-net show ospf6 database detailzAqXsWEeE"
+echo "zAqXsWSsS301-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "301 sudo nohup net show ospf6 database detail" > current.command
+echo "zAqXsWSsS301-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show ospf6 database detail
+echo "zAqXsWSsS301-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "301 nohup net show ospf6 database detail --help" > current.command
+echo "zAqXsWSsS301-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show ospf6 database detail --help
+echo "zAqXsWSsS301-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "301 nohup net show ospf6 database detail -h" > current.command
+echo "zAqXsWSsS301-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show ospf6 database detail -h
+echo "zAqXsWSsS302-_-_-new-_-_-net show bfd sessionszAqXsWEeE"
+echo "zAqXsWSsS302-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "302 sudo nohup net show bfd sessions" > current.command
+echo "zAqXsWSsS302-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bfd sessions
+echo "zAqXsWSsS302-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "302 nohup net show bfd sessions --help" > current.command
+echo "zAqXsWSsS302-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bfd sessions --help
+echo "zAqXsWSsS302-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "302 nohup net show bfd sessions -h" > current.command
+echo "zAqXsWSsS302-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bfd sessions -h
+echo "zAqXsWSsS303-_-_-new-_-_-net show bfd sessions detailzAqXsWEeE"
+echo "zAqXsWSsS303-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "303 sudo nohup net show bfd sessions detail" > current.command
+echo "zAqXsWSsS303-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bfd sessions detail
+echo "zAqXsWSsS303-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "303 nohup net show bfd sessions detail --help" > current.command
+echo "zAqXsWSsS303-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bfd sessions detail --help
+echo "zAqXsWSsS303-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "303 nohup net show bfd sessions detail -h" > current.command
+echo "zAqXsWSsS303-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bfd sessions detail -h
+echo "zAqXsWSsS305-_-_-sec-_-_-PBRzAqXsWEeE"
+echo "zAqXsWSsS307-_-_-new-_-_-net show pbr interfacezAqXsWEeE"
+echo "zAqXsWSsS307-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "307 sudo nohup net show pbr interface" > current.command
+echo "zAqXsWSsS307-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show pbr interface
+echo "zAqXsWSsS307-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "307 nohup net show pbr interface --help" > current.command
+echo "zAqXsWSsS307-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show pbr interface --help
+echo "zAqXsWSsS307-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "307 nohup net show pbr interface -h" > current.command
+echo "zAqXsWSsS307-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show pbr interface -h
+echo "zAqXsWSsS308-_-_-new-_-_-net show pbr mapzAqXsWEeE"
+echo "zAqXsWSsS308-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "308 sudo nohup net show pbr map" > current.command
+echo "zAqXsWSsS308-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show pbr map
+echo "zAqXsWSsS308-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "308 nohup net show pbr map --help" > current.command
+echo "zAqXsWSsS308-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show pbr map --help
+echo "zAqXsWSsS308-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "308 nohup net show pbr map -h" > current.command
+echo "zAqXsWSsS308-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show pbr map -h
+echo "zAqXsWSsS309-_-_-new-_-_-net show pbr nexthop-groupzAqXsWEeE"
+echo "zAqXsWSsS309-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "309 sudo nohup net show pbr nexthop-group" > current.command
+echo "zAqXsWSsS309-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show pbr nexthop-group
+echo "zAqXsWSsS309-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "309 nohup net show pbr nexthop-group --help" > current.command
+echo "zAqXsWSsS309-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show pbr nexthop-group --help
+echo "zAqXsWSsS309-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "309 nohup net show pbr nexthop-group -h" > current.command
+echo "zAqXsWSsS309-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show pbr nexthop-group -h
+echo "zAqXsWSsS311-_-_-sec-_-_-ECMPzAqXsWEeE"
+echo "zAqXsWSsS313-_-_-new-_-_-sudo cl-ecmpcalc -i %DP -s 10.0.0.1 -d 10.0.0.1 -p tcp --sport 20000 --dport 80zAqXsWEeE"
+echo "zAqXsWSsS313-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "313 sudo nohup sudo cl-ecmpcalc -i %DP -s 10.0.0.1 -d 10.0.0.1 -p tcp --sport 20000 --dport 80" > current.command
+echo "zAqXsWSsS313-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo cl-ecmpcalc -i %DP -s 10.0.0.1 -d 10.0.0.1 -p tcp --sport 20000 --dport 80
+echo "zAqXsWSsS313-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "313 nohup sudo cl-ecmpcalc -i %DP -s 10.0.0.1 -d 10.0.0.1 -p tcp --sport 20000 --dport 80 --help" > current.command
+echo "zAqXsWSsS313-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo cl-ecmpcalc -i %DP -s 10.0.0.1 -d 10.0.0.1 -p tcp --sport 20000 --dport 80 --help
+echo "zAqXsWSsS313-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "313 nohup sudo cl-ecmpcalc -i %DP -s 10.0.0.1 -d 10.0.0.1 -p tcp --sport 20000 --dport 80 -h" > current.command
+echo "zAqXsWSsS313-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo cl-ecmpcalc -i %DP -s 10.0.0.1 -d 10.0.0.1 -p tcp --sport 20000 --dport 80 -h
+echo "zAqXsWSsS314-_-_-new-_-_-ip route show 10.1.1.0/24zAqXsWEeE"
+echo "zAqXsWSsS314-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "314 sudo nohup ip route show 10.1.1.0/24" > current.command
+echo "zAqXsWSsS314-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip route show 10.1.1.0/24
+echo "zAqXsWSsS314-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "314 nohup ip route show 10.1.1.0/24 --help" > current.command
+echo "zAqXsWSsS314-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip route show 10.1.1.0/24 --help
+echo "zAqXsWSsS314-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "314 nohup ip route show 10.1.1.0/24 -h" > current.command
+echo "zAqXsWSsS314-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip route show 10.1.1.0/24 -h
+echo "zAqXsWSsS315-_-_-new-_-_-cat /etc/cumulus/datapath/traffic.confzAqXsWEeE"
+echo "zAqXsWSsS315-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "315 sudo nohup cat /etc/cumulus/datapath/traffic.conf" > current.command
+echo "zAqXsWSsS315-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/cumulus/datapath/traffic.conf
+echo "zAqXsWSsS315-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "315 nohup cat /etc/cumulus/datapath/traffic.conf --help" > current.command
+echo "zAqXsWSsS315-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/cumulus/datapath/traffic.conf --help
+echo "zAqXsWSsS315-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "315 nohup cat /etc/cumulus/datapath/traffic.conf -h" > current.command
+echo "zAqXsWSsS315-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/cumulus/datapath/traffic.conf -h
+echo "zAqXsWSsS317-_-_-sec-_-_-RedistributezAqXsWEeE"
+echo "zAqXsWSsS319-_-_-new-_-_-cat /etc/default/ifplugdzAqXsWEeE"
+echo "zAqXsWSsS319-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "319 sudo nohup cat /etc/default/ifplugd" > current.command
+echo "zAqXsWSsS319-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/default/ifplugd
+echo "zAqXsWSsS319-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "319 nohup cat /etc/default/ifplugd --help" > current.command
+echo "zAqXsWSsS319-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/default/ifplugd --help
+echo "zAqXsWSsS319-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "319 nohup cat /etc/default/ifplugd -h" > current.command
+echo "zAqXsWSsS319-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/default/ifplugd -h
+echo "zAqXsWSsS320-_-_-new-_-_-systemctl status rdnbrd.servicezAqXsWEeE"
+echo "zAqXsWSsS320-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "320 sudo nohup systemctl status rdnbrd.service" > current.command
+echo "zAqXsWSsS320-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup systemctl status rdnbrd.service
+echo "zAqXsWSsS320-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "320 nohup systemctl status rdnbrd.service --help" > current.command
+echo "zAqXsWSsS320-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup systemctl status rdnbrd.service --help
+echo "zAqXsWSsS320-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "320 nohup systemctl status rdnbrd.service -h" > current.command
+echo "zAqXsWSsS320-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup systemctl status rdnbrd.service -h
+echo "zAqXsWSsS321-_-_-new-_-_-cat /etc/iproute2/rt_tableszAqXsWEeE"
+echo "zAqXsWSsS321-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "321 sudo nohup cat /etc/iproute2/rt_tables" > current.command
+echo "zAqXsWSsS321-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/iproute2/rt_tables
+echo "zAqXsWSsS321-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "321 nohup cat /etc/iproute2/rt_tables --help" > current.command
+echo "zAqXsWSsS321-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/iproute2/rt_tables --help
+echo "zAqXsWSsS321-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "321 nohup cat /etc/iproute2/rt_tables -h" > current.command
+echo "zAqXsWSsS321-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/iproute2/rt_tables -h
+echo "zAqXsWSsS322-_-_-new-_-_-ip route show table 10zAqXsWEeE"
+echo "zAqXsWSsS322-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "322 sudo nohup ip route show table 10" > current.command
+echo "zAqXsWSsS322-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip route show table 10
+echo "zAqXsWSsS322-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "322 nohup ip route show table 10 --help" > current.command
+echo "zAqXsWSsS322-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip route show table 10 --help
+echo "zAqXsWSsS322-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "322 nohup ip route show table 10 -h" > current.command
+echo "zAqXsWSsS322-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip route show table 10 -h
+echo "zAqXsWSsS325-_-_-sec-_-_-GREzAqXsWEeE"
+echo "zAqXsWSsS327-_-_-new-_-_-cat /etc/network/interfaceszAqXsWEeE"
+echo "zAqXsWSsS327-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "327 sudo nohup cat /etc/network/interfaces" > current.command
+echo "zAqXsWSsS327-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/network/interfaces
+echo "zAqXsWSsS327-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "327 nohup cat /etc/network/interfaces --help" > current.command
+echo "zAqXsWSsS327-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/network/interfaces --help
+echo "zAqXsWSsS327-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "327 nohup cat /etc/network/interfaces -h" > current.command
+echo "zAqXsWSsS327-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/network/interfaces -h
+echo "zAqXsWSsS328-_-_-new-_-_-ip tunnel showzAqXsWEeE"
+echo "zAqXsWSsS328-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "328 sudo nohup ip tunnel show" > current.command
+echo "zAqXsWSsS328-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip tunnel show
+echo "zAqXsWSsS328-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "328 nohup ip tunnel show --help" > current.command
+echo "zAqXsWSsS328-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip tunnel show --help
+echo "zAqXsWSsS328-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "328 nohup ip tunnel show -h" > current.command
+echo "zAqXsWSsS328-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip tunnel show -h
+echo "zAqXsWSsS330-_-_-sec-_-_-PIMzAqXsWEeE"
+echo "zAqXsWSsS332-_-_-new-_-_-net show mroutezAqXsWEeE"
+echo "zAqXsWSsS332-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "332 sudo nohup net show mroute" > current.command
+echo "zAqXsWSsS332-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show mroute
+echo "zAqXsWSsS332-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "332 nohup net show mroute --help" > current.command
+echo "zAqXsWSsS332-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show mroute --help
+echo "zAqXsWSsS332-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "332 nohup net show mroute -h" > current.command
+echo "zAqXsWSsS332-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show mroute -h
+echo "zAqXsWSsS333-_-_-new-_-_-net show pim local-membershipzAqXsWEeE"
+echo "zAqXsWSsS333-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "333 sudo nohup net show pim local-membership" > current.command
+echo "zAqXsWSsS333-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show pim local-membership
+echo "zAqXsWSsS333-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "333 nohup net show pim local-membership --help" > current.command
+echo "zAqXsWSsS333-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show pim local-membership --help
+echo "zAqXsWSsS333-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "333 nohup net show pim local-membership -h" > current.command
+echo "zAqXsWSsS333-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show pim local-membership -h
+echo "zAqXsWSsS334-_-_-new-_-_-net show pim statezAqXsWEeE"
+echo "zAqXsWSsS334-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "334 sudo nohup net show pim state" > current.command
+echo "zAqXsWSsS334-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show pim state
+echo "zAqXsWSsS334-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "334 nohup net show pim state --help" > current.command
+echo "zAqXsWSsS334-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show pim state --help
+echo "zAqXsWSsS334-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "334 nohup net show pim state -h" > current.command
+echo "zAqXsWSsS334-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show pim state -h
+echo "zAqXsWSsS335-_-_-new-_-_-net show pim upstreamzAqXsWEeE"
+echo "zAqXsWSsS335-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "335 sudo nohup net show pim upstream" > current.command
+echo "zAqXsWSsS335-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show pim upstream
+echo "zAqXsWSsS335-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "335 nohup net show pim upstream --help" > current.command
+echo "zAqXsWSsS335-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show pim upstream --help
+echo "zAqXsWSsS335-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "335 nohup net show pim upstream -h" > current.command
+echo "zAqXsWSsS335-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show pim upstream -h
+echo "zAqXsWSsS336-_-_-new-_-_-net show pim upstream-join-desiredzAqXsWEeE"
+echo "zAqXsWSsS336-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "336 sudo nohup net show pim upstream-join-desired" > current.command
+echo "zAqXsWSsS336-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show pim upstream-join-desired
+echo "zAqXsWSsS336-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "336 nohup net show pim upstream-join-desired --help" > current.command
+echo "zAqXsWSsS336-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show pim upstream-join-desired --help
+echo "zAqXsWSsS336-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "336 nohup net show pim upstream-join-desired -h" > current.command
+echo "zAqXsWSsS336-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show pim upstream-join-desired -h
+echo "zAqXsWSsS337-_-_-new-_-_-net show igmp groupszAqXsWEeE"
+echo "zAqXsWSsS337-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "337 sudo nohup net show igmp groups" > current.command
+echo "zAqXsWSsS337-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show igmp groups
+echo "zAqXsWSsS337-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "337 nohup net show igmp groups --help" > current.command
+echo "zAqXsWSsS337-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show igmp groups --help
+echo "zAqXsWSsS337-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "337 nohup net show igmp groups -h" > current.command
+echo "zAqXsWSsS337-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show igmp groups -h
+echo "zAqXsWSsS338-_-_-new-_-_-net show igmp sourceszAqXsWEeE"
+echo "zAqXsWSsS338-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "338 sudo nohup net show igmp sources" > current.command
+echo "zAqXsWSsS338-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show igmp sources
+echo "zAqXsWSsS338-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "338 nohup net show igmp sources --help" > current.command
+echo "zAqXsWSsS338-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show igmp sources --help
+echo "zAqXsWSsS338-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "338 nohup net show igmp sources -h" > current.command
+echo "zAqXsWSsS338-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show igmp sources -h
+echo "zAqXsWSsS339-_-_-new-_-_-cat /etc/network/interfaceszAqXsWEeE"
+echo "zAqXsWSsS339-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "339 sudo nohup cat /etc/network/interfaces" > current.command
+echo "zAqXsWSsS339-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/network/interfaces
+echo "zAqXsWSsS339-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "339 nohup cat /etc/network/interfaces --help" > current.command
+echo "zAqXsWSsS339-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/network/interfaces --help
+echo "zAqXsWSsS339-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "339 nohup cat /etc/network/interfaces -h" > current.command
+echo "zAqXsWSsS339-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/network/interfaces -h
+echo "zAqXsWSsS340-_-_-new-_-_-cat  /etc/frr/frr.confzAqXsWEeE"
+echo "zAqXsWSsS340-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "340 sudo nohup cat  /etc/frr/frr.conf" > current.command
+echo "zAqXsWSsS340-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat  /etc/frr/frr.conf
+echo "zAqXsWSsS340-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "340 nohup cat  /etc/frr/frr.conf --help" > current.command
+echo "zAqXsWSsS340-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat  /etc/frr/frr.conf --help
+echo "zAqXsWSsS340-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "340 nohup cat  /etc/frr/frr.conf -h" > current.command
+echo "zAqXsWSsS340-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat  /etc/frr/frr.conf -h
+echo "zAqXsWSsS341-_-_-new-_-_-net show mroute vrf bluezAqXsWEeE"
+echo "zAqXsWSsS341-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "341 sudo nohup net show mroute vrf blue" > current.command
+echo "zAqXsWSsS341-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show mroute vrf blue
+echo "zAqXsWSsS341-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "341 nohup net show mroute vrf blue --help" > current.command
+echo "zAqXsWSsS341-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show mroute vrf blue --help
+echo "zAqXsWSsS341-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "341 nohup net show mroute vrf blue -h" > current.command
+echo "zAqXsWSsS341-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show mroute vrf blue -h
+echo "zAqXsWSsS342-_-_-new-_-_-cl-resource-query  | grep McastzAqXsWEeE"
+echo "zAqXsWSsS342-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "342 sudo nohup cl-resource-query  | grep Mcast" > current.command
+echo "zAqXsWSsS342-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cl-resource-query  | grep Mcast
+echo "zAqXsWSsS342-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "342 nohup cl-resource-query  | grep Mcast --help" > current.command
+echo "zAqXsWSsS342-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cl-resource-query  | grep Mcast --help
+echo "zAqXsWSsS342-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "342 nohup cl-resource-query  | grep Mcast -h" > current.command
+echo "zAqXsWSsS342-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cl-resource-query  | grep Mcast -h
+echo "zAqXsWSsS343-_-_-new-_-_-net show msdp sazAqXsWEeE"
+echo "zAqXsWSsS343-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "343 sudo nohup net show msdp sa" > current.command
+echo "zAqXsWSsS343-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show msdp sa
+echo "zAqXsWSsS343-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "343 nohup net show msdp sa --help" > current.command
+echo "zAqXsWSsS343-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show msdp sa --help
+echo "zAqXsWSsS343-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "343 nohup net show msdp sa -h" > current.command
+echo "zAqXsWSsS343-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show msdp sa -h
+echo "zAqXsWSsS345-_-_-sec-_-_-VRFzAqXsWEeE"
+echo "zAqXsWSsS360-_-_-new-_-_-vrf listzAqXsWEeE"
+echo "zAqXsWSsS360-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "360 sudo nohup vrf list" > current.command
+echo "zAqXsWSsS360-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup vrf list
+echo "zAqXsWSsS360-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "360 nohup vrf list --help" > current.command
+echo "zAqXsWSsS360-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup vrf list --help
+echo "zAqXsWSsS360-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "360 nohup vrf list -h" > current.command
+echo "zAqXsWSsS360-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup vrf list -h
+echo "zAqXsWSsS361-_-_-new-_-_-vrf task list rocketzAqXsWEeE"
+echo "zAqXsWSsS361-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "361 sudo nohup vrf task list rocket" > current.command
+echo "zAqXsWSsS361-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup vrf task list rocket
+echo "zAqXsWSsS361-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "361 nohup vrf task list rocket --help" > current.command
+echo "zAqXsWSsS361-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup vrf task list rocket --help
+echo "zAqXsWSsS361-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "361 nohup vrf task list rocket -h" > current.command
+echo "zAqXsWSsS361-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup vrf task list rocket -h
+echo "zAqXsWSsS362-_-_-new-_-_-vrf task identify 2829zAqXsWEeE"
+echo "zAqXsWSsS362-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "362 sudo nohup vrf task identify 2829" > current.command
+echo "zAqXsWSsS362-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup vrf task identify 2829
+echo "zAqXsWSsS362-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "362 nohup vrf task identify 2829 --help" > current.command
+echo "zAqXsWSsS362-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup vrf task identify 2829 --help
+echo "zAqXsWSsS362-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "362 nohup vrf task identify 2829 -h" > current.command
+echo "zAqXsWSsS362-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup vrf task identify 2829 -h
+echo "zAqXsWSsS363-_-_-new-_-_-sudo vrf task exec rocket ssh user@hostzAqXsWEeE"
+echo "zAqXsWSsS363-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "363 sudo nohup sudo vrf task exec rocket ssh user@host" > current.command
+echo "zAqXsWSsS363-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo vrf task exec rocket ssh user@host
+echo "zAqXsWSsS363-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "363 nohup sudo vrf task exec rocket ssh user@host --help" > current.command
+echo "zAqXsWSsS363-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo vrf task exec rocket ssh user@host --help
+echo "zAqXsWSsS363-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "363 nohup sudo vrf task exec rocket ssh user@host -h" > current.command
+echo "zAqXsWSsS363-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo vrf task exec rocket ssh user@host -h
+echo "zAqXsWSsS364-_-_-new-_-_-net show bgp vrf turtle ipv4 unicast route-leakzAqXsWEeE"
+echo "zAqXsWSsS364-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "364 sudo nohup net show bgp vrf turtle ipv4 unicast route-leak" > current.command
+echo "zAqXsWSsS364-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bgp vrf turtle ipv4 unicast route-leak
+echo "zAqXsWSsS364-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "364 nohup net show bgp vrf turtle ipv4 unicast route-leak --help" > current.command
+echo "zAqXsWSsS364-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bgp vrf turtle ipv4 unicast route-leak --help
+echo "zAqXsWSsS364-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "364 nohup net show bgp vrf turtle ipv4 unicast route-leak -h" > current.command
+echo "zAqXsWSsS364-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bgp vrf turtle ipv4 unicast route-leak -h
+echo "zAqXsWSsS365-_-_-new-_-_-net show route vrf turtle ipv4zAqXsWEeE"
+echo "zAqXsWSsS365-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "365 sudo nohup net show route vrf turtle ipv4" > current.command
+echo "zAqXsWSsS365-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show route vrf turtle ipv4
+echo "zAqXsWSsS365-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "365 nohup net show route vrf turtle ipv4 --help" > current.command
+echo "zAqXsWSsS365-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show route vrf turtle ipv4 --help
+echo "zAqXsWSsS365-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "365 nohup net show route vrf turtle ipv4 -h" > current.command
+echo "zAqXsWSsS365-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show route vrf turtle ipv4 -h
+echo "zAqXsWSsS366-_-_-new-_-_-cat /etc/frr/frr.confzAqXsWEeE"
+echo "zAqXsWSsS366-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "366 sudo nohup cat /etc/frr/frr.conf" > current.command
+echo "zAqXsWSsS366-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/frr/frr.conf
+echo "zAqXsWSsS366-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "366 nohup cat /etc/frr/frr.conf --help" > current.command
+echo "zAqXsWSsS366-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/frr/frr.conf --help
+echo "zAqXsWSsS366-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "366 nohup cat /etc/frr/frr.conf -h" > current.command
+echo "zAqXsWSsS366-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/frr/frr.conf -h
+echo "zAqXsWSsS367-_-_-new-_-_-net show bgp vrf rocket summaryzAqXsWEeE"
+echo "zAqXsWSsS367-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "367 sudo nohup net show bgp vrf rocket summary" > current.command
+echo "zAqXsWSsS367-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bgp vrf rocket summary
+echo "zAqXsWSsS367-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "367 nohup net show bgp vrf rocket summary --help" > current.command
+echo "zAqXsWSsS367-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bgp vrf rocket summary --help
+echo "zAqXsWSsS367-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "367 nohup net show bgp vrf rocket summary -h" > current.command
+echo "zAqXsWSsS367-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bgp vrf rocket summary -h
+echo "zAqXsWSsS368-_-_-new-_-_-net show bgp vrf vrf1012zAqXsWEeE"
+echo "zAqXsWSsS368-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "368 sudo nohup net show bgp vrf vrf1012" > current.command
+echo "zAqXsWSsS368-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bgp vrf vrf1012
+echo "zAqXsWSsS368-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "368 nohup net show bgp vrf vrf1012 --help" > current.command
+echo "zAqXsWSsS368-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bgp vrf vrf1012 --help
+echo "zAqXsWSsS368-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "368 nohup net show bgp vrf vrf1012 -h" > current.command
+echo "zAqXsWSsS368-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bgp vrf vrf1012 -h
+echo "zAqXsWSsS369-_-_-new-_-_-net show ospf vrf allzAqXsWEeE"
+echo "zAqXsWSsS369-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "369 sudo nohup net show ospf vrf all" > current.command
+echo "zAqXsWSsS369-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show ospf vrf all
+echo "zAqXsWSsS369-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "369 nohup net show ospf vrf all --help" > current.command
+echo "zAqXsWSsS369-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show ospf vrf all --help
+echo "zAqXsWSsS369-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "369 nohup net show ospf vrf all -h" > current.command
+echo "zAqXsWSsS369-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show ospf vrf all -h
+echo "zAqXsWSsS370-_-_-new-_-_-net show ospf vrf vrf1012 routezAqXsWEeE"
+echo "zAqXsWSsS370-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "370 sudo nohup net show ospf vrf vrf1012 route" > current.command
+echo "zAqXsWSsS370-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show ospf vrf vrf1012 route
+echo "zAqXsWSsS370-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "370 nohup net show ospf vrf vrf1012 route --help" > current.command
+echo "zAqXsWSsS370-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show ospf vrf vrf1012 route --help
+echo "zAqXsWSsS370-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "370 nohup net show ospf vrf vrf1012 route -h" > current.command
+echo "zAqXsWSsS370-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show ospf vrf vrf1012 route -h
+echo "zAqXsWSsS371-_-_-new-_-_-ip -d link show type vrfzAqXsWEeE"
+echo "zAqXsWSsS371-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "371 sudo nohup ip -d link show type vrf" > current.command
+echo "zAqXsWSsS371-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip -d link show type vrf
+echo "zAqXsWSsS371-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "371 nohup ip -d link show type vrf --help" > current.command
+echo "zAqXsWSsS371-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip -d link show type vrf --help
+echo "zAqXsWSsS371-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "371 nohup ip -d link show type vrf -h" > current.command
+echo "zAqXsWSsS371-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip -d link show type vrf -h
+echo "zAqXsWSsS372-_-_-new-_-_-ip -d link show vrf vrf1012zAqXsWEeE"
+echo "zAqXsWSsS372-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "372 sudo nohup ip -d link show vrf vrf1012" > current.command
+echo "zAqXsWSsS372-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip -d link show vrf vrf1012
+echo "zAqXsWSsS372-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "372 nohup ip -d link show vrf vrf1012 --help" > current.command
+echo "zAqXsWSsS372-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip -d link show vrf vrf1012 --help
+echo "zAqXsWSsS372-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "372 nohup ip -d link show vrf vrf1012 -h" > current.command
+echo "zAqXsWSsS372-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip -d link show vrf vrf1012 -h
+echo "zAqXsWSsS373-_-_-new-_-_-ip route show table vrf1012zAqXsWEeE"
+echo "zAqXsWSsS373-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "373 sudo nohup ip route show table vrf1012" > current.command
+echo "zAqXsWSsS373-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip route show table vrf1012
+echo "zAqXsWSsS373-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "373 nohup ip route show table vrf1012 --help" > current.command
+echo "zAqXsWSsS373-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip route show table vrf1012 --help
+echo "zAqXsWSsS373-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "373 nohup ip route show table vrf1012 -h" > current.command
+echo "zAqXsWSsS373-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip route show table vrf1012 -h
+echo "zAqXsWSsS374-_-_-new-_-_-ip -6 route show table vrf1012zAqXsWEeE"
+echo "zAqXsWSsS374-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "374 sudo nohup ip -6 route show table vrf1012" > current.command
+echo "zAqXsWSsS374-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip -6 route show table vrf1012
+echo "zAqXsWSsS374-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "374 nohup ip -6 route show table vrf1012 --help" > current.command
+echo "zAqXsWSsS374-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip -6 route show table vrf1012 --help
+echo "zAqXsWSsS374-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "374 nohup ip -6 route show table vrf1012 -h" > current.command
+echo "zAqXsWSsS374-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip -6 route show table vrf1012 -h
+echo "zAqXsWSsS375-_-_-new-_-_-ip link list rocketzAqXsWEeE"
+echo "zAqXsWSsS375-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "375 sudo nohup ip link list rocket" > current.command
+echo "zAqXsWSsS375-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip link list rocket
+echo "zAqXsWSsS375-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "375 nohup ip link list rocket --help" > current.command
+echo "zAqXsWSsS375-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip link list rocket --help
+echo "zAqXsWSsS375-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "375 nohup ip link list rocket -h" > current.command
+echo "zAqXsWSsS375-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip link list rocket -h
+echo "zAqXsWSsS376-_-_-new-_-_-net show mroute vrf bluezAqXsWEeE"
+echo "zAqXsWSsS376-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "376 sudo nohup net show mroute vrf blue" > current.command
+echo "zAqXsWSsS376-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show mroute vrf blue
+echo "zAqXsWSsS376-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "376 nohup net show mroute vrf blue --help" > current.command
+echo "zAqXsWSsS376-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show mroute vrf blue --help
+echo "zAqXsWSsS376-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "376 nohup net show mroute vrf blue -h" > current.command
+echo "zAqXsWSsS376-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show mroute vrf blue -h
+echo "zAqXsWSsS377-_-_-new-_-_-sudo systemctl status dhcrelay@rocket.servicezAqXsWEeE"
+echo "zAqXsWSsS377-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "377 sudo nohup sudo systemctl status dhcrelay@rocket.service" > current.command
+echo "zAqXsWSsS377-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo systemctl status dhcrelay@rocket.service
+echo "zAqXsWSsS377-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "377 nohup sudo systemctl status dhcrelay@rocket.service --help" > current.command
+echo "zAqXsWSsS377-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo systemctl status dhcrelay@rocket.service --help
+echo "zAqXsWSsS377-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "377 nohup sudo systemctl status dhcrelay@rocket.service -h" > current.command
+echo "zAqXsWSsS377-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo systemctl status dhcrelay@rocket.service -h
+echo "zAqXsWSsS378-_-_-new-_-_-sudo vrf task exec rocket /usr/sbin/dhcrelay -d -q -i %DP -i %DP 102.0.0.2zAqXsWEeE"
+echo "zAqXsWSsS378-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "378 sudo nohup sudo vrf task exec rocket /usr/sbin/dhcrelay -d -q -i %DP -i %DP 102.0.0.2" > current.command
+echo "zAqXsWSsS378-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo vrf task exec rocket /usr/sbin/dhcrelay -d -q -i %DP -i %DP 102.0.0.2
+echo "zAqXsWSsS378-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "378 nohup sudo vrf task exec rocket /usr/sbin/dhcrelay -d -q -i %DP -i %DP 102.0.0.2 --help" > current.command
+echo "zAqXsWSsS378-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo vrf task exec rocket /usr/sbin/dhcrelay -d -q -i %DP -i %DP 102.0.0.2 --help
+echo "zAqXsWSsS378-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "378 nohup sudo vrf task exec rocket /usr/sbin/dhcrelay -d -q -i %DP -i %DP 102.0.0.2 -h" > current.command
+echo "zAqXsWSsS378-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo vrf task exec rocket /usr/sbin/dhcrelay -d -q -i %DP -i %DP 102.0.0.2 -h
+echo "zAqXsWSsS382-_-_-sec-_-_-VRRzAqXsWEeE"
+echo "zAqXsWSsS384-_-_-sec-_-_-IGP MLD SnoopingzAqXsWEeE"
+echo "zAqXsWSsS386-_-_-new-_-_-sudo brctl showstp bridgezAqXsWEeE"
+echo "zAqXsWSsS386-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "386 sudo nohup sudo brctl showstp bridge" > current.command
+echo "zAqXsWSsS386-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo brctl showstp bridge
+echo "zAqXsWSsS386-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "386 nohup sudo brctl showstp bridge --help" > current.command
+echo "zAqXsWSsS386-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo brctl showstp bridge --help
+echo "zAqXsWSsS386-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "386 nohup sudo brctl showstp bridge -h" > current.command
+echo "zAqXsWSsS386-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo brctl showstp bridge -h
+echo "zAqXsWSsS387-_-_-new-_-_-sudo bridge -d -s mdb showzAqXsWEeE"
+echo "zAqXsWSsS387-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "387 sudo nohup sudo bridge -d -s mdb show" > current.command
+echo "zAqXsWSsS387-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo bridge -d -s mdb show
+echo "zAqXsWSsS387-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "387 nohup sudo bridge -d -s mdb show --help" > current.command
+echo "zAqXsWSsS387-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo bridge -d -s mdb show --help
+echo "zAqXsWSsS387-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "387 nohup sudo bridge -d -s mdb show -h" > current.command
+echo "zAqXsWSsS387-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo bridge -d -s mdb show -h
+echo "zAqXsWSsS388-_-_-new-_-_-cat /etc/frr/frr.confzAqXsWEeE"
+echo "zAqXsWSsS388-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "388 sudo nohup cat /etc/frr/frr.conf" > current.command
+echo "zAqXsWSsS388-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/frr/frr.conf
+echo "zAqXsWSsS388-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "388 nohup cat /etc/frr/frr.conf --help" > current.command
+echo "zAqXsWSsS388-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/frr/frr.conf --help
+echo "zAqXsWSsS388-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "388 nohup cat /etc/frr/frr.conf -h" > current.command
+echo "zAqXsWSsS388-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/frr/frr.conf -h
+echo "zAqXsWSsS389-_-_-new-_-_-net show routezAqXsWEeE"
+echo "zAqXsWSsS389-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "389 sudo nohup net show route" > current.command
+echo "zAqXsWSsS389-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show route
+echo "zAqXsWSsS389-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "389 nohup net show route --help" > current.command
+echo "zAqXsWSsS389-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show route --help
+echo "zAqXsWSsS389-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "389 nohup net show route -h" > current.command
+echo "zAqXsWSsS389-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show route -h
+echo "zAqXsWSsS390-_-_-new-_-_-net show vrfzAqXsWEeE"
+echo "zAqXsWSsS390-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "390 sudo nohup net show vrf" > current.command
+echo "zAqXsWSsS390-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show vrf
+echo "zAqXsWSsS390-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "390 nohup net show vrf --help" > current.command
+echo "zAqXsWSsS390-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show vrf --help
+echo "zAqXsWSsS390-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "390 nohup net show vrf -h" > current.command
+echo "zAqXsWSsS390-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show vrf -h
+echo "zAqXsWSsS391-_-_-new-_-_-vrf link listzAqXsWEeE"
+echo "zAqXsWSsS391-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "391 sudo nohup vrf link list" > current.command
+echo "zAqXsWSsS391-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup vrf link list
+echo "zAqXsWSsS391-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "391 nohup vrf link list --help" > current.command
+echo "zAqXsWSsS391-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup vrf link list --help
+echo "zAqXsWSsS391-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "391 nohup vrf link list -h" > current.command
+echo "zAqXsWSsS391-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup vrf link list -h
+echo "zAqXsWSsS392-_-_-new-_-_-sudo vrf task exec CLD ping 4.2.2.2zAqXsWEeE"
+echo "zAqXsWSsS392-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "392 sudo nohup sudo vrf task exec CLD ping 4.2.2.2" > current.command
+echo "zAqXsWSsS392-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo vrf task exec CLD ping 4.2.2.2
+echo "zAqXsWSsS392-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "392 nohup sudo vrf task exec CLD ping 4.2.2.2 --help" > current.command
+echo "zAqXsWSsS392-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo vrf task exec CLD ping 4.2.2.2 --help
+echo "zAqXsWSsS392-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "392 nohup sudo vrf task exec CLD ping 4.2.2.2 -h" > current.command
+echo "zAqXsWSsS392-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo vrf task exec CLD ping 4.2.2.2 -h
+echo "zAqXsWSsS393-_-_-new-_-_-cl-rctl running-configzAqXsWEeE"
+echo "zAqXsWSsS393-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "393 sudo nohup cl-rctl running-config" > current.command
+echo "zAqXsWSsS393-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cl-rctl running-config
+echo "zAqXsWSsS393-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "393 nohup cl-rctl running-config --help" > current.command
+echo "zAqXsWSsS393-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cl-rctl running-config --help
+echo "zAqXsWSsS393-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "393 nohup cl-rctl running-config -h" > current.command
+echo "zAqXsWSsS393-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cl-rctl running-config -h
+echo "zAqXsWSsS394-_-_-new-_-_-ip route showzAqXsWEeE"
+echo "zAqXsWSsS394-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "394 sudo nohup ip route show" > current.command
+echo "zAqXsWSsS394-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip route show
+echo "zAqXsWSsS394-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "394 nohup ip route show --help" > current.command
+echo "zAqXsWSsS394-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip route show --help
+echo "zAqXsWSsS394-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "394 nohup ip route show -h" > current.command
+echo "zAqXsWSsS394-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip route show -h
+echo "zAqXsWSsS395-_-_-new-_-_-ptmctl -dzAqXsWEeE"
+echo "zAqXsWSsS395-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "395 sudo nohup ptmctl -d" > current.command
+echo "zAqXsWSsS395-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ptmctl -d
+echo "zAqXsWSsS395-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "395 nohup ptmctl -d --help" > current.command
+echo "zAqXsWSsS395-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ptmctl -d --help
+echo "zAqXsWSsS395-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "395 nohup ptmctl -d -h" > current.command
+echo "zAqXsWSsS395-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ptmctl -d -h
+echo "zAqXsWSsS397-_-_-new-_-_-cl-rctlzAqXsWEeE"
+echo "zAqXsWSsS397-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "397 sudo nohup cl-rctl" > current.command
+echo "zAqXsWSsS397-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cl-rctl
+echo "zAqXsWSsS397-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "397 nohup cl-rctl --help" > current.command
+echo "zAqXsWSsS397-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cl-rctl --help
+echo "zAqXsWSsS397-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "397 nohup cl-rctl -h" > current.command
+echo "zAqXsWSsS397-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cl-rctl -h
+echo "zAqXsWSsS398-_-_-new-_-_-ip routezAqXsWEeE"
+echo "zAqXsWSsS398-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "398 sudo nohup ip route" > current.command
+echo "zAqXsWSsS398-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip route
+echo "zAqXsWSsS398-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "398 nohup ip route --help" > current.command
+echo "zAqXsWSsS398-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip route --help
+echo "zAqXsWSsS398-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "398 nohup ip route -h" > current.command
+echo "zAqXsWSsS398-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip route -h
+echo "zAqXsWSsS399-_-_-new-_-_-cl-ospf neighborzAqXsWEeE"
+echo "zAqXsWSsS399-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "399 sudo nohup cl-ospf neighbor" > current.command
+echo "zAqXsWSsS399-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cl-ospf neighbor
+echo "zAqXsWSsS399-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "399 nohup cl-ospf neighbor --help" > current.command
+echo "zAqXsWSsS399-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cl-ospf neighbor --help
+echo "zAqXsWSsS399-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "399 nohup cl-ospf neighbor -h" > current.command
+echo "zAqXsWSsS399-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cl-ospf neighbor -h
+echo "zAqXsWSsS400-_-_-new-_-_-cl-bgp summaryzAqXsWEeE"
+echo "zAqXsWSsS400-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "400 sudo nohup cl-bgp summary" > current.command
+echo "zAqXsWSsS400-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cl-bgp summary
+echo "zAqXsWSsS400-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "400 nohup cl-bgp summary --help" > current.command
+echo "zAqXsWSsS400-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cl-bgp summary --help
+echo "zAqXsWSsS400-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "400 nohup cl-bgp summary -h" > current.command
+echo "zAqXsWSsS400-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cl-bgp summary -h
+echo "zAqXsWSsS401-_-_-new-_-_-cl-bgp routezAqXsWEeE"
+echo "zAqXsWSsS401-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "401 sudo nohup cl-bgp route" > current.command
+echo "zAqXsWSsS401-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cl-bgp route
+echo "zAqXsWSsS401-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "401 nohup cl-bgp route --help" > current.command
+echo "zAqXsWSsS401-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cl-bgp route --help
+echo "zAqXsWSsS401-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "401 nohup cl-bgp route -h" > current.command
+echo "zAqXsWSsS401-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cl-bgp route -h
+echo "zAqXsWSsS405-_-_-sec-_-_-BGPzAqXsWEeE"
+echo "zAqXsWSsS407-_-_-new-_-_-netq show bgpzAqXsWEeE"
+echo "zAqXsWSsS407-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "407 sudo nohup netq show bgp" > current.command
+echo "zAqXsWSsS407-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup netq show bgp
+echo "zAqXsWSsS407-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "407 nohup netq show bgp --help" > current.command
+echo "zAqXsWSsS407-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup netq show bgp --help
+echo "zAqXsWSsS407-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "407 nohup netq show bgp -h" > current.command
+echo "zAqXsWSsS407-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup netq show bgp -h
+echo "zAqXsWSsS408-_-_-new-_-_-net examples bgpzAqXsWEeE"
+echo "zAqXsWSsS408-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "408 sudo nohup net examples bgp" > current.command
+echo "zAqXsWSsS408-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net examples bgp
+echo "zAqXsWSsS408-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "408 nohup net examples bgp --help" > current.command
+echo "zAqXsWSsS408-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net examples bgp --help
+echo "zAqXsWSsS408-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "408 nohup net examples bgp -h" > current.command
+echo "zAqXsWSsS408-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net examples bgp -h
+echo "zAqXsWSsS409-_-_-new-_-_-netq check bgpzAqXsWEeE"
+echo "zAqXsWSsS409-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "409 sudo nohup netq check bgp" > current.command
+echo "zAqXsWSsS409-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup netq check bgp
+echo "zAqXsWSsS409-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "409 nohup netq check bgp --help" > current.command
+echo "zAqXsWSsS409-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup netq check bgp --help
+echo "zAqXsWSsS409-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "409 nohup netq check bgp -h" > current.command
+echo "zAqXsWSsS409-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup netq check bgp -h
+echo "zAqXsWSsS410-_-_-new-_-_-net show bgp summaryzAqXsWEeE"
+echo "zAqXsWSsS410-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "410 sudo nohup net show bgp summary" > current.command
+echo "zAqXsWSsS410-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bgp summary
+echo "zAqXsWSsS410-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "410 nohup net show bgp summary --help" > current.command
+echo "zAqXsWSsS410-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bgp summary --help
+echo "zAqXsWSsS410-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "410 nohup net show bgp summary -h" > current.command
+echo "zAqXsWSsS410-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bgp summary -h
+echo "zAqXsWSsS412-_-_-new-_-_-net show evpn vnizAqXsWEeE"
+echo "zAqXsWSsS412-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "412 sudo nohup net show evpn vni" > current.command
+echo "zAqXsWSsS412-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show evpn vni
+echo "zAqXsWSsS412-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "412 nohup net show evpn vni --help" > current.command
+echo "zAqXsWSsS412-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show evpn vni --help
+echo "zAqXsWSsS412-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "412 nohup net show evpn vni -h" > current.command
+echo "zAqXsWSsS412-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show evpn vni -h
+echo "zAqXsWSsS413-_-_-new-_-_-net show evpn mac vni allzAqXsWEeE"
+echo "zAqXsWSsS413-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "413 sudo nohup net show evpn mac vni all" > current.command
+echo "zAqXsWSsS413-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show evpn mac vni all
+echo "zAqXsWSsS413-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "413 nohup net show evpn mac vni all --help" > current.command
+echo "zAqXsWSsS413-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show evpn mac vni all --help
+echo "zAqXsWSsS413-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "413 nohup net show evpn mac vni all -h" > current.command
+echo "zAqXsWSsS413-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show evpn mac vni all -h
+echo "zAqXsWSsS414-_-_-new-_-_-net show bgp l2vpn evpn routezAqXsWEeE"
+echo "zAqXsWSsS414-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "414 sudo nohup net show bgp l2vpn evpn route" > current.command
+echo "zAqXsWSsS414-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route
+echo "zAqXsWSsS414-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "414 nohup net show bgp l2vpn evpn route --help" > current.command
+echo "zAqXsWSsS414-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route --help
+echo "zAqXsWSsS414-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "414 nohup net show bgp l2vpn evpn route -h" > current.command
+echo "zAqXsWSsS414-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bgp l2vpn evpn route -h
+echo "zAqXsWSsS415-_-_-new-_-_-net show timezAqXsWEeE"
+echo "zAqXsWSsS415-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "415 sudo nohup net show time" > current.command
+echo "zAqXsWSsS415-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show time
+echo "zAqXsWSsS415-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "415 nohup net show time --help" > current.command
+echo "zAqXsWSsS415-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show time --help
+echo "zAqXsWSsS415-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "415 nohup net show time -h" > current.command
+echo "zAqXsWSsS415-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show time -h
+echo "zAqXsWSsS416-_-_-new-_-_-net show time ntp serverszAqXsWEeE"
+echo "zAqXsWSsS416-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "416 sudo nohup net show time ntp servers" > current.command
+echo "zAqXsWSsS416-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show time ntp servers
+echo "zAqXsWSsS416-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "416 nohup net show time ntp servers --help" > current.command
+echo "zAqXsWSsS416-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show time ntp servers --help
+echo "zAqXsWSsS416-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "416 nohup net show time ntp servers -h" > current.command
+echo "zAqXsWSsS416-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show time ntp servers -h
+echo "zAqXsWSsS417-_-_-new-_-_-sudo systemctl status dhcrelayzAqXsWEeE"
+echo "zAqXsWSsS417-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "417 sudo nohup sudo systemctl status dhcrelay" > current.command
+echo "zAqXsWSsS417-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup sudo systemctl status dhcrelay
+echo "zAqXsWSsS417-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "417 nohup sudo systemctl status dhcrelay --help" > current.command
+echo "zAqXsWSsS417-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup sudo systemctl status dhcrelay --help
+echo "zAqXsWSsS417-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "417 nohup sudo systemctl status dhcrelay -h" > current.command
+echo "zAqXsWSsS417-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup sudo systemctl status dhcrelay -h
+echo "zAqXsWSsS418-_-_-new-_-_-net show bgpzAqXsWEeE"
+echo "zAqXsWSsS418-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "418 sudo nohup net show bgp" > current.command
+echo "zAqXsWSsS418-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bgp
+echo "zAqXsWSsS418-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "418 nohup net show bgp --help" > current.command
+echo "zAqXsWSsS418-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bgp --help
+echo "zAqXsWSsS418-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "418 nohup net show bgp -h" > current.command
+echo "zAqXsWSsS418-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bgp -h
+echo "zAqXsWSsS419-_-_-new-_-_-net show route ipv4zAqXsWEeE"
+echo "zAqXsWSsS419-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "419 sudo nohup net show route ipv4" > current.command
+echo "zAqXsWSsS419-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show route ipv4
+echo "zAqXsWSsS419-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "419 nohup net show route ipv4 --help" > current.command
+echo "zAqXsWSsS419-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show route ipv4 --help
+echo "zAqXsWSsS419-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "419 nohup net show route ipv4 -h" > current.command
+echo "zAqXsWSsS419-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show route ipv4 -h
+echo "zAqXsWSsS420-_-_-new-_-_-ip neighborzAqXsWEeE"
+echo "zAqXsWSsS420-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "420 sudo nohup ip neighbor" > current.command
+echo "zAqXsWSsS420-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup ip neighbor
+echo "zAqXsWSsS420-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "420 nohup ip neighbor --help" > current.command
+echo "zAqXsWSsS420-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup ip neighbor --help
+echo "zAqXsWSsS420-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "420 nohup ip neighbor -h" > current.command
+echo "zAqXsWSsS420-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup ip neighbor -h
+echo "zAqXsWSsS421-_-_-new-_-_-net show bgp neighborzAqXsWEeE"
+echo "zAqXsWSsS421-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "421 sudo nohup net show bgp neighbor" > current.command
+echo "zAqXsWSsS421-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bgp neighbor
+echo "zAqXsWSsS421-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "421 nohup net show bgp neighbor --help" > current.command
+echo "zAqXsWSsS421-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bgp neighbor --help
+echo "zAqXsWSsS421-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "421 nohup net show bgp neighbor -h" > current.command
+echo "zAqXsWSsS421-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bgp neighbor -h
+echo "zAqXsWSsS422-_-_-new-_-_-net show bgp 10.0.0.12zAqXsWEeE"
+echo "zAqXsWSsS422-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "422 sudo nohup net show bgp 10.0.0.12" > current.command
+echo "zAqXsWSsS422-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup net show bgp 10.0.0.12
+echo "zAqXsWSsS422-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "422 nohup net show bgp 10.0.0.12 --help" > current.command
+echo "zAqXsWSsS422-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup net show bgp 10.0.0.12 --help
+echo "zAqXsWSsS422-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "422 nohup net show bgp 10.0.0.12 -h" > current.command
+echo "zAqXsWSsS422-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup net show bgp 10.0.0.12 -h
+echo "zAqXsWSsS423-_-_-new-_-_-cat /etc/frr/frr.confzAqXsWEeE"
+echo "zAqXsWSsS423-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "423 sudo nohup cat /etc/frr/frr.conf" > current.command
+echo "zAqXsWSsS423-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/frr/frr.conf
+echo "zAqXsWSsS423-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "423 nohup cat /etc/frr/frr.conf --help" > current.command
+echo "zAqXsWSsS423-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/frr/frr.conf --help
+echo "zAqXsWSsS423-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "423 nohup cat /etc/frr/frr.conf -h" > current.command
+echo "zAqXsWSsS423-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/frr/frr.conf -h
+echo "zAqXsWSsS424-_-_-new-_-_-cat /etc/cumulus/acl/policy.d/01control_plane_bgp.ruleszAqXsWEeE"
+echo "zAqXsWSsS424-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "424 sudo nohup cat /etc/cumulus/acl/policy.d/01control_plane_bgp.rules" > current.command
+echo "zAqXsWSsS424-_-_-cmd-_-_-sudozAqXsWEeE"
+sudo nohup cat /etc/cumulus/acl/policy.d/01control_plane_bgp.rules
+echo "zAqXsWSsS424-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "424 nohup cat /etc/cumulus/acl/policy.d/01control_plane_bgp.rules --help" > current.command
+echo "zAqXsWSsS424-_-_-cmd-_-_-helpzAqXsWEeE"
+sudo nohup cat /etc/cumulus/acl/policy.d/01control_plane_bgp.rules --help
+echo "zAqXsWSsS424-_-_-xxx-_-_-xxxzAqXsWEeE"
+echo "424 nohup cat /etc/cumulus/acl/policy.d/01control_plane_bgp.rules -h" > current.command
+echo "zAqXsWSsS424-_-_-cmd-_-_-hzAqXsWEeE"
+sudo nohup cat /etc/cumulus/acl/policy.d/01control_plane_bgp.rules -h
+echo "zAqXsWSsS427-_-_-sec-_-_- NTPzAqXsWEeE"

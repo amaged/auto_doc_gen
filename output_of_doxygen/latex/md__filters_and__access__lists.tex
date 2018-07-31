@@ -1,0 +1,579 @@
+\subsection*{cat sample\+\_\+count.\+rules}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cat: sample\_count.rules: No such file or directory}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: cat [OPTION]... [FILE]...}
+\DoxyCodeLine{Concatenate FILE(s), or standard input, to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{  -A, --show-all           equivalent to -vET}
+\DoxyCodeLine{  -b, --number-nonblank    number nonempty output lines, overrides -n}
+\DoxyCodeLine{  -e                       equivalent to -vE}
+\DoxyCodeLine{  -E, --show-ends          display \$ at end of each line}
+\DoxyCodeLine{  -n, --number             number all output lines}
+\DoxyCodeLine{  -s, --squeeze-blank      suppress repeated empty output lines}
+\DoxyCodeLine{  -t                       equivalent to -vT}
+\DoxyCodeLine{  -T, --show-tabs          display TAB characters as \string^I}
+\DoxyCodeLine{  -u                       (ignored)}
+\DoxyCodeLine{  -v, --show-nonprinting   use \string^ and M- notation, except for LFD and TAB}
+\DoxyCodeLine{      --help     display this help and exit}
+\DoxyCodeLine{      --version  output version information and exit}
+\DoxyCodeLine{}
+\DoxyCodeLine{With no FILE, or when FILE is -, read standard input.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Examples:}
+\DoxyCodeLine{  cat f - g  Output f's contents, then standard input, then g's contents.}
+\DoxyCodeLine{  cat        Copy standard input to standard output.}
+\DoxyCodeLine{}
+\DoxyCodeLine{GNU coreutils online help: <http://www.gnu.org/software/coreutils/>}
+\DoxyCodeLine{Full documentation at: <http://www.gnu.org/software/coreutils/cat>}
+\DoxyCodeLine{or available locally via: info '(coreutils) cat invocation'}
+\DoxyCodeLine{}
+\DoxyCodeLine{cat: sample\_count.rules: No such file or directory}
+\end{DoxyCode}
+ \subsection*{net example acl}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Scenario}
+\DoxyCodeLine{========}
+\DoxyCodeLine{We would like to use access-lists on 'switch' to}
+\DoxyCodeLine{- Restrict inbound traffic on swp1 to traffic from 10.1.1.0/24 destined for 10.1.2.0/24}
+\DoxyCodeLine{- Restrict outbound traffic on swp2 to http, https, or ssh}
+\DoxyCodeLine{}
+\DoxyCodeLine{     *switch}
+\DoxyCodeLine{        /\(\backslash\)}
+\DoxyCodeLine{  swp1 /  \(\backslash\) swp2}
+\DoxyCodeLine{      /    \(\backslash\)}
+\DoxyCodeLine{     /      \(\backslash\)}
+\DoxyCodeLine{ host-11   host-12}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{switch net commands}
+\DoxyCodeLine{====================}
+\DoxyCodeLine{}
+\DoxyCodeLine{Create an ACL that accepts traffic from 10.1.1.0/24 destined for 10.1.2.0/24}
+\DoxyCodeLine{and drops all other traffic}
+\DoxyCodeLine{}
+\DoxyCodeLine{switch\# net add acl ipv4 MYACL accept source-ip 10.1.1.0/24 dest-ip 10.1.2.0/24}
+\DoxyCodeLine{switch\# net add acl ipv4 MYACL drop source-ip any dest-ip any}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{Apply MYACL inbound on swp1}
+\DoxyCodeLine{}
+\DoxyCodeLine{switch\# net add interface swp1 acl ipv4 MYACL inbound}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{Create an ACL that accepts http, https, or ssh traffic and drops all}
+\DoxyCodeLine{other traffic.}
+\DoxyCodeLine{}
+\DoxyCodeLine{switch\# net add acl ipv4 WEB\_OR\_SSH accept tcp source-ip any source-port any dest-ip any dest-port http}
+\DoxyCodeLine{switch\# net add acl ipv4 WEB\_OR\_SSH accept tcp source-ip any source-port http dest-ip any dest-port any}
+\DoxyCodeLine{switch\# net add acl ipv4 WEB\_OR\_SSH accept tcp source-ip any source-port any dest-ip any dest-port https}
+\DoxyCodeLine{switch\# net add acl ipv4 WEB\_OR\_SSH accept tcp source-ip any source-port https dest-ip any dest-port any}
+\DoxyCodeLine{switch\# net add acl ipv4 WEB\_OR\_SSH accept tcp source-ip any source-port any dest-ip any dest-port ssh}
+\DoxyCodeLine{switch\# net add acl ipv4 WEB\_OR\_SSH accept tcp source-ip any source-port ssh dest-ip any dest-port any}
+\DoxyCodeLine{switch\# net add acl ipv4 WEB\_OR\_SSH drop source-ip any dest-ip any}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{Apply WEB\_OR\_SSH outbound on swp2}
+\DoxyCodeLine{}
+\DoxyCodeLine{switch\# net add interface swp2 acl ipv4 WEB\_OR\_SSH outbound}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{commit the staged changes}
+\DoxyCodeLine{switch\# net commit}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{Verification}
+\DoxyCodeLine{============}
+\DoxyCodeLine{switch\# net show configuration acl}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The following commands contain keyword(s) 'example', 'acl'}
+\DoxyCodeLine{}
+\DoxyCodeLine{    net example acl}
+\end{DoxyCode}
+ \subsection*{sudo cl-\/acltool -\/i -\/p sample\+\_\+count.\+rules}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{warning: Detected platform is Cumulus VX}
+\DoxyCodeLine{warning: Running in no-hw-sync mode. No rules will be programmed in hw}
+\DoxyCodeLine{error: Cannot find policy files: ['sample\_count.rules']}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usage: cl-acltool [-h]}
+\DoxyCodeLine{                  (-i | -F \{all,ip,ip6,eb\} | -Z \{all,ip,ip6,eb\} | -L \{all,ip,ip6,eb\} | -V)}
+\DoxyCodeLine{                  [-p POLICY\_FILE] [-P POLICY\_DIR] [-n] [-N] [-v] [-x]}
+\DoxyCodeLine{                  [--last-good]}
+\DoxyCodeLine{}
+\DoxyCodeLine{acl policy and rule administration}
+\DoxyCodeLine{}
+\DoxyCodeLine{optional arguments:}
+\DoxyCodeLine{  -h, --help            show this help message and exit}
+\DoxyCodeLine{  -i, --install         Install acl rules}
+\DoxyCodeLine{  -F \{all,ip,ip6,eb\}, --flush \{all,ip,ip6,eb\}}
+\DoxyCodeLine{                        flush rules}
+\DoxyCodeLine{  -Z \{all,ip,ip6,eb\}, --zero-counters \{all,ip,ip6,eb\}}
+\DoxyCodeLine{                        Zero counters}
+\DoxyCodeLine{  -L \{all,ip,ip6,eb\}, --list \{all,ip,ip6,eb\}}
+\DoxyCodeLine{                        List rules}
+\DoxyCodeLine{  -V, --version         show version}
+\DoxyCodeLine{  -p POLICY\_FILE, --policy POLICY\_FILE}
+\DoxyCodeLine{                        acl policy file name}
+\DoxyCodeLine{  -P POLICY\_DIR, --policy-dir POLICY\_DIR}
+\DoxyCodeLine{                        policy dir.}
+\DoxyCodeLine{  -n, --dry-run         dry run}
+\DoxyCodeLine{  -N, --numeric         do not resolve hostnames}
+\DoxyCodeLine{  -v, --verbose         verbose}
+\DoxyCodeLine{  -x, --exact           expand numbers (display exact values)}
+\DoxyCodeLine{  --last-good           install last good acl policies}
+\end{DoxyCode}
+ \subsection*{sudo iptables -\/L -\/v}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Chain INPUT (policy ACCEPT 0 packets, 0 bytes)}
+\DoxyCodeLine{ pkts bytes target     prot opt in     out     source               destination         }
+\DoxyCodeLine{    0     0 DROP       all  --  swp+   any     240.0.0.0/5          anywhere            }
+\DoxyCodeLine{    0     0 DROP       all  --  swp+   any     loopback/8           anywhere            }
+\DoxyCodeLine{    0     0 DROP       all  --  swp+   any     base-address.mcast.net/4  anywhere            }
+\DoxyCodeLine{    0     0 DROP       all  --  swp+   any     255.255.255.255      anywhere            }
+\DoxyCodeLine{    0     0 SETCLASS   udp  --  swp+   any     anywhere             anywhere             udp dpt:3785 SETCLASS  class:7}
+\DoxyCodeLine{    0     0 POLICE     udp  --  any    any     anywhere             anywhere             udp dpt:3785 POLICE  mode:pkt rate:2000 burst:2000}
+\DoxyCodeLine{    0     0 SETCLASS   udp  --  swp+   any     anywhere             anywhere             udp dpt:3784 SETCLASS  class:7}
+\DoxyCodeLine{    0     0 POLICE     udp  --  any    any     anywhere             anywhere             udp dpt:3784 POLICE  mode:pkt rate:2000 burst:2000}
+\DoxyCodeLine{    0     0 SETCLASS   udp  --  swp+   any     anywhere             anywhere             udp dpt:4784 SETCLASS  class:7}
+\DoxyCodeLine{    0     0 POLICE     udp  --  any    any     anywhere             anywhere             udp dpt:4784 POLICE  mode:pkt rate:2000 burst:2000}
+\DoxyCodeLine{    0     0 SETCLASS   ospf --  swp+   any     anywhere             anywhere             SETCLASS  class:7}
+\DoxyCodeLine{    0     0 POLICE     ospf --  any    any     anywhere             anywhere             POLICE  mode:pkt rate:2000 burst:2000}
+\DoxyCodeLine{    0     0 SETCLASS   pim  --  swp+   any     anywhere             anywhere             SETCLASS  class:6}
+\DoxyCodeLine{    0     0 POLICE     pim  --  any    any     anywhere             anywhere             POLICE  mode:pkt rate:2000 burst:2000}
+\DoxyCodeLine{    0     0 SETCLASS   tcp  --  swp+   any     anywhere             anywhere             tcp dpt:639 SETCLASS  class:6}
+\DoxyCodeLine{    0     0 POLICE     tcp  --  any    any     anywhere             anywhere             tcp dpt:639 POLICE  mode:pkt rate:2000 burst:2000}
+\DoxyCodeLine{    0     0 SETCLASS   tcp  --  swp+   any     anywhere             anywhere             tcp spt:639 SETCLASS  class:6}
+\DoxyCodeLine{    0     0 POLICE     tcp  --  any    any     anywhere             anywhere             tcp spt:639 POLICE  mode:pkt rate:2000 burst:2000}
+\DoxyCodeLine{    0     0 SETCLASS   tcp  --  swp+   any     anywhere             anywhere             tcp dpt:bgp SETCLASS  class:7}
+\DoxyCodeLine{    0     0 POLICE     tcp  --  any    any     anywhere             anywhere             tcp dpt:bgp POLICE  mode:pkt rate:2000 burst:2000}
+\DoxyCodeLine{    0     0 SETCLASS   tcp  --  swp+   any     anywhere             anywhere             tcp spt:bgp SETCLASS  class:7}
+\DoxyCodeLine{    0     0 POLICE     tcp  --  any    any     anywhere             anywhere             tcp spt:bgp POLICE  mode:pkt rate:2000 burst:2000}
+\DoxyCodeLine{    0     0 SETCLASS   tcp  --  swp+   any     anywhere             anywhere             tcp dpt:5342 SETCLASS  class:7}
+\DoxyCodeLine{    0     0 POLICE     tcp  --  any    any     anywhere             anywhere             tcp dpt:5342 POLICE  mode:pkt rate:2000 burst:2000}
+\DoxyCodeLine{    0     0 SETCLASS   tcp  --  swp+   any     anywhere             anywhere             tcp spt:5342 SETCLASS  class:7}
+\DoxyCodeLine{    0     0 POLICE     tcp  --  any    any     anywhere             anywhere             tcp spt:5342 POLICE  mode:pkt rate:2000 burst:2000}
+\DoxyCodeLine{    0     0 SETCLASS   icmp --  swp+   any     anywhere             anywhere             SETCLASS  class:2}
+\DoxyCodeLine{    0     0 POLICE     icmp --  any    any     anywhere             anywhere             POLICE  mode:pkt rate:100 burst:40}
+\DoxyCodeLine{    0     0 SETCLASS   udp  --  swp+   any     anywhere             anywhere             udp dpts:bootps:bootpc SETCLASS  class:2}
+\DoxyCodeLine{    0     0 POLICE     udp  --  any    any     anywhere             anywhere             udp dpt:bootps POLICE  mode:pkt rate:100 burst:100}
+\DoxyCodeLine{    0     0 POLICE     udp  --  any    any     anywhere             anywhere             udp dpt:bootpc POLICE  mode:pkt rate:100 burst:100}
+\DoxyCodeLine{    0     0 SETCLASS   tcp  --  swp+   any     anywhere             anywhere             tcp dpts:bootps:bootpc SETCLASS  class:2}
+\DoxyCodeLine{    0     0 POLICE     tcp  --  any    any     anywhere             anywhere             tcp dpt:bootps POLICE  mode:pkt rate:100 burst:100}
+\DoxyCodeLine{    0     0 POLICE     tcp  --  any    any     anywhere             anywhere             tcp dpt:bootpc POLICE  mode:pkt rate:100 burst:100}
+\DoxyCodeLine{    0     0 SETCLASS   udp  --  swp+   any     anywhere             anywhere             udp dpt:10001 SETCLASS  class:3}
+\DoxyCodeLine{    0     0 POLICE     udp  --  any    any     anywhere             anywhere             udp dpt:10001 POLICE  mode:pkt rate:2000 burst:2000}
+\DoxyCodeLine{    0     0 SETCLASS   igmp --  swp+   any     anywhere             anywhere             SETCLASS  class:6}
+\DoxyCodeLine{    0     0 POLICE     igmp --  any    any     anywhere             anywhere             POLICE  mode:pkt rate:300 burst:100}
+\DoxyCodeLine{    0     0 POLICE     all  --  swp+   any     anywhere             anywhere             ADDRTYPE match dst-type LOCAL POLICE  mode:pkt rate:1000 burst:1000 class:0}
+\DoxyCodeLine{    0     0 POLICE     all  --  swp+   any     anywhere             anywhere             ADDRTYPE match dst-type IPROUTER POLICE  mode:pkt rate:400 burst:100 class:0}
+\DoxyCodeLine{    0     0 SETCLASS   all  --  swp+   any     anywhere             anywhere             SETCLASS  class:0}
+\DoxyCodeLine{}
+\DoxyCodeLine{Chain FORWARD (policy ACCEPT 27406 packets, 21M bytes)}
+\DoxyCodeLine{ pkts bytes target     prot opt in     out     source               destination         }
+\DoxyCodeLine{    0     0 DROP       all  --  swp+   any     240.0.0.0/5          anywhere            }
+\DoxyCodeLine{    0     0 DROP       all  --  swp+   any     loopback/8           anywhere            }
+\DoxyCodeLine{    0     0 DROP       all  --  swp+   any     base-address.mcast.net/4  anywhere            }
+\DoxyCodeLine{    0     0 DROP       all  --  swp+   any     255.255.255.255      anywhere            }
+\DoxyCodeLine{}
+\DoxyCodeLine{Chain OUTPUT (policy ACCEPT 64805 packets, 20M bytes)}
+\DoxyCodeLine{ pkts bytes target     prot opt in     out     source               destination         }
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{iptables v1.4.21}
+\DoxyCodeLine{}
+\DoxyCodeLine{Usage: iptables -[ACD] chain rule-specification [options]}
+\DoxyCodeLine{       iptables -I chain [rulenum] rule-specification [options]}
+\DoxyCodeLine{       iptables -R chain rulenum rule-specification [options]}
+\DoxyCodeLine{       iptables -D chain rulenum [options]}
+\DoxyCodeLine{       iptables -[LS] [chain [rulenum]] [options]}
+\DoxyCodeLine{       iptables -[FZ] [chain] [options]}
+\DoxyCodeLine{       iptables -[NX] chain}
+\DoxyCodeLine{       iptables -E old-chain-name new-chain-name}
+\DoxyCodeLine{       iptables -P chain target [options]}
+\DoxyCodeLine{       iptables -h (print this help information)}
+\DoxyCodeLine{}
+\DoxyCodeLine{Commands:}
+\DoxyCodeLine{Either long or short options are allowed.}
+\DoxyCodeLine{  --append  -A chain        Append to chain}
+\DoxyCodeLine{  --check   -C chain        Check for the existence of a rule}
+\DoxyCodeLine{  --delete  -D chain        Delete matching rule from chain}
+\DoxyCodeLine{  --delete  -D chain rulenum}
+\DoxyCodeLine{                Delete rule rulenum (1 = first) from chain}
+\DoxyCodeLine{  --insert  -I chain [rulenum]}
+\DoxyCodeLine{                Insert in chain as rulenum (default 1=first)}
+\DoxyCodeLine{  --replace -R chain rulenum}
+\DoxyCodeLine{                Replace rule rulenum (1 = first) in chain}
+\DoxyCodeLine{  --list    -L [chain [rulenum]]}
+\DoxyCodeLine{                List the rules in a chain or all chains}
+\DoxyCodeLine{  --list-rules -S [chain [rulenum]]}
+\DoxyCodeLine{                Print the rules in a chain or all chains}
+\DoxyCodeLine{  --flush   -F [chain]      Delete all rules in  chain or all chains}
+\DoxyCodeLine{  --zero    -Z [chain [rulenum]]}
+\DoxyCodeLine{                Zero counters in chain or all chains}
+\DoxyCodeLine{  --new     -N chain        Create a new user-defined chain}
+\DoxyCodeLine{  --delete-chain}
+\DoxyCodeLine{            -X [chain]      Delete a user-defined chain}
+\DoxyCodeLine{  --policy  -P chain target}
+\DoxyCodeLine{                Change policy on chain to target}
+\DoxyCodeLine{  --rename-chain}
+\DoxyCodeLine{            -E old-chain new-chain}
+\DoxyCodeLine{                Change chain name, (moving any references)}
+\DoxyCodeLine{Options:}
+\DoxyCodeLine{    --ipv4  -4      Nothing (line is ignored by ip6tables-restore)}
+\DoxyCodeLine{    --ipv6  -6      Error (line is ignored by iptables-restore)}
+\DoxyCodeLine{[!] --protocol  -p proto    protocol: by number or name, eg. `tcp'}
+\DoxyCodeLine{[!] --source    -s address[/mask][...]}
+\DoxyCodeLine{                source specification}
+\DoxyCodeLine{[!] --destination -d address[/mask][...]}
+\DoxyCodeLine{                destination specification}
+\DoxyCodeLine{[!] --in-interface -i input name[+]}
+\DoxyCodeLine{                network interface name ([+] for wildcard)}
+\DoxyCodeLine{ --jump -j target}
+\DoxyCodeLine{                target for rule (may load target extension)}
+\DoxyCodeLine{  --goto      -g chain}
+\DoxyCodeLine{                              jump to chain with no return}
+\DoxyCodeLine{  --match   -m match}
+\DoxyCodeLine{                extended match (may load extension)}
+\DoxyCodeLine{  --numeric -n      numeric output of addresses and ports}
+\DoxyCodeLine{[!] --out-interface -o output name[+]}
+\DoxyCodeLine{                network interface name ([+] for wildcard)}
+\DoxyCodeLine{  --table   -t table    table to manipulate (default: `filter')}
+\DoxyCodeLine{  --verbose -v      verbose mode}
+\DoxyCodeLine{  --wait    -w      wait for the xtables lock}
+\DoxyCodeLine{  --line-numbers        print line numbers when listing}
+\DoxyCodeLine{  --exact   -x      expand numbers (display exact values)}
+\DoxyCodeLine{[!] --fragment  -f      match second or further fragments only}
+\DoxyCodeLine{  --modprobe=<command>      try to insert modules using this command}
+\DoxyCodeLine{  --set-counters PKTS BYTES set the counter during insert/append}
+\DoxyCodeLine{[!] --version   -V      print package version.}
+\end{DoxyCode}
+ \subsection*{sudo cl-\/acltool}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usage: cl-acltool [-h]}
+\DoxyCodeLine{                  (-i | -F \{all,ip,ip6,eb\} | -Z \{all,ip,ip6,eb\} | -L \{all,ip,ip6,eb\} | -V)}
+\DoxyCodeLine{                  [-p POLICY\_FILE] [-P POLICY\_DIR] [-n] [-N] [-v] [-x]}
+\DoxyCodeLine{                  [--last-good]}
+\DoxyCodeLine{cl-acltool: error: one of the arguments -i/--install -F/--flush -Z/--zero-counters -L/--list -V/--version is required}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usage: cl-acltool [-h]}
+\DoxyCodeLine{                  (-i | -F \{all,ip,ip6,eb\} | -Z \{all,ip,ip6,eb\} | -L \{all,ip,ip6,eb\} | -V)}
+\DoxyCodeLine{                  [-p POLICY\_FILE] [-P POLICY\_DIR] [-n] [-N] [-v] [-x]}
+\DoxyCodeLine{                  [--last-good]}
+\DoxyCodeLine{}
+\DoxyCodeLine{acl policy and rule administration}
+\DoxyCodeLine{}
+\DoxyCodeLine{optional arguments:}
+\DoxyCodeLine{  -h, --help            show this help message and exit}
+\DoxyCodeLine{  -i, --install         Install acl rules}
+\DoxyCodeLine{  -F \{all,ip,ip6,eb\}, --flush \{all,ip,ip6,eb\}}
+\DoxyCodeLine{                        flush rules}
+\DoxyCodeLine{  -Z \{all,ip,ip6,eb\}, --zero-counters \{all,ip,ip6,eb\}}
+\DoxyCodeLine{                        Zero counters}
+\DoxyCodeLine{  -L \{all,ip,ip6,eb\}, --list \{all,ip,ip6,eb\}}
+\DoxyCodeLine{                        List rules}
+\DoxyCodeLine{  -V, --version         show version}
+\DoxyCodeLine{  -p POLICY\_FILE, --policy POLICY\_FILE}
+\DoxyCodeLine{                        acl policy file name}
+\DoxyCodeLine{  -P POLICY\_DIR, --policy-dir POLICY\_DIR}
+\DoxyCodeLine{                        policy dir.}
+\DoxyCodeLine{  -n, --dry-run         dry run}
+\DoxyCodeLine{  -N, --numeric         do not resolve hostnames}
+\DoxyCodeLine{  -v, --verbose         verbose}
+\DoxyCodeLine{  -x, --exact           expand numbers (display exact values)}
+\DoxyCodeLine{  --last-good           install last good acl policies}
+\end{DoxyCode}
+ \subsection*{sudo cl-\/acltool -\/i -\/P /etc/cumulus/acl/policy.d/span.\+rules}
+
+\#\#\# Hello 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{warning: Detected platform is Cumulus VX}
+\DoxyCodeLine{warning: Running in no-hw-sync mode. No rules will be programmed in hw}
+\DoxyCodeLine{error: Cannot find policy dir /etc/cumulus/acl/policy.d/span.rules}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usage: cl-acltool [-h]}
+\DoxyCodeLine{                  (-i | -F \{all,ip,ip6,eb\} | -Z \{all,ip,ip6,eb\} | -L \{all,ip,ip6,eb\} | -V)}
+\DoxyCodeLine{                  [-p POLICY\_FILE] [-P POLICY\_DIR] [-n] [-N] [-v] [-x]}
+\DoxyCodeLine{                  [--last-good]}
+\DoxyCodeLine{}
+\DoxyCodeLine{acl policy and rule administration}
+\DoxyCodeLine{}
+\DoxyCodeLine{optional arguments:}
+\DoxyCodeLine{  -h, --help            show this help message and exit}
+\DoxyCodeLine{  -i, --install         Install acl rules}
+\DoxyCodeLine{  -F \{all,ip,ip6,eb\}, --flush \{all,ip,ip6,eb\}}
+\DoxyCodeLine{                        flush rules}
+\DoxyCodeLine{  -Z \{all,ip,ip6,eb\}, --zero-counters \{all,ip,ip6,eb\}}
+\DoxyCodeLine{                        Zero counters}
+\DoxyCodeLine{  -L \{all,ip,ip6,eb\}, --list \{all,ip,ip6,eb\}}
+\DoxyCodeLine{                        List rules}
+\DoxyCodeLine{  -V, --version         show version}
+\DoxyCodeLine{  -p POLICY\_FILE, --policy POLICY\_FILE}
+\DoxyCodeLine{                        acl policy file name}
+\DoxyCodeLine{  -P POLICY\_DIR, --policy-dir POLICY\_DIR}
+\DoxyCodeLine{                        policy dir.}
+\DoxyCodeLine{  -n, --dry-run         dry run}
+\DoxyCodeLine{  -N, --numeric         do not resolve hostnames}
+\DoxyCodeLine{  -v, --verbose         verbose}
+\DoxyCodeLine{  -x, --exact           expand numbers (display exact values)}
+\DoxyCodeLine{  --last-good           install last good acl policies}
+\end{DoxyCode}
+ \subsection*{sudo cl-\/acltool -\/L all $\vert$ grep S\+P\+AN}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: grep [OPTION]... PATTERN [FILE]...}
+\DoxyCodeLine{Search for PATTERN in each FILE or standard input.}
+\DoxyCodeLine{PATTERN is, by default, a basic regular expression (BRE).}
+\DoxyCodeLine{Example: grep -i 'hello world' menu.h main.c}
+\DoxyCodeLine{}
+\DoxyCodeLine{Regexp selection and interpretation:}
+\DoxyCodeLine{  -E, --extended-regexp     PATTERN is an extended regular expression (ERE)}
+\DoxyCodeLine{  -F, --fixed-strings       PATTERN is a set of newline-separated fixed strings}
+\DoxyCodeLine{  -G, --basic-regexp        PATTERN is a basic regular expression (BRE)}
+\DoxyCodeLine{  -P, --perl-regexp         PATTERN is a Perl regular expression}
+\DoxyCodeLine{  -e, --regexp=PATTERN      use PATTERN for matching}
+\DoxyCodeLine{  -f, --file=FILE           obtain PATTERN from FILE}
+\DoxyCodeLine{  -i, --ignore-case         ignore case distinctions}
+\DoxyCodeLine{  -w, --word-regexp         force PATTERN to match only whole words}
+\DoxyCodeLine{  -x, --line-regexp         force PATTERN to match only whole lines}
+\DoxyCodeLine{  -z, --null-data           a data line ends in 0 byte, not newline}
+\DoxyCodeLine{}
+\DoxyCodeLine{Miscellaneous:}
+\DoxyCodeLine{  -s, --no-messages         suppress error messages}
+\DoxyCodeLine{  -v, --invert-match        select non-matching lines}
+\DoxyCodeLine{  -V, --version             display version information and exit}
+\DoxyCodeLine{      --help                display this help text and exit}
+\DoxyCodeLine{}
+\DoxyCodeLine{Output control:}
+\DoxyCodeLine{  -m, --max-count=NUM       stop after NUM matches}
+\DoxyCodeLine{  -b, --byte-offset         print the byte offset with output lines}
+\DoxyCodeLine{  -n, --line-number         print line number with output lines}
+\DoxyCodeLine{      --line-buffered       flush output on every line}
+\DoxyCodeLine{  -H, --with-filename       print the file name for each match}
+\DoxyCodeLine{  -h, --no-filename         suppress the file name prefix on output}
+\DoxyCodeLine{      --label=LABEL         use LABEL as the standard input file name prefix}
+\DoxyCodeLine{  -o, --only-matching       show only the part of a line matching PATTERN}
+\DoxyCodeLine{  -q, --quiet, --silent     suppress all normal output}
+\DoxyCodeLine{      --binary-files=TYPE   assume that binary files are TYPE;}
+\DoxyCodeLine{                            TYPE is 'binary', 'text', or 'without-match'}
+\DoxyCodeLine{  -a, --text                equivalent to --binary-files=text}
+\DoxyCodeLine{  -I                        equivalent to --binary-files=without-match}
+\DoxyCodeLine{  -d, --directories=ACTION  how to handle directories;}
+\DoxyCodeLine{                            ACTION is 'read', 'recurse', or 'skip'}
+\DoxyCodeLine{  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;}
+\DoxyCodeLine{                            ACTION is 'read' or 'skip'}
+\DoxyCodeLine{  -r, --recursive           like --directories=recurse}
+\DoxyCodeLine{  -R, --dereference-recursive  likewise, but follow all symlinks}
+\DoxyCodeLine{      --include=FILE\_PATTERN  search only files that match FILE\_PATTERN}
+\DoxyCodeLine{      --exclude=FILE\_PATTERN  skip files and directories matching FILE\_PATTERN}
+\DoxyCodeLine{      --exclude-from=FILE   skip files matching any file pattern from FILE}
+\DoxyCodeLine{      --exclude-dir=PATTERN  directories that match PATTERN will be skipped.}
+\DoxyCodeLine{  -L, --files-without-match  print only names of FILEs containing no match}
+\DoxyCodeLine{  -l, --files-with-matches  print only names of FILEs containing matches}
+\DoxyCodeLine{  -c, --count               print only a count of matching lines per FILE}
+\DoxyCodeLine{  -T, --initial-tab         make tabs line up (if needed)}
+\DoxyCodeLine{  -Z, --null                print 0 byte after FILE name}
+\DoxyCodeLine{}
+\DoxyCodeLine{Context control:}
+\DoxyCodeLine{  -B, --before-context=NUM  print NUM lines of leading context}
+\DoxyCodeLine{  -A, --after-context=NUM   print NUM lines of trailing context}
+\DoxyCodeLine{  -C, --context=NUM         print NUM lines of output context}
+\DoxyCodeLine{  -NUM                      same as --context=NUM}
+\DoxyCodeLine{      --color[=WHEN],}
+\DoxyCodeLine{      --colour[=WHEN]       use markers to highlight the matching strings;}
+\DoxyCodeLine{                            WHEN is 'always', 'never', or 'auto'}
+\DoxyCodeLine{  -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)}
+\DoxyCodeLine{  -u, --unix-byte-offsets   report offsets as if CRs were not there}
+\DoxyCodeLine{                            (MSDOS/Windows)}
+\DoxyCodeLine{}
+\DoxyCodeLine{'egrep' means 'grep -E'.  'fgrep' means 'grep -F'.}
+\DoxyCodeLine{Direct invocation as either 'egrep' or 'fgrep' is deprecated.}
+\DoxyCodeLine{When FILE is -, read standard input.  With no FILE, read . if a command-line}
+\DoxyCodeLine{-r is given, - otherwise.  If fewer than two FILEs are given, assume -h.}
+\DoxyCodeLine{Exit status is 0 if any line is selected, 1 otherwise;}
+\DoxyCodeLine{if any error occurs and -q is not given, the exit status is 2.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Report bugs to: bug-grep@gnu.org}
+\DoxyCodeLine{GNU Grep home page: <http://www.gnu.org/software/grep/>}
+\DoxyCodeLine{General help using GNU software: <http://www.gnu.org/gethelp/>}
+\DoxyCodeLine{Traceback (most recent call last):}
+\DoxyCodeLine{  File "/usr/cumulus/bin/cl-acltool", line 1349, in <module>}
+\DoxyCodeLine{    log\_warn('Detected platform is Cumulus VX')}
+\DoxyCodeLine{  File "/usr/cumulus/bin/cl-acltool", line 107, in log\_warn}
+\DoxyCodeLine{    log\_handler("warn", ''.join(args))}
+\DoxyCodeLine{  File "/usr/cumulus/bin/cl-acltool", line 65, in log\_handler\_stdout}
+\DoxyCodeLine{    sys.stdout.flush()}
+\DoxyCodeLine{IOError: [Errno 32] Broken pipe}
+\end{DoxyCode}
+ \subsection*{sudo cl-\/acltool -\/i}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{warning: Detected platform is Cumulus VX}
+\DoxyCodeLine{warning: Running in no-hw-sync mode. No rules will be programmed in hw}
+\DoxyCodeLine{Reading rule file /etc/cumulus/acl/policy.d/00control\_plane.rules ...}
+\DoxyCodeLine{Processing rules in file /etc/cumulus/acl/policy.d/00control\_plane.rules ...}
+\DoxyCodeLine{Reading rule file /etc/cumulus/acl/policy.d/99control\_plane\_catch\_all.rules ...}
+\DoxyCodeLine{Processing rules in file /etc/cumulus/acl/policy.d/99control\_plane\_catch\_all.rules ...}
+\DoxyCodeLine{Installing acl policy}
+\DoxyCodeLine{done.}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usage: cl-acltool [-h]}
+\DoxyCodeLine{                  (-i | -F \{all,ip,ip6,eb\} | -Z \{all,ip,ip6,eb\} | -L \{all,ip,ip6,eb\} | -V)}
+\DoxyCodeLine{                  [-p POLICY\_FILE] [-P POLICY\_DIR] [-n] [-N] [-v] [-x]}
+\DoxyCodeLine{                  [--last-good]}
+\DoxyCodeLine{}
+\DoxyCodeLine{acl policy and rule administration}
+\DoxyCodeLine{}
+\DoxyCodeLine{optional arguments:}
+\DoxyCodeLine{  -h, --help            show this help message and exit}
+\DoxyCodeLine{  -i, --install         Install acl rules}
+\DoxyCodeLine{  -F \{all,ip,ip6,eb\}, --flush \{all,ip,ip6,eb\}}
+\DoxyCodeLine{                        flush rules}
+\DoxyCodeLine{  -Z \{all,ip,ip6,eb\}, --zero-counters \{all,ip,ip6,eb\}}
+\DoxyCodeLine{                        Zero counters}
+\DoxyCodeLine{  -L \{all,ip,ip6,eb\}, --list \{all,ip,ip6,eb\}}
+\DoxyCodeLine{                        List rules}
+\DoxyCodeLine{  -V, --version         show version}
+\DoxyCodeLine{  -p POLICY\_FILE, --policy POLICY\_FILE}
+\DoxyCodeLine{                        acl policy file name}
+\DoxyCodeLine{  -P POLICY\_DIR, --policy-dir POLICY\_DIR}
+\DoxyCodeLine{                        policy dir.}
+\DoxyCodeLine{  -n, --dry-run         dry run}
+\DoxyCodeLine{  -N, --numeric         do not resolve hostnames}
+\DoxyCodeLine{  -v, --verbose         verbose}
+\DoxyCodeLine{  -x, --exact           expand numbers (display exact values)}
+\DoxyCodeLine{  --last-good           install last good acl policies}
+\end{DoxyCode}
+ \subsection*{sudo iptables -\/L -\/v $\vert$ grep S\+P\+AN}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Usage: grep [OPTION]... PATTERN [FILE]...}
+\DoxyCodeLine{Search for PATTERN in each FILE or standard input.}
+\DoxyCodeLine{PATTERN is, by default, a basic regular expression (BRE).}
+\DoxyCodeLine{Example: grep -i 'hello world' menu.h main.c}
+\DoxyCodeLine{}
+\DoxyCodeLine{Regexp selection and interpretation:}
+\DoxyCodeLine{  -E, --extended-regexp     PATTERN is an extended regular expression (ERE)}
+\DoxyCodeLine{  -F, --fixed-strings       PATTERN is a set of newline-separated fixed strings}
+\DoxyCodeLine{  -G, --basic-regexp        PATTERN is a basic regular expression (BRE)}
+\DoxyCodeLine{  -P, --perl-regexp         PATTERN is a Perl regular expression}
+\DoxyCodeLine{  -e, --regexp=PATTERN      use PATTERN for matching}
+\DoxyCodeLine{  -f, --file=FILE           obtain PATTERN from FILE}
+\DoxyCodeLine{  -i, --ignore-case         ignore case distinctions}
+\DoxyCodeLine{  -w, --word-regexp         force PATTERN to match only whole words}
+\DoxyCodeLine{  -x, --line-regexp         force PATTERN to match only whole lines}
+\DoxyCodeLine{  -z, --null-data           a data line ends in 0 byte, not newline}
+\DoxyCodeLine{}
+\DoxyCodeLine{Miscellaneous:}
+\DoxyCodeLine{  -s, --no-messages         suppress error messages}
+\DoxyCodeLine{  -v, --invert-match        select non-matching lines}
+\DoxyCodeLine{  -V, --version             display version information and exit}
+\DoxyCodeLine{      --help                display this help text and exit}
+\DoxyCodeLine{}
+\DoxyCodeLine{Output control:}
+\DoxyCodeLine{  -m, --max-count=NUM       stop after NUM matches}
+\DoxyCodeLine{  -b, --byte-offset         print the byte offset with output lines}
+\DoxyCodeLine{  -n, --line-number         print line number with output lines}
+\DoxyCodeLine{      --line-buffered       flush output on every line}
+\DoxyCodeLine{  -H, --with-filename       print the file name for each match}
+\DoxyCodeLine{  -h, --no-filename         suppress the file name prefix on output}
+\DoxyCodeLine{      --label=LABEL         use LABEL as the standard input file name prefix}
+\DoxyCodeLine{  -o, --only-matching       show only the part of a line matching PATTERN}
+\DoxyCodeLine{  -q, --quiet, --silent     suppress all normal output}
+\DoxyCodeLine{      --binary-files=TYPE   assume that binary files are TYPE;}
+\DoxyCodeLine{                            TYPE is 'binary', 'text', or 'without-match'}
+\DoxyCodeLine{  -a, --text                equivalent to --binary-files=text}
+\DoxyCodeLine{  -I                        equivalent to --binary-files=without-match}
+\DoxyCodeLine{  -d, --directories=ACTION  how to handle directories;}
+\DoxyCodeLine{                            ACTION is 'read', 'recurse', or 'skip'}
+\DoxyCodeLine{  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;}
+\DoxyCodeLine{                            ACTION is 'read' or 'skip'}
+\DoxyCodeLine{  -r, --recursive           like --directories=recurse}
+\DoxyCodeLine{  -R, --dereference-recursive  likewise, but follow all symlinks}
+\DoxyCodeLine{      --include=FILE\_PATTERN  search only files that match FILE\_PATTERN}
+\DoxyCodeLine{      --exclude=FILE\_PATTERN  skip files and directories matching FILE\_PATTERN}
+\DoxyCodeLine{      --exclude-from=FILE   skip files matching any file pattern from FILE}
+\DoxyCodeLine{      --exclude-dir=PATTERN  directories that match PATTERN will be skipped.}
+\DoxyCodeLine{  -L, --files-without-match  print only names of FILEs containing no match}
+\DoxyCodeLine{  -l, --files-with-matches  print only names of FILEs containing matches}
+\DoxyCodeLine{  -c, --count               print only a count of matching lines per FILE}
+\DoxyCodeLine{  -T, --initial-tab         make tabs line up (if needed)}
+\DoxyCodeLine{  -Z, --null                print 0 byte after FILE name}
+\DoxyCodeLine{}
+\DoxyCodeLine{Context control:}
+\DoxyCodeLine{  -B, --before-context=NUM  print NUM lines of leading context}
+\DoxyCodeLine{  -A, --after-context=NUM   print NUM lines of trailing context}
+\DoxyCodeLine{  -C, --context=NUM         print NUM lines of output context}
+\DoxyCodeLine{  -NUM                      same as --context=NUM}
+\DoxyCodeLine{      --color[=WHEN],}
+\DoxyCodeLine{      --colour[=WHEN]       use markers to highlight the matching strings;}
+\DoxyCodeLine{                            WHEN is 'always', 'never', or 'auto'}
+\DoxyCodeLine{  -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)}
+\DoxyCodeLine{  -u, --unix-byte-offsets   report offsets as if CRs were not there}
+\DoxyCodeLine{                            (MSDOS/Windows)}
+\DoxyCodeLine{}
+\DoxyCodeLine{'egrep' means 'grep -E'.  'fgrep' means 'grep -F'.}
+\DoxyCodeLine{Direct invocation as either 'egrep' or 'fgrep' is deprecated.}
+\DoxyCodeLine{When FILE is -, read standard input.  With no FILE, read . if a command-line}
+\DoxyCodeLine{-r is given, - otherwise.  If fewer than two FILEs are given, assume -h.}
+\DoxyCodeLine{Exit status is 0 if any line is selected, 1 otherwise;}
+\DoxyCodeLine{if any error occurs and -q is not given, the exit status is 2.}
+\DoxyCodeLine{}
+\DoxyCodeLine{Report bugs to: bug-grep@gnu.org}
+\DoxyCodeLine{GNU Grep home page: <http://www.gnu.org/software/grep/>}
+\DoxyCodeLine{General help using GNU software: <http://www.gnu.org/gethelp/>}
+\end{DoxyCode}
+ \subsection*{sudo tcpdump -\/i bond0 host 169.\+254.\+0.\+2 -\/c 10}
+
+\#\#\# 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{tcpdump: bond0: No such device exists}
+\DoxyCodeLine{(SIOCGIFHWADDR: No such device)}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{tcpdump version 4.9.2}
+\DoxyCodeLine{libpcap version 1.8.1}
+\DoxyCodeLine{OpenSSL 1.0.1t  3 May 2016}
+\DoxyCodeLine{Usage: tcpdump [-aAbdDefhHIJKlLnNOpqStuUvxX\#] [ -B size ] [ -c count ]}
+\DoxyCodeLine{        [ -C file\_size ] [ -E algo:secret ] [ -F file ] [ -G seconds ]}
+\DoxyCodeLine{        [ -i interface ] [ -j tstamptype ] [ -M secret ] [ --number ]}
+\DoxyCodeLine{        [ -Q in|out|inout ]}
+\DoxyCodeLine{        [ -r file ] [ -s snaplen ] [ --time-stamp-precision precision ]}
+\DoxyCodeLine{        [ --immediate-mode ] [ -T type ] [ --version ] [ -V file ]}
+\DoxyCodeLine{        [ -w file ] [ -W filecount ] [ -y datalinktype ] [ -z postrotate-command ]}
+\DoxyCodeLine{        [ -Z user ] [ expression ]}
+\end{DoxyCode}
+ 
