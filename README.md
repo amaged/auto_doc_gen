@@ -7,7 +7,7 @@ Why was this created:
 
 ====================
 
-"Quickly" generate a formatted "baseline" output of all operation commands, A Cumulus Customer asked the Consulting for a troubleshooting guide and this would help them get started.
+"Quickly" generate a formatted "baseline" output of all operation commands, My Customer asked for a troubleshooting guide and this would help them get started.
 
 Other reasons:
 
